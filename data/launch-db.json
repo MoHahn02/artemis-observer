@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T20:07:57Z",
+  "generatedAt": "2026-05-03T23:50:11Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -22,7 +22,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-05-01T04:13:09Z"
     },
     {
@@ -45,7 +45,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-05-01T10:23:54Z"
     },
     {
@@ -91,7 +91,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-30T15:18:38Z"
     },
     {
@@ -136,7 +136,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-26T23:55:22Z"
     },
     {
@@ -159,7 +159,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-25T06:44:24Z"
     },
     {
@@ -182,7 +182,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z"
     },
     {
@@ -206,7 +206,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z"
     },
     {
@@ -228,7 +228,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -259,38 +259,8 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-24T09:57:45Z"
-    },
-    {
-      "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
-      "name": "Long March 7A | Unknown Payload",
-      "net": "2026-05-31T00:00:00Z",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 7A",
-      "pad": "201",
-      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
-      "latitude": 19.618452,
-      "longitude": 110.955356,
-      "mission": "Unknown Payload",
-      "missionDescription": "Details TBD.",
-      "orbit": "Unknown",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-03T20:07:57Z",
-      "firstSeenAt": "2026-04-19T13:07:28Z",
-      "previousNets": [
-        "2026-04-30T00:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -312,7 +282,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-20T18:45:01Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -321,29 +291,6 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
-    },
-    {
-      "id": "a5872822-76df-404b-93d0-9ecd7ba80a70",
-      "name": "Long March 7 | Tianzhou-10",
-      "net": "2026-05-31T00:00:00Z",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 7",
-      "pad": "201",
-      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
-      "latitude": 19.618452,
-      "longitude": 110.955356,
-      "mission": "Tianzhou-10",
-      "missionDescription": "Ninth cargo delivery mission to the Chinese space station.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/19/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a5872822-76df-404b-93d0-9ecd7ba80a70/",
-      "updatedAt": "2026-05-03T20:07:57Z",
-      "firstSeenAt": "2026-04-25T23:22:07Z"
     },
     {
       "id": "4aa02420-1bcb-4dd9-afa8-06d5ff89d248",
@@ -365,7 +312,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4aa02420-1bcb-4dd9-afa8-06d5ff89d248/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4aa02420-1bcb-4dd9-afa8-06d5ff89d248/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -395,10 +342,41 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
+      "name": "Long March 7A | Unknown Payload",
+      "net": "2026-05-26T16:00:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 7A",
+      "pad": "201",
+      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
+      "latitude": 19.618452,
+      "longitude": 110.955356,
+      "mission": "Unknown Payload",
+      "missionDescription": "Details TBD.",
+      "orbit": "Unknown",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
+      "updatedAt": "2026-05-03T23:50:11Z",
+      "firstSeenAt": "2026-04-19T13:07:28Z",
+      "previousNets": [
+        "2026-04-30T00:00:00Z",
+        "2026-05-31T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -425,7 +403,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/viva-la-strix-2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/156a9e46-01b5-46f4-818e-ea563c71c5fe/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -456,7 +434,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-28T04:57:10Z"
     },
     {
@@ -480,7 +458,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=6q8aKbcKCOs",
       "sourceUrl": "https://esamultimedia.esa.int/docs/science/Smile_Launch_Kit_EN.pdf",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b31313da-ee5d-42b2-9a27-20cc18105276/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -510,7 +488,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/11/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -541,7 +519,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-20T16:49:14Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -571,8 +549,60 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/24f0b5b1-f573-4cc9-8898-1eb7fd5cc0f2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/24f0b5b1-f573-4cc9-8898-1eb7fd5cc0f2/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-05-01T17:17:51Z"
+    },
+    {
+      "id": "d50ae620-be2f-4690-9f86-fbc2a194bf29",
+      "name": "Long March 6A | Unknown Payload",
+      "net": "2026-05-12T11:55:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 6A",
+      "pad": "Launch Complex 9A",
+      "padLocation": "Taiyuan Satellite Launch Center, People's Republic of China",
+      "latitude": 38.8583,
+      "longitude": 111.5802,
+      "mission": "Unknown Payload",
+      "missionDescription": "Details TBD.",
+      "orbit": "Unknown",
+      "status": "go",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d50ae620-be2f-4690-9f86-fbc2a194bf29/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d50ae620-be2f-4690-9f86-fbc2a194bf29/",
+      "updatedAt": "2026-05-03T23:50:11Z",
+      "firstSeenAt": "2026-05-03T23:50:11Z"
+    },
+    {
+      "id": "a5872822-76df-404b-93d0-9ecd7ba80a70",
+      "name": "Long March 7 | Tianzhou-10",
+      "net": "2026-05-09T22:00:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 7",
+      "pad": "201",
+      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
+      "latitude": 19.618452,
+      "longitude": 110.955356,
+      "mission": "Tianzhou-10",
+      "missionDescription": "Ninth cargo delivery mission to the Chinese space station.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/19/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a5872822-76df-404b-93d0-9ecd7ba80a70/",
+      "updatedAt": "2026-05-03T23:50:11Z",
+      "firstSeenAt": "2026-04-25T23:22:07Z",
+      "previousNets": [
+        "2026-05-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
     },
     {
       "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
@@ -594,7 +624,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-29T19:28:24Z"
     },
     {
@@ -617,7 +647,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=yt5DGn7No6U",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-29",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dd82ccd7-9ab2-410a-ac41-306218015c05/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-23T22:03:46Z"
     },
     {
@@ -640,7 +670,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/cas500-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/05530ccb-7184-41e7-b2e5-c090b61e0e3a/",
-      "updatedAt": "2026-05-03T20:07:57Z",
+      "updatedAt": "2026-05-03T23:50:11Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=oAYpPfnj9E8",
       "previousNets": [
