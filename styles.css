@@ -254,6 +254,8 @@ body.launch-detail-active:not(.hide-watch) #mission-control-panel {
     top: 116px;
     right: 20px;
     width: min(320px, calc(100vw - 40px));
+    max-height: calc(100vh - 136px);
+    overflow: auto;
     padding: 14px;
     display: none;
 }
@@ -1235,9 +1237,24 @@ button.stat-card:focus-visible {
     overflow-wrap: anywhere;
 }
 
+.sat-focus-combined strong + strong {
+    color: var(--muted);
+    font-size: 12px;
+}
+
 .sat-stop-wide {
     width: 100%;
     margin-top: 12px;
+}
+
+.sat-constellation-jump {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.sat-constellation-jump.is-hidden {
+    display: none;
 }
 
 .sat-constellation-panel.is-hidden {

@@ -240,6 +240,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat.group.added': 'Added in window',
             'sat.group.decayed': 'Decayed/reentered',
             'sat.group.clear': 'Clear constellation filter',
+            'sat.group.jump': 'Show constellation',
             'sat.tleNoOperator': 'TLE without operator field',
             'sat.panelKicker': 'Satellite tracking',
             'sat.focus': 'Focus',
@@ -435,6 +436,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat.group.added': 'Neu im Zeitraum',
             'sat.group.decayed': 'Decayed/Reentry',
             'sat.group.clear': 'Konstellationsfilter loeschen',
+            'sat.group.jump': 'Konstellation anzeigen',
             'sat.tleNoOperator': 'TLE ohne Betreiberfeld',
             'sat.panelKicker': 'Satellit verfolgt',
             'sat.focus': 'Fokus',
@@ -1255,7 +1257,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat-focus-type',
             'sat-focus-operator',
             'sat-focus-country',
-            'sat-focus-profile-source',
             'sat-focus-size',
             'sat-focus-regime',
             'sat-focus-altitude',
@@ -1266,6 +1267,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat-focus-eccentricity',
             'sat-focus-latitude',
             'sat-focus-longitude',
+            'sat-focus-constellation',
             'sat-focus-details-grid',
             'sat-constellation-panel',
             'sat-group-active',
@@ -1864,6 +1866,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['control-focus-launch']?.addEventListener('click', () => focusSelectedLaunch());
         dom['sat-focus-stop']?.addEventListener('click', stopSatellitePanelContext);
         dom['sat-focus-stop-wide']?.addEventListener('click', stopSatellitePanelContext);
+        dom['sat-focus-constellation']?.addEventListener('click', jumpFocusedSatelliteToConstellation);
         dom['earth-view-btn']?.addEventListener('click', resetView);
         dom['observer-view-btn']?.addEventListener('click', toggleFollowObserver);
         dom['moon-view-btn']?.addEventListener('click', toggleMoonView);
@@ -5149,6 +5152,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         return true;
     }
 
+    function satelliteConstellationGroup(satellite) {
+        if (!satellite) return null;
+        return ['starlink', 'qianfan', 'oneweb', 'kuiper']
+            .map((id) => SATELLITE_GROUP_FILTERS.find((filter) => filter.id === id))
+            .find((filter) => filter && satelliteMatchesGroupFilter(satellite, filter.id)) || null;
+    }
+
     function parseCatalogDateMs(value) {
         if (!value) return NaN;
         const parsed = Date.parse(String(value).slice(0, 10));
@@ -5983,7 +5993,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 'sat-focus-type',
                 'sat-focus-operator',
                 'sat-focus-country',
-                'sat-focus-profile-source',
                 'sat-focus-size',
                 'sat-focus-regime',
                 'sat-focus-altitude',
@@ -5995,19 +6004,27 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 'sat-focus-latitude',
                 'sat-focus-longitude'
             ].forEach((id) => setText(id, '--'));
+            dom['sat-focus-constellation']?.classList.add('is-hidden');
             setText('sat-focus-stop-wide', t('sat.stopFollowing'));
             return;
         }
 
+        const constellationGroup = satelliteConstellationGroup(satellite);
         dom['sat-focus-details-grid']?.classList.remove('is-hidden');
         dom['sat-constellation-panel']?.classList.add('is-hidden');
+        if (dom['sat-focus-constellation']) {
+            dom['sat-focus-constellation'].classList.toggle('is-hidden', !constellationGroup);
+            dom['sat-focus-constellation'].dataset.groupFilter = constellationGroup?.id || '';
+            dom['sat-focus-constellation'].textContent = constellationGroup
+                ? `${t('sat.group.jump')}: ${t(constellationGroup.labelKey)}`
+                : t('sat.group.jump');
+        }
         setText('sat-focus-kicker', t('sat.panelKicker'));
         setText('sat-focus-title', satellite.name);
         setText('sat-focus-subtitle', `NORAD ${satellite.id}${satellite.orbitSource ? ` · ${satellite.orbitSource}` : ''}`);
         setText('sat-focus-type', satellite.type || '--');
         setText('sat-focus-operator', satellite.operator || '--');
         setText('sat-focus-country', satellite.country || '--');
-        setText('sat-focus-profile-source', satellite.profileSource || '--');
         setText('sat-focus-size', formatSatelliteSize(satellite));
         setText('sat-focus-regime', satellite.regime || '--');
         setText('sat-focus-altitude', formatAltitudeKm(satellite.altitudeKm));
@@ -6025,6 +6042,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const stats = currentGroupStats(groupFilter.id);
         dom['sat-focus-details-grid']?.classList.add('is-hidden');
         dom['sat-constellation-panel']?.classList.remove('is-hidden');
+        dom['sat-focus-constellation']?.classList.add('is-hidden');
         setText('sat-focus-kicker', t('sat.group.panelKicker'));
         setText('sat-focus-title', t(groupFilter.labelKey));
         setText('sat-focus-subtitle', t('sat.group.subtitle'));
@@ -6493,6 +6511,19 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (state.satelliteGroupFilter !== 'all') {
             setSatelliteGroupFilter('all');
         }
+    }
+
+    function jumpFocusedSatelliteToConstellation() {
+        const satellite = state.followSatelliteId
+            ? state.satelliteIndex.get(state.followSatelliteId) || null
+            : null;
+        const group = satelliteConstellationGroup(satellite);
+        if (!group) return;
+        state.followSatelliteId = null;
+        closeSearch();
+        setSatelliteGroupFilter(group.id);
+        renderSatelliteSearchResults();
+        if (isMobileViewport()) openMobilePanel('satellite');
     }
 
     function pickVisibleSatellite() {
