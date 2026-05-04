@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-03T21:57:32Z",
+  "generatedAt": "2026-05-04T03:24:48Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15299,
+      "activeCount": 15297,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -834,7 +834,7 @@
         "2021-01-08": 1,
         "2021-01-19": 1,
         "2021-01-20": 43,
-        "2021-01-24": 10,
+        "2021-01-24": 9,
         "2021-01-29": 3,
         "2021-02-02": 1,
         "2021-02-04": 13,
@@ -943,7 +943,6 @@
         "2022-04-15": 2,
         "2022-04-21": 46,
         "2022-04-29": 49,
-        "2022-04-30": 1,
         "2022-05-02": 1,
         "2022-05-05": 6,
         "2022-05-06": 48,
@@ -16302,7 +16301,7 @@
         "2025-04-20": 5,
         "2021-09-29": 2,
         "2021-09-06": 1,
-        "2026-05-03": 4,
+        "2026-05-03": 6,
         "2025-04-24": 5,
         "2026-03-26": 3,
         "2026-04-05": 3,
@@ -20545,7 +20544,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3523,
+        "activeCount": 3521,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21277,7 +21276,7 @@
           "2021-01-08": 1,
           "2021-01-19": 1,
           "2021-01-20": 1,
-          "2021-01-24": 10,
+          "2021-01-24": 9,
           "2021-01-29": 3,
           "2021-02-02": 1,
           "2021-02-04": 1,
@@ -21358,7 +21357,6 @@
           "2022-04-07": 1,
           "2022-04-15": 2,
           "2022-04-29": 2,
-          "2022-04-30": 1,
           "2022-05-02": 1,
           "2022-05-05": 6,
           "2022-05-19": 1,
@@ -36105,6 +36103,7 @@
           "2024-09-15": 5,
           "2023-05-05": 2,
           "2024-01-24": 2,
+          "2026-05-03": 2,
           "2025-02-05": 1,
           "2023-02-26": 3,
           "2021-03-05": 2,
@@ -73641,24 +73640,6 @@
       },
       "wikidata": null
     },
-    "47487": {
-      "satcat": {
-        "NORAD_CAT_ID": "47487",
-        "OBJECT_NAME": "ASTROCAST-0103",
-        "OBJECT_ID": "2021-006CC",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "SWTZ",
-        "LAUNCH_DATE": "2021-01-24"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "SWTZ",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "47502": {
       "satcat": {
         "NORAD_CAT_ID": "47502",
@@ -104042,24 +104023,6 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "52389": {
-      "satcat": {
-        "NORAD_CAT_ID": "52389",
-        "OBJECT_NAME": "JILIN-1 GAOFEN 03D04",
-        "OBJECT_ID": "2022-046B",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2022-04-30"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
