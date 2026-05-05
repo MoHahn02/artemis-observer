@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-05T01:16:25Z",
+  "generatedAt": "2026-05-05T12:04:15Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15321,
+      "activeCount": 15322,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1515,7 +1515,7 @@
         "2025-11-26": 13,
         "2025-11-27": 1,
         "2025-11-28": 122,
-        "2025-12-01": 29,
+        "2025-12-01": 30,
         "2025-12-02": 56,
         "2025-12-04": 28,
         "2025-12-05": 2,
@@ -20552,7 +20552,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3522,
+        "activeCount": 3523,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21731,6 +21731,7 @@
           "2025-11-26": 13,
           "2025-11-27": 1,
           "2025-11-28": 76,
+          "2025-12-01": 1,
           "2025-12-05": 2,
           "2025-12-06": 9,
           "2025-12-08": 5,
@@ -307802,6 +307803,24 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "66820": {
+      "satcat": {
+        "NORAD_CAT_ID": "66820",
+        "OBJECT_NAME": "KOMPSAT-7",
+        "OBJECT_ID": "2025-279A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "SKOR",
+        "LAUNCH_DATE": "2025-12-01"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "SKOR",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     },
