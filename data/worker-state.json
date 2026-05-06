@@ -1,20 +1,8 @@
 {
-  "lastFeedRefreshAt": "2026-05-06T01:15:07Z",
-  "lastCheckRunAt": "2026-05-06T01:15:07Z",
-  "lastSatelliteRefreshAt": "2026-05-06T01:15:07Z",
+  "lastFeedRefreshAt": "2026-05-06T04:45:45Z",
+  "lastCheckRunAt": "2026-05-06T04:45:45Z",
+  "lastSatelliteRefreshAt": "2026-05-06T04:45:45Z",
   "pendingChecks": [
-    {
-      "id": "dd82ccd7-9ab2-410a-ac41-306218015c05",
-      "phase": "preflight",
-      "dueAt": "2026-05-06T03:44:19Z",
-      "overdue": false
-    },
-    {
-      "id": "dd82ccd7-9ab2-410a-ac41-306218015c05",
-      "phase": "postflight",
-      "dueAt": "2026-05-06T04:29:19Z",
-      "overdue": false
-    },
     {
       "id": "a5872822-76df-404b-93d0-9ecd7ba80a70",
       "phase": "preflight",
@@ -329,6 +317,6 @@
     }
   ],
   "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-05-06T01:15:07Z",
-  "lastSatelliteProfileRefreshAt": "2026-05-06T01:15:07Z"
+  "lastIssOemRefreshAt": "2026-05-06T04:45:45Z",
+  "lastSatelliteProfileRefreshAt": "2026-05-06T04:45:45Z"
 }
