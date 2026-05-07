@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-07T06:49:53Z",
+  "generatedAt": "2026-05-07T09:23:20Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15350,
+      "activeCount": 15347,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -800,7 +800,7 @@
         "2020-08-06": 1,
         "2020-08-07": 35,
         "2020-08-15": 3,
-        "2020-08-18": 18,
+        "2020-08-18": 17,
         "2020-08-23": 1,
         "2020-08-30": 2,
         "2020-09-03": 24,
@@ -809,7 +809,7 @@
         "2020-09-21": 1,
         "2020-09-27": 2,
         "2020-09-28": 12,
-        "2020-10-06": 17,
+        "2020-10-06": 16,
         "2020-10-11": 1,
         "2020-10-18": 20,
         "2020-10-24": 11,
@@ -1057,7 +1057,7 @@
         "2023-03-12": 1,
         "2023-03-13": 1,
         "2023-03-15": 1,
-        "2023-03-17": 52,
+        "2023-03-17": 51,
         "2023-03-22": 4,
         "2023-03-23": 1,
         "2023-03-24": 53,
@@ -16225,6 +16225,7 @@
         "2020-11-14": 3,
         "2021-10-04": 3,
         "2021-09-24": 1,
+        "2026-05-06": 2,
         "2026-04-29": 2,
         "2021-08-01": 1,
         "2025-02-05": 7,
@@ -16286,6 +16287,7 @@
         "2025-04-29": 5,
         "2021-03-06": 1,
         "2021-12-12": 2,
+        "2026-05-07": 1,
         "2022-04-10": 10,
         "2026-03-17": 5,
         "2021-07-18": 1,
@@ -16604,7 +16606,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10321,
+        "activeCount": 10318,
         "addedByDay": {
           "2019-11-11": 15,
           "2020-01-07": 6,
@@ -16615,9 +16617,9 @@
           "2020-06-04": 27,
           "2020-06-13": 16,
           "2020-08-07": 35,
-          "2020-08-18": 18,
+          "2020-08-18": 17,
           "2020-09-03": 20,
-          "2020-10-06": 17,
+          "2020-10-06": 16,
           "2020-10-18": 20,
           "2020-10-24": 11,
           "2020-11-25": 10,
@@ -16680,7 +16682,7 @@
           "2023-02-12": 51,
           "2023-02-17": 44,
           "2023-03-03": 45,
-          "2023-03-17": 49,
+          "2023-03-17": 48,
           "2023-03-24": 52,
           "2023-03-29": 48,
           "2023-04-19": 18,
@@ -17293,6 +17295,7 @@
           "2024-12-30": 5,
           "2024-06-26": 3,
           "2025-04-06": 3,
+          "2026-05-06": 2,
           "2025-01-07": 6,
           "2025-03-01": 1,
           "2026-02-11": 1,
@@ -17360,6 +17363,7 @@
           "2023-03-24": 1,
           "2025-02-20": 5,
           "2021-12-12": 1,
+          "2026-05-07": 1,
           "2026-04-28": 1,
           "2023-06-16": 1,
           "2022-04-10": 1,
@@ -17861,7 +17865,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11507,
+        "activeCount": 11504,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -17889,9 +17893,9 @@
           "2020-06-04": 27,
           "2020-06-13": 16,
           "2020-08-07": 35,
-          "2020-08-18": 18,
+          "2020-08-18": 17,
           "2020-09-03": 20,
-          "2020-10-06": 17,
+          "2020-10-06": 16,
           "2020-10-18": 20,
           "2020-10-24": 11,
           "2020-11-25": 10,
@@ -17968,7 +17972,7 @@
           "2023-02-17": 44,
           "2023-03-03": 45,
           "2023-03-09": 40,
-          "2023-03-17": 49,
+          "2023-03-17": 48,
           "2023-03-24": 52,
           "2023-03-26": 36,
           "2023-03-29": 48,
@@ -19125,6 +19129,7 @@
           "2024-12-30": 5,
           "2024-06-26": 3,
           "2025-04-06": 3,
+          "2026-05-06": 2,
           "2025-01-07": 6,
           "2025-03-01": 1,
           "2026-02-11": 1,
@@ -19188,6 +19193,7 @@
           "2023-03-24": 1,
           "2025-02-20": 5,
           "2021-12-12": 1,
+          "2026-05-07": 1,
           "2026-04-28": 1,
           "2023-06-16": 1,
           "2022-04-10": 1,
@@ -68842,27 +68848,6 @@
       },
       "wikidata": null
     },
-    "46119": {
-      "satcat": {
-        "NORAD_CAT_ID": "46119",
-        "OBJECT_NAME": "STARLINK-1593",
-        "OBJECT_ID": "2020-057C",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2020-08-18"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
     "46128": {
       "satcat": {
         "NORAD_CAT_ID": "46128",
@@ -70272,27 +70257,6 @@
         "NORAD_CAT_ID": "46557",
         "OBJECT_NAME": "STARLINK-1679",
         "OBJECT_ID": "2020-070AB",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2020-10-06"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "46558": {
-      "satcat": {
-        "NORAD_CAT_ID": "46558",
-        "OBJECT_NAME": "STARLINK-1680",
-        "OBJECT_ID": "2020-070AC",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2020-10-06"
@@ -141082,27 +141046,6 @@
         "NORAD_CAT_ID": "55946",
         "OBJECT_NAME": "STARLINK-5857",
         "OBJECT_ID": "2023-037AJ",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-03-17"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "55947": {
-      "satcat": {
-        "NORAD_CAT_ID": "55947",
-        "OBJECT_NAME": "STARLINK-5851",
-        "OBJECT_ID": "2023-037AK",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2023-03-17"
@@ -318210,21 +318153,18 @@
     "67364": {
       "satcat": {
         "NORAD_CAT_ID": "67364",
-        "OBJECT_NAME": "LEMUR-2-CALLUM-K-J",
+        "OBJECT_NAME": "TWILIGHT-1 OBJECT B",
         "OBJECT_ID": "2026-004B",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
+        "OWNER": "TBD",
         "LAUNCH_DATE": "2026-01-11"
       },
       "profile": {
-        "type": "Wetter-/AIS-Datensatellit",
-        "operator": "Spire Global",
-        "country": "USA/Luxemburg",
-        "sizeLabel": "ca. 3U/6U CubeSat",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Spire Lemur",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "spire-lemur"
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     },
@@ -318252,18 +318192,21 @@
     "67366": {
       "satcat": {
         "NORAD_CAT_ID": "67366",
-        "OBJECT_NAME": "TWILIGHT-1 OBJECT D",
+        "OBJECT_NAME": "LEMUR-2 CALLUM-K-J",
         "OBJECT_ID": "2026-004D",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-01-11"
       },
       "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
+        "type": "Wetter-/AIS-Datensatellit",
+        "operator": "Spire Global",
+        "country": "USA/Luxemburg",
+        "sizeLabel": "ca. 3U/6U CubeSat",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Spire Lemur",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "spire-lemur"
       },
       "wikidata": null
     },
@@ -339570,15 +339513,15 @@
     "68469": {
       "satcat": {
         "NORAD_CAT_ID": "68469",
-        "OBJECT_NAME": "TRANSPORTER-16 OBJECT BF",
+        "OBJECT_NAME": "W-SERIES 6",
         "OBJECT_ID": "2026-067BF",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
