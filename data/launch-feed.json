@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-08T17:42:55Z",
+  "generatedAt": "2026-05-08T18:58:30Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-05-08T18:42:55Z",
+  "nextRefreshAfter": "2026-05-08T19:58:30Z",
   "launches": [
     {
       "id": "a5872822-76df-404b-93d0-9ecd7ba80a70",
@@ -28,7 +28,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/19/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a5872822-76df-404b-93d0-9ecd7ba80a70/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "24f0b5b1-f573-4cc9-8898-1eb7fd5cc0f2",
@@ -55,7 +55,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AKEmOQmWLVKL",
       "sourceUrl": "https://www.spacex.com/launches/nrol172",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/24f0b5b1-f573-4cc9-8898-1eb7fd5cc0f2/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "d50ae620-be2f-4690-9f86-fbc2a194bf29",
@@ -82,12 +82,12 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d50ae620-be2f-4690-9f86-fbc2a194bf29/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d50ae620-be2f-4690-9f86-fbc2a194bf29/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "e60aa241-1f2c-4459-ba94-2f576c3e5632",
       "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-34",
-      "net": "2026-05-12T23:16:34Z",
+      "net": "2026-05-12T23:16:36Z",
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "pad": "Space Launch Complex 40",
@@ -109,7 +109,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1DxleEdlAQjKL",
       "sourceUrl": "https://www.spacex.com/launches/crs-34",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "4aa02420-1bcb-4dd9-afa8-06d5ff89d248",
@@ -136,7 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4aa02420-1bcb-4dd9-afa8-06d5ff89d248/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4aa02420-1bcb-4dd9-afa8-06d5ff89d248/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
@@ -163,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "ed83366c-872c-4484-97c1-bc74832304fc",
@@ -190,7 +190,34 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
+    },
+    {
+      "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
+      "name": "Falcon 9 Block 5 | 9 x Globalstar-3",
+      "net": "2026-05-17T12:50:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "9 x Globalstar-3",
+      "missionDescription": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 3rd generation satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
+      "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "7ba18bcb-c711-4329-9fc1-7ac017fadfff",
@@ -217,7 +244,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1wxWjaEgZOkJQ",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-42",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7ba18bcb-c711-4329-9fc1-7ac017fadfff/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "b31313da-ee5d-42b2-9a27-20cc18105276",
@@ -244,7 +271,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=6q8aKbcKCOs",
       "sourceUrl": "https://esamultimedia.esa.int/docs/science/Smile_Launch_Kit_EN.pdf",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b31313da-ee5d-42b2-9a27-20cc18105276/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -271,7 +298,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "ff0a6a32-6513-4e85-9fd8-a2d022add74d",
@@ -298,7 +325,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "156a9e46-01b5-46f4-818e-ea563c71c5fe",
@@ -325,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/viva-la-strix-2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/156a9e46-01b5-46f4-818e-ea563c71c5fe/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "ef65c43b-faf9-4adb-9155-289eaabdd097",
@@ -352,7 +379,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLmMoZMKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-31",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef65c43b-faf9-4adb-9155-289eaabdd097/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
@@ -379,34 +406,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-08T17:42:55Z"
-    },
-    {
-      "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
-      "name": "Falcon 9 Block 5 | 9 x Globalstar-3",
-      "net": "2026-05-31T00:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Unknown Pad",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.458,
-      "longitude": -80.528,
-      "mission": "9 x Globalstar-3",
-      "missionDescription": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 3rd generation satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -433,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -460,7 +460,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "aafe107e-46d8-420c-bcb9-192069d80893",
@@ -487,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -514,7 +514,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -541,34 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-08T17:42:55Z"
-    },
-    {
-      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
-      "name": "Pegasus XL | Swift Rescue Mission",
-      "net": "2026-06-01T00:00:00Z",
-      "provider": "Northrop Grumman Space Systems",
-      "rocket": "Pegasus XL",
-      "pad": "Kwajalein Atoll",
-      "padLocation": "Air launch to orbit",
-      "latitude": 8.716667,
-      "longitude": 167.733333,
-      "mission": "Swift Rescue Mission",
-      "missionDescription": "Contracted by NASA under the Small Business Innovation Research Phase 3 contract, Katalyst Space Technologies' LINK servicing spacecraft will rendezvous and attach to NASA\u2019s Neil Gehrels Swift Observatory to re-boost its orbit. This aims to demonstrate a key capability for the future of space exploration and extending the Swift mission\u2019s science lifetime in gamma ray astronomy.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
@@ -595,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
@@ -622,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -649,7 +622,34 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-08T17:42:55Z"
+      "updatedAt": "2026-05-08T18:58:30Z"
+    },
+    {
+      "id": "c3f48f48-0e0a-4bca-917e-de494cfca35b",
+      "name": "Falcon 9 Block 5 | BlueBird Block 2 #3",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "BlueBird Block 2 #3",
+      "missionDescription": "AST SpaceMobile\u2019s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
+      "updatedAt": "2026-05-08T18:58:30Z"
     }
   ]
 }
