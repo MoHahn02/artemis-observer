@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-08T20:12:23Z",
+  "generatedAt": "2026-05-09T09:57:36Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15343,
+      "activeCount": 15385,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -56,7 +56,7 @@
         "1998-08-02": 2,
         "1998-09-23": 1,
         "1998-10-23": 1,
-        "1998-11-20": 12,
+        "1998-11-20": 11,
         "1998-12-06": 1,
         "1998-12-04": 1,
         "1999-05-26": 1,
@@ -1338,7 +1338,7 @@
         "2025-01-08": 21,
         "2025-01-10": 21,
         "2025-01-13": 30,
-        "2025-01-14": 101,
+        "2025-01-14": 100,
         "2025-01-17": 3,
         "2025-01-20": 5,
         "2025-01-21": 50,
@@ -1390,7 +1390,7 @@
         "2025-05-02": 27,
         "2025-05-04": 29,
         "2025-05-07": 27,
-        "2025-05-10": 53,
+        "2025-05-10": 52,
         "2025-05-11": 3,
         "2025-05-12": 1,
         "2025-05-13": 54,
@@ -1607,7 +1607,8 @@
         "2026-04-26": 25,
         "2026-04-28": 29,
         "2026-04-29": 1,
-        "2026-04-30": 56
+        "2026-04-30": 56,
+        "2026-05-03": 45
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -8057,7 +8058,7 @@
         "1984-09-30": 1,
         "1984-11-05": 3,
         "1989-09-09": 4,
-        "2026-05-07": 6,
+        "2026-05-07": 7,
         "1984-10-01": 1,
         "1987-12-07": 2,
         "1989-12-10": 2,
@@ -16563,6 +16564,7 @@
         "2022-12-11": 2,
         "2025-08-25": 2,
         "2024-12-01": 1,
+        "2026-05-08": 3,
         "2025-09-21": 2,
         "2025-09-20": 3,
         "2024-11-21": 3,
@@ -16606,7 +16608,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10316,
+        "activeCount": 10315,
         "addedByDay": {
           "2019-11-11": 15,
           "2020-01-07": 6,
@@ -16851,7 +16853,7 @@
           "2025-05-02": 27,
           "2025-05-04": 29,
           "2025-05-07": 27,
-          "2025-05-10": 53,
+          "2025-05-10": 52,
           "2025-05-13": 54,
           "2025-05-14": 28,
           "2025-05-16": 26,
@@ -17793,6 +17795,7 @@
           "2025-11-12": 1,
           "2026-05-05": 1,
           "2025-05-18": 1,
+          "2026-05-08": 1,
           "2026-01-17": 1
         },
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -17865,7 +17868,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11502,
+        "activeCount": 11501,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18148,7 +18151,7 @@
           "2025-05-02": 27,
           "2025-05-04": 29,
           "2025-05-07": 27,
-          "2025-05-10": 53,
+          "2025-05-10": 52,
           "2025-05-13": 54,
           "2025-05-14": 28,
           "2025-05-16": 26,
@@ -19604,6 +19607,7 @@
           "2026-04-26": 2,
           "2026-05-05": 1,
           "2025-05-18": 1,
+          "2026-05-08": 1,
           "2026-01-17": 1
         },
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -20562,7 +20566,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3518,
+        "activeCount": 3561,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20614,7 +20618,7 @@
           "1998-08-02": 2,
           "1998-09-23": 1,
           "1998-10-23": 1,
-          "1998-11-20": 12,
+          "1998-11-20": 11,
           "1998-12-06": 1,
           "1998-12-04": 1,
           "1999-05-26": 1,
@@ -21633,7 +21637,7 @@
           "2025-01-04": 1,
           "2025-01-06": 1,
           "2025-01-13": 10,
-          "2025-01-14": 63,
+          "2025-01-14": 62,
           "2025-01-17": 3,
           "2025-01-20": 5,
           "2025-01-21": 2,
@@ -21794,7 +21798,8 @@
           "2026-04-23": 12,
           "2026-04-24": 4,
           "2026-04-25": 2,
-          "2026-04-29": 1
+          "2026-04-29": 1,
+          "2026-05-03": 45
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -28243,7 +28248,7 @@
           "1984-09-30": 1,
           "1984-11-05": 3,
           "1989-09-09": 4,
-          "2026-05-07": 3,
+          "2026-05-07": 4,
           "1984-10-01": 1,
           "1987-12-07": 2,
           "1989-12-10": 2,
@@ -36402,6 +36407,7 @@
           "2023-05-22": 2,
           "2024-10-15": 2,
           "2023-12-09": 1,
+          "2026-05-08": 2,
           "2025-11-27": 2,
           "2023-01-06": 1,
           "2026-03-26": 1,
@@ -232201,24 +232207,6 @@
       },
       "wikidata": null
     },
-    "62693": {
-      "satcat": {
-        "NORAD_CAT_ID": "62693",
-        "OBJECT_NAME": "TRANSPORTER-12 OBJECT CN",
-        "OBJECT_ID": "2025-009CN",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
-        "LAUNCH_DATE": "2025-01-14"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "62694": {
       "satcat": {
         "NORAD_CAT_ID": "62694",
@@ -253203,27 +253191,6 @@
         "NORAD_CAT_ID": "63875",
         "OBJECT_NAME": "STARLINK-34023",
         "OBJECT_ID": "2025-094M",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2025-05-10"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "63876": {
-      "satcat": {
-        "NORAD_CAT_ID": "63876",
-        "OBJECT_NAME": "STARLINK-34061",
-        "OBJECT_ID": "2025-094N",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2025-05-10"
@@ -309402,24 +309369,6 @@
       },
       "wikidata": null
     },
-    "66907": {
-      "satcat": {
-        "NORAD_CAT_ID": "66907",
-        "OBJECT_NAME": "ISS OBJECT XT",
-        "OBJECT_ID": "1998-067XT",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
-        "LAUNCH_DATE": "1998-11-20"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "66908": {
       "satcat": {
         "NORAD_CAT_ID": "66908",
@@ -348831,6 +348780,816 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "68980": {
+      "satcat": {
+        "NORAD_CAT_ID": "68980",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT A",
+        "OBJECT_ID": "2026-100A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68981": {
+      "satcat": {
+        "NORAD_CAT_ID": "68981",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT B",
+        "OBJECT_ID": "2026-100B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68982": {
+      "satcat": {
+        "NORAD_CAT_ID": "68982",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT C",
+        "OBJECT_ID": "2026-100C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68983": {
+      "satcat": {
+        "NORAD_CAT_ID": "68983",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT D",
+        "OBJECT_ID": "2026-100D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68984": {
+      "satcat": {
+        "NORAD_CAT_ID": "68984",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT E",
+        "OBJECT_ID": "2026-100E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68985": {
+      "satcat": {
+        "NORAD_CAT_ID": "68985",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT F",
+        "OBJECT_ID": "2026-100F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68986": {
+      "satcat": {
+        "NORAD_CAT_ID": "68986",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT G",
+        "OBJECT_ID": "2026-100G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68987": {
+      "satcat": {
+        "NORAD_CAT_ID": "68987",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT H",
+        "OBJECT_ID": "2026-100H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68988": {
+      "satcat": {
+        "NORAD_CAT_ID": "68988",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT J",
+        "OBJECT_ID": "2026-100J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68989": {
+      "satcat": {
+        "NORAD_CAT_ID": "68989",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT K",
+        "OBJECT_ID": "2026-100K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68990": {
+      "satcat": {
+        "NORAD_CAT_ID": "68990",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT L",
+        "OBJECT_ID": "2026-100L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68991": {
+      "satcat": {
+        "NORAD_CAT_ID": "68991",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT M",
+        "OBJECT_ID": "2026-100M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68992": {
+      "satcat": {
+        "NORAD_CAT_ID": "68992",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT N",
+        "OBJECT_ID": "2026-100N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68993": {
+      "satcat": {
+        "NORAD_CAT_ID": "68993",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT P",
+        "OBJECT_ID": "2026-100P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68994": {
+      "satcat": {
+        "NORAD_CAT_ID": "68994",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT Q",
+        "OBJECT_ID": "2026-100Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68995": {
+      "satcat": {
+        "NORAD_CAT_ID": "68995",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT R",
+        "OBJECT_ID": "2026-100R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68996": {
+      "satcat": {
+        "NORAD_CAT_ID": "68996",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT S",
+        "OBJECT_ID": "2026-100S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68997": {
+      "satcat": {
+        "NORAD_CAT_ID": "68997",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT T",
+        "OBJECT_ID": "2026-100T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68998": {
+      "satcat": {
+        "NORAD_CAT_ID": "68998",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT U",
+        "OBJECT_ID": "2026-100U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68999": {
+      "satcat": {
+        "NORAD_CAT_ID": "68999",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT V",
+        "OBJECT_ID": "2026-100V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69000": {
+      "satcat": {
+        "NORAD_CAT_ID": "69000",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT W",
+        "OBJECT_ID": "2026-100W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69001": {
+      "satcat": {
+        "NORAD_CAT_ID": "69001",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT X",
+        "OBJECT_ID": "2026-100X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69002": {
+      "satcat": {
+        "NORAD_CAT_ID": "69002",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT Y",
+        "OBJECT_ID": "2026-100Y",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69003": {
+      "satcat": {
+        "NORAD_CAT_ID": "69003",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT Z",
+        "OBJECT_ID": "2026-100Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69004": {
+      "satcat": {
+        "NORAD_CAT_ID": "69004",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AA",
+        "OBJECT_ID": "2026-100AA",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69005": {
+      "satcat": {
+        "NORAD_CAT_ID": "69005",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AB",
+        "OBJECT_ID": "2026-100AB",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69006": {
+      "satcat": {
+        "NORAD_CAT_ID": "69006",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AC",
+        "OBJECT_ID": "2026-100AC",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69007": {
+      "satcat": {
+        "NORAD_CAT_ID": "69007",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AD",
+        "OBJECT_ID": "2026-100AD",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69008": {
+      "satcat": {
+        "NORAD_CAT_ID": "69008",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AE",
+        "OBJECT_ID": "2026-100AE",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69009": {
+      "satcat": {
+        "NORAD_CAT_ID": "69009",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AF",
+        "OBJECT_ID": "2026-100AF",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69010": {
+      "satcat": {
+        "NORAD_CAT_ID": "69010",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AG",
+        "OBJECT_ID": "2026-100AG",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69011": {
+      "satcat": {
+        "NORAD_CAT_ID": "69011",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AH",
+        "OBJECT_ID": "2026-100AH",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69012": {
+      "satcat": {
+        "NORAD_CAT_ID": "69012",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AJ",
+        "OBJECT_ID": "2026-100AJ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69013": {
+      "satcat": {
+        "NORAD_CAT_ID": "69013",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AK",
+        "OBJECT_ID": "2026-100AK",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69014": {
+      "satcat": {
+        "NORAD_CAT_ID": "69014",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AL",
+        "OBJECT_ID": "2026-100AL",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69015": {
+      "satcat": {
+        "NORAD_CAT_ID": "69015",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AM",
+        "OBJECT_ID": "2026-100AM",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69016": {
+      "satcat": {
+        "NORAD_CAT_ID": "69016",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AN",
+        "OBJECT_ID": "2026-100AN",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69017": {
+      "satcat": {
+        "NORAD_CAT_ID": "69017",
+        "OBJECT_NAME": "PELICAN-7",
+        "OBJECT_ID": "2026-100AP",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69018": {
+      "satcat": {
+        "NORAD_CAT_ID": "69018",
+        "OBJECT_NAME": "EDDA-1",
+        "OBJECT_ID": "2026-100AQ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69019": {
+      "satcat": {
+        "NORAD_CAT_ID": "69019",
+        "OBJECT_NAME": "PELICAN-9",
+        "OBJECT_ID": "2026-100AR",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69020": {
+      "satcat": {
+        "NORAD_CAT_ID": "69020",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AS",
+        "OBJECT_ID": "2026-100AS",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69021": {
+      "satcat": {
+        "NORAD_CAT_ID": "69021",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AT",
+        "OBJECT_ID": "2026-100AT",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69022": {
+      "satcat": {
+        "NORAD_CAT_ID": "69022",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AU",
+        "OBJECT_ID": "2026-100AU",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69023": {
+      "satcat": {
+        "NORAD_CAT_ID": "69023",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AV",
+        "OBJECT_ID": "2026-100AV",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69024": {
+      "satcat": {
+        "NORAD_CAT_ID": "69024",
+        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AW",
+        "OBJECT_ID": "2026-100AW",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-05-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     }
