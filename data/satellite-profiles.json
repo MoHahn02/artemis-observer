@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-10T10:02:48Z",
+  "generatedAt": "2026-05-11T20:20:03Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15380,
+      "activeCount": 15379,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -56,7 +56,7 @@
         "1998-08-02": 2,
         "1998-09-23": 1,
         "1998-10-23": 1,
-        "1998-11-20": 11,
+        "1998-11-20": 10,
         "1998-12-06": 1,
         "1998-12-04": 1,
         "1999-05-26": 1,
@@ -804,7 +804,7 @@
         "2020-08-30": 2,
         "2020-09-03": 24,
         "2020-09-07": 1,
-        "2020-09-15": 6,
+        "2020-09-15": 5,
         "2020-09-21": 1,
         "2020-09-27": 2,
         "2020-09-28": 12,
@@ -1607,7 +1607,8 @@
         "2026-04-28": 29,
         "2026-04-29": 1,
         "2026-04-30": 56,
-        "2026-05-03": 45
+        "2026-05-03": 45,
+        "2026-05-11": 1
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -14037,7 +14038,7 @@
         "2023-06-24": 3,
         "2013-01-12": 2,
         "2010-09-18": 1,
-        "2024-09-04": 5,
+        "2024-09-27": 6,
         "2010-11-04": 2,
         "2013-09-07": 2,
         "2011-01-27": 1,
@@ -15406,7 +15407,6 @@
         "2015-12-17": 1,
         "2024-09-03": 4,
         "2026-02-11": 4,
-        "2024-09-27": 5,
         "2023-08-08": 4,
         "2020-10-28": 2,
         "2024-11-29": 9,
@@ -15592,6 +15592,7 @@
         "2026-04-14": 5,
         "2026-04-18": 3,
         "2025-08-12": 4,
+        "2024-09-04": 4,
         "2025-11-21": 3,
         "2022-05-05": 7,
         "2017-06-26": 1,
@@ -16279,6 +16280,7 @@
         "2020-12-08": 1,
         "2021-01-20": 1,
         "2020-12-25": 2,
+        "2026-05-11": 2,
         "2021-02-21": 1,
         "2020-12-03": 1,
         "2020-11-07": 2,
@@ -16564,7 +16566,7 @@
         "2022-12-11": 2,
         "2025-08-25": 2,
         "2024-12-01": 1,
-        "2026-05-08": 3,
+        "2026-05-08": 4,
         "2025-09-21": 2,
         "2025-09-20": 3,
         "2024-11-21": 3,
@@ -20196,6 +20198,7 @@
           "2025-04-17": 1,
           "2025-11-18": 1,
           "2026-04-25": 1,
+          "2026-05-11": 1,
           "2026-04-12": 1,
           "2026-04-03": 1
         },
@@ -20571,7 +20574,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3558,
+        "activeCount": 3557,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20623,7 +20626,7 @@
           "1998-08-02": 2,
           "1998-09-23": 1,
           "1998-10-23": 1,
-          "1998-11-20": 11,
+          "1998-11-20": 10,
           "1998-12-06": 1,
           "1998-12-04": 1,
           "1999-05-26": 1,
@@ -21280,7 +21283,7 @@
           "2020-08-30": 2,
           "2020-09-03": 4,
           "2020-09-07": 1,
-          "2020-09-15": 6,
+          "2020-09-15": 5,
           "2020-09-21": 1,
           "2020-09-27": 2,
           "2020-09-28": 12,
@@ -21803,7 +21806,8 @@
           "2026-04-24": 4,
           "2026-04-25": 2,
           "2026-04-29": 1,
-          "2026-05-03": 45
+          "2026-05-03": 45,
+          "2026-05-11": 1
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -34115,7 +34119,7 @@
           "2011-02-16": 1,
           "2013-08-06": 2,
           "2010-09-18": 1,
-          "2024-09-04": 3,
+          "2024-09-27": 4,
           "2016-01-19": 2,
           "2010-11-04": 2,
           "2013-09-07": 2,
@@ -35333,7 +35337,6 @@
           "2025-12-03": 4,
           "2024-09-03": 3,
           "2026-02-11": 3,
-          "2024-09-27": 3,
           "2023-08-08": 4,
           "2020-10-28": 2,
           "2024-11-29": 8,
@@ -35470,6 +35473,7 @@
           "2026-04-14": 2,
           "2026-04-18": 2,
           "2025-08-12": 3,
+          "2024-09-04": 2,
           "2025-10-27": 3,
           "2025-11-21": 3,
           "2022-05-05": 7,
@@ -36075,6 +36079,7 @@
           "2021-01-20": 1,
           "2020-12-25": 2,
           "2024-02-11": 2,
+          "2026-05-11": 1,
           "2021-02-21": 1,
           "2020-12-03": 1,
           "2020-11-07": 2,
@@ -36411,7 +36416,7 @@
           "2023-05-22": 2,
           "2024-10-15": 2,
           "2023-12-09": 1,
-          "2026-05-08": 2,
+          "2026-05-08": 3,
           "2025-11-27": 2,
           "2023-01-06": 1,
           "2026-03-26": 1,
@@ -69761,24 +69766,6 @@
         "NORAD_CAT_ID": "46461",
         "OBJECT_NAME": "JILIN-1 GAOFEN 3I",
         "OBJECT_ID": "2020-065H",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2020-09-15"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "46462": {
-      "satcat": {
-        "NORAD_CAT_ID": "46462",
-        "OBJECT_NAME": "JILIN-1 GAOFEN 3J",
-        "OBJECT_ID": "2020-065J",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2020-09-15"
@@ -309275,24 +309262,6 @@
       },
       "wikidata": null
     },
-    "66908": {
-      "satcat": {
-        "NORAD_CAT_ID": "66908",
-        "OBJECT_NAME": "ISS OBJECT XU",
-        "OBJECT_ID": "1998-067XU",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
-        "LAUNCH_DATE": "1998-11-20"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "66910": {
       "satcat": {
         "NORAD_CAT_ID": "66910",
@@ -338933,15 +338902,15 @@
     "68449": {
       "satcat": {
         "NORAD_CAT_ID": "68449",
-        "OBJECT_NAME": "TRANSPORTER-16 OBJECT AK",
+        "OBJECT_NAME": "IRIDE-MS1-EAGLET 2-9",
         "OBJECT_ID": "2026-067AK",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "IT",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "IT",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -338951,15 +338920,15 @@
     "68450": {
       "satcat": {
         "NORAD_CAT_ID": "68450",
-        "OBJECT_NAME": "TRANSPORTER-16 OBJECT AL",
+        "OBJECT_NAME": "IRIDE-MS1-EAGLET 2-13",
         "OBJECT_ID": "2026-067AL",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "IT",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "IT",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -338969,15 +338938,15 @@
     "68451": {
       "satcat": {
         "NORAD_CAT_ID": "68451",
-        "OBJECT_NAME": "TRANSPORTER-16 OBJECT AM",
+        "OBJECT_NAME": "IRIDE-MS1-EAGLET 2-10",
         "OBJECT_ID": "2026-067AM",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "IT",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "IT",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349493,6 +349462,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69049": {
+      "satcat": {
+        "NORAD_CAT_ID": "69049",
+        "OBJECT_NAME": "TIANZHOU-10",
+        "OBJECT_ID": "2026-102A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-05-11"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
