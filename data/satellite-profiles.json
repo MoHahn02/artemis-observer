@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T20:20:03Z",
+  "generatedAt": "2026-05-12T08:03:25Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
@@ -349291,15 +349291,15 @@
     "69015": {
       "satcat": {
         "NORAD_CAT_ID": "69015",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AM",
+        "OBJECT_NAME": "FRONTIERSAT",
         "OBJECT_ID": "2026-100AM",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "CA",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "CA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349435,15 +349435,15 @@
     "69023": {
       "satcat": {
         "NORAD_CAT_ID": "69023",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AV",
+        "OBJECT_NAME": "QUBE-II",
         "OBJECT_ID": "2026-100AV",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
