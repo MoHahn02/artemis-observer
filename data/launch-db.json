@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T22:52:06Z",
+  "generatedAt": "2026-05-14T00:01:23Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -648,6 +648,43 @@
       "firstSeenAt": "2026-05-10T13:53:38Z"
     },
     {
+      "id": "e60aa241-1f2c-4459-ba94-2f576c3e5632",
+      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-34",
+      "net": "2026-05-15T22:05:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "Dragon CRS-2 SpX-34",
+      "missionDescription": "34th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://www.spacex.com/launches/crs-34",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
+      "updatedAt": "2026-05-14T00:01:23Z",
+      "firstSeenAt": "2026-04-19T13:07:28Z",
+      "previousNets": [
+        "2026-05-31T00:00:00Z",
+        "2026-05-12T23:00:00Z",
+        "2026-05-12T23:16:34Z",
+        "2026-05-12T23:16:36Z",
+        "2026-05-12T23:16:31Z",
+        "2026-05-13T22:50:00Z",
+        "2026-05-13T22:50:50Z"
+      ],
+      "preflightCheckedAt": "2026-05-14T00:01:23Z",
+      "postflightCheckedAt": "2026-05-14T00:01:23Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "go",
+      "livestreamUrl": "https://x.com/i/broadcasts/1AxRnawMpzVxl"
+    },
+    {
       "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
       "name": "Falcon 9 Block 5 | Starlink Group 17-37",
       "net": "2026-05-15T14:00:00Z",
@@ -732,42 +769,6 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
-    },
-    {
-      "id": "e60aa241-1f2c-4459-ba94-2f576c3e5632",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-34",
-      "net": "2026-05-13T22:50:50Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.56194122,
-      "longitude": -80.57735736,
-      "mission": "Dragon CRS-2 SpX-34",
-      "missionDescription": "34th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "On Hold",
-      "statusAbbrev": "Hold",
-      "statusDescription": "The countdown has been paused, but the launch can still happen within the launch window.",
-      "sourceUrl": "https://www.spacex.com/launches/crs-34",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-13T22:52:06Z",
-      "firstSeenAt": "2026-04-19T13:07:28Z",
-      "previousNets": [
-        "2026-05-31T00:00:00Z",
-        "2026-05-12T23:00:00Z",
-        "2026-05-12T23:16:34Z",
-        "2026-05-12T23:16:36Z",
-        "2026-05-12T23:16:31Z",
-        "2026-05-13T22:50:00Z"
-      ],
-      "preflightCheckedAt": "2026-05-13T22:52:06Z",
-      "postflightCheckedAt": null,
-      "preflightStatus": "delayed",
-      "postflightStatus": "",
-      "livestreamUrl": "https://www.youtube.com/watch?v=dF-GsJmqJA8"
     },
     {
       "id": "d50ae620-be2f-4690-9f86-fbc2a194bf29",
