@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-14T04:09:40Z",
+  "generatedAt": "2026-05-14T07:21:50Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15430,
+      "activeCount": 15432,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1420,7 +1420,7 @@
         "2025-06-18": 28,
         "2025-06-19": 2,
         "2025-06-20": 1,
-        "2025-06-23": 120,
+        "2025-06-23": 122,
         "2025-06-25": 27,
         "2025-06-26": 4,
         "2025-06-28": 55,
@@ -20580,7 +20580,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3556,
+        "activeCount": 3558,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21699,7 +21699,7 @@
           "2025-06-14": 1,
           "2025-06-19": 2,
           "2025-06-20": 1,
-          "2025-06-23": 62,
+          "2025-06-23": 64,
           "2025-06-26": 4,
           "2025-06-28": 2,
           "2025-07-01": 1,
@@ -350563,6 +350563,42 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69093": {
+      "satcat": {
+        "NORAD_CAT_ID": "69093",
+        "OBJECT_NAME": "TRANSPORTER-14 OBJECT BR",
+        "OBJECT_ID": "2025-135BW",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2025-06-23"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69094": {
+      "satcat": {
+        "NORAD_CAT_ID": "69094",
+        "OBJECT_NAME": "TRANSPORTER-14 OBJECT BS",
+        "OBJECT_ID": "2025-135BX",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2025-06-23"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
