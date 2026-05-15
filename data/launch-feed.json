@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-15T18:58:19Z",
+  "generatedAt": "2026-05-15T20:19:43Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-05-15T19:58:19Z",
+  "nextRefreshAfter": "2026-05-15T21:19:43Z",
   "launches": [
     {
       "id": "4d70f2c0-953e-4fbc-b579-3c901c06a158",
@@ -28,7 +28,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4d70f2c0-953e-4fbc-b579-3c901c06a158/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4d70f2c0-953e-4fbc-b579-3c901c06a158/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "e60aa241-1f2c-4459-ba94-2f576c3e5632",
@@ -55,34 +55,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=9J8pbaLkRuE",
       "sourceUrl": "https://www.spacex.com/launches/crs-34",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-15T18:58:19Z"
-    },
-    {
-      "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-37",
-      "net": "2026-05-16T14:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "padLocation": "Vandenberg SFB, CA, USA",
-      "latitude": 34.632,
-      "longitude": -120.611,
-      "mission": "Starlink Group 17-37",
-      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "orbit": "Low Earth Orbit",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
-      "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "aef8f8ea-522b-4bdb-9d57-212bbe981946",
@@ -109,34 +82,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aef8f8ea-522b-4bdb-9d57-212bbe981946/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aef8f8ea-522b-4bdb-9d57-212bbe981946/",
-      "updatedAt": "2026-05-15T18:58:19Z"
-    },
-    {
-      "id": "7ba18bcb-c711-4329-9fc1-7ac017fadfff",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-42",
-      "net": "2026-05-19T02:11:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "padLocation": "Vandenberg SFB, CA, USA",
-      "latitude": 34.632,
-      "longitude": -120.611,
-      "mission": "Starlink Group 17-42",
-      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "orbit": "Low Earth Orbit",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://x.com/i/broadcasts/1wxWjaEgZOkJQ",
-      "sourceUrl": "https://www.spacex.com/launches/sl-17-42",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7ba18bcb-c711-4329-9fc1-7ac017fadfff/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "b31313da-ee5d-42b2-9a27-20cc18105276",
@@ -163,7 +109,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=6q8aKbcKCOs",
       "sourceUrl": "https://esamultimedia.esa.int/docs/science/Smile_Launch_Kit_EN.pdf",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b31313da-ee5d-42b2-9a27-20cc18105276/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "ed83366c-872c-4484-97c1-bc74832304fc",
@@ -190,7 +136,34 @@
       "livestreamUrl": "",
       "sourceUrl": "https://www.spacex.com/launches/starship-flight-12",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
+    },
+    {
+      "id": "7ba18bcb-c711-4329-9fc1-7ac017fadfff",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-42",
+      "net": "2026-05-20T02:11:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "Starlink Group 17-42",
+      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "https://x.com/i/broadcasts/1wxWjaEgZOkJQ",
+      "sourceUrl": "https://www.spacex.com/launches/sl-17-42",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7ba18bcb-c711-4329-9fc1-7ac017fadfff/",
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -217,7 +190,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -244,7 +217,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "ef65c43b-faf9-4adb-9155-289eaabdd097",
@@ -271,7 +244,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLmMoZMKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-31",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef65c43b-faf9-4adb-9155-289eaabdd097/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "156a9e46-01b5-46f4-818e-ea563c71c5fe",
@@ -298,20 +271,20 @@
       "livestreamUrl": "",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/viva-la-strix-2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/156a9e46-01b5-46f4-818e-ea563c71c5fe/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
-      "id": "ff0a6a32-6513-4e85-9fd8-a2d022add74d",
-      "name": "Atlas V 551 | Amazon Leo (LA-07)",
-      "net": "2026-05-22T18:56:00Z",
-      "provider": "United Launch Alliance",
-      "rocket": "Atlas V 551",
-      "pad": "Space Launch Complex 41",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.58341025,
-      "longitude": -80.58303644,
-      "mission": "Amazon Leo (LA-07)",
-      "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n29 satellites are carried on this launch.",
+      "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-37",
+      "net": "2026-05-23T14:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "Starlink Group 17-37",
+      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
       "status": "go",
       "outcome": "",
@@ -322,10 +295,37 @@
       "postflightStatus": "",
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
+      "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
+      "updatedAt": "2026-05-15T20:19:43Z"
+    },
+    {
+      "id": "e6159040-124e-4a2a-91db-41f5a48acfd8",
+      "name": "Falcon 9 Block 5 | Starlink Group 10-47",
+      "net": "2026-05-25T11:41:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "Starlink Group 10-47",
+      "missionDescription": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "https://x.com/i/broadcasts/1AKEmOYyqYAKL",
+      "sourceUrl": "https://www.spacex.com/launches/sl-10-47",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6159040-124e-4a2a-91db-41f5a48acfd8/",
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
@@ -352,20 +352,20 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
-      "id": "e6159040-124e-4a2a-91db-41f5a48acfd8",
-      "name": "Falcon 9 Block 5 | Starlink Group 10-47",
-      "net": "2026-05-27T11:41:00Z",
+      "id": "a7341350-789e-4f61-99a4-a61ebc40c05b",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-41",
+      "net": "2026-05-27T14:00:00Z",
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.56194122,
-      "longitude": -80.57735736,
-      "mission": "Starlink Group 10-47",
-      "missionDescription": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "Starlink Group 17-41",
+      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
       "status": "go",
       "outcome": "",
@@ -376,10 +376,37 @@
       "postflightStatus": "",
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
-      "livestreamUrl": "https://x.com/i/broadcasts/1AKEmOYyqYAKL",
-      "sourceUrl": "https://www.spacex.com/launches/sl-10-47",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6159040-124e-4a2a-91db-41f5a48acfd8/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLgeMbqKN",
+      "sourceUrl": "https://www.spacex.com/launches/sl-17-41",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a7341350-789e-4f61-99a4-a61ebc40c05b/",
+      "updatedAt": "2026-05-15T20:19:43Z"
+    },
+    {
+      "id": "ff0a6a32-6513-4e85-9fd8-a2d022add74d",
+      "name": "Atlas V 551 | Amazon Leo (LA-07)",
+      "net": "2026-05-29T16:27:00Z",
+      "provider": "United Launch Alliance",
+      "rocket": "Atlas V 551",
+      "pad": "Space Launch Complex 41",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.58341025,
+      "longitude": -80.58303644,
+      "mission": "Amazon Leo (LA-07)",
+      "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n29 satellites are carried on this launch.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -406,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -433,7 +460,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "aafe107e-46d8-420c-bcb9-192069d80893",
@@ -460,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -487,7 +514,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -514,7 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
@@ -541,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -568,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "c3f48f48-0e0a-4bca-917e-de494cfca35b",
@@ -595,7 +622,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     },
     {
       "id": "a6db1e67-5860-47c9-a674-adc0f35b62e0",
@@ -622,34 +649,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
-      "updatedAt": "2026-05-15T18:58:19Z"
-    },
-    {
-      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
-      "name": "Pegasus XL | Swift Rescue Mission",
-      "net": "2026-06-30T00:00:00Z",
-      "provider": "Northrop Grumman Space Systems",
-      "rocket": "Pegasus XL",
-      "pad": "Kwajalein Atoll",
-      "padLocation": "Air launch to orbit",
-      "latitude": 8.716667,
-      "longitude": 167.733333,
-      "mission": "Swift Rescue Mission",
-      "missionDescription": "Contracted by NASA under the Small Business Innovation Research Phase 3 contract, Katalyst Space Technologies' LINK servicing spacecraft will rendezvous and attach to NASA\u2019s Neil Gehrels Swift Observatory to re-boost its orbit. This aims to demonstrate a key capability for the future of space exploration and extending the Swift mission\u2019s science lifetime in gamma ray astronomy.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-15T18:58:19Z"
+      "updatedAt": "2026-05-15T20:19:43Z"
     }
   ]
 }
