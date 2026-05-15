@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T22:35:03Z",
+  "generatedAt": "2026-05-15T23:34:31Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -773,8 +773,8 @@
       "statusAbbrev": "Success",
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/crs-34",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-15T22:35:03Z",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/?format=json",
+      "updatedAt": "2026-05-15T23:34:31Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -787,10 +787,10 @@
         "2026-05-15T22:05:00Z",
         "2026-05-15T22:05:40Z"
       ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": "",
+      "preflightCheckedAt": "2026-05-15T23:34:31Z",
+      "postflightCheckedAt": "2026-05-15T23:34:31Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "success",
       "livestreamUrl": "https://www.youtube.com/watch?v=9J8pbaLkRuE"
     },
     {
