@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-14T20:08:30Z",
+  "generatedAt": "2026-05-15T18:58:19Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15429,
+      "activeCount": 15428,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1418,7 +1418,7 @@
         "2025-06-14": 1,
         "2025-06-17": 26,
         "2025-06-18": 28,
-        "2025-06-19": 2,
+        "2025-06-19": 1,
         "2025-06-20": 1,
         "2025-06-23": 122,
         "2025-06-25": 27,
@@ -20583,7 +20583,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3557,
+        "activeCount": 3556,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21700,7 +21700,7 @@
           "2025-06-07": 1,
           "2025-06-11": 1,
           "2025-06-14": 1,
-          "2025-06-19": 2,
+          "2025-06-19": 1,
           "2025-06-20": 1,
           "2025-06-23": 64,
           "2025-06-26": 4,
@@ -265470,24 +265470,6 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "kuiper"
-      },
-      "wikidata": null
-    },
-    "64527": {
-      "satcat": {
-        "NORAD_CAT_ID": "64527",
-        "OBJECT_NAME": "COSMOS 2590",
-        "OBJECT_ID": "2025-131D",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "CIS",
-        "LAUNCH_DATE": "2025-06-19"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "CIS",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
