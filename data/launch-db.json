@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T15:26:45Z",
+  "generatedAt": "2026-05-15T17:10:35Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -45,7 +45,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-01T10:23:54Z"
     },
     {
@@ -91,7 +91,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-07T04:00:45Z"
     },
     {
@@ -114,7 +114,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -144,7 +144,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z"
@@ -219,7 +219,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-26T23:55:22Z"
     },
     {
@@ -243,7 +243,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z"
     },
     {
@@ -266,7 +266,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-24T09:57:45Z"
     },
     {
@@ -289,7 +289,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-20T18:45:01Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -319,7 +319,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -349,7 +349,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-07T15:39:36Z",
       "previousNets": [
         "2026-05-21T03:15:00Z"
@@ -358,6 +358,29 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
+    },
+    {
+      "id": "e6159040-124e-4a2a-91db-41f5a48acfd8",
+      "name": "Falcon 9 Block 5 | Starlink Group 10-47",
+      "net": "2026-05-27T11:41:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "Starlink Group 10-47",
+      "missionDescription": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "livestreamUrl": "https://x.com/i/broadcasts/1AKEmOYyqYAKL",
+      "sourceUrl": "https://www.spacex.com/launches/sl-10-47",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6159040-124e-4a2a-91db-41f5a48acfd8/",
+      "updatedAt": "2026-05-15T17:10:35Z",
+      "firstSeenAt": "2026-05-15T17:10:35Z"
     },
     {
       "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
@@ -379,7 +402,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z",
@@ -410,7 +433,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-28T04:57:10Z",
       "previousNets": [
         "2026-05-22T00:00:00Z"
@@ -440,7 +463,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/viva-la-strix-2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/156a9e46-01b5-46f4-818e-ea563c71c5fe/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -471,7 +494,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLmMoZMKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-31",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef65c43b-faf9-4adb-9155-289eaabdd097/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-05T16:24:30Z",
       "previousNets": [
         "2026-05-22T11:00:00Z",
@@ -502,7 +525,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -535,7 +558,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -567,7 +590,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/starship-flight-12",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-20T16:49:14Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -600,7 +623,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=6q8aKbcKCOs",
       "sourceUrl": "https://esamultimedia.esa.int/docs/science/Smile_Launch_Kit_EN.pdf",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b31313da-ee5d-42b2-9a27-20cc18105276/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-04-30T00:00:00Z"
@@ -630,7 +653,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1wxWjaEgZOkJQ",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-42",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7ba18bcb-c711-4329-9fc1-7ac017fadfff/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-04T17:03:25Z",
       "previousNets": [
         "2026-05-16T02:11:00Z",
@@ -661,7 +684,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aef8f8ea-522b-4bdb-9d57-212bbe981946/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aef8f8ea-522b-4bdb-9d57-212bbe981946/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-10T13:53:38Z"
     },
     {
@@ -684,7 +707,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-29T19:28:24Z",
       "previousNets": [
         "2026-05-09T14:00:00Z",
@@ -717,7 +740,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/crs-34",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e60aa241-1f2c-4459-ba94-2f576c3e5632/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -755,7 +778,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4d70f2c0-953e-4fbc-b579-3c901c06a158/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4d70f2c0-953e-4fbc-b579-3c901c06a158/",
-      "updatedAt": "2026-05-15T15:26:45Z",
+      "updatedAt": "2026-05-15T17:10:35Z",
       "firstSeenAt": "2026-05-09T08:46:53Z",
       "outcome": "success",
       "previousNets": [
