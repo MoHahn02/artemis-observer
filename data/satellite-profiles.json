@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-16T04:53:40Z",
+  "generatedAt": "2026-05-16T19:47:49Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15430,
+      "activeCount": 15431,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1317,6 +1317,7 @@
         "2024-11-27": 26,
         "2024-11-29": 1,
         "2024-11-30": 46,
+        "2024-12-03": 1,
         "2024-12-04": 26,
         "2024-12-05": 41,
         "2024-12-08": 23,
@@ -20585,7 +20586,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3557,
+        "activeCount": 3558,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21641,6 +21642,7 @@
           "2024-11-27": 2,
           "2024-11-29": 1,
           "2024-11-30": 2,
+          "2024-12-03": 1,
           "2024-12-04": 2,
           "2024-12-05": 2,
           "2024-12-12": 5,
@@ -223890,6 +223892,24 @@
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2024-11-30"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "62188": {
+      "satcat": {
+        "NORAD_CAT_ID": "62188",
+        "OBJECT_NAME": "TJS-13",
+        "OBJECT_ID": "2024-227A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2024-12-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
