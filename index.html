@@ -73,6 +73,14 @@
                 <div class="small-label">Live getrackt</div>
                 <strong id="sat-stat-live">--</strong>
             </button>
+            <button type="button" class="stat-card" data-stat-panel="sat-recent" aria-label="Liste neuer Satelliten oeffnen">
+                <div class="small-label">Neue Satelliten</div>
+                <strong id="sat-stat-recent">--</strong>
+            </button>
+            <button type="button" class="stat-card" data-stat-panel="sat-reentry-watch" aria-label="Reentry Watch oeffnen">
+                <div class="small-label">Reentry Watch</div>
+                <strong id="sat-stat-reentry-watch">--</strong>
+            </button>
             <button type="button" class="stat-card" data-stat-panel="sat-decayed" aria-label="Decay-Statistik oeffnen">
                 <div class="small-label" id="sat-stat-decayed-label">Decayed 100d</div>
                 <strong id="sat-stat-decayed">--</strong>
@@ -107,6 +115,13 @@
             <p id="watch-launch-stream-state">Streamsuche wartet auf T-15.</p>
             <iframe id="watch-launch-stream-frame" class="launch-stream-frame is-hidden" title="Launch Livestream" src="about:blank" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a id="watch-launch-stream-link" class="watch-link is-hidden" href="#" target="_blank" rel="noreferrer noopener">Livestream oeffnen</a>
+        </div>
+
+        <div class="launch-satellites is-hidden" id="watch-launch-satellites">
+            <div class="small-label">Verteilte Satelliten</div>
+            <strong id="watch-launch-satellites-count">--</strong>
+            <div class="launch-satellite-constellation" id="watch-launch-satellites-constellation">--</div>
+            <button type="button" class="action-btn action-btn-accent" id="watch-launch-satellites-action">Satelliten anzeigen</button>
         </div>
 
         <div class="status-pill" id="scene-mode-pill">Home-Modus: Earth Launch Tracker</div>

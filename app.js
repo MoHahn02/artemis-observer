@@ -30,6 +30,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     ];
     const SATELLITE_FETCH_INTERVAL_MS = 2 * 60 * 60 * 1000;
     const SATELLITE_PROPAGATION_INTERVAL_MS = 1000;
+    const HUD_UPDATE_INTERVAL_MS = 220;
     const OBLIQUITY_RAD = 23.4393 * Math.PI / 180;
     const EARTH_POLE = new THREE.Vector3(-Math.sin(OBLIQUITY_RAD), Math.cos(OBLIQUITY_RAD), 0);
     const EARTH_SIDEREAL_REFERENCE_OFFSET_RAD = Math.PI / 2;
@@ -91,6 +92,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const SATELLITE_SIZE_SCALE_DEFAULT = 110;
     const SATELLITE_SIZE_SCALE_MIN = 5;
     const SATELLITE_SIZE_SCALE_MAX = 250;
+    const RECENT_SATELLITE_WINDOW_DAYS = 30;
+    const RECENT_SATELLITE_LIST_LIMIT = 60;
+    const RECENT_MISSION_GROUP_LIMIT = 30;
+    const REENTRY_WATCH_PERIGEE_KM = 260;
+    const REENTRY_RISK_LIMIT = 60;
+    const REENTRY_WATCH_LIMIT = 40;
     const LAUNCH_FOCUS_VIEW_DISTANCE = 10.5;
     const LAUNCH_ASCENT_SAMPLE_COUNT = 144;
     const LAUNCH_ORBIT_PREVIEW_SAMPLE_COUNT = 220;
@@ -169,6 +176,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stream.open': 'Open livestream',
             'stream.searchReady': 'No official stream in the feed yet - search prepared.',
             'stream.searchYoutube': 'Search YouTube',
+            'launch.satellites.title': 'Deployed satellites',
+            'launch.satellites.action': 'Show satellites',
+            'launch.satellites.constellation': 'Constellation: {value}',
+            'launch.satellites.mixedConstellation': 'Mixed / multiple',
             'stats.deltaSame': 'same vs {label}',
             'stats.previous.week': 'Previous week',
             'stats.previous.month': 'Previous month',
@@ -180,12 +191,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stats.title.providers': 'Providers',
             'stats.title.pads': 'Launch pads',
             'stats.title.live': 'Live tracked',
+            'stats.title.recentSatellites': 'New satellites',
+            'stats.title.reentryWatch': 'Reentry Watch',
             'stats.title.decayed': 'Decayed/reentered',
             'stats.subtitle.loadingHistory': 'Launch history is loading',
             'stats.subtitle.history': 'Trend from {count} stored launches',
             'stats.subtitle.providers': 'Total launches in the last {days} days',
             'stats.subtitle.pads': 'Known pads from upcoming launches and stored launch history',
             'stats.subtitle.workerGlobal': 'Global worker trend',
+            'stats.subtitle.recentSatellites': 'Catalog additions from the last {days} days',
+            'stats.subtitle.reentryWatch': 'Decay risk from orbit geometry and TLE drag',
             'stats.subtitle.decayed': 'Last {days} days',
             'stats.window': '{days} days',
             'stats.windowLabel': 'Statistics window',
@@ -195,11 +210,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stats.metric.now': 'Now',
             'stats.metric.samples': 'Samples',
             'stats.metric.window': 'Window',
+            'stats.metric.missions': 'Missions',
             'stats.empty.loadingTrend': 'Loading launch data for the trend ...',
             'stats.empty.providersLoading': 'Loading provider statistics ...',
             'stats.empty.providersNone': 'No launches found in the last 100 days.',
             'stats.empty.padsNone': 'No launch pads with coordinates found yet.',
             'stats.empty.satHistory': 'No global satellite history loaded yet.',
+            'stats.empty.recentSatellites': 'No recently cataloged satellites found yet.',
+            'stats.empty.reentryWatch': 'No active low-perigee candidates found.',
             'stats.empty.decayHistory': 'No SATCAT decay history loaded yet.',
             'stats.chart.satHistory': 'Live tracked satellites over time',
             'stats.chart.decayHistory': 'SATCAT decays/reentries over time',
@@ -235,12 +253,29 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat.group.label': 'Group',
             'sat.group.panelKicker': 'Constellation filter',
             'sat.group.subtitle': 'Only matching satellites are visible',
+            'sat.group.missionKicker': 'Mission filter',
+            'sat.group.missionSubtitle': 'Only payloads from this mission are visible',
             'sat.group.active': 'Active in catalog',
             'sat.group.visible': 'Visible with orbit filters',
             'sat.group.added': 'Added in window',
             'sat.group.decayed': 'Decayed/reentered',
             'sat.group.clear': 'Clear constellation filter',
             'sat.group.jump': 'Show constellation',
+            'sat.activity.focus': 'Satellite',
+            'sat.activity.mission': 'Mission',
+            'sat.activity.noMission': 'No matching mission',
+            'sat.activity.showAll': 'Show all',
+            'sat.activity.payloads': '{count} payloads',
+            'sat.activity.payloadsOne': '1 payload',
+            'sat.activity.unknownMission': 'Catalog group',
+            'sat.decay.critical': 'critical',
+            'sat.decay.high': 'high',
+            'sat.decay.medium': 'medium',
+            'sat.decay.low': 'low',
+            'sat.decay.estimateDays': '~{days} d',
+            'sat.decay.estimateWeeks': '~{weeks} wk',
+            'sat.decay.estimateMonths': '~{months} mo',
+            'sat.decay.estimateUnknown': 'uncertain',
             'sat.tleNoOperator': 'TLE without operator field',
             'sat.panelKicker': 'Satellite tracking',
             'sat.focus': 'Focus',
@@ -365,6 +400,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stream.open': 'Livestream oeffnen',
             'stream.searchReady': 'Noch kein offizieller Stream im Feed - Suche vorbereitet.',
             'stream.searchYoutube': 'Auf YouTube suchen',
+            'launch.satellites.title': 'Verteilte Satelliten',
+            'launch.satellites.action': 'Satelliten anzeigen',
+            'launch.satellites.constellation': 'Konstellation: {value}',
+            'launch.satellites.mixedConstellation': 'Gemischt / mehrere',
             'stats.deltaSame': 'gleich vs {label}',
             'stats.previous.week': 'Vorwoche',
             'stats.previous.month': 'Vormonat',
@@ -376,12 +415,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stats.title.providers': 'Anbieter',
             'stats.title.pads': 'Launchpads',
             'stats.title.live': 'Live getrackt',
+            'stats.title.recentSatellites': 'Neue Satelliten',
+            'stats.title.reentryWatch': 'Reentry Watch',
             'stats.title.decayed': 'Decayed/Reentry',
             'stats.subtitle.loadingHistory': 'Starthistorie wird geladen',
             'stats.subtitle.history': 'Verlauf aus {count} gespeicherten Starts',
             'stats.subtitle.providers': 'Gesamtstarts der letzten {days} Tage',
             'stats.subtitle.pads': 'Bekannte Pads aus anstehenden Starts und gespeicherter Starthistorie',
             'stats.subtitle.workerGlobal': 'Globaler Worker-Verlauf',
+            'stats.subtitle.recentSatellites': 'Katalogzugaenge der letzten {days} Tage',
+            'stats.subtitle.reentryWatch': 'Decay-Risiko aus Orbitgeometrie und TLE-Drag',
             'stats.subtitle.decayed': 'Letzte {days} Tage',
             'stats.window': '{days} Tage',
             'stats.windowLabel': 'Statistikfenster',
@@ -391,11 +434,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'stats.metric.now': 'Jetzt',
             'stats.metric.samples': 'Samples',
             'stats.metric.window': 'Zeitraum',
+            'stats.metric.missions': 'Missionen',
             'stats.empty.loadingTrend': 'Lade Startdaten fuer den Verlauf ...',
             'stats.empty.providersLoading': 'Lade Anbieterstatistik ...',
             'stats.empty.providersNone': 'Keine Starts in den letzten 100 Tagen gefunden.',
             'stats.empty.padsNone': 'Noch keine Launchpads mit Koordinaten gefunden.',
             'stats.empty.satHistory': 'Noch keine globale Satellitenhistorie geladen.',
+            'stats.empty.recentSatellites': 'Noch keine kuerzlich katalogisierten Satelliten gefunden.',
+            'stats.empty.reentryWatch': 'Keine aktiven Low-Perigaeum-Kandidaten gefunden.',
             'stats.empty.decayHistory': 'Noch keine SATCAT-Decay-Historie geladen.',
             'stats.chart.satHistory': 'Live getrackte Satelliten im Verlauf',
             'stats.chart.decayHistory': 'SATCAT Decays/Reentries im Verlauf',
@@ -431,12 +477,29 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'sat.group.label': 'Gruppe',
             'sat.group.panelKicker': 'Konstellationsfilter',
             'sat.group.subtitle': 'Nur passende Satelliten sind sichtbar',
+            'sat.group.missionKicker': 'Missionsfilter',
+            'sat.group.missionSubtitle': 'Nur Payloads dieser Mission sind sichtbar',
             'sat.group.active': 'Aktiv im Katalog',
             'sat.group.visible': 'Sichtbar mit Orbitfiltern',
             'sat.group.added': 'Neu im Zeitraum',
             'sat.group.decayed': 'Decayed/Reentry',
             'sat.group.clear': 'Konstellationsfilter loeschen',
             'sat.group.jump': 'Konstellation anzeigen',
+            'sat.activity.focus': 'Satellit',
+            'sat.activity.mission': 'Mission',
+            'sat.activity.noMission': 'Keine passende Mission',
+            'sat.activity.showAll': 'Alle anzeigen',
+            'sat.activity.payloads': '{count} Payloads',
+            'sat.activity.payloadsOne': '1 Payload',
+            'sat.activity.unknownMission': 'Kataloggruppe',
+            'sat.decay.critical': 'kritisch',
+            'sat.decay.high': 'hoch',
+            'sat.decay.medium': 'mittel',
+            'sat.decay.low': 'niedrig',
+            'sat.decay.estimateDays': '~{days} d',
+            'sat.decay.estimateWeeks': '~{weeks} Wo.',
+            'sat.decay.estimateMonths': '~{months} Mon.',
+            'sat.decay.estimateUnknown': 'unsicher',
             'sat.tleNoOperator': 'TLE ohne Betreiberfeld',
             'sat.panelKicker': 'Satellit verfolgt',
             'sat.focus': 'Fokus',
@@ -568,6 +631,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'LiveStream': 'Livestream',
             'Streamsuche wartet auf T-15.': 'Stream search waits for T-15.',
             'Livestream oeffnen': 'Open livestream',
+            'Verteilte Satelliten': 'Deployed satellites',
+            'Satelliten anzeigen': 'Show satellites',
             'Status': 'Status',
             'Countdown': 'Countdown',
             'Startfenster': 'Launch window',
@@ -923,6 +988,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         satelliteProfilePending: new Map(),
         satelliteSearchQuery: '',
         satelliteGroupFilter: 'all',
+        satelliteMissionGroupFilter: null,
+        selectedLaunchSatellites: [],
+        selectedLaunchSatelliteIds: new Set(),
+        satelliteRecentCount: 0,
+        satelliteReentryWatchCount: 0,
         satelliteFilters: { LEO: true, MEO: true, GEO: true, HEO: true },
         satelliteWorldPositions: new Map(),
         satelliteDrawOrder: [],
@@ -951,6 +1021,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         sunScenePos: new THREE.Vector3(),
         simTime: Date.now(),
         lastFrameTime: performance.now(),
+        lastHudUpdateMs: 0,
         timeWarp: 1,
         warpStepMag: 10,
         warpTrack: 'idle',
@@ -972,6 +1043,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         launchHistoryFetchTimer: null,
         launchWatchList: new Map(),
         launchStreamUiKey: '',
+        launchSatelliteUiKey: '',
+        selectedLaunchSatelliteIdsKey: '',
         launchSuccessStats: null,
         launchSuccessStatsFetchedAt: 0,
         launchDataGeneratedAt: '',
@@ -1309,6 +1382,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'launch-stat-success-year-delta',
             'sat-stat-total',
             'sat-stat-live',
+            'sat-stat-recent',
+            'sat-stat-reentry-watch',
             'sat-stat-decayed',
             'sat-stat-decayed-label',
             'scene-mode-pill',
@@ -1336,6 +1411,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'watch-launch-stream-state',
             'watch-launch-stream-frame',
             'watch-launch-stream-link',
+            'watch-launch-satellites',
+            'watch-launch-satellites-count',
+            'watch-launch-satellites-constellation',
+            'watch-launch-satellites-action',
             'controls-panel',
             'launch-feed-panel',
             'control-focus-launch',
@@ -1545,6 +1624,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         syncLaunchGroundTrackSettingsUi();
         populateSatelliteGroupFilter();
         syncStatsWindowControls();
+        state.launchSatelliteUiKey = '';
         const artemisOpen = dom['toggle-artemis-settings']?.getAttribute('aria-expanded') === 'true';
         setArtemisSettingsOpen(artemisOpen);
         refreshSceneModePill();
@@ -1934,6 +2014,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 if (followed && !orbitRegimeActive(followed.regime)) {
                     clearFocusModes();
                 }
+                refreshSatelliteOverviewCounts();
                 propagateSatellites(true);
                 renderSatelliteSearchResults();
             });
@@ -3801,6 +3882,442 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         parent.appendChild(list);
     }
 
+    function allKnownLaunchesForMatching() {
+        const byId = new Map();
+        [...state.launches, ...state.launchHistoryItems].forEach((launch) => {
+            byId.set(launchKey(launch), launch);
+        });
+        return Array.from(byId.values());
+    }
+
+    function satelliteLaunchMatchScore(satellite, launch) {
+        const satelliteLaunchDay = dayKeyFromMs(parseCatalogDateMs(satellite.launchDate));
+        const launchTime = launchInstant(launch)?.getTime();
+        if (!satelliteLaunchDay || !Number.isFinite(launchTime)) return 0;
+        const launchDay = dayKeyFromMs(launchTime);
+        if (satelliteLaunchDay !== launchDay) return 0;
+
+        const text = [
+            launch.name,
+            launchStory(launch),
+            launchRocketName(launch),
+            launchOrganization(launch),
+            launchPadLabel(launch)
+        ].filter(Boolean).join(' ').toLowerCase();
+        const satText = [
+            satellite.name,
+            satellite.operator,
+            satellite.type,
+            satellite.profileSource
+        ].filter(Boolean).join(' ').toLowerCase();
+        let score = 30;
+        const group = satelliteConstellationGroup(satellite);
+        if (group?.id && text.includes(group.id)) score += 50;
+        if (/starlink/i.test(satellite.name) && /starlink|spacex/i.test(text)) score += 70;
+        if (/qianfan|spacesail/i.test(satText) && /qianfan|spacesail|long march|chang zheng/i.test(text)) score += 60;
+        if (/oneweb/i.test(satellite.name) && /oneweb/i.test(text)) score += 70;
+        if (/kuiper/i.test(satText) && /kuiper|amazon/i.test(text)) score += 70;
+        const objectId = String(satellite.satcatObjectId || '').toLowerCase();
+        if (objectId && text.includes(objectId)) score += 80;
+        return score;
+    }
+
+    function missionForSatellite(satellite) {
+        return allKnownLaunchesForMatching()
+            .map((launch) => ({ launch, score: satelliteLaunchMatchScore(satellite, launch) }))
+            .filter((entry) => entry.score > 0)
+            .sort((a, b) => b.score - a.score)[0]?.launch || null;
+    }
+
+    function satellitesForLaunch(launch) {
+        if (!launch || !state.satelliteCatalogLoaded) return [];
+        return state.satelliteCatalog
+            .map((satellite) => ({
+                satellite,
+                score: satelliteLaunchMatchScore(satellite, launch)
+            }))
+            .filter((entry) => entry.score > 0)
+            .sort((a, b) =>
+                b.score - a.score ||
+                a.satellite.name.localeCompare(b.satellite.name, currentLocale())
+            )
+            .map((entry) => entry.satellite);
+    }
+
+    function syncSelectedLaunchSatellites(launch) {
+        const satellites = satellitesForLaunch(launch);
+        state.selectedLaunchSatellites = satellites;
+        state.selectedLaunchSatelliteIds = new Set(satellites.map((satellite) => String(satellite.id)));
+        return satellites;
+    }
+
+    function satelliteIdListKey(satellites) {
+        return satellites.map((satellite) => String(satellite.id)).sort().join('|');
+    }
+
+    function launchSatelliteConstellationSummary(satellites) {
+        const counts = new Map();
+        satellites.forEach((satellite) => {
+            const group = satelliteConstellationGroup(satellite);
+            if (!group || group.id === 'all') return;
+            const label = group.labelKey ? t(group.labelKey) : group.label;
+            counts.set(label, (counts.get(label) || 0) + 1);
+        });
+        const entries = Array.from(counts.entries())
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], currentLocale()));
+        if (!entries.length) return '';
+        return entries
+            .slice(0, 3)
+            .map(([label, count]) => `${label} (${formatNumber(count)})`)
+            .join(' | ');
+    }
+
+    function updateLaunchSatelliteUi(launch) {
+        const card = dom['watch-launch-satellites'];
+        if (!card) return false;
+        const uiKey = launch
+            ? `${launchKey(launch)}|${state.satelliteCatalogLoaded ? 1 : 0}|${state.satelliteCatalog.length}`
+            : 'none';
+        if (uiKey === state.launchSatelliteUiKey) {
+            return false;
+        }
+        state.launchSatelliteUiKey = uiKey;
+        const previousIdsKey = state.selectedLaunchSatelliteIdsKey;
+        const satellites = syncSelectedLaunchSatellites(launch);
+        const nextIdsKey = satelliteIdListKey(satellites);
+        state.selectedLaunchSatelliteIdsKey = nextIdsKey;
+        card.classList.toggle('is-hidden', !satellites.length);
+        if (!satellites.length) {
+            if (dom['watch-launch-satellites-action']) dom['watch-launch-satellites-action'].onclick = null;
+            return previousIdsKey !== nextIdsKey;
+        }
+        const constellation = launchSatelliteConstellationSummary(satellites);
+        setText('watch-launch-satellites-count', missionPayloadCountLabel(satellites.length));
+        setText(
+            'watch-launch-satellites-constellation',
+            constellation
+                ? t('launch.satellites.constellation', { value: constellation })
+                : t('launch.satellites.constellation', { value: t('sat.notClear') })
+        );
+        if (dom['watch-launch-satellites-action']) {
+            dom['watch-launch-satellites-action'].textContent = t('launch.satellites.action');
+            dom['watch-launch-satellites-action'].onclick = () => {
+                setSatelliteMissionGroupFilter({
+                    id: launch ? launchKey(launch) : 'selected-launch',
+                    label: launch?.name || t('launch.unnamed'),
+                    launchTime: launchInstant(launch)?.getTime(),
+                    satelliteIds: satellites.map((satellite) => satellite.id)
+                });
+            };
+        }
+        return previousIdsKey !== nextIdsKey;
+    }
+
+    function recentSatelliteRows(days = RECENT_SATELLITE_WINDOW_DAYS) {
+        if (!state.satelliteCatalogLoaded) return [];
+        const now = Date.now();
+        const since = now - days * 86400000;
+        return state.satelliteCatalog
+            .map((satellite) => ({
+                satellite,
+                launchTime: parseCatalogDateMs(satellite.launchDate)
+            }))
+            .filter((row) => Number.isFinite(row.launchTime) && row.launchTime >= since && row.launchTime <= now)
+            .map((row) => ({
+                ...row,
+                mission: missionForSatellite(row.satellite)
+            }))
+            .sort((a, b) => b.launchTime - a.launchTime || a.satellite.name.localeCompare(b.satellite.name, currentLocale()));
+    }
+
+    function recentSatelliteCount(days = RECENT_SATELLITE_WINDOW_DAYS) {
+        if (!state.satelliteCatalogLoaded) return 0;
+        const now = Date.now();
+        const since = now - days * 86400000;
+        return state.satelliteCatalog.reduce((count, satellite) => {
+            const launchTime = parseCatalogDateMs(satellite.launchDate);
+            return Number.isFinite(launchTime) && launchTime >= since && launchTime <= now
+                ? count + 1
+                : count;
+        }, 0);
+    }
+
+    function meanOrbitAltitudeKm(satellite) {
+        return Number.isFinite(satellite?.perigeeKm) && Number.isFinite(satellite?.apogeeKm)
+            ? (satellite.perigeeKm + satellite.apogeeKm) / 2
+            : NaN;
+    }
+
+    function estimateDecayRisk(satellite) {
+        const perigee = satellite?.perigeeKm;
+        const apogee = satellite?.apogeeKm;
+        const meanAltitude = meanOrbitAltitudeKm(satellite);
+        if (!Number.isFinite(perigee) || !Number.isFinite(meanAltitude) || !Number.isFinite(apogee)) {
+            return null;
+        }
+        const eccentricity = Number.isFinite(satellite.eccentricity) ? satellite.eccentricity : 0;
+        const bstar = Math.abs(Number(satellite.bstar) || 0);
+        const dragFactor = Math.min(1.4, Math.log10(1 + bstar * 1e5) / 3);
+        const lowPerigeeScore = THREE.MathUtils.clamp((360 - perigee) / 170, 0, 1);
+        const lowMeanScore = THREE.MathUtils.clamp((430 - meanAltitude) / 210, 0, 1);
+        const eccentricPenalty = THREE.MathUtils.clamp(eccentricity * 8, 0, 0.35);
+        const score = THREE.MathUtils.clamp(
+            lowPerigeeScore * 0.58 + lowMeanScore * 0.34 + dragFactor * 0.2 + eccentricPenalty,
+            0,
+            1
+        );
+        if (score <= 0 && perigee > 380) return null;
+
+        let daysEstimate = Infinity;
+        if (perigee <= 155) daysEstimate = 1;
+        else if (perigee <= 180) daysEstimate = 3;
+        else if (perigee <= 205) daysEstimate = 7;
+        else if (perigee <= 230) daysEstimate = 18;
+        else if (perigee <= 260) daysEstimate = 45;
+        else if (perigee <= 300 && meanAltitude <= 360) daysEstimate = 90;
+        else if (perigee <= 340 && meanAltitude <= 400 && bstar > 0.00008) daysEstimate = 180;
+
+        if (Number.isFinite(daysEstimate) && dragFactor > 0.5) {
+            daysEstimate = Math.max(1, Math.round(daysEstimate * (1 - Math.min(0.45, dragFactor * 0.25))));
+        }
+
+        const level = score >= 0.82 || perigee <= 190
+            ? 'critical'
+            : score >= 0.62 || perigee <= 235
+                ? 'high'
+                : score >= 0.38 || perigee <= REENTRY_WATCH_PERIGEE_KM
+                    ? 'medium'
+                    : 'low';
+
+        return {
+            score,
+            level,
+            daysEstimate,
+            meanAltitudeKm: meanAltitude,
+            bstar,
+            reason: [
+                `Perigaeum ${formatAltitudeKm(perigee)}`,
+                `mittlere Hoehe ${formatAltitudeKm(meanAltitude)}`,
+                bstar ? `B* ${bstar.toExponential(2)}` : ''
+            ].filter(Boolean).join(' | ')
+        };
+    }
+
+    function decayEstimateLabel(risk) {
+        if (!risk || !Number.isFinite(risk.daysEstimate)) return t('sat.decay.estimateUnknown');
+        if (risk.daysEstimate < 14) return t('sat.decay.estimateDays', { days: formatNumber(Math.max(1, Math.round(risk.daysEstimate))) });
+        if (risk.daysEstimate < 90) return t('sat.decay.estimateWeeks', { weeks: formatNumber(Math.round(risk.daysEstimate / 7)) });
+        return t('sat.decay.estimateMonths', { months: formatNumber(Math.round(risk.daysEstimate / 30)) });
+    }
+
+    function reentryWatchRows(limit = REENTRY_WATCH_LIMIT) {
+        if (!state.satelliteCatalogLoaded) return [];
+        return state.satelliteCatalog
+            .filter((satellite) => orbitRegimeActive(satellite.regime))
+            .map((satellite) => ({ satellite, risk: estimateDecayRisk(satellite) }))
+            .filter((entry) => entry.risk)
+            .sort((a, b) =>
+                b.risk.score - a.risk.score ||
+                (a.risk.daysEstimate || Infinity) - (b.risk.daysEstimate || Infinity) ||
+                a.satellite.perigeeKm - b.satellite.perigeeKm
+            )
+            .slice(0, limit);
+    }
+
+    function reentryWatchCount() {
+        if (!state.satelliteCatalogLoaded) return 0;
+        return state.satelliteCatalog.reduce((count, satellite) =>
+            orbitRegimeActive(satellite.regime) && estimateDecayRisk(satellite)
+                ? count + 1
+                : count,
+        0);
+    }
+
+    function refreshSatelliteOverviewCounts() {
+        state.satelliteRecentCount = recentSatelliteCount();
+        state.satelliteReentryWatchCount = reentryWatchCount();
+    }
+
+    function satelliteMissionGroupKey(satellite, mission) {
+        if (mission) return `launch:${launchKey(mission)}`;
+        const objectId = String(satellite.satcatObjectId || '').trim();
+        const launchDesignator = objectId.match(/^(\d{4}-\d{3})/i)?.[1];
+        if (launchDesignator) return `satcat:${launchDesignator}`;
+        const dateKey = String(satellite.launchDate || '').slice(0, 10) || 'unknown-date';
+        const operatorKey = String(satellite.operator || satellite.country || t('sat.activity.unknownMission')).toLowerCase();
+        return `catalog:${dateKey}:${operatorKey}`;
+    }
+
+    function satelliteMissionGroupLabel(satellite, mission) {
+        if (mission) return mission.name || t('launch.unnamed');
+        const objectId = String(satellite.satcatObjectId || '').trim();
+        const launchDesignator = objectId.match(/^(\d{4}-\d{3})/i)?.[1];
+        const base = launchDesignator ? `SATCAT ${launchDesignator}` : t('sat.activity.unknownMission');
+        const operator = translateDataLabel(satellite.operator || satellite.country || '');
+        return [base, operator].filter(Boolean).join(' | ');
+    }
+
+    function recentSatelliteMissionGroups(days = RECENT_SATELLITE_WINDOW_DAYS) {
+        const groups = new Map();
+        recentSatelliteRows(days).forEach(({ satellite, launchTime, mission }) => {
+            const key = satelliteMissionGroupKey(satellite, mission);
+            if (!groups.has(key)) {
+                groups.set(key, {
+                    key,
+                    label: satelliteMissionGroupLabel(satellite, mission),
+                    mission,
+                    launchTime,
+                    satellites: []
+                });
+            }
+            const group = groups.get(key);
+            group.launchTime = Math.max(group.launchTime, launchTime);
+            group.satellites.push(satellite);
+            if (!group.mission && mission) group.mission = mission;
+        });
+        return Array.from(groups.values())
+            .map((group) => ({
+                ...group,
+                satellites: group.satellites
+                    .slice()
+                    .sort((a, b) => a.name.localeCompare(b.name, currentLocale()))
+            }))
+            .sort((a, b) => b.launchTime - a.launchTime || b.satellites.length - a.satellites.length)
+            .slice(0, RECENT_MISSION_GROUP_LIMIT);
+    }
+
+    function missionPayloadCountLabel(count) {
+        return count === 1 ? t('sat.activity.payloadsOne') : t('sat.activity.payloads', { count: formatNumber(count) });
+    }
+
+    function showSatelliteMissionGroup(group) {
+        setSatelliteMissionGroupFilter({
+            id: group.key,
+            label: group.label,
+            launchTime: group.launchTime,
+            satelliteIds: group.satellites.map((satellite) => satellite.id)
+        });
+    }
+
+    function appendSatelliteActivityList(parent, groups) {
+        const list = document.createElement('div');
+        list.className = 'stat-ranking-list satellite-activity-list';
+        groups.forEach((group) => {
+            const item = document.createElement('article');
+            item.className = 'stat-ranking-row satellite-activity-row satellite-mission-row';
+
+            const name = document.createElement('div');
+            name.className = 'stat-ranking-name';
+            name.textContent = group.label;
+
+            const date = document.createElement('div');
+            date.className = 'stat-ranking-count';
+            const missionDate = group.mission ? launchInstant(group.mission) : null;
+            date.textContent = missionDate
+                ? formatLocalShortDateTime(missionDate)
+                : (Number.isFinite(group.launchTime) ? formatLocalShortDateTime(new Date(group.launchTime)) : '--');
+
+            const meta = document.createElement('div');
+            meta.className = 'pad-row-meta';
+            meta.textContent = [
+                missionPayloadCountLabel(group.satellites.length),
+                group.mission ? launchOrganization(group.mission) : t('sat.activity.noMission'),
+                group.mission ? launchPadLabel(group.mission) : ''
+            ].filter(Boolean).join(' | ');
+
+            const actions = document.createElement('div');
+            actions.className = 'sat-result-actions';
+
+            const allButton = document.createElement('button');
+            allButton.type = 'button';
+            allButton.className = 'action-btn action-btn-accent';
+            allButton.textContent = t('sat.activity.showAll');
+            allButton.addEventListener('click', () => showSatelliteMissionGroup(group));
+            actions.appendChild(allButton);
+
+            if (group.mission) {
+                const missionButton = document.createElement('button');
+                missionButton.type = 'button';
+                missionButton.className = 'action-btn';
+                missionButton.textContent = t('sat.activity.mission');
+                missionButton.addEventListener('click', () => {
+                    state.launchWatchList.set(launchKey(group.mission), group.mission);
+                    selectLaunch(launchKey(group.mission), true);
+                });
+                actions.appendChild(missionButton);
+            }
+
+            const details = document.createElement('details');
+            details.className = 'mission-satellite-details';
+            const summary = document.createElement('summary');
+            summary.textContent = missionPayloadCountLabel(group.satellites.length);
+            details.appendChild(summary);
+
+            const payloadList = document.createElement('div');
+            payloadList.className = 'mission-satellite-list';
+            group.satellites.slice(0, RECENT_SATELLITE_LIST_LIMIT).forEach((satellite) => {
+                const row = document.createElement('div');
+                row.className = 'mission-satellite-row';
+
+                const label = document.createElement('span');
+                label.textContent = `${satellite.name} | NORAD ${satellite.id}`;
+
+                const satButton = document.createElement('button');
+                satButton.type = 'button';
+                satButton.className = 'action-btn';
+                satButton.textContent = t('sat.activity.focus');
+                satButton.addEventListener('click', () => focusSatelliteById(satellite.id, true));
+
+                row.append(label, satButton);
+                payloadList.appendChild(row);
+            });
+            details.appendChild(payloadList);
+
+            item.append(name, date, meta, actions, details);
+            list.appendChild(item);
+        });
+        parent.appendChild(list);
+    }
+
+    function appendReentryWatchList(parent, rows) {
+        const list = document.createElement('div');
+        list.className = 'stat-ranking-list satellite-activity-list';
+        rows.forEach(({ satellite, risk }) => {
+            const item = document.createElement('article');
+            item.className = 'stat-ranking-row satellite-activity-row';
+
+            const name = document.createElement('div');
+            name.className = 'stat-ranking-name';
+            name.textContent = satellite.name;
+
+            const perigee = document.createElement('div');
+            perigee.className = 'stat-ranking-count';
+            perigee.textContent = decayEstimateLabel(risk);
+
+            const meta = document.createElement('div');
+            meta.className = 'pad-row-meta';
+            meta.textContent = [
+                t(`sat.decay.${risk.level}`),
+                risk.reason,
+                `Apogaeum ${formatAltitudeKm(satellite.apogeeKm)}`,
+                `NORAD ${satellite.id}`
+            ].join(' | ');
+
+            const actions = document.createElement('div');
+            actions.className = 'sat-result-actions';
+            const satButton = document.createElement('button');
+            satButton.type = 'button';
+            satButton.className = 'action-btn action-btn-accent';
+            satButton.textContent = t('sat.activity.focus');
+            satButton.addEventListener('click', () => focusSatelliteById(satellite.id, true));
+            actions.appendChild(satButton);
+
+            item.append(name, perigee, meta, actions);
+            list.appendChild(item);
+        });
+        parent.appendChild(list);
+    }
+
     function launchPeriodSeries(period, now = new Date()) {
         const successful = successfulLaunchHistoryForStats();
         if (period === 'week') {
@@ -3957,6 +4474,40 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
     }
 
+    function renderRecentSatelliteStats() {
+        const body = dom['stat-insight-body'];
+        const rows = recentSatelliteRows();
+        const groups = recentSatelliteMissionGroups();
+        dom['stat-insight-title'].textContent = t('stats.title.recentSatellites');
+        dom['stat-insight-subtitle'].textContent = t('stats.subtitle.recentSatellites', { days: RECENT_SATELLITE_WINDOW_DAYS });
+        body.replaceChildren();
+        appendStatSummary(body, [
+            { label: t('stats.metric.total'), value: formatNumber(rows.length) },
+            { label: t('stats.metric.missions'), value: formatNumber(groups.length) }
+        ]);
+        if (groups.length) {
+            appendSatelliteActivityList(body, groups);
+        } else {
+            appendEmptyStat(body, state.satelliteCatalogLoaded ? t('stats.empty.recentSatellites') : t('sat.catalogLoading'));
+        }
+    }
+
+    function renderReentryWatchStats() {
+        const body = dom['stat-insight-body'];
+        const rows = reentryWatchRows();
+        dom['stat-insight-title'].textContent = t('stats.title.reentryWatch');
+        dom['stat-insight-subtitle'].textContent = t('stats.subtitle.reentryWatch');
+        body.replaceChildren();
+        appendStatSummary(body, [
+            { label: t('stats.metric.total'), value: formatNumber(rows.length) }
+        ]);
+        if (rows.length) {
+            appendReentryWatchList(body, rows);
+        } else {
+            appendEmptyStat(body, state.satelliteCatalogLoaded ? t('stats.empty.reentryWatch') : t('sat.catalogLoading'));
+        }
+    }
+
     function renderSatelliteDecayStats() {
         const body = dom['stat-insight-body'];
         const windowDays = clampStatsWindowDays(state.statsWindowDays);
@@ -4002,6 +4553,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             renderSatelliteLiveStats();
             return;
         }
+        if (state.statsPanelMode === 'sat-recent') {
+            renderRecentSatelliteStats();
+            return;
+        }
+        if (state.statsPanelMode === 'sat-reentry-watch') {
+            renderReentryWatchStats();
+            return;
+        }
         if (state.statsPanelMode === 'sat-decayed') {
             renderSatelliteDecayStats();
             return;
@@ -4039,8 +4598,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         document.body.classList.add('stat-panel-open');
         dom['stat-insight-panel']?.setAttribute('aria-hidden', 'false');
         renderStatsPanel();
-        if ((mode.startsWith('launch-') || mode === 'providers' || mode === 'pads') && !state.launchHistoryItems.length && !state.launchHistoryLoading) {
+        if ((mode.startsWith('launch-') || mode === 'providers' || mode === 'pads' || mode === 'sat-recent') && !state.launchHistoryItems.length && !state.launchHistoryLoading) {
             fetchLaunchHistoryPage().then(renderStatsPanel);
+        }
+        if ((mode === 'sat-recent' || mode === 'sat-reentry-watch') && !state.satelliteCatalogLoaded) {
+            fetchSatelliteCatalog().then(renderStatsPanel);
         }
         if (mode === 'sat-live' && !state.satelliteLiveHistory.length) {
             fetchSatelliteLiveHistory().then(renderStatsPanel);
@@ -4200,7 +4762,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             updateLaunchHistoryStatus();
             renderLaunchHistory(state.launchHistoryItems);
             updateOverviewStats();
-            if (state.statsPanelOpen && (state.statsPanelMode.startsWith('launch-') || state.statsPanelMode === 'providers' || state.statsPanelMode === 'pads')) {
+            if (state.statsPanelOpen && (state.statsPanelMode.startsWith('launch-') || state.statsPanelMode === 'providers' || state.statsPanelMode === 'pads' || state.statsPanelMode === 'sat-recent')) {
                 renderStatsPanel();
             }
         }
@@ -4312,6 +4874,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         updateSatelliteStats();
     }
 
+    function updateOverviewCountdownOnly() {
+        if (!dom['launch-stat-countdown']) return;
+        const nextLaunch = state.launches[0] || null;
+        dom['launch-stat-countdown'].textContent = nextLaunch
+            ? formatLaunchCountdown(launchInstant(nextLaunch))
+            : '--';
+    }
+
     function getSelectedLaunch() {
         if (state.selectedLaunchId && state.launchWatchList.has(state.selectedLaunchId)) {
             return state.launches.find((launch) => launchKey(launch) === state.selectedLaunchId) ||
@@ -4349,7 +4919,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         });
         if (!launch) {
             updateLaunchStreamUi(null);
+            const satellitesChanged = updateLaunchSatelliteUi(null);
             clearLaunchTrajectory();
+            if (satellitesChanged) propagateSatellites(true);
             if (dom['watch-launch-title']) dom['watch-launch-title'].textContent = t('launch.selected');
             if (dom['watch-launch-subtitle']) dom['watch-launch-subtitle'].textContent = '--';
             if (dom['watch-launch-intel']) dom['watch-launch-intel'].textContent = t('launch.chooseFromFeed');
@@ -4376,7 +4948,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['watch-launch-story'].textContent = launchStory(launch);
         if (dom['watch-launch-intel']) dom['watch-launch-intel'].textContent = launchIntelText(launch);
         updateLaunchStreamUi(launch);
+        const satellitesChanged = updateLaunchSatelliteUi(launch);
         updateSelectedLaunchTrajectory(launch);
+        if (satellitesChanged) propagateSatellites(true);
 
         const externalUrl = launchExternalUrl(launch);
         if (externalUrl) {
@@ -4483,8 +5057,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             element.textContent = formatLaunchCountdown(new Date(iso));
             applyLaunchStatusClass(element, launch);
         });
-        updateOverviewStats();
-        refreshSelectedLaunchUi();
+        updateOverviewCountdownOnly();
+        const launch = state.selectedLaunchId || state.launchDetailActive ? getSelectedLaunch() : null;
+        if (launch) {
+            const when = launchInstant(launch);
+            dom['watch-launch-status'].textContent = launchStatusLabel(launch);
+            dom['watch-launch-countdown'].textContent = formatLaunchCountdown(when);
+            applyLaunchStatusClass(dom['watch-launch-status'], launch);
+            applyLaunchStatusClass(dom['watch-launch-countdown'], launch);
+            if (dom['watch-launch-intel']) dom['watch-launch-intel'].textContent = launchIntelText(launch);
+            updateLaunchStreamUi(launch);
+        }
     }
 
     function initLaunchFeed() {
@@ -5075,12 +5658,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function activeSatelliteGroupFilter() {
+        if (state.satelliteMissionGroupFilter) {
+            return state.satelliteMissionGroupFilter;
+        }
         const id = normalizeSatelliteGroupFilter(state.satelliteGroupFilter);
         if (id === 'all') return null;
         return SATELLITE_GROUP_FILTERS.find((filter) => filter.id === id) || null;
     }
 
     function setSatelliteGroupFilter(value) {
+        state.satelliteMissionGroupFilter = null;
         state.satelliteGroupFilter = normalizeSatelliteGroupFilter(value);
         if (dom['satellite-group-filter']) {
             dom['satellite-group-filter'].value = state.satelliteGroupFilter;
@@ -5088,6 +5675,32 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         propagateSatellites(true);
         renderSatelliteSearchResults();
         refreshSatelliteFocusVisuals();
+    }
+
+    function setSatelliteMissionGroupFilter(group) {
+        const satelliteIds = Array.isArray(group?.satelliteIds)
+            ? Array.from(new Set(group.satelliteIds.map(String)))
+            : [];
+        state.satelliteMissionGroupFilter = satelliteIds.length
+            ? {
+                id: `mission:${group.id || satelliteIds.join('-')}`,
+                type: 'mission',
+                label: group.label || t('sat.activity.unknownMission'),
+                launchTime: group.launchTime,
+                satelliteIds,
+                satelliteIdSet: new Set(satelliteIds)
+            }
+            : null;
+        state.satelliteGroupFilter = 'all';
+        state.followSatelliteId = null;
+        if (dom['satellite-group-filter']) {
+            dom['satellite-group-filter'].value = 'all';
+        }
+        closeSearch();
+        propagateSatellites(true);
+        renderSatelliteSearchResults();
+        refreshSatelliteFocusVisuals();
+        if (isMobileViewport()) openMobilePanel('satellite');
     }
 
     function populateSatelliteGroupFilter() {
@@ -5152,6 +5765,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         return true;
     }
 
+    function satelliteMatchesActiveGroupFilter(satellite) {
+        if (state.satelliteMissionGroupFilter) {
+            return state.satelliteMissionGroupFilter.satelliteIdSet.has(String(satellite.id));
+        }
+        return satelliteMatchesGroupFilter(satellite);
+    }
+
     function satelliteConstellationGroup(satellite) {
         if (!satellite) return null;
         return ['starlink', 'qianfan', 'oneweb', 'kuiper']
@@ -5163,6 +5783,21 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (!value) return NaN;
         const parsed = Date.parse(String(value).slice(0, 10));
         return Number.isFinite(parsed) ? parsed : NaN;
+    }
+
+    function dayKeyFromMs(time) {
+        if (!Number.isFinite(time)) return '';
+        return new Date(time).toISOString().slice(0, 10);
+    }
+
+    function formatCatalogDate(value) {
+        const time = parseCatalogDateMs(value);
+        if (!Number.isFinite(time)) return '--';
+        return new Intl.DateTimeFormat(currentLocale(), {
+            year: 'numeric',
+            month: 'short',
+            day: '2-digit'
+        }).format(new Date(time));
     }
 
     function countDateBucketsInWindow(buckets, days, now = Date.now()) {
@@ -5188,6 +5823,20 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function currentGroupStats(filterId = state.satelliteGroupFilter) {
+        if (filterId && typeof filterId === 'object' && filterId.type === 'mission') {
+            const ids = filterId.satelliteIdSet || new Set(filterId.satelliteIds || []);
+            const active = state.satelliteCatalog.filter((satellite) => ids.has(String(satellite.id)));
+            const visible = active.filter((satellite) => orbitRegimeActive(satellite.regime));
+            return {
+                id: filterId.id,
+                label: filterId.label,
+                activeCount: active.length,
+                visibleCount: visible.length,
+                addedCount: active.length,
+                decayedCount: null,
+                source: ''
+            };
+        }
         const id = normalizeSatelliteGroupFilter(filterId);
         const workerStats = state.satelliteGroupStats.get(id) || null;
         const active = activeSatellitesForGroup(id);
@@ -5252,8 +5901,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
 
         const enabled = ORBIT_REGIMES.filter((regime) => orbitRegimeActive(regime)).join(', ') || t('common.none');
-        const group = SATELLITE_GROUP_FILTERS.find((filter) => filter.id === state.satelliteGroupFilter);
-        const groupLabel = group ? t(group.labelKey) : t('sat.group.all');
+        const group = activeSatelliteGroupFilter();
+        const groupLabel = group
+            ? (group.labelKey ? t(group.labelKey) : group.label)
+            : t('sat.group.all');
         dom['satellite-search-status'].textContent = `${t('sat.catalogReady', {
             total: formatNumber(estimateSatelliteOrbitTotal()),
             trackable: formatNumber(state.satelliteCatalog.length),
@@ -5304,7 +5955,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const query = state.satelliteSearchQuery.trim().toLowerCase();
         const catalog = state.satelliteCatalog.filter((satellite) => {
             if (!orbitRegimeActive(satellite.regime)) return false;
-            if (!satelliteMatchesGroupFilter(satellite)) return false;
+            if (!satelliteMatchesActiveGroupFilter(satellite)) return false;
             if (!query) return true;
             return satellite.name.toLowerCase().includes(query) ||
                 String(satellite.satcatObjectId || '').toLowerCase().includes(query) ||
@@ -5887,6 +6538,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                     perigeeKm: orbit.perigeeKm,
                     apogeeKm: orbit.apogeeKm,
                     periodMinutes: orbit.periodMinutes,
+                    bstar: Number.isFinite(satrec.bstar) ? satrec.bstar : NaN,
                     altitudeKm,
                     regime,
                     orbitSource: 'TLE/SGP4',
@@ -5969,7 +6621,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function updateSatelliteLayerOpacity(isFollowingSatellite = Boolean(state.followSatelliteId)) {
         if (!state.satellitePoints?.material) return;
         const launchTrajectoryActive = Boolean(state.selectedLaunchId && state.launchTrajectoryLine?.visible);
-        const normalOpacity = (isFollowingSatellite || launchTrajectoryActive)
+        const groupFilter = activeSatelliteGroupFilter();
+        const launchPayloadContext = launchTrajectoryActive && (state.selectedLaunchSatelliteIds?.size > 0 || Boolean(groupFilter));
+        const normalOpacity = (isFollowingSatellite || (launchTrajectoryActive && !launchPayloadContext))
             ? SATELLITE_LAYER_DIMMED_OPACITY
             : SATELLITE_LAYER_OPACITY;
         state.satellitePoints.material.opacity = normalOpacity;
@@ -6039,13 +6693,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function renderSatelliteGroupPanel(groupFilter) {
-        const stats = currentGroupStats(groupFilter.id);
+        const stats = currentGroupStats(groupFilter);
         dom['sat-focus-details-grid']?.classList.add('is-hidden');
         dom['sat-constellation-panel']?.classList.remove('is-hidden');
         dom['sat-focus-constellation']?.classList.add('is-hidden');
-        setText('sat-focus-kicker', t('sat.group.panelKicker'));
-        setText('sat-focus-title', t(groupFilter.labelKey));
-        setText('sat-focus-subtitle', t('sat.group.subtitle'));
+        setText('sat-focus-kicker', groupFilter.type === 'mission' ? t('sat.group.missionKicker') : t('sat.group.panelKicker'));
+        setText('sat-focus-title', groupFilter.labelKey ? t(groupFilter.labelKey) : groupFilter.label);
+        setText('sat-focus-subtitle', groupFilter.type === 'mission' ? t('sat.group.missionSubtitle') : t('sat.group.subtitle'));
         setText('sat-group-active', formatNumber(stats.activeCount));
         setText('sat-group-visible', formatNumber(stats.visibleCount));
         setText('sat-group-added', formatNumber(stats.addedCount));
@@ -6258,6 +6912,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['sat-stat-live'].textContent = state.satelliteCatalogLoaded
             ? formatNumber(state.satelliteLiveCount)
             : '--';
+        dom['sat-stat-recent'].textContent = state.satelliteCatalogLoaded
+            ? formatNumber(state.satelliteRecentCount)
+            : '--';
+        dom['sat-stat-reentry-watch'].textContent = state.satelliteCatalogLoaded
+            ? formatNumber(state.satelliteReentryWatchCount)
+            : '--';
         const decayed = satelliteDecayedCount(state.statsWindowDays);
         setText('sat-stat-decayed-label', t('stats.title.decayed'));
         dom['sat-stat-decayed'].textContent = Number.isFinite(decayed) ? formatNumber(decayed) : '--';
@@ -6284,7 +6944,18 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const geometry = state.satellitePoints.geometry;
         const positionAttr = geometry.getAttribute('position');
         const colorAttr = geometry.getAttribute('color');
-        const groupFilterActive = state.satelliteGroupFilter !== 'all';
+        if (!positionAttr || positionAttr.count < state.satelliteCatalog.length) {
+            rebuildSatelliteLayer();
+            return;
+        }
+        const groupFilterActive = Boolean(activeSatelliteGroupFilter());
+        const launchSatelliteIds = state.selectedLaunchSatelliteIds || new Set();
+        const launchPayloadContext = Boolean(
+            state.selectedLaunchId &&
+            launchSatelliteIds.size &&
+            state.launchTrajectoryLine?.visible &&
+            !groupFilterActive
+        );
         let visibleCount = 0;
         state.satelliteWorldPositions.clear();
         state.satelliteDrawOrder = [];
@@ -6301,15 +6972,21 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 return;
             }
             const vector = propagated.localPosition;
-            const matchesGroup = satelliteMatchesGroupFilter(satellite);
+            const matchesGroup = satelliteMatchesActiveGroupFilter(satellite);
             if (groupFilterActive && !matchesGroup) {
                 return;
             }
             const [r, g, b] = satellite.color;
+            const launchPayloadMatch = launchPayloadContext && launchSatelliteIds.has(String(satellite.id));
 
             positionAttr.setXYZ(visibleCount, vector.x, vector.y, vector.z);
             if (colorAttr) {
-                colorAttr.setXYZ(visibleCount, r, g, b);
+                colorAttr.setXYZ(
+                    visibleCount,
+                    launchPayloadContext && !launchPayloadMatch ? 0.16 : r,
+                    launchPayloadContext && !launchPayloadMatch ? 0.18 : g,
+                    launchPayloadContext && !launchPayloadMatch ? 0.24 : b
+                );
             }
             state.satelliteWorldPositions.set(satellite.id, vector.clone());
             state.satelliteDrawOrder[visibleCount] = satellite.id;
@@ -6323,6 +7000,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.satellitePoints.visible = visibleCount > 0;
         refreshSatelliteFocusVisuals();
         updateSatelliteStats();
+        if (state.statsPanelOpen && state.statsPanelMode === 'sat-reentry-watch') {
+            renderStatsPanel();
+        }
         if (document.body.classList.contains('search-open')) {
             renderSatelliteSearchResults();
         }
@@ -6333,6 +7013,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.satelliteCatalog = [];
             state.satelliteCatalogLoaded = false;
             state.satelliteLiveCount = 0;
+            refreshSatelliteOverviewCounts();
             state.satelliteLastError = state.satelliteLastError || t('sat.libraryUnavailable');
             rebuildSatelliteLayer();
             updateSatelliteStats();
@@ -6353,10 +7034,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             await loadSatelliteProfileData();
             applyLoadedSatelliteProfilesToCatalog();
             state.satelliteCatalogLoaded = true;
+            refreshSatelliteOverviewCounts();
             rebuildSatelliteLayer();
             propagateSatellites(true);
             fetchSatelliteLiveHistory(true);
             renderSatelliteSearchResults();
+            if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
         } catch (error) {
             const cached = readSatelliteCache();
             if (cached?.rawText) {
@@ -6364,16 +7047,19 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 await loadSatelliteProfileData();
                 applyLoadedSatelliteProfilesToCatalog();
                 state.satelliteCatalogLoaded = true;
+                refreshSatelliteOverviewCounts();
                 state.satelliteLastError = t('sat.cacheFallback', { error: error.message || t('sat.unknownError') });
                 rebuildSatelliteLayer();
                 propagateSatellites(true);
                 renderSatelliteSearchResults();
+                if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
                 return;
             }
 
             state.satelliteCatalog = [];
             state.satelliteCatalogLoaded = false;
             state.satelliteLiveCount = 0;
+            refreshSatelliteOverviewCounts();
             state.satelliteLastError = t('sat.catalogLoadFailed', { error: error.message || t('sat.unknownError') });
             rebuildSatelliteLayer();
             updateSatelliteStats();
@@ -6508,7 +7194,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             stopSatelliteFollow();
             return;
         }
-        if (state.satelliteGroupFilter !== 'all') {
+        if (activeSatelliteGroupFilter()) {
             setSatelliteGroupFilter('all');
         }
     }
@@ -6581,6 +7267,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.satelliteFilters[satellite.regime] = true;
             document.querySelector(`[data-sat-filter="${satellite.regime}"]`)?.setAttribute('aria-pressed', 'true');
             propagateSatellites(true);
+        }
+        if (activeSatelliteGroupFilter() && !satelliteMatchesActiveGroupFilter(satellite)) {
+            setSatelliteGroupFilter('all');
         }
 
         const world = getSatelliteWorldPosition(satelliteId);
@@ -7329,15 +8018,21 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.planetOrbits[2].material.gapSize = dash * 0.48;
         }
 
-        if (!state.zoomSliderDragging && dom['zoom-slider']) {
-            dom['zoom-slider'].value = String(Math.round(distToSliderValue(camTargetDist) * 1000));
+        const updateHud = now - state.lastHudUpdateMs >= HUD_UPDATE_INTERVAL_MS;
+        if (updateHud) {
+            state.lastHudUpdateMs = now;
+            if (!state.zoomSliderDragging && dom['zoom-slider']) {
+                dom['zoom-slider'].value = String(Math.round(distToSliderValue(camTargetDist) * 1000));
+            }
+            dom['zoom-readout'].textContent = formatZoomReadout(camTargetDist);
+            const localNow = new Date();
+            if (dom['real-time-zone']) {
+                dom['real-time-zone'].textContent = getLocalTimeZoneLabel(localNow);
+            }
+            dom['real-time-berlin'].textContent = formatLocalTimeOnly(localNow);
+            updateArtemisPanel(clampedMet);
+            syncMissionSlider();
         }
-        dom['zoom-readout'].textContent = formatZoomReadout(camTargetDist);
-        const localNow = new Date();
-        if (dom['real-time-zone']) {
-            dom['real-time-zone'].textContent = getLocalTimeZoneLabel(localNow);
-        }
-        dom['real-time-berlin'].textContent = formatLocalTimeOnly(localNow);
 
         state.dynamicLabels.forEach((label) => {
             const distance = state.camera.position.distanceTo(label.position);
@@ -7358,8 +8053,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
         updateSatelliteHighlight(now);
         propagateSatellites();
-        updateArtemisPanel(clampedMet);
-        syncMissionSlider();
         state.controls.update();
         state.renderer.render(state.scene, state.camera);
     }

@@ -562,6 +562,49 @@ button.stat-card:focus-visible {
     overflow-wrap: anywhere;
 }
 
+.satellite-activity-row {
+    align-items: start;
+}
+
+.satellite-activity-row .sat-result-actions {
+    grid-column: 1 / -1;
+}
+
+.mission-satellite-details {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.mission-satellite-details summary {
+    cursor: pointer;
+    color: #d9f4ff;
+    font-weight: 700;
+}
+
+.mission-satellite-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.mission-satellite-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+    padding: 7px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mission-satellite-row span {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .stat-ranking-name {
     min-width: 0;
     overflow: hidden;
@@ -725,6 +768,31 @@ button.stat-card:focus-visible {
     border: 1px solid var(--line);
     border-radius: 14px;
     background: rgba(10, 18, 34, 0.82);
+}
+
+.launch-satellites {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(10, 18, 34, 0.82);
+}
+
+.launch-satellites.is-hidden {
+    display: none;
+}
+
+.launch-satellites strong {
+    color: #f7fbff;
+    font-size: 15px;
+}
+
+.launch-satellite-constellation {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 .launch-stream.is-hidden {
