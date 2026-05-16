@@ -14,6 +14,7 @@
             <h1>Earth</h1>
         </div>
         <div class="topbar-side">
+            <div class="earth-observation-status" id="earth-observation-status">NASA GIBS laedt</div>
             <div class="topbar-time">
                 <span class="small-label" id="real-time-zone">MEZ</span>
                 <strong id="real-time-berlin">--</strong>
@@ -404,6 +405,14 @@
         </section>
 
         <section class="drawer-section">
+            <h3>Erde & Wolken</h3>
+            <p>Schalte die echten NASA-GIBS-Erdbeobachtungs- und Wolkenlayer ein oder aus.</p>
+            <div class="drawer-action-row">
+                <button type="button" class="action-btn action-btn-accent active" id="toggle-earth-observation-layer" aria-pressed="true">NASA-Layer an</button>
+            </div>
+        </section>
+
+        <section class="drawer-section">
             <h3>Satelliten-Tracking</h3>
             <p>Lege fest, wie weit die vorausberechnete Flugbahn fuer den verfolgten Satelliten angezeigt wird.</p>
             <div class="orbit-setting-wrap">
@@ -506,7 +515,7 @@
         }
     }
     </script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js?v=earth-observation-layer-3"></script>
     <script data-goatcounter="https://mohahn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

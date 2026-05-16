@@ -1,0 +1,9 @@
+{
+  "generatedAt": null,
+  "source": "nasa-gibs-wms",
+  "cadenceHours": 24,
+  "width": 2048,
+  "height": 1024,
+  "candidates": [],
+  "errors": []
+}

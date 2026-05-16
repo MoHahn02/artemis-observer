@@ -12,3 +12,12 @@ This project vendors a small set of browser runtime files and visual assets so t
 - Earth day, bump, and night textures from the public `three-globe` examples.
 - Earth cloud texture from `turban/webgl-earth`.
 - Moon texture from Wikimedia Commons: `Solarsystemscope texture 2k moon.jpg`, by Solar System Scope, CC BY 4.0.
+
+## Worker-generated imagery
+
+- NASA GIBS WMS snapshots in `assets/earth-observation/` are refreshed by the GitHub Actions worker from public NASA Earthdata GIBS layers.
+
+## Live Earth observation imagery
+
+- Runtime Earth observation and cloud layers load the worker-generated local snapshots; browsers do not request NASA GIBS directly.
+- Acknowledgement: imagery provided by NASA's Global Imagery Browse Services (GIBS), part of NASA's Earth Science Data and Information System (ESDIS).

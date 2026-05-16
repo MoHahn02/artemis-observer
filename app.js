@@ -60,6 +60,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         'https://raw.githubusercontent.com/turban/webgl-earth/master/images/fair_clouds_4k.png',
         'https://cdn.jsdelivr.net/gh/turban/webgl-earth/images/fair_clouds_4k.png'
     ];
+    const EARTH_OBSERVATION_DATA_URL = 'data/earth-observation.json';
+    const EARTH_OBSERVATION_TEXTURE_WIDTH = 2048;
+    const EARTH_OBSERVATION_TEXTURE_HEIGHT = 1024;
+    const EARTH_OBSERVATION_REFRESH_MS = 6 * 60 * 60 * 1000;
+    const EARTH_OBSERVATION_TARGET_COVERAGE = 0.86;
+    const EARTH_OBSERVATION_MIN_COVERAGE = 0.66;
     const MOON_TEX_URL = 'assets/textures/moon.jpg';
     const SATELLITE_RESULT_LIMIT = 40;
     const SATELLITES_IN_ORBIT_ESTIMATE = 16910;
@@ -136,6 +142,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'common.unknown': 'Unknown',
             'common.none': 'none',
             'common.provider': 'Provider',
+            'earth.obs.loading': 'NASA GIBS loading',
+            'earth.obs.ready': 'NASA GIBS {date}',
+            'earth.obs.off': 'NASA GIBS off',
+            'earth.obs.fallback': 'Blue Marble fallback',
+            'earth.obs.toggleOn': 'NASA layer on',
+            'earth.obs.toggleOff': 'NASA layer off',
             'launch.unknownOrg': 'Unknown',
             'launch.unknownPad': 'Unknown pad',
             'launch.unknownRocket': 'Rocket unknown',
@@ -360,6 +372,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'common.unknown': 'Unbekannt',
             'common.none': 'keine',
             'common.provider': 'Anbieter',
+            'earth.obs.loading': 'NASA GIBS laedt',
+            'earth.obs.ready': 'NASA GIBS {date}',
+            'earth.obs.off': 'NASA GIBS aus',
+            'earth.obs.fallback': 'Blue Marble Fallback',
+            'earth.obs.toggleOn': 'NASA-Layer an',
+            'earth.obs.toggleOff': 'NASA-Layer aus',
             'launch.unknownOrg': 'Unbekannt',
             'launch.unknownPad': 'Unbekanntes Pad',
             'launch.unknownRocket': 'Rakete unbekannt',
@@ -579,6 +597,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'Overlay-Sprache': 'Overlay language',
             'Deutsch': 'German',
             'Tracking, Flugbahn und optionale Missionsansichten.': 'Tracking, trajectories, and optional mission views.',
+            'Erde & Wolken': 'Earth & clouds',
+            'Schalte die echten NASA-GIBS-Erdbeobachtungs- und Wolkenlayer ein oder aus.': 'Toggle the real NASA GIBS Earth observation and cloud layers.',
+            'NASA-Layer an': 'NASA layer on',
             'Satelliten-Tracking': 'Satellite tracking',
             'Lege fest, wie weit die vorausberechnete Flugbahn fuer den verfolgten Satelliten angezeigt wird.': 'Choose how far the predicted path for the tracked satellite is shown.',
             'Flugbahn-Laenge': 'Path length',
@@ -931,10 +952,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         controls: null,
         earthGroup: null,
         earthMesh: null,
+        earthObservationMesh: null,
         earthCloudMesh: null,
         earthAtmosphereMesh: null,
         earthGlowMesh: null,
         earthNightUniforms: null,
+        earthObservationRefreshTimer: null,
+        earthObservationLoading: false,
+        earthObservationDate: '',
+        earthObservationLayer: '',
+        earthObservationSource: '',
         earthRotationAngle: 0,
         moonMesh: null,
         sunMesh: null,
@@ -1120,6 +1147,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             orbitRevolutions: SATELLITE_ORBIT_DEFAULT_REVOLUTIONS,
             launchGroundTrackRevolutions: LAUNCH_GROUND_TRACK_DEFAULT_REVOLUTIONS,
             satelliteSizeScale: SATELLITE_SIZE_SCALE_DEFAULT,
+            earthObservationLayer: true,
             language: defaultUiLanguage()
         };
         try {
@@ -1137,6 +1165,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             parsed.satelliteSizeScale = clampSatelliteSizeScale(parsed.satelliteSizeScale);
             delete parsed.satelliteSizeMode;
             delete parsed.satelliteRealisticSize;
+            parsed.earthObservationLayer = parsed.earthObservationLayer !== false;
             parsed.language = normalizeLanguage(parsed.language);
             return parsed;
         } catch (error) {
@@ -1307,6 +1336,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function cacheDom() {
         [
             'canvas-container',
+            'earth-observation-status',
             'overview-panel',
             'stat-insight-panel',
             'stat-insight-close',
@@ -1354,6 +1384,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'settings-toggle',
             'settings-close',
             'settings-scrim',
+            'toggle-earth-observation-layer',
             'mobile-dock',
             'mobile-sheet-scrim',
             'mobile-nav-info',
@@ -1622,6 +1653,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         syncSatelliteOrbitSettingsUi();
         syncSatelliteSizeSettingsUi();
         syncLaunchGroundTrackSettingsUi();
+        applyEarthObservationVisibility();
         populateSatelliteGroupFilter();
         syncStatsWindowControls();
         state.launchSatelliteUiKey = '';
@@ -1900,6 +1932,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['settings-toggle']?.addEventListener('click', openSettings);
         dom['settings-close']?.addEventListener('click', closeSettings);
         dom['settings-scrim']?.addEventListener('click', closeSettings);
+        dom['toggle-earth-observation-layer']?.addEventListener('click', () => {
+            setEarthObservationLayerEnabled(!state.panelVisibility.earthObservationLayer);
+        });
         dom['stat-insight-close']?.addEventListener('click', closeStatsPanel);
         ensureMobileSheetHandles();
 
@@ -2030,6 +2065,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         applyStaticTranslations();
         syncLanguageSettingsUi();
         applyPanelVisibility();
+        applyEarthObservationVisibility();
         syncSatelliteOrbitSettingsUi();
         syncSatelliteSizeSettingsUi();
         syncLaunchGroundTrackSettingsUi();
@@ -2164,6 +2200,288 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             texture.anisotropy = Math.min(8, state.renderer.capabilities.getMaxAnisotropy());
         }
         return texture;
+    }
+
+    function smoothStep(edge0, edge1, value) {
+        const t = THREE.MathUtils.clamp((value - edge0) / Math.max(0.000001, edge1 - edge0), 0, 1);
+        return t * t * (3 - 2 * t);
+    }
+
+    async function earthObservationCandidateUrls() {
+        const response = await fetch(EARTH_OBSERVATION_DATA_URL, { cache: 'no-cache' });
+        if (!response.ok) {
+            throw new Error(`Earth observation manifest failed with HTTP ${response.status}`);
+        }
+        const payload = await response.json();
+        const candidates = Array.isArray(payload?.candidates) ? payload.candidates : [];
+        return candidates
+            .map((candidate) => {
+                const imageUrl = String(candidate?.imageUrl || '').trim();
+                if (!imageUrl || imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+                    return null;
+                }
+                return {
+                    layer: String(candidate?.layer || ''),
+                    date: String(candidate?.date || payload?.generatedAt || '').slice(0, 10),
+                    url: imageUrl,
+                    sourceUrl: String(candidate?.sourceUrl || '')
+                };
+            })
+            .filter(Boolean);
+    }
+
+    function loadCrossOriginImage(url) {
+        return new Promise((resolve, reject) => {
+            const image = new Image();
+            image.crossOrigin = 'anonymous';
+            image.decoding = 'async';
+            image.onload = () => resolve(image);
+            image.onerror = () => reject(new Error('image load failed'));
+            image.src = url;
+        });
+    }
+
+    function isEarthObservationPixelValid(data, index) {
+        return Math.max(data[index], data[index + 1], data[index + 2]) / 255 > 0.075;
+    }
+
+    function earthObservationCoverage(image) {
+        const canvas = document.createElement('canvas');
+        canvas.width = 256;
+        canvas.height = 128;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+        const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+        let valid = 0;
+        for (let i = 0; i < data.length; i += 4) {
+            if (isEarthObservationPixelValid(data, i)) valid += 1;
+        }
+        return valid / (data.length / 4);
+    }
+
+    function createEarthObservationComposite(entries) {
+        const compositeCanvas = document.createElement('canvas');
+        compositeCanvas.width = EARTH_OBSERVATION_TEXTURE_WIDTH;
+        compositeCanvas.height = EARTH_OBSERVATION_TEXTURE_HEIGHT;
+        const compositeCtx = compositeCanvas.getContext('2d', { willReadFrequently: true });
+        const compositePixels = compositeCtx.getImageData(0, 0, compositeCanvas.width, compositeCanvas.height);
+        const compositeData = compositePixels.data;
+        const filled = new Uint8Array(compositeCanvas.width * compositeCanvas.height);
+
+        const sourceCanvas = document.createElement('canvas');
+        sourceCanvas.width = compositeCanvas.width;
+        sourceCanvas.height = compositeCanvas.height;
+        const sourceCtx = sourceCanvas.getContext('2d', { willReadFrequently: true });
+
+        let filledCount = 0;
+        const used = [];
+        for (const entry of entries) {
+            sourceCtx.clearRect(0, 0, sourceCanvas.width, sourceCanvas.height);
+            sourceCtx.drawImage(entry.image, 0, 0, sourceCanvas.width, sourceCanvas.height);
+            const sourceData = sourceCtx.getImageData(0, 0, sourceCanvas.width, sourceCanvas.height).data;
+            let usedPixels = 0;
+            for (let pixel = 0; pixel < filled.length; pixel += 1) {
+                if (filled[pixel]) continue;
+                const index = pixel * 4;
+                if (!isEarthObservationPixelValid(sourceData, index)) continue;
+                compositeData[index] = sourceData[index];
+                compositeData[index + 1] = sourceData[index + 1];
+                compositeData[index + 2] = sourceData[index + 2];
+                compositeData[index + 3] = 255;
+                filled[pixel] = 1;
+                filledCount += 1;
+                usedPixels += 1;
+            }
+            if (usedPixels > 0) {
+                used.push(entry);
+            }
+            if (filledCount / filled.length >= EARTH_OBSERVATION_TARGET_COVERAGE) break;
+        }
+
+        compositeCtx.putImageData(compositePixels, 0, 0);
+        return {
+            canvas: compositeCanvas,
+            coverage: filledCount / filled.length,
+            used
+        };
+    }
+
+    function createObservationTextureFromImage(image) {
+        const canvas = document.createElement('canvas');
+        canvas.width = EARTH_OBSERVATION_TEXTURE_WIDTH;
+        canvas.height = EARTH_OBSERVATION_TEXTURE_HEIGHT;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+        const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = pixels.data;
+        for (let i = 0; i < data.length; i += 4) {
+            const r = data[i] / 255;
+            const g = data[i + 1] / 255;
+            const b = data[i + 2] / 255;
+            const brightness = Math.max(r, g, b);
+            const darkness = 1 - smoothStep(0.018, 0.075, brightness);
+            data[i + 3] = Math.round(242 * (1 - darkness));
+        }
+        ctx.putImageData(pixels, 0, 0);
+
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.generateMipmaps = true;
+        texture.needsUpdate = true;
+        return prepareColorTexture(texture);
+    }
+
+    function createCloudTextureFromObservationImage(image) {
+        const canvas = document.createElement('canvas');
+        canvas.width = EARTH_OBSERVATION_TEXTURE_WIDTH;
+        canvas.height = EARTH_OBSERVATION_TEXTURE_HEIGHT;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+        const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = pixels.data;
+        for (let i = 0; i < data.length; i += 4) {
+            const x = (i / 4) % canvas.width;
+            const y = Math.floor((i / 4) / canvas.width);
+            const lat = 90 - (y / canvas.height) * 180;
+            const r = data[i] / 255;
+            const g = data[i + 1] / 255;
+            const b = data[i + 2] / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            const saturation = max > 0 ? (max - min) / max : 0;
+            const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+            const brightNeutral = smoothStep(0.52, 0.9, luma) * (1 - smoothStep(0.18, 0.46, saturation));
+            const blueWater = b > r * 1.12 && b > g * 1.04 && saturation > 0.18 ? 0.55 : 1;
+            const polarIceDampen = Math.abs(lat) > 62 ? 0.42 : 1;
+            const seamDampen = x < 2 || x > canvas.width - 3 ? 0.7 : 1;
+            const cloud = THREE.MathUtils.clamp(brightNeutral * blueWater * polarIceDampen * seamDampen, 0, 1);
+            data[i] = Math.round(232 + cloud * 23);
+            data[i + 1] = Math.round(238 + cloud * 17);
+            data[i + 2] = 255;
+            data[i + 3] = Math.round(cloud * 232);
+        }
+        ctx.putImageData(pixels, 0, 0);
+
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.generateMipmaps = true;
+        texture.needsUpdate = true;
+        return prepareColorTexture(texture);
+    }
+
+    function replaceMaterialTexture(material, property, texture) {
+        if (material[property] && material[property] !== texture) {
+            material[property].dispose();
+        }
+        material[property] = texture;
+        material.needsUpdate = true;
+    }
+
+    function updateEarthObservationStatus(statusKey) {
+        const element = dom['earth-observation-status'];
+        if (!element) return;
+        if (!state.panelVisibility.earthObservationLayer) {
+            element.textContent = t('earth.obs.off');
+            element.classList.remove('is-loading');
+            return;
+        }
+        if (statusKey === 'loading') {
+            element.textContent = t('earth.obs.loading');
+            element.classList.add('is-loading');
+            return;
+        }
+        element.classList.remove('is-loading');
+        if (state.earthObservationDate) {
+            element.textContent = t('earth.obs.ready', { date: state.earthObservationDate });
+        } else {
+            element.textContent = t('earth.obs.fallback');
+        }
+    }
+
+    function applyEarthObservationVisibility() {
+        const enabled = state.panelVisibility.earthObservationLayer !== false;
+        if (state.earthObservationMesh) {
+            state.earthObservationMesh.visible = enabled && Boolean(state.earthObservationMesh.material.map);
+        }
+        if (state.earthCloudMesh) {
+            state.earthCloudMesh.visible = enabled;
+        }
+        if (dom['toggle-earth-observation-layer']) {
+            dom['toggle-earth-observation-layer'].textContent = enabled
+                ? t('earth.obs.toggleOn')
+                : t('earth.obs.toggleOff');
+            dom['toggle-earth-observation-layer'].setAttribute('aria-pressed', String(enabled));
+            dom['toggle-earth-observation-layer'].classList.toggle('active', enabled);
+        }
+        updateEarthObservationStatus(enabled ? 'ready' : 'off');
+    }
+
+    function setEarthObservationLayerEnabled(enabled) {
+        state.panelVisibility.earthObservationLayer = Boolean(enabled);
+        applyEarthObservationVisibility();
+        writeUiState();
+        if (state.panelVisibility.earthObservationLayer && !state.earthObservationDate) {
+            refreshEarthObservationTexture();
+        }
+    }
+
+    async function refreshEarthObservationTexture() {
+        if (
+            state.earthObservationLoading ||
+            !state.panelVisibility.earthObservationLayer ||
+            !state.earthObservationMesh ||
+            !state.earthCloudMesh
+        ) return;
+        state.earthObservationLoading = true;
+        updateEarthObservationStatus('loading');
+
+        try {
+            const loaded = [];
+            const candidates = await earthObservationCandidateUrls();
+            for (const candidate of candidates) {
+                try {
+                    const image = await loadCrossOriginImage(candidate.url);
+                    const coverage = earthObservationCoverage(image);
+                    if (coverage > 0.02) {
+                        loaded.push({ ...candidate, image, coverage });
+                    }
+                    if (loaded.length >= 12) break;
+                } catch (error) {
+                    // Try the next daily mosaic or instrument before falling back.
+                }
+            }
+            if (!loaded.length) throw new Error('No NASA GIBS Earth observation layer loaded');
+
+            const composite = createEarthObservationComposite(loaded);
+            if (composite.coverage < EARTH_OBSERVATION_MIN_COVERAGE) {
+                throw new Error('No sufficiently complete NASA GIBS Earth observation layer loaded');
+            }
+
+            const observationTexture = createObservationTextureFromImage(composite.canvas);
+            const cloudTexture = createCloudTextureFromObservationImage(composite.canvas);
+            replaceMaterialTexture(state.earthObservationMesh.material, 'map', observationTexture);
+            state.earthObservationMesh.material.opacity = 0.9;
+
+            replaceMaterialTexture(state.earthCloudMesh.material, 'map', cloudTexture);
+            state.earthCloudMesh.material.alphaMap = null;
+            state.earthCloudMesh.material.opacity = 0.46;
+            state.earthCloudMesh.material.needsUpdate = true;
+
+            const newestUsed = composite.used[0] || loaded[0];
+            state.earthObservationDate = newestUsed.date;
+            state.earthObservationLayer = composite.used.map((entry) => entry.layer).filter(Boolean).join(', ');
+            state.earthObservationSource = newestUsed.sourceUrl || EARTH_OBSERVATION_DATA_URL;
+            applyEarthObservationVisibility();
+            updateEarthObservationStatus('ready');
+        } catch (error) {
+            if (!state.earthObservationDate) {
+                state.earthObservationLayer = '';
+                state.earthObservationSource = '';
+            }
+            updateEarthObservationStatus('fallback');
+        } finally {
+            state.earthObservationLoading = false;
+        }
     }
 
     function createFallbackEarthTexture() {
@@ -2412,6 +2730,23 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.earthMesh.userData.planetIndex = 2;
         state.earthGroup.add(state.earthMesh);
 
+        state.earthObservationMesh = new THREE.Mesh(
+            new THREE.SphereGeometry(ARTEMIS.EARTH_RADIUS * 1.003, 128, 128),
+            new THREE.MeshPhongMaterial({
+                color: 0xffffff,
+                transparent: true,
+                opacity: 0,
+                depthWrite: false,
+                specular: new THREE.Color(0x142033),
+                shininess: 8,
+                polygonOffset: true,
+                polygonOffsetFactor: -1,
+                polygonOffsetUnits: -1
+            })
+        );
+        state.earthObservationMesh.visible = false;
+        state.earthGroup.add(state.earthObservationMesh);
+
         state.earthCloudMesh = new THREE.Mesh(
             new THREE.SphereGeometry(ARTEMIS.EARTH_RADIUS * 1.012, 96, 96),
             new THREE.MeshPhongMaterial({
@@ -2427,8 +2762,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.earthCloudMesh.material.alphaMap = texture;
             state.earthCloudMesh.material.opacity = 0.34;
             state.earthCloudMesh.material.needsUpdate = true;
+            applyEarthObservationVisibility();
         });
         state.earthGroup.add(state.earthCloudMesh);
+        applyEarthObservationVisibility();
+        refreshEarthObservationTexture();
+        if (!state.earthObservationRefreshTimer) {
+            state.earthObservationRefreshTimer = window.setInterval(
+                refreshEarthObservationTexture,
+                EARTH_OBSERVATION_REFRESH_MS
+            );
+        }
 
         state.earthAtmosphereMesh = new THREE.Mesh(
             new THREE.SphereGeometry(ARTEMIS.EARTH_RADIUS * 1.05, 96, 96),
@@ -7826,8 +8170,12 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (!state.earthMesh || !state.earthGroup) return;
         state.earthRotationAngle = earthRotationAngleForMs(dateMs);
         state.earthMesh.rotation.y = state.earthRotationAngle;
+        if (state.earthObservationMesh) {
+            state.earthObservationMesh.rotation.y = state.earthRotationAngle;
+        }
         if (state.earthCloudMesh) {
-            state.earthCloudMesh.rotation.y = state.earthRotationAngle * 1.025;
+            const drift = state.earthObservationDate ? 0 : state.earthRotationAngle * 0.025;
+            state.earthCloudMesh.rotation.y = state.earthRotationAngle + drift;
         }
     }
 

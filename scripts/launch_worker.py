@@ -10,6 +10,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -31,6 +32,8 @@ SATELLITE_TLE_PATH = DATA_DIR / "active-satellites.tle"
 SATELLITE_PROFILE_PATH = DATA_DIR / "satellite-profiles.json"
 SATELLITE_HISTORY_PATH = DATA_DIR / "satellite-live-history.json"
 ISS_OEM_PATH = DATA_DIR / "iss-oem-j2k.txt"
+EARTH_OBSERVATION_PATH = DATA_DIR / "earth-observation.json"
+EARTH_OBSERVATION_ASSET_DIR = REPO_ROOT / "assets" / "earth-observation"
 
 LL_BASE = "https://ll.thespacedevs.com/2.2.0"
 UPCOMING_URL = f"{LL_BASE}/launch/upcoming/?limit=48&mode=detailed"
@@ -38,6 +41,7 @@ PREVIOUS_URL = f"{LL_BASE}/launch/previous/?limit={{limit}}&mode=detailed"
 SATELLITE_SOURCE_URL = "https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle"
 SATCAT_RECORDS_URL = "https://celestrak.org/pub/satcat.csv"
 ISS_OEM_SOURCE_URL = "https://nasa-public-data.s3.amazonaws.com/iss-coords/current/ISS_OEM/ISS.OEM_J2K_EPH.txt"
+NASA_GIBS_WMS_URL = "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi"
 
 USER_AGENT = os.environ.get(
     "LAUNCH_WORKER_USER_AGENT",
@@ -47,12 +51,24 @@ USER_AGENT = os.environ.get(
 FEED_REFRESH_INTERVAL = timedelta(hours=1)
 SATELLITE_REFRESH_INTERVAL = timedelta(hours=2)
 ISS_OEM_REFRESH_INTERVAL = timedelta(hours=2)
+EARTH_OBSERVATION_REFRESH_INTERVAL = timedelta(hours=24)
 PREFLIGHT_WINDOW = timedelta(minutes=15)
 POSTFLIGHT_DELAY = timedelta(minutes=30)
 DETAIL_RECHECK_INTERVAL = timedelta(minutes=30)
 PREFLIGHT_MISSED_MARK_AFTER = timedelta(hours=6)
 DB_LIMIT = 1000
 SATELLITE_HISTORY_MAX_DAYS = 90
+EARTH_OBSERVATION_TEXTURE_WIDTH = 2048
+EARTH_OBSERVATION_TEXTURE_HEIGHT = 1024
+EARTH_OBSERVATION_LOOKBACK_DAYS = 8
+EARTH_OBSERVATION_CANDIDATE_LIMIT = int(os.environ.get("EARTH_OBSERVATION_CANDIDATE_LIMIT", "10"))
+EARTH_OBSERVATION_LAYERS = [
+    "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+    "VIIRS_NOAA20_CorrectedReflectance_TrueColor",
+    "VIIRS_NOAA21_CorrectedReflectance_TrueColor",
+    "MODIS_Aqua_CorrectedReflectance_TrueColor",
+    "MODIS_Terra_CorrectedReflectance_TrueColor",
+]
 
 TERMINAL_OUTCOMES = {"success", "failure", "cancelled"}
 OBSERVED_OUTCOMES = TERMINAL_OUTCOMES | {"delayed"}
@@ -98,11 +114,22 @@ EMPTY_SATELLITE_PROFILES = {
     "stats": {"groups": {}},
 }
 
+EMPTY_EARTH_OBSERVATION = {
+    "generatedAt": None,
+    "source": "nasa-gibs-wms",
+    "cadenceHours": 24,
+    "width": EARTH_OBSERVATION_TEXTURE_WIDTH,
+    "height": EARTH_OBSERVATION_TEXTURE_HEIGHT,
+    "candidates": [],
+    "errors": [],
+}
+
 EMPTY_STATE = {
     "lastFeedRefreshAt": None,
     "lastCheckRunAt": None,
     "lastSatelliteRefreshAt": None,
     "lastSatelliteProfileRefreshAt": None,
+    "lastEarthObservationRefreshAt": None,
     "lastIssOemRefreshAt": None,
     "pendingChecks": [],
     "lastErrors": [],
@@ -167,6 +194,15 @@ def write_text_if_changed(path: Path, text: str) -> bool:
     return True
 
 
+def write_bytes_if_changed(path: Path, data: bytes) -> bool:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    old_data = path.read_bytes() if path.exists() else b""
+    if old_data == data:
+        return False
+    path.write_bytes(data)
+    return True
+
+
 def comparable_payload(value: object, ignored_keys: set[str]) -> object:
     if isinstance(value, dict):
         return {
@@ -211,6 +247,19 @@ def request_text(url: str, timeout: int = 45) -> str:
     with urllib.request.urlopen(request, timeout=timeout) as response:
         charset = response.headers.get_content_charset() or "utf-8"
         return response.read().decode(charset, errors="replace")
+
+
+def request_bytes(url: str, timeout: int = 60) -> tuple[bytes, str]:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "image/jpeg,image/png,*/*",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        content_type = response.headers.get_content_type() or ""
+        return response.read(), content_type
 
 
 def nested(data: dict, *keys: str) -> object:
@@ -974,11 +1023,138 @@ def refresh_iss_oem(now: datetime, state: dict, force: bool, errors: list[str]) 
         return False
 
 
+def earth_observation_wms_url(layer: str, date: str) -> str:
+    params = {
+        "SERVICE": "WMS",
+        "VERSION": "1.1.1",
+        "REQUEST": "GetMap",
+        "LAYERS": layer,
+        "STYLES": "",
+        "SRS": "EPSG:4326",
+        "BBOX": "-180,-90,180,90",
+        "WIDTH": str(EARTH_OBSERVATION_TEXTURE_WIDTH),
+        "HEIGHT": str(EARTH_OBSERVATION_TEXTURE_HEIGHT),
+        "FORMAT": "image/jpeg",
+        "TRANSPARENT": "FALSE",
+        "BGCOLOR": "0x000000",
+        "TIME": date,
+    }
+    return f"{NASA_GIBS_WMS_URL}?{urllib.parse.urlencode(params)}"
+
+
+def earth_observation_candidates(now: datetime) -> list[dict]:
+    candidates: list[dict] = []
+    base = now.astimezone(timezone.utc).replace(hour=12, minute=0, second=0, microsecond=0)
+    for days_back in range(EARTH_OBSERVATION_LOOKBACK_DAYS + 1):
+        date = (base - timedelta(days=days_back)).date().isoformat()
+        for layer in EARTH_OBSERVATION_LAYERS:
+            candidates.append(
+                {
+                    "layer": layer,
+                    "date": date,
+                    "sourceUrl": earth_observation_wms_url(layer, date),
+                }
+            )
+    return candidates
+
+
+def looks_like_image(data: bytes, content_type: str) -> bool:
+    if len(data) < 20_000:
+        return False
+    lowered = content_type.lower()
+    if lowered.startswith("image/"):
+        return True
+    return data.startswith(b"\xff\xd8") or data.startswith(b"\x89PNG\r\n\x1a\n")
+
+
+def earth_observation_assets_exist(payload: dict) -> bool:
+    candidates = payload.get("candidates")
+    if not isinstance(candidates, list) or not candidates:
+        return False
+    for item in candidates:
+        if not isinstance(item, dict):
+            return False
+        image_url = text_value(item.get("imageUrl"))
+        if not image_url or image_url.startswith(("http://", "https://")):
+            return False
+        if not (REPO_ROOT / image_url).exists():
+            return False
+    return True
+
+
+def refresh_earth_observation(now: datetime, state: dict, old_payload: dict, force: bool, errors: list[str]) -> tuple[bool, dict]:
+    if (
+        not should_refresh(state.get("lastEarthObservationRefreshAt"), EARTH_OBSERVATION_REFRESH_INTERVAL, now, force)
+        and earth_observation_assets_exist(old_payload)
+    ):
+        return False, old_payload
+
+    EARTH_OBSERVATION_ASSET_DIR.mkdir(parents=True, exist_ok=True)
+    manifest_candidates: list[dict] = []
+    local_errors: list[str] = []
+    changed = False
+
+    for source_index, candidate in enumerate(earth_observation_candidates(now), start=1):
+        if len(manifest_candidates) >= max(1, EARTH_OBSERVATION_CANDIDATE_LIMIT):
+            break
+        try:
+            image_data, content_type = request_bytes(candidate["sourceUrl"], timeout=75)
+            if not looks_like_image(image_data, content_type):
+                raise RuntimeError(f"unexpected payload ({content_type or 'unknown content type'}, {len(image_data)} bytes)")
+            slot = len(manifest_candidates) + 1
+            image_path = EARTH_OBSERVATION_ASSET_DIR / f"gibs-{slot:02d}.jpg"
+            if write_bytes_if_changed(image_path, image_data):
+                changed = True
+            manifest_candidates.append(
+                {
+                    "imageUrl": str(image_path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                    "layer": candidate["layer"],
+                    "date": candidate["date"],
+                    "sourceUrl": candidate["sourceUrl"],
+                    "bytes": len(image_data),
+                    "contentType": content_type,
+                }
+            )
+        except Exception as error:  # noqa: BLE001
+            local_errors.append(f"{candidate['layer']} {candidate['date']}: {error}")
+            if source_index >= len(EARTH_OBSERVATION_LAYERS) * 3 and not manifest_candidates:
+                break
+
+    if not manifest_candidates:
+        errors.append("earth observation refresh failed: no NASA GIBS image candidates downloaded")
+        errors.extend(f"earth observation candidate failed: {item}" for item in local_errors[:8])
+        return False, old_payload
+
+    for stale_path in sorted(EARTH_OBSERVATION_ASSET_DIR.glob("gibs-*.jpg")):
+        try:
+            slot = int(stale_path.stem.split("-")[-1])
+        except ValueError:
+            continue
+        if slot > len(manifest_candidates):
+            stale_path.unlink()
+            changed = True
+
+    payload = {
+        "generatedAt": to_iso(now),
+        "source": "nasa-gibs-wms",
+        "cadenceHours": int(EARTH_OBSERVATION_REFRESH_INTERVAL.total_seconds() // 3600),
+        "width": EARTH_OBSERVATION_TEXTURE_WIDTH,
+        "height": EARTH_OBSERVATION_TEXTURE_HEIGHT,
+        "candidates": manifest_candidates,
+        "errors": local_errors[:20],
+    }
+    payload = preserve_if_semantically_equal(old_payload, payload, {"generatedAt", "bytes", "errors"})
+    state["lastEarthObservationRefreshAt"] = to_iso(now)
+    changed = write_json_if_changed(EARTH_OBSERVATION_PATH, payload) or changed
+    return changed, payload
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Refresh static launch data for GitHub Pages.")
     parser.add_argument("--force-feed", action="store_true", help="Refresh launch-feed.json even inside the hourly guard.")
     parser.add_argument("--force-satellites", action="store_true", help="Refresh active-satellites.tle even inside the two-hour guard.")
     parser.add_argument("--force-iss-oem", action="store_true", help="Refresh NASA ISS OEM ephemeris even inside the two-hour guard.")
+    parser.add_argument("--force-earth-observation", action="store_true", help="Refresh cached NASA GIBS Earth observation images even inside the daily guard.")
     parser.add_argument("--seed-history", action="store_true", help="Backfill launch-db.json from Launch Library previous launches.")
     parser.add_argument("--seed-limit", type=int, default=int(os.environ.get("SEED_HISTORY_LIMIT", "100")))
     parser.add_argument("--max-detail-checks", type=int, default=int(os.environ.get("MAX_DETAIL_CHECKS", "8")))
@@ -996,6 +1172,7 @@ def main() -> int:
         db_payload = read_json(DB_PATH, EMPTY_DB)
         stats_payload = read_json(STATS_PATH, EMPTY_STATS)
         satellite_history_payload = read_json(SATELLITE_HISTORY_PATH, EMPTY_SATELLITE_HISTORY)
+        earth_observation_payload = read_json(EARTH_OBSERVATION_PATH, EMPTY_EARTH_OBSERVATION)
         state = read_json(STATE_PATH, EMPTY_STATE)
     except RuntimeError as error:
         print(error, file=sys.stderr)
@@ -1047,6 +1224,13 @@ def main() -> int:
         satellite_history_payload = append_satellite_history_sample(satellite_history_payload, now, satellite_live_count)
     satellite_profile_changed = refresh_satellite_profiles(now, state, args.force_satellites, errors)
     iss_oem_changed = refresh_iss_oem(now, state, args.force_iss_oem, errors)
+    earth_observation_changed, earth_observation_payload = refresh_earth_observation(
+        now,
+        state,
+        earth_observation_payload,
+        args.force_earth_observation,
+        errors,
+    )
 
     state["pendingChecks"] = pending_checks(launches, now)
     state["lastErrors"] = errors[-20:]
@@ -1060,6 +1244,7 @@ def main() -> int:
         (DB_PATH, db_payload),
         (STATS_PATH, stats_payload),
         (SATELLITE_HISTORY_PATH, satellite_history_payload),
+        (EARTH_OBSERVATION_PATH, earth_observation_payload),
         (STATE_PATH, state),
     ]
     for path, payload in writes:
@@ -1071,6 +1256,12 @@ def main() -> int:
         changed_paths.append(str(SATELLITE_PROFILE_PATH.relative_to(REPO_ROOT)))
     if iss_oem_changed:
         changed_paths.append(str(ISS_OEM_PATH.relative_to(REPO_ROOT)))
+    if earth_observation_changed:
+        changed_paths.append(str(EARTH_OBSERVATION_PATH.relative_to(REPO_ROOT)))
+        changed_paths.extend(
+            str(path.relative_to(REPO_ROOT))
+            for path in sorted(EARTH_OBSERVATION_ASSET_DIR.glob("gibs-*.jpg"))
+        )
 
     print(
         json.dumps(
@@ -1079,6 +1270,7 @@ def main() -> int:
                 "feedRefreshed": feed_due and not any(error.startswith("feed refresh failed") for error in errors),
                 "detailChecks": checked,
                 "pendingChecks": len(state["pendingChecks"]),
+                "earthObservationCandidates": len(earth_observation_payload.get("candidates", [])),
                 "errors": errors,
             },
             ensure_ascii=True,

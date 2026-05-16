@@ -93,6 +93,37 @@ class LaunchWorkerTests(unittest.TestCase):
         self.assertEqual(stats["addedByDay"]["2026-01-15"], 1)
         self.assertEqual(stats["decayedByDay"]["2026-02-20"], 1)
 
+    def test_earth_observation_wms_url_uses_expected_getmap_params(self) -> None:
+        url = launch_worker.earth_observation_wms_url(
+            "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+            "2026-05-16",
+        )
+
+        self.assertIn("gibs.earthdata.nasa.gov", url)
+        self.assertIn("REQUEST=GetMap", url)
+        self.assertIn("LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor", url)
+        self.assertIn("TIME=2026-05-16", url)
+        self.assertIn("WIDTH=2048", url)
+        self.assertIn("HEIGHT=1024", url)
+
+    def test_earth_observation_manifest_requires_local_assets(self) -> None:
+        self.assertFalse(
+            launch_worker.earth_observation_assets_exist(
+                {
+                    "candidates": [
+                        {
+                            "imageUrl": "https://gibs.earthdata.nasa.gov/example.jpg",
+                            "date": "2026-05-16",
+                        }
+                    ]
+                }
+            )
+        )
+
+    def test_earth_observation_image_validation_rejects_error_payloads(self) -> None:
+        self.assertTrue(launch_worker.looks_like_image(b"\xff\xd8" + (b"0" * 20000), "image/jpeg"))
+        self.assertFalse(launch_worker.looks_like_image(b"<ServiceException>bad</ServiceException>", "text/xml"))
+
 
 if __name__ == "__main__":
     unittest.main()

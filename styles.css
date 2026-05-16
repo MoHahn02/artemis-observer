@@ -194,6 +194,27 @@ body::after {
     gap: 14px;
 }
 
+.earth-observation-status {
+    min-width: 146px;
+    padding: 7px 10px;
+    border: 1px solid rgba(95, 216, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(4, 12, 25, 0.68);
+    color: #d8ecff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.earth-observation-status.is-loading {
+    color: var(--cyan);
+}
+
 .topbar-time {
     display: flex;
     align-items: baseline;
@@ -1704,6 +1725,10 @@ body.hide-controls .panel-restore-bottom {
     .topbar-side {
         margin-left: auto;
         gap: 8px;
+    }
+
+    .earth-observation-status {
+        display: none;
     }
 
     .topbar-time {
