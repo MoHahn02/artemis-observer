@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-16T22:27:25Z",
+  "generatedAt": "2026-05-17T15:00:15Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15436,
+      "activeCount": 15435,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1588,7 +1588,6 @@
         "2026-03-27": 1,
         "2026-03-28": 2,
         "2026-03-30": 122,
-        "2026-04-01": 1,
         "2026-04-02": 29,
         "2026-04-03": 1,
         "2026-04-04": 29,
@@ -20590,7 +20589,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3564,
+        "activeCount": 3563,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21811,7 +21810,6 @@
           "2026-03-27": 1,
           "2026-03-28": 2,
           "2026-03-30": 83,
-          "2026-04-01": 1,
           "2026-04-03": 1,
           "2026-04-07": 9,
           "2026-04-08": 5,
@@ -340486,24 +340484,6 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "68540": {
-      "satcat": {
-        "NORAD_CAT_ID": "68540",
-        "OBJECT_NAME": "SWC-1",
-        "OBJECT_ID": "2026-069C",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "SAUD",
-        "LAUNCH_DATE": "2026-04-01"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "SAUD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
