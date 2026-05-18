@@ -1,21 +1,19 @@
 {
-  "generatedAt": "2026-05-18T18:52:31Z",
+  "generatedAt": "2026-05-18T21:46:52Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15439,
+      "activeCount": 15436,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
         "1965-08-13": 2,
         "1967-05-31": 3,
         "1967-07-01": 1,
-        "1971-05-05": 1,
         "1971-08-07": 1,
         "1974-11-15": 1,
         "1975-02-06": 1,
         "1976-05-04": 1,
-        "1982-03-06": 1,
         "1983-06-16": 1,
         "1984-03-01": 1,
         "1986-08-12": 1,
@@ -26,9 +24,7 @@
         "1990-01-22": 1,
         "1990-04-24": 1,
         "1990-08-30": 1,
-        "1990-11-13": 1,
         "1991-08-02": 1,
-        "1991-11-24": 1,
         "1992-10-22": 1,
         "1993-01-13": 1,
         "1993-02-09": 1,
@@ -69,7 +65,6 @@
         "1999-12-18": 1,
         "2000-03-21": 1,
         "2000-03-25": 1,
-        "2000-05-08": 1,
         "2000-06-30": 1,
         "2000-07-12": 1,
         "2000-07-16": 2,
@@ -83,7 +78,6 @@
         "2001-02-27": 1,
         "2001-03-08": 1,
         "2001-06-19": 1,
-        "2001-08-06": 1,
         "2001-08-30": 1,
         "2001-09-30": 1,
         "2001-10-22": 1,
@@ -121,7 +115,6 @@
         "2003-11-24": 1,
         "2003-12-18": 1,
         "2003-12-21": 1,
-        "2004-02-14": 1,
         "2004-03-13": 1,
         "2004-03-20": 1,
         "2004-04-18": 1,
@@ -270,7 +263,7 @@
         "2010-04-27": 1,
         "2010-05-21": 2,
         "2010-05-28": 1,
-        "2010-06-02": 1,
+        "2010-06-02": 2,
         "2010-06-03": 1,
         "2010-06-15": 1,
         "2010-06-21": 1,
@@ -292,7 +285,7 @@
         "2010-11-04": 1,
         "2010-11-06": 1,
         "2010-11-14": 1,
-        "2010-11-20": 1,
+        "2010-11-20": 2,
         "2010-11-26": 2,
         "2010-12-17": 1,
         "2010-12-26": 1,
@@ -726,7 +719,7 @@
         "2019-05-22": 1,
         "2019-05-27": 1,
         "2019-05-30": 1,
-        "2019-06-05": 4,
+        "2019-06-05": 5,
         "2019-06-12": 3,
         "2019-06-20": 2,
         "2019-06-24": 1,
@@ -1492,7 +1485,7 @@
         "2025-10-26": 30,
         "2025-10-28": 28,
         "2025-10-29": 29,
-        "2025-10-31": 28,
+        "2025-10-31": 29,
         "2025-11-02": 17,
         "2025-11-03": 1,
         "2025-11-04": 1,
@@ -20592,19 +20585,17 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3567,
+        "activeCount": 3564,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
           "1965-08-13": 2,
           "1967-05-31": 3,
           "1967-07-01": 1,
-          "1971-05-05": 1,
           "1971-08-07": 1,
           "1974-11-15": 1,
           "1975-02-06": 1,
           "1976-05-04": 1,
-          "1982-03-06": 1,
           "1983-06-16": 1,
           "1984-03-01": 1,
           "1986-08-12": 1,
@@ -20615,9 +20606,7 @@
           "1990-01-22": 1,
           "1990-04-24": 1,
           "1990-08-30": 1,
-          "1990-11-13": 1,
           "1991-08-02": 1,
-          "1991-11-24": 1,
           "1992-10-22": 1,
           "1993-01-13": 1,
           "1993-02-09": 1,
@@ -20656,7 +20645,6 @@
           "1999-12-18": 1,
           "2000-03-21": 1,
           "2000-03-25": 1,
-          "2000-05-08": 1,
           "2000-06-30": 1,
           "2000-07-12": 1,
           "2000-07-16": 1,
@@ -20669,7 +20657,6 @@
           "2001-02-27": 1,
           "2001-03-08": 1,
           "2001-06-19": 1,
-          "2001-08-06": 1,
           "2001-08-30": 1,
           "2001-09-30": 1,
           "2001-10-22": 1,
@@ -20704,7 +20691,6 @@
           "2003-10-21": 1,
           "2003-11-24": 1,
           "2003-12-18": 1,
-          "2004-02-14": 1,
           "2004-03-13": 1,
           "2004-04-18": 1,
           "2004-06-16": 1,
@@ -20839,6 +20825,7 @@
           "2010-04-24": 1,
           "2010-04-27": 1,
           "2010-05-21": 2,
+          "2010-06-02": 1,
           "2010-06-03": 1,
           "2010-06-15": 1,
           "2010-06-21": 1,
@@ -20857,7 +20844,7 @@
           "2010-11-04": 1,
           "2010-11-06": 1,
           "2010-11-14": 1,
-          "2010-11-20": 1,
+          "2010-11-20": 2,
           "2010-11-26": 2,
           "2010-12-26": 1,
           "2010-12-29": 2,
@@ -21242,7 +21229,7 @@
           "2019-05-22": 1,
           "2019-05-27": 1,
           "2019-05-30": 1,
-          "2019-06-05": 4,
+          "2019-06-05": 5,
           "2019-06-12": 3,
           "2019-06-20": 2,
           "2019-06-25": 10,
@@ -21764,6 +21751,7 @@
           "2025-11-09": 2,
           "2025-11-10": 9,
           "2025-11-14": 1,
+          "2025-10-31": 1,
           "2025-11-19": 3,
           "2025-11-30": 1,
           "2025-11-20": 1,
@@ -36711,24 +36699,6 @@
       },
       "wikidata": null
     },
-    "5204": {
-      "satcat": {
-        "NORAD_CAT_ID": "5204",
-        "OBJECT_NAME": "OPS 3811 (DSP 2)",
-        "OBJECT_ID": "1971-039A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "1971-05-05"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "5398": {
       "satcat": {
         "NORAD_CAT_ID": "5398",
@@ -36795,24 +36765,6 @@
         "OWNER": "US",
         "LAUNCH_DATE": "1976-05-04",
         "RCS": "0.3981"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "13086": {
-      "satcat": {
-        "NORAD_CAT_ID": "13086",
-        "OBJECT_NAME": "OPS 8701 (DSP 10)",
-        "OBJECT_ID": "1982-019A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "1982-03-06"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
@@ -37013,24 +36965,6 @@
       },
       "wikidata": null
     },
-    "20929": {
-      "satcat": {
-        "NORAD_CAT_ID": "20929",
-        "OBJECT_NAME": "USA 65 (DSP 15)",
-        "OBJECT_ID": "1990-095A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "1990-11-13"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "21639": {
       "satcat": {
         "NORAD_CAT_ID": "21639",
@@ -37040,24 +36974,6 @@
         "OWNER": "US",
         "LAUNCH_DATE": "1991-08-02",
         "RCS": "20.8608"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "21805": {
-      "satcat": {
-        "NORAD_CAT_ID": "21805",
-        "OBJECT_NAME": "USA 75 (DSP 16)",
-        "OBJECT_ID": "1991-080B",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "1991-11-24"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
@@ -37924,24 +37840,6 @@
       },
       "wikidata": null
     },
-    "26356": {
-      "satcat": {
-        "NORAD_CAT_ID": "26356",
-        "OBJECT_NAME": "USA 149 (DSP 20)",
-        "OBJECT_ID": "2000-024A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2000-05-08"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "26388": {
       "satcat": {
         "NORAD_CAT_ID": "26388",
@@ -38206,24 +38104,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "NICO",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "26880": {
-      "satcat": {
-        "NORAD_CAT_ID": "26880",
-        "OBJECT_NAME": "USA 159 (DSP 21)",
-        "OBJECT_ID": "2001-033A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2001-08-06"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -39086,24 +38966,6 @@
         "confidence": "system",
         "operatorAmbiguous": false,
         "ruleId": "gps-navstar"
-      },
-      "wikidata": null
-    },
-    "28158": {
-      "satcat": {
-        "NORAD_CAT_ID": "28158",
-        "OBJECT_NAME": "USA 176 (DSP 22)",
-        "OBJECT_ID": "2004-004A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2004-02-14"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
@@ -43067,6 +42929,25 @@
       },
       "wikidata": null
     },
+    "36588": {
+      "satcat": {
+        "NORAD_CAT_ID": "36588",
+        "OBJECT_NAME": "SERVIS 2",
+        "OBJECT_ID": "2010-023A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "JPN",
+        "LAUNCH_DATE": "2010-06-02",
+        "RCS": "2.6607"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "JPN",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "36590": {
       "satcat": {
         "NORAD_CAT_ID": "36590",
@@ -43780,6 +43661,24 @@
         "NORAD_CAT_ID": "37224",
         "OBJECT_NAME": "O/OREOS (USA 219)",
         "OBJECT_ID": "2010-062C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2010-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "37225": {
+      "satcat": {
+        "NORAD_CAT_ID": "37225",
+        "OBJECT_NAME": "FASTSAT-HSV01 (USA 220)",
+        "OBJECT_ID": "2010-062D",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2010-11-20"
@@ -61146,6 +61045,24 @@
         "NORAD_CAT_ID": "44314",
         "OBJECT_NAME": "TIANQI-3",
         "OBJECT_ID": "2019-032E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2019-06-05"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "44316": {
+      "satcat": {
+        "NORAD_CAT_ID": "44316",
+        "OBJECT_NAME": "WT 1B",
+        "OBJECT_ID": "2019-032G",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2019-06-05"
@@ -301763,6 +301680,24 @@
         "confidence": "program",
         "operatorAmbiguous": false,
         "ruleId": "sentinel"
+      },
+      "wikidata": null
+    },
+    "66515": {
+      "satcat": {
+        "NORAD_CAT_ID": "66515",
+        "OBJECT_NAME": "SZ-21 MODULE",
+        "OBJECT_ID": "2025-246C",
+        "OBJECT_TYPE": "DEB",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2025-10-31"
+      },
+      "profile": {
+        "type": "Weltraumschrott",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     },
