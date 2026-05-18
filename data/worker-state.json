@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-05-18T16:52:05Z",
-  "lastCheckRunAt": "2026-05-18T16:52:05Z",
-  "lastSatelliteRefreshAt": "2026-05-18T14:00:05Z",
+  "lastFeedRefreshAt": "2026-05-18T18:52:31Z",
+  "lastCheckRunAt": "2026-05-18T18:52:31Z",
+  "lastSatelliteRefreshAt": "2026-05-18T18:52:31Z",
   "pendingChecks": [
     {
       "id": "b31313da-ee5d-42b2-9a27-20cc18105276",
@@ -328,10 +328,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "satellite refresh failed: HTTP Error 500: Internal Server Error"
-  ],
-  "lastIssOemRefreshAt": "2026-05-18T16:52:05Z",
-  "lastSatelliteProfileRefreshAt": "2026-05-18T16:52:05Z",
+  "lastErrors": [],
+  "lastIssOemRefreshAt": "2026-05-18T18:52:31Z",
+  "lastSatelliteProfileRefreshAt": "2026-05-18T18:52:31Z",
   "lastEarthObservationRefreshAt": "2026-05-18T14:00:05Z"
 }
