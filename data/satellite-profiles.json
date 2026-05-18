@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-18T21:46:52Z",
+  "generatedAt": "2026-05-18T23:50:54Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15436,
+      "activeCount": 15435,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -52,7 +52,7 @@
         "1998-08-02": 2,
         "1998-09-23": 1,
         "1998-10-23": 1,
-        "1998-11-20": 10,
+        "1998-11-20": 9,
         "1998-12-06": 1,
         "1998-12-04": 1,
         "1999-05-26": 1,
@@ -16607,6 +16607,7 @@
         "2026-02-21": 2,
         "2025-08-14": 1,
         "2025-07-05": 1,
+        "2026-05-17": 1,
         "2026-04-11": 1,
         "2026-03-12": 2,
         "2026-05-12": 1
@@ -20585,7 +20586,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3564,
+        "activeCount": 3563,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20633,7 +20634,7 @@
           "1998-08-02": 2,
           "1998-09-23": 1,
           "1998-10-23": 1,
-          "1998-11-20": 10,
+          "1998-11-20": 9,
           "1998-12-06": 1,
           "1998-12-04": 1,
           "1999-05-26": 1,
@@ -36515,6 +36516,7 @@
           "2026-05-06": 2,
           "2025-09-15": 1,
           "2026-03-04": 2,
+          "2026-05-17": 1,
           "2026-04-11": 1,
           "2026-03-17": 1,
           "2026-04-02": 4,
@@ -301688,12 +301690,12 @@
         "NORAD_CAT_ID": "66515",
         "OBJECT_NAME": "SZ-21 MODULE",
         "OBJECT_ID": "2025-246C",
-        "OBJECT_TYPE": "DEB",
+        "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2025-10-31"
       },
       "profile": {
-        "type": "Weltraumschrott",
+        "type": "Nutzlast/Satellit",
         "country": "China",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
@@ -309175,24 +309177,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "66910": {
-      "satcat": {
-        "NORAD_CAT_ID": "66910",
-        "OBJECT_NAME": "ISS OBJECT XW",
-        "OBJECT_ID": "1998-067XW",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
-        "LAUNCH_DATE": "1998-11-20"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
