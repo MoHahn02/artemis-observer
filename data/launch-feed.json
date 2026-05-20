@@ -1,39 +1,12 @@
 {
-  "generatedAt": "2026-05-20T00:08:03Z",
+  "generatedAt": "2026-05-20T04:35:10Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-05-20T01:08:03Z",
+  "nextRefreshAfter": "2026-05-20T05:35:10Z",
   "launches": [
-    {
-      "id": "b31313da-ee5d-42b2-9a27-20cc18105276",
-      "name": "Vega-C | Solar wind Magnetosphere Ionosphere Link Explorer (SMILE)",
-      "net": "2026-05-19T03:52:10Z",
-      "provider": "Avio S.p.A",
-      "rocket": "Vega-C",
-      "pad": "Ariane Launch Area 1 (ELV)",
-      "padLocation": "Guiana Space Centre, French Guiana",
-      "latitude": 5.236,
-      "longitude": -52.775,
-      "mission": "Solar wind Magnetosphere Ionosphere Link Explorer (SMILE)",
-      "missionDescription": "Joint mission between the European Space Agency and the Chinese Academy of Sciences to investigate the interaction between Earth\u2019s protective shield \u2013 the magnetosphere \u2013 and the supersonic solar wind.",
-      "orbit": "Elliptical Orbit",
-      "status": "success",
-      "outcome": "success",
-      "statusName": "Launch Successful",
-      "statusAbbrev": "Success",
-      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://www.youtube.com/watch?v=6q8aKbcKCOs",
-      "sourceUrl": "https://www.avio.com/press-kit/launch-kit-vv29",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b31313da-ee5d-42b2-9a27-20cc18105276/",
-      "updatedAt": "2026-05-20T00:08:03Z"
-    },
     {
       "id": "7ba18bcb-c711-4329-9fc1-7ac017fadfff",
       "name": "Falcon 9 Block 5 | Starlink Group 17-42",
-      "net": "2026-05-20T02:36:00Z",
+      "net": "2026-05-20T02:46:19Z",
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "pad": "Space Launch Complex 4E",
@@ -43,19 +16,19 @@
       "mission": "Starlink Group 17-42",
       "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "preflightStatus": "",
       "postflightStatus": "",
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
-      "livestreamUrl": "https://x.com/i/broadcasts/1wxWjaEgZOkJQ",
+      "livestreamUrl": "https://www.youtube.com/watch?v=t_WSE0HLBm4",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-42",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7ba18bcb-c711-4329-9fc1-7ac017fadfff/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "ef65c43b-faf9-4adb-9155-289eaabdd097",
@@ -82,7 +55,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLmMoZMKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-31",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef65c43b-faf9-4adb-9155-289eaabdd097/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "ed83366c-872c-4484-97c1-bc74832304fc",
@@ -109,7 +82,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://www.spacex.com/launches/starship-flight-12",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "156a9e46-01b5-46f4-818e-ea563c71c5fe",
@@ -136,7 +109,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/viva-la-strix-2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/156a9e46-01b5-46f4-818e-ea563c71c5fe/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
@@ -163,7 +136,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoeWkBkGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "a0e0f590-1cb4-4b6b-845c-0087633af132",
@@ -190,7 +163,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a0e0f590-1cb4-4b6b-845c-0087633af132/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "e6159040-124e-4a2a-91db-41f5a48acfd8",
@@ -217,7 +190,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AKEmOYyqYAKL",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-47",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6159040-124e-4a2a-91db-41f5a48acfd8/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
@@ -244,7 +217,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "a7341350-789e-4f61-99a4-a61ebc40c05b",
@@ -271,7 +244,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLgeMbqKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-41",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a7341350-789e-4f61-99a4-a61ebc40c05b/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "ff0a6a32-6513-4e85-9fd8-a2d022add74d",
@@ -298,7 +271,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -325,7 +298,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -352,7 +325,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -379,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "aafe107e-46d8-420c-bcb9-192069d80893",
@@ -406,7 +379,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/aafe107e-46d8-420c-bcb9-192069d80893/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -433,7 +406,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "4936311a-af7c-4b05-8d7b-3eea59fc0f11",
@@ -460,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/25/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4936311a-af7c-4b05-8d7b-3eea59fc0f11/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
@@ -487,7 +460,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -514,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "c3f48f48-0e0a-4bca-917e-de494cfca35b",
@@ -541,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -568,7 +541,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "a6db1e67-5860-47c9-a674-adc0f35b62e0",
@@ -595,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "f596ad48-881e-47d6-806d-113c6dd97427",
@@ -622,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -649,7 +622,34 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-20T00:08:03Z"
+      "updatedAt": "2026-05-20T04:35:10Z"
+    },
+    {
+      "id": "9eb09815-c237-4fdd-9057-5b161131240c",
+      "name": "Atlas V 551 | Amazon Leo (LA-08)",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "United Launch Alliance",
+      "rocket": "Atlas V 551",
+      "pad": "Space Launch Complex 41",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.58341025,
+      "longitude": -80.58303644,
+      "mission": "Amazon Leo (LA-08)",
+      "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n29 satellites are carried on this launch.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9eb09815-c237-4fdd-9057-5b161131240c/",
+      "updatedAt": "2026-05-20T04:35:10Z"
     }
   ]
 }
