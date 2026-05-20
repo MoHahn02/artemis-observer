@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-19T22:53:50Z",
+  "generatedAt": "2026-05-20T08:04:56Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15449,
+      "activeCount": 15450,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1582,7 +1582,7 @@
         "2026-03-26": 25,
         "2026-03-27": 1,
         "2026-03-28": 2,
-        "2026-03-30": 121,
+        "2026-03-30": 122,
         "2026-04-02": 29,
         "2026-04-03": 1,
         "2026-04-04": 29,
@@ -16445,7 +16445,6 @@
         "2021-09-17": 1,
         "2021-07-03": 1,
         "2021-08-06": 2,
-        "2026-05-15": 2,
         "2022-09-15": 10,
         "2021-11-25": 1,
         "2023-08-25": 3,
@@ -16596,6 +16595,7 @@
         "2026-02-04": 1,
         "2026-01-09": 1,
         "2024-01-30": 1,
+        "2026-05-15": 1,
         "2025-05-24": 1,
         "2025-05-23": 3,
         "2025-08-17": 1,
@@ -20596,7 +20596,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3563,
+        "activeCount": 3564,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21813,7 +21813,7 @@
           "2026-03-25": 2,
           "2026-03-27": 1,
           "2026-03-28": 2,
-          "2026-03-30": 82,
+          "2026-03-30": 83,
           "2026-04-03": 1,
           "2026-04-07": 9,
           "2026-04-08": 5,
@@ -36232,7 +36232,6 @@
           "2021-09-17": 1,
           "2021-07-03": 1,
           "2021-08-06": 2,
-          "2026-05-15": 1,
           "2022-09-15": 9,
           "2021-11-25": 1,
           "2023-08-25": 3,
@@ -85018,8 +85017,7 @@
         "OBJECT_ID": "2021-055E",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
-        "LAUNCH_DATE": "2021-06-18",
-        "DECAY_DATE": "2026-05-15"
+        "LAUNCH_DATE": "2021-06-18"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
@@ -339801,6 +339799,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68506": {
+      "satcat": {
+        "NORAD_CAT_ID": "68506",
+        "OBJECT_NAME": "TRANSPORTER-16 OBJECT CU",
+        "OBJECT_ID": "2026-067CU",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-03-30"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
