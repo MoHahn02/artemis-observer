@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T22:44:59Z",
+  "generatedAt": "2026-05-21T23:43:54Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -785,7 +785,7 @@
     {
       "id": "ed83366c-872c-4484-97c1-bc74832304fc",
       "name": "Starship | Flight 12",
-      "net": "2026-05-21T23:30:00Z",
+      "net": "2026-05-21T23:39:00Z",
       "provider": "SpaceX",
       "rocket": "Starship V3",
       "pad": "Orbital Launch Pad 2",
@@ -795,14 +795,14 @@
       "mission": "Flight 12",
       "missionDescription": "12th test flight of the two-stage Starship launch vehicle. Maiden Flight of Starship V3.\r\n\r\nThe flight test\u2019s primary goal will be to demonstrate each of these new pieces in the flight environment for the first time, with each element of the Starship architecture featuring significant redesigns to enable full and rapid reuse that incorporate learnings from years of development and test.\r\n\r\nThe Starship upper stage will target multiple in-space and reentry objectives, including a payload deployment of 20 Starlink simulators, similar in size to next-generation Starlink V3 satellites, and two specially modified Starlink satellites. The two modified satellites will test hardware planned for Starlink V3 and will attempt to scan Starship\u2019s heat shield and transmit imagery down to operators to test methods of analyzing Starship\u2019s heat shield readiness for return to launch site on future missions. Several tiles on Starship have been painted white to simulate missing tiles and serve as imaging targets in the test. The Starlink simulators will be on the same suborbital trajectory as Starship. A relight of a single Raptor engine while in space is also planned.\r\n\r\nFor Starship entry, a single heat shield tile has been intentionally removed to measure the aerodynamic load differences on adjacent tiles when there is a tile missing. Finally, the ship will perform experimental actions tested on previous flight tests, including a maneuver to intentionally stress the structural limits of the vehicle\u2019s rear flaps and a dynamic banking maneuver to mimic the trajectory that future missions returning to Starbase will fly.",
       "orbit": "Suborbital",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "On Hold",
+      "statusAbbrev": "Hold",
+      "statusDescription": "The countdown has been paused, but the launch can still happen within the launch window.",
       "sourceUrl": "https://www.spacex.com/launches/starship-flight-12",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed83366c-872c-4484-97c1-bc74832304fc/",
-      "updatedAt": "2026-05-21T22:44:59Z",
+      "updatedAt": "2026-05-21T23:43:54Z",
       "firstSeenAt": "2026-04-20T16:49:14Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -811,11 +811,12 @@
         "2026-05-19T22:30:00Z",
         "2026-05-20T22:30:00Z",
         "2026-05-21T22:30:00Z",
-        "2026-05-21T22:30:01Z"
+        "2026-05-21T22:30:01Z",
+        "2026-05-21T23:30:00Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-05-21T23:43:54Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
+      "preflightStatus": "delayed",
       "postflightStatus": "",
       "livestreamUrl": "https://www.youtube.com/watch?v=ou6rUKyNmUQ"
     },

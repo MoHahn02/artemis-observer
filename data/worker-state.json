@@ -1,18 +1,12 @@
 {
   "lastFeedRefreshAt": "2026-05-21T22:44:59Z",
-  "lastCheckRunAt": "2026-05-21T22:44:59Z",
-  "lastSatelliteRefreshAt": "2026-05-21T19:22:05Z",
+  "lastCheckRunAt": "2026-05-21T23:43:54Z",
+  "lastSatelliteRefreshAt": "2026-05-21T23:43:54Z",
   "pendingChecks": [
     {
       "id": "ed83366c-872c-4484-97c1-bc74832304fc",
-      "phase": "preflight",
-      "dueAt": "2026-05-21T23:15:00Z",
-      "overdue": false
-    },
-    {
-      "id": "ed83366c-872c-4484-97c1-bc74832304fc",
       "phase": "postflight",
-      "dueAt": "2026-05-22T00:00:00Z",
+      "dueAt": "2026-05-22T00:09:00Z",
       "overdue": false
     },
     {
@@ -352,11 +346,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "satellite refresh failed: <urlopen error timed out>",
-    "satellite profile refresh failed: <urlopen error timed out>"
-  ],
+  "lastErrors": [],
   "lastIssOemRefreshAt": "2026-05-21T22:44:59Z",
-  "lastSatelliteProfileRefreshAt": "2026-05-21T19:22:05Z",
+  "lastSatelliteProfileRefreshAt": "2026-05-21T23:43:54Z",
   "lastEarthObservationRefreshAt": "2026-05-21T19:22:05Z"
 }
