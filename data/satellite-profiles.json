@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-21T04:43:17Z",
+  "generatedAt": "2026-05-21T19:22:05Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15448,
+      "activeCount": 15447,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -777,7 +777,7 @@
         "2020-05-12": 2,
         "2020-05-22": 1,
         "2020-05-31": 1,
-        "2020-06-04": 27,
+        "2020-06-04": 26,
         "2020-06-10": 1,
         "2020-06-13": 18,
         "2020-06-17": 1,
@@ -16183,6 +16183,7 @@
         "2020-07-14": 1,
         "2024-08-07": 4,
         "2021-01-08": 1,
+        "2026-05-21": 1,
         "2025-03-07": 7,
         "2024-01-20": 3,
         "2024-06-22": 2,
@@ -16621,7 +16622,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10360,
+        "activeCount": 10359,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16629,7 +16630,7 @@
           "2020-02-17": 21,
           "2020-03-18": 30,
           "2020-04-22": 24,
-          "2020-06-04": 27,
+          "2020-06-04": 26,
           "2020-06-13": 16,
           "2020-08-07": 34,
           "2020-08-18": 17,
@@ -17250,6 +17251,7 @@
           "2021-01-08": 1,
           "2025-05-07": 1,
           "2024-10-05": 1,
+          "2026-05-21": 1,
           "2025-03-07": 4,
           "2025-04-26": 1,
           "2024-07-06": 1,
@@ -17891,7 +17893,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11564,
+        "activeCount": 11563,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -17916,7 +17918,7 @@
           "2020-03-18": 30,
           "2020-03-21": 34,
           "2020-04-22": 24,
-          "2020-06-04": 27,
+          "2020-06-04": 26,
           "2020-06-13": 16,
           "2020-08-07": 34,
           "2020-08-18": 17,
@@ -19099,6 +19101,7 @@
           "2024-12-18": 7,
           "2021-01-08": 1,
           "2025-05-07": 1,
+          "2026-05-21": 1,
           "2025-03-07": 4,
           "2025-04-26": 1,
           "2024-07-06": 1,
@@ -66935,27 +66938,6 @@
         "NORAD_CAT_ID": "45673",
         "OBJECT_NAME": "STARLINK-1456",
         "OBJECT_ID": "2020-035S",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2020-06-04"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "45674": {
-      "satcat": {
-        "NORAD_CAT_ID": "45674",
-        "OBJECT_NAME": "STARLINK-1457",
-        "OBJECT_ID": "2020-035T",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2020-06-04"
@@ -349518,15 +349500,15 @@
     "69004": {
       "satcat": {
         "NORAD_CAT_ID": "69004",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AA",
+        "OBJECT_NAME": "GEN1A-1",
         "OBJECT_ID": "2026-100AA",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349536,15 +349518,15 @@
     "69005": {
       "satcat": {
         "NORAD_CAT_ID": "69005",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AB",
+        "OBJECT_NAME": "GEN1A-2",
         "OBJECT_ID": "2026-100AB",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349626,15 +349608,15 @@
     "69010": {
       "satcat": {
         "NORAD_CAT_ID": "69010",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AG",
+        "OBJECT_NAME": "DRISHTI",
         "OBJECT_ID": "2026-100AG",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "IND",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "IND",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
