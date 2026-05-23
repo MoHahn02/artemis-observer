@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-22T23:19:05Z",
+  "generatedAt": "2026-05-23T22:35:31Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15445,
+      "activeCount": 15444,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1337,9 +1337,8 @@
         "2025-01-20": 5,
         "2025-01-21": 50,
         "2025-01-23": 19,
-        "2025-01-24": 22,
+        "2025-01-24": 21,
         "2025-01-27": 21,
-        "2025-01-29": 1,
         "2025-01-30": 1,
         "2025-02-01": 22,
         "2025-02-02": 1,
@@ -1609,7 +1608,8 @@
         "2026-05-12": 18,
         "2026-05-14": 1,
         "2026-05-15": 6,
-        "2026-05-19": 1
+        "2026-05-19": 1,
+        "2026-05-22": 1
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -12312,6 +12312,7 @@
         "2014-11-20": 3,
         "2005-02-07": 1,
         "2003-11-12": 1,
+        "2006-07-15": 2,
         "2003-11-18": 2,
         "2003-11-25": 3,
         "2003-11-27": 1,
@@ -12401,6 +12402,7 @@
         "2004-05-26": 1,
         "2007-03-06": 1,
         "2008-12-23": 2,
+        "2009-09-11": 1,
         "2004-07-30": 1,
         "2013-12-26": 1,
         "2005-05-09": 1,
@@ -12693,7 +12695,6 @@
         "2006-05-23": 2,
         "2006-05-22": 1,
         "2006-08-18": 1,
-        "2006-07-15": 1,
         "2006-06-18": 2,
         "2012-07-11": 2,
         "2006-07-30": 2,
@@ -14321,7 +14322,7 @@
         "2009-11-20": 1,
         "2016-01-15": 2,
         "2015-05-01": 2,
-        "2025-03-29": 13,
+        "2025-03-29": 14,
         "2013-05-26": 2,
         "2025-06-24": 4,
         "2025-11-05": 3,
@@ -15171,6 +15172,7 @@
         "2013-10-09": 2,
         "2015-09-01": 1,
         "2013-09-28": 1,
+        "2026-05-22": 4,
         "2013-10-16": 1,
         "2013-11-05": 1,
         "2013-10-06": 1,
@@ -16183,7 +16185,7 @@
         "2020-07-14": 1,
         "2024-08-07": 4,
         "2021-01-08": 1,
-        "2026-05-21": 2,
+        "2026-05-21": 3,
         "2025-03-07": 7,
         "2024-01-20": 3,
         "2024-06-22": 2,
@@ -16317,7 +16319,6 @@
         "2021-09-06": 1,
         "2025-04-24": 5,
         "2026-03-26": 3,
-        "2026-05-22": 2,
         "2026-04-05": 3,
         "2021-11-11": 1,
         "2021-05-28": 1,
@@ -16617,13 +16618,14 @@
         "2026-05-17": 2,
         "2026-04-11": 1,
         "2026-03-12": 2,
+        "2026-05-23": 1,
         "2026-05-12": 1
       },
       "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
     },
     "groups": {
       "starlink": {
-        "activeCount": 10358,
+        "activeCount": 10357,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16840,7 +16842,7 @@
           "2025-01-10": 21,
           "2025-01-13": 20,
           "2025-01-21": 48,
-          "2025-01-24": 22,
+          "2025-01-24": 21,
           "2025-01-27": 21,
           "2025-02-01": 22,
           "2025-02-04": 21,
@@ -17423,7 +17425,7 @@
           "2023-11-18": 1,
           "2025-01-13": 6,
           "2026-03-26": 2,
-          "2026-05-22": 1,
+          "2026-05-22": 2,
           "2025-06-24": 1,
           "2026-04-05": 2,
           "2025-09-03": 1,
@@ -17895,7 +17897,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11562,
+        "activeCount": 11561,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18149,7 +18151,7 @@
           "2025-01-13": 20,
           "2025-01-21": 48,
           "2025-01-23": 18,
-          "2025-01-24": 22,
+          "2025-01-24": 21,
           "2025-01-27": 21,
           "2025-02-01": 22,
           "2025-02-04": 21,
@@ -19265,7 +19267,7 @@
           "2023-11-18": 1,
           "2025-01-13": 6,
           "2026-03-26": 2,
-          "2026-05-22": 1,
+          "2026-05-22": 2,
           "2025-06-24": 1,
           "2026-04-05": 2,
           "2025-09-03": 1,
@@ -21677,7 +21679,6 @@
           "2025-01-20": 5,
           "2025-01-21": 2,
           "2025-01-23": 1,
-          "2025-01-29": 1,
           "2025-01-30": 1,
           "2025-02-02": 1,
           "2025-02-04": 2,
@@ -21839,7 +21840,8 @@
           "2026-05-11": 1,
           "2026-05-14": 1,
           "2026-05-15": 6,
-          "2026-05-19": 1
+          "2026-05-19": 1,
+          "2026-05-22": 1
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -32481,6 +32483,7 @@
           "2014-11-20": 3,
           "2005-02-07": 1,
           "2003-11-12": 1,
+          "2006-07-15": 2,
           "2003-11-18": 2,
           "2003-11-25": 3,
           "2003-11-27": 1,
@@ -32570,6 +32573,7 @@
           "2004-05-26": 1,
           "2007-03-06": 1,
           "2008-12-23": 2,
+          "2009-09-11": 1,
           "2004-07-30": 1,
           "2013-12-26": 1,
           "2005-05-09": 1,
@@ -32862,7 +32866,6 @@
           "2006-05-23": 2,
           "2006-05-22": 1,
           "2006-08-18": 1,
-          "2006-07-15": 1,
           "2006-06-18": 2,
           "2012-07-11": 2,
           "2006-07-30": 2,
@@ -34347,7 +34350,7 @@
           "2009-11-20": 1,
           "2016-01-15": 2,
           "2015-05-01": 2,
-          "2025-03-29": 10,
+          "2025-03-29": 11,
           "2013-05-26": 2,
           "2025-06-24": 2,
           "2025-11-05": 3,
@@ -35164,6 +35167,7 @@
           "2013-10-09": 2,
           "2015-09-01": 1,
           "2013-09-28": 1,
+          "2026-05-22": 2,
           "2013-10-16": 1,
           "2013-11-05": 1,
           "2013-10-06": 1,
@@ -36467,6 +36471,7 @@
           "2024-12-29": 2,
           "2023-03-13": 1,
           "2024-06-19": 2,
+          "2026-05-21": 2,
           "2025-07-26": 1,
           "2026-01-20": 2,
           "2023-07-03": 1,
@@ -36529,7 +36534,6 @@
           "2026-04-09": 1,
           "2025-07-28": 1,
           "2026-04-24": 1,
-          "2026-05-21": 1,
           "2025-05-25": 1,
           "2026-01-19": 1,
           "2025-09-17": 1,
@@ -36544,10 +36548,10 @@
           "2026-04-02": 4,
           "2026-04-04": 1,
           "2026-03-12": 2,
+          "2026-05-23": 1,
           "2026-03-24": 1,
           "2026-05-19": 1,
           "2026-05-12": 1,
-          "2026-05-22": 1,
           "2026-05-18": 1
         },
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -234255,27 +234259,6 @@
       },
       "wikidata": null
     },
-    "62823": {
-      "satcat": {
-        "NORAD_CAT_ID": "62823",
-        "OBJECT_NAME": "STARLINK-32823",
-        "OBJECT_ID": "2025-018T",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2025-01-24"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
     "62824": {
       "satcat": {
         "NORAD_CAT_ID": "62824",
@@ -234798,24 +234781,6 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "62850": {
-      "satcat": {
-        "NORAD_CAT_ID": "62850",
-        "OBJECT_NAME": "NVS-02 (IRNSS-1K)",
-        "OBJECT_ID": "2025-020A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "IND",
-        "LAUNCH_DATE": "2025-01-29"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "IND",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
@@ -349304,15 +349269,15 @@
     "68995": {
       "satcat": {
         "NORAD_CAT_ID": "68995",
-        "OBJECT_NAME": "YAM-12",
+        "OBJECT_NAME": "ICEYE-X78",
         "OBJECT_ID": "2026-100R",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
+        "OWNER": "POL",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "USA",
+        "country": "POL",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349448,15 +349413,15 @@
     "69003": {
       "satcat": {
         "NORAD_CAT_ID": "69003",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT Z",
+        "OBJECT_NAME": "YAM-12",
         "OBJECT_ID": "2026-100Z",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349754,15 +349719,15 @@
     "69020": {
       "satcat": {
         "NORAD_CAT_ID": "69020",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AS",
+        "OBJECT_NAME": "SELENE",
         "OBJECT_ID": "2026-100AS",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GREC",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GREC",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349772,15 +349737,15 @@
     "69021": {
       "satcat": {
         "NORAD_CAT_ID": "69021",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AT",
+        "OBJECT_NAME": "HELIOS",
         "OBJECT_ID": "2026-100AT",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GREC",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GREC",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349790,15 +349755,15 @@
     "69022": {
       "satcat": {
         "NORAD_CAT_ID": "69022",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AU",
+        "OBJECT_NAME": "HYDRA-3",
         "OBJECT_ID": "2026-100AU",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "SPN",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "SPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -350897,6 +350862,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "ESA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69177": {
+      "satcat": {
+        "NORAD_CAT_ID": "69177",
+        "OBJECT_NAME": "STRIX-7",
+        "OBJECT_ID": "2026-112A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "JPN",
+        "LAUNCH_DATE": "2026-05-22"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
