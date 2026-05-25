@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-25T10:45:28Z",
+  "generatedAt": "2026-05-25T19:58:48Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15439,
+      "activeCount": 15440,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1609,7 +1609,8 @@
         "2026-05-14": 1,
         "2026-05-15": 6,
         "2026-05-19": 1,
-        "2026-05-22": 1
+        "2026-05-22": 1,
+        "2026-05-24": 1
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -20613,7 +20614,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3561,
+        "activeCount": 3562,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21846,7 +21847,8 @@
           "2026-05-14": 1,
           "2026-05-15": 6,
           "2026-05-19": 1,
-          "2026-05-22": 1
+          "2026-05-22": 1,
+          "2026-05-24": 1
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -350783,6 +350785,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "JPN",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69180": {
+      "satcat": {
+        "NORAD_CAT_ID": "69180",
+        "OBJECT_NAME": "SHENZHOU-23",
+        "OBJECT_ID": "2026-113A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-05-24"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
