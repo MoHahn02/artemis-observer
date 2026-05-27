@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-27T19:46:23Z",
+  "generatedAt": "2026-05-27T23:02:16Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15435,
+      "activeCount": 15434,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -523,7 +523,7 @@
         "2015-12-13": 1,
         "2015-12-16": 2,
         "2015-12-17": 3,
-        "2015-12-22": 8,
+        "2015-12-22": 7,
         "2015-12-24": 1,
         "2015-12-28": 1,
         "2016-01-15": 1,
@@ -20628,7 +20628,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3565,
+        "activeCount": 3564,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21102,7 +21102,7 @@
           "2015-12-13": 1,
           "2015-12-16": 2,
           "2015-12-17": 3,
-          "2015-12-22": 8,
+          "2015-12-22": 7,
           "2015-12-24": 1,
           "2015-12-28": 1,
           "2016-01-15": 1,
@@ -52165,25 +52165,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "ESA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "41179": {
-      "satcat": {
-        "NORAD_CAT_ID": "41179",
-        "OBJECT_NAME": "ORBCOMM FM114",
-        "OBJECT_ID": "2015-081A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "ORB",
-        "LAUNCH_DATE": "2015-12-22",
-        "RCS": "0.5620"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "ORB",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
