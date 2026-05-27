@@ -1,62 +1,8 @@
 {
-  "generatedAt": "2026-05-27T14:02:18Z",
+  "generatedAt": "2026-05-27T17:31:48Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-05-27T15:02:18Z",
+  "nextRefreshAfter": "2026-05-27T18:31:48Z",
   "launches": [
-    {
-      "id": "75a35be5-b3bd-4591-b978-9a876da9fa96",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-37",
-      "net": "2026-05-26T14:50:34Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "padLocation": "Vandenberg SFB, CA, USA",
-      "latitude": 34.632,
-      "longitude": -120.611,
-      "mission": "Starlink Group 17-37",
-      "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-      "orbit": "Low Earth Orbit",
-      "status": "success",
-      "outcome": "success",
-      "statusName": "Launch Successful",
-      "statusAbbrev": "Success",
-      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://www.youtube.com/watch?v=jOuCnNgE8yM",
-      "sourceUrl": "https://www.spacex.com/launches/sl-17-37",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/75a35be5-b3bd-4591-b978-9a876da9fa96/",
-      "updatedAt": "2026-05-27T14:02:18Z"
-    },
-    {
-      "id": "6d2beb1a-6869-4505-9fc1-a4aa224178e2",
-      "name": "Long March 7A | TJSW-24",
-      "net": "2026-05-26T16:16:00Z",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 7A",
-      "pad": "201",
-      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
-      "latitude": 19.618452,
-      "longitude": 110.955356,
-      "mission": "TJSW-24",
-      "missionDescription": "Chinese classified satellite claimed to be for communication technology test purposes. Actual mission not known.",
-      "orbit": "Geostationary Transfer Orbit",
-      "status": "success",
-      "outcome": "success",
-      "statusName": "Launch Successful",
-      "statusAbbrev": "Success",
-      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://www.youtube.com/watch?v=1aT4OfdPiLU",
-      "sourceUrl": "https://www.youtube.com/watch?v=1aT4OfdPiLU",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6d2beb1a-6869-4505-9fc1-a4aa224178e2/",
-      "updatedAt": "2026-05-27T14:02:18Z"
-    },
     {
       "id": "384fb817-2a18-46ec-b294-613c08ecea52",
       "name": "Falcon 9 Block 5 | Starlink Group 10-53",
@@ -82,7 +28,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1YxNrZwdWMyxw",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-53",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/384fb817-2a18-46ec-b294-613c08ecea52/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "ff0a6a32-6513-4e85-9fd8-a2d022add74d",
@@ -109,7 +55,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=hRddOJJzB7A",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "a7341350-789e-4f61-99a4-a61ebc40c05b",
@@ -136,7 +82,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1mxPaLgeMbqKN",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-41",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a7341350-789e-4f61-99a4-a61ebc40c05b/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "0ab3587d-bb8c-4515-a321-2ec154840659",
@@ -163,7 +109,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ab3587d-bb8c-4515-a321-2ec154840659/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ab3587d-bb8c-4515-a321-2ec154840659/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -190,34 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-27T14:02:18Z"
-    },
-    {
-      "id": "ca3d56b7-2175-48e4-9a6a-2ecc9996d96b",
-      "name": "New Glenn | Amazon Leo (LN-01)",
-      "net": "2026-06-02T18:04:00Z",
-      "provider": "Blue Origin",
-      "rocket": "New Glenn",
-      "pad": "Launch Complex 36A",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.4705556,
-      "longitude": -80.542194,
-      "mission": "Amazon Leo (LN-01)",
-      "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n61 satellites will be carried on each New Glenn launch.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Confirmed",
-      "statusAbbrev": "TBC",
-      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ca3d56b7-2175-48e4-9a6a-2ecc9996d96b/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "cfff5e89-af2e-46b1-9446-7b0f18de4ef7",
@@ -244,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbjmdaeJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-43",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cfff5e89-af2e-46b1-9446-7b0f18de4ef7/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "4936311a-af7c-4b05-8d7b-3eea59fc0f11",
@@ -271,7 +190,34 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbWvemBJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-47",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4936311a-af7c-4b05-8d7b-3eea59fc0f11/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
+    },
+    {
+      "id": "ca3d56b7-2175-48e4-9a6a-2ecc9996d96b",
+      "name": "New Glenn | Amazon Leo (LN-01)",
+      "net": "2026-06-04T17:21:00Z",
+      "provider": "Blue Origin",
+      "rocket": "New Glenn",
+      "pad": "Launch Complex 36A",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.4705556,
+      "longitude": -80.542194,
+      "mission": "Amazon Leo (LN-01)",
+      "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n48 satellites will be carried on this New Glenn launch.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ca3d56b7-2175-48e4-9a6a-2ecc9996d96b/",
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "3dd21d77-a37d-419c-86fb-8591fe256583",
@@ -298,7 +244,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -325,7 +271,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
@@ -352,7 +298,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "c7b7e18f-1b42-467e-a8ed-181fb58080e8",
@@ -379,7 +325,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoBmZWdGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-44",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c7b7e18f-1b42-467e-a8ed-181fb58080e8/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -406,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "c3f48f48-0e0a-4bca-917e-de494cfca35b",
@@ -433,7 +379,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -460,7 +406,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "f596ad48-881e-47d6-806d-113c6dd97427",
@@ -487,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -514,7 +460,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -541,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "9eb09815-c237-4fdd-9057-5b161131240c",
@@ -568,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9eb09815-c237-4fdd-9057-5b161131240c/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
@@ -595,7 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
@@ -622,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
     },
     {
       "id": "fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5",
@@ -649,7 +595,61 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-05-27T14:02:18Z"
+      "updatedAt": "2026-05-27T17:31:48Z"
+    },
+    {
+      "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
+      "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "SDA Tranche 1 Transport Layer A",
+      "missionDescription": "Tranche 1 Transport Layer A is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites.\r\n\r\nThe constellation will be interconnected with Optical Inter-Satellite Links (OISLs) which have significantly increased performance over existing radio frequency crosslinks. It is expected to operate over Ka band, have stereo coverage and be dynamically networked for simpler hand-offs, greater bandwidth and fault tolerance.\r\n\r\nThis launch carries 21 satellites manufactured by Northrop Grumman.",
+      "orbit": "Polar Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
+      "updatedAt": "2026-05-27T17:31:48Z"
+    },
+    {
+      "id": "4541ce85-0e38-42ac-a9a0-20474bb5f2cd",
+      "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "SDA Tranche 1 Transport Layer D",
+      "missionDescription": "Tranche 1 Transport Layer D is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites.\r\n\r\nThe constellation will be interconnected with Optical Inter-Satellite Links (OISLs) which have significantly increased performance over existing radio frequency crosslinks. It is expected to operate over Ka band, have stereo coverage and be dynamically networked for simpler hand-offs, greater bandwidth and fault tolerance.",
+      "orbit": "Polar Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
+      "updatedAt": "2026-05-27T17:31:48Z"
     }
   ]
 }
