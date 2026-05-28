@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-28T04:44:36Z",
+  "generatedAt": "2026-05-28T12:02:59Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15487,
+      "activeCount": 15488,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1584,7 +1584,7 @@
         "2026-03-26": 25,
         "2026-03-27": 1,
         "2026-03-28": 2,
-        "2026-03-30": 122,
+        "2026-03-30": 123,
         "2026-04-02": 29,
         "2026-04-03": 1,
         "2026-04-04": 29,
@@ -15244,7 +15244,7 @@
         "2024-07-14": 4,
         "2014-05-26": 1,
         "2014-04-29": 2,
-        "2026-05-27": 2,
+        "2026-05-27": 3,
         "2014-09-03": 1,
         "2014-05-10": 1,
         "2014-05-06": 1,
@@ -20634,7 +20634,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3564,
+        "activeCount": 3565,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21853,7 +21853,7 @@
           "2026-03-25": 2,
           "2026-03-27": 1,
           "2026-03-28": 2,
-          "2026-03-30": 83,
+          "2026-03-30": 84,
           "2026-04-03": 1,
           "2026-04-07": 9,
           "2026-04-08": 5,
@@ -35258,7 +35258,7 @@
           "2024-07-14": 3,
           "2014-05-26": 1,
           "2014-04-29": 2,
-          "2026-05-27": 1,
+          "2026-05-27": 2,
           "2014-09-03": 1,
           "2014-05-10": 1,
           "2014-05-06": 1,
@@ -339476,6 +339476,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68507": {
+      "satcat": {
+        "NORAD_CAT_ID": "68507",
+        "OBJECT_NAME": "TRANSPORTER-16 OBJECT CV",
+        "OBJECT_ID": "2026-067CV",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-03-30"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
