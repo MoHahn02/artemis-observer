@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T23:49:07Z",
+  "generatedAt": "2026-05-30T01:46:02Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -91,7 +91,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-07T04:00:45Z"
     },
     {
@@ -114,7 +114,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -144,7 +144,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z"
@@ -174,7 +174,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -210,7 +210,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -240,7 +240,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-21T04:43:17Z"
     },
     {
@@ -263,7 +263,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-24T09:57:45Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -293,7 +293,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-22T12:09:28Z"
     },
     {
@@ -316,7 +316,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-23T10:55:32Z"
     },
     {
@@ -339,7 +339,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-05-29T15:38:08Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-23T23:39:26Z"
     },
     {
@@ -454,7 +454,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoBmZWdGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-44",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c7b7e18f-1b42-467e-a8ed-181fb58080e8/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-21T21:12:41Z",
       "previousNets": [
         "2026-06-04T14:00:00Z"
@@ -483,7 +483,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-26T23:55:22Z"
     },
     {
@@ -506,7 +506,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-29T18:20:57Z"
     },
     {
@@ -529,7 +529,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-07T15:39:36Z",
       "previousNets": [
         "2026-05-21T03:15:00Z",
@@ -561,8 +561,41 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AKEmmPDOpRKL",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-35",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/114577dc-7617-461c-aaeb-9bd0f64b5a4b/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-27T23:02:16Z"
+    },
+    {
+      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
+      "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
+      "net": "2026-06-08T05:00:00Z",
+      "provider": "Agency for Defense Development",
+      "rocket": "South Korean ADD Solid-Fuel SLV",
+      "pad": "ADD Offshore launch platform",
+      "padLocation": "Sea Launch",
+      "latitude": 33.216667,
+      "longitude": 126.366667,
+      "mission": "Demo Flight",
+      "missionDescription": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
+      "updatedAt": "2026-05-30T01:46:02Z",
+      "firstSeenAt": "2026-04-19T13:07:28Z",
+      "outcome": "",
+      "previousNets": [
+        "2026-04-25T05:00:00Z",
+        "2026-05-31T00:00:00Z",
+        "2026-05-20T05:00:00Z",
+        "2026-06-01T05:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
     },
     {
       "id": "3dd21d77-a37d-419c-86fb-8591fe256583",
@@ -584,7 +617,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-26T19:06:30Z"
     },
     {
@@ -636,7 +669,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-28T16:30:32Z"
     },
     {
@@ -659,7 +692,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-47",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4936311a-af7c-4b05-8d7b-3eea59fc0f11/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-19T07:03:27Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbWvemBJX",
       "previousNets": [
@@ -692,41 +725,9 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-43",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cfff5e89-af2e-46b1-9446-7b0f18de4ef7/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-21T19:22:05Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbjmdaeJX"
-    },
-    {
-      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
-      "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
-      "net": "2026-06-01T05:00:00Z",
-      "provider": "Agency for Defense Development",
-      "rocket": "South Korean ADD Solid-Fuel SLV",
-      "pad": "ADD Offshore launch platform",
-      "padLocation": "Sea Launch",
-      "latitude": 33.216667,
-      "longitude": 126.366667,
-      "mission": "Demo Flight",
-      "missionDescription": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
-      "orbit": "Low Earth Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-05-29T23:49:07Z",
-      "firstSeenAt": "2026-04-19T13:07:28Z",
-      "outcome": "delayed",
-      "previousNets": [
-        "2026-04-25T05:00:00Z",
-        "2026-05-31T00:00:00Z",
-        "2026-05-20T05:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -807,7 +808,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ab3587d-bb8c-4515-a321-2ec154840659/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ab3587d-bb8c-4515-a321-2ec154840659/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-26T19:06:30Z"
     },
     {
@@ -830,7 +831,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=PNTtpjYDYt8",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-41",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a7341350-789e-4f61-99a4-a61ebc40c05b/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-15T20:19:43Z",
       "previousNets": [
         "2026-05-27T14:00:00Z",
@@ -855,14 +856,14 @@
       "mission": "Amazon Leo (LA-07)",
       "missionDescription": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n29 satellites are carried on this launch.",
       "orbit": "Low Earth Orbit",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.ulalaunch.com/missions/next-launch/atlas-v-amazon-leo-7",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/?format=json",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ff0a6a32-6513-4e85-9fd8-a2d022add74d/",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-04-28T04:57:10Z",
       "previousNets": [
         "2026-05-22T00:00:00Z",
@@ -872,9 +873,9 @@
         "2026-05-29T23:33:30Z"
       ],
       "preflightCheckedAt": "2026-05-29T23:49:07Z",
-      "postflightCheckedAt": null,
+      "postflightCheckedAt": "2026-05-30T01:46:02Z",
       "preflightStatus": "go",
-      "postflightStatus": "",
+      "postflightStatus": "success",
       "livestreamUrl": "https://www.youtube.com/watch?v=hRddOJJzB7A"
     },
     {
@@ -897,7 +898,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=fDzQGpt54JY",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-53",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/384fb817-2a18-46ec-b294-613c08ecea52/",
-      "updatedAt": "2026-05-29T23:49:07Z",
+      "updatedAt": "2026-05-30T01:46:02Z",
       "firstSeenAt": "2026-05-20T19:39:49Z",
       "previousNets": [
         "2026-05-29T11:52:00Z",
