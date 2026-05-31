@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-30T20:39:39Z",
+  "generatedAt": "2026-05-31T01:55:02Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15502,
+      "activeCount": 15503,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1584,7 +1584,7 @@
         "2026-03-26": 25,
         "2026-03-27": 1,
         "2026-03-28": 2,
-        "2026-03-30": 123,
+        "2026-03-30": 124,
         "2026-04-02": 29,
         "2026-04-03": 1,
         "2026-04-04": 29,
@@ -20645,7 +20645,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3564,
+        "activeCount": 3565,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21864,7 +21864,7 @@
           "2026-03-25": 2,
           "2026-03-27": 1,
           "2026-03-28": 2,
-          "2026-03-30": 84,
+          "2026-03-30": 85,
           "2026-04-03": 1,
           "2026-04-07": 9,
           "2026-04-08": 5,
@@ -338039,15 +338039,15 @@
     "68430": {
       "satcat": {
         "NORAD_CAT_ID": "68430",
-        "OBJECT_NAME": "TRANSPORTER-16 OBJECT Q",
+        "OBJECT_NAME": "VEGAFLY-1",
         "OBJECT_ID": "2026-067Q",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "VTNM",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "VTNM",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -345701,6 +345701,24 @@
       },
       "wikidata": null
     },
+    "68830": {
+      "satcat": {
+        "NORAD_CAT_ID": "68830",
+        "OBJECT_NAME": "MARS-1",
+        "OBJECT_ID": "2026-067CW",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-03-30"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "68831": {
       "satcat": {
         "NORAD_CAT_ID": "68831",
@@ -348893,15 +348911,15 @@
     "68988": {
       "satcat": {
         "NORAD_CAT_ID": "68988",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT J",
+        "OBJECT_NAME": "FOREST-17",
         "OBJECT_ID": "2026-100J",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349073,15 +349091,15 @@
     "68998": {
       "satcat": {
         "NORAD_CAT_ID": "68998",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT U",
+        "OBJECT_NAME": "FOREST-16",
         "OBJECT_ID": "2026-100U",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349091,15 +349109,15 @@
     "68999": {
       "satcat": {
         "NORAD_CAT_ID": "68999",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT V",
+        "OBJECT_NAME": "FOREST-18",
         "OBJECT_ID": "2026-100V",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -349307,15 +349325,15 @@
     "69011": {
       "satcat": {
         "NORAD_CAT_ID": "69011",
-        "OBJECT_NAME": "CAS500-2 RIDESHARE OBJECT AH",
+        "OBJECT_NAME": "EYCORE-1",
         "OBJECT_ID": "2026-100AH",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "POL",
         "LAUNCH_DATE": "2026-05-03"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "POL",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -352112,7 +352130,7 @@
     "69180": {
       "satcat": {
         "NORAD_CAT_ID": "69180",
-        "OBJECT_NAME": "SHENZHOU-23",
+        "OBJECT_NAME": "SHENZHOU-23 (SZ-23)",
         "OBJECT_ID": "2026-113A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
