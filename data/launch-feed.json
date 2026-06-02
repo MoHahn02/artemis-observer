@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-02T02:00:23Z",
+  "generatedAt": "2026-06-02T06:53:19Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-06-02T03:00:23Z",
+  "nextRefreshAfter": "2026-06-02T07:53:19Z",
   "launches": [
     {
       "id": "459225a2-dc1a-43d7-8c2c-78f9552b0a05",
@@ -28,7 +28,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/459225a2-dc1a-43d7-8c2c-78f9552b0a05/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/459225a2-dc1a-43d7-8c2c-78f9552b0a05/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "cfff5e89-af2e-46b1-9446-7b0f18de4ef7",
@@ -55,7 +55,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbjmdaeJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-43",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cfff5e89-af2e-46b1-9446-7b0f18de4ef7/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "4936311a-af7c-4b05-8d7b-3eea59fc0f11",
@@ -82,7 +82,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1aKbdbWvemBJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-47",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4936311a-af7c-4b05-8d7b-3eea59fc0f11/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "5db6b0f1-446d-4209-824f-1187e1b6d212",
@@ -109,12 +109,12 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "3dd21d77-a37d-419c-86fb-8591fe256583",
       "name": "Long March 8 | Unknown Payload",
-      "net": "2026-06-05T05:00:00Z",
+      "net": "2026-06-05T06:30:00Z",
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 8",
       "pad": "Commercial LC-1",
@@ -124,11 +124,11 @@
       "mission": "Unknown Payload",
       "missionDescription": "Details TBD, probably SpaceSail Polar Orbit LEO communication satellites.",
       "orbit": "Unknown",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Confirmed",
-      "statusAbbrev": "TBC",
-      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "preflightStatus": "",
       "postflightStatus": "",
       "preflightCheckedAt": null,
@@ -136,7 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "114577dc-7617-461c-aaeb-9bd0f64b5a4b",
@@ -163,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AKEmmPDOpRKL",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-35",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/114577dc-7617-461c-aaeb-9bd0f64b5a4b/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -190,34 +190,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-06-02T02:00:23Z"
-    },
-    {
-      "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
-      "name": "GSLV Mk II | GISAT-1A (EOS-05)",
-      "net": "2026-06-10T00:00:00Z",
-      "provider": "Indian Space Research Organization",
-      "rocket": "GSLV Mk. II",
-      "pad": "Satish Dhawan Space Centre Second Launch Pad",
-      "padLocation": "Satish Dhawan Space Centre, India",
-      "latitude": 13.7199,
-      "longitude": 80.2304,
-      "mission": "GISAT-1A (EOS-05)",
-      "missionDescription": "GISAT-1A (GEO Imaging Satellite) is an Indian earth observing satellite operating from geostationary orbit to facilitate continuous observation of Indian sub-continent, quick monitoring of natural hazards and disaster.",
-      "orbit": "Geostationary Transfer Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "d8eb4b68-5307-4b3b-b585-5598958defc2",
@@ -244,7 +217,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
@@ -271,7 +244,34 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
+    },
+    {
+      "id": "2670e4f1-d58b-4787-9c3f-f9eb03349513",
+      "name": "Long March 5 | Unknown Payload",
+      "net": "2026-06-10T06:00:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 5",
+      "pad": "101",
+      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
+      "latitude": 19.614334,
+      "longitude": 110.951011,
+      "mission": "Unknown Payload",
+      "missionDescription": "Details TBD.",
+      "orbit": "Unknown",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "c7b7e18f-1b42-467e-a8ed-181fb58080e8",
@@ -298,7 +298,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoBmZWdGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-44",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c7b7e18f-1b42-467e-a8ed-181fb58080e8/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -325,7 +325,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "c3f48f48-0e0a-4bca-917e-de494cfca35b",
@@ -352,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -379,7 +379,34 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
+    },
+    {
+      "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
+      "name": "GSLV Mk II | GISAT-1A (EOS-05)",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "Indian Space Research Organization",
+      "rocket": "GSLV Mk. II",
+      "pad": "Satish Dhawan Space Centre Second Launch Pad",
+      "padLocation": "Satish Dhawan Space Centre, India",
+      "latitude": 13.7199,
+      "longitude": 80.2304,
+      "mission": "GISAT-1A (EOS-05)",
+      "missionDescription": "GISAT-1A (GEO Imaging Satellite) is an Indian earth observing satellite operating from geostationary orbit to facilitate continuous observation of Indian sub-continent, quick monitoring of natural hazards and disaster.",
+      "orbit": "Geostationary Transfer Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "f596ad48-881e-47d6-806d-113c6dd97427",
@@ -406,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -433,7 +460,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -460,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
@@ -487,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
@@ -514,7 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5",
@@ -541,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
@@ -568,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "4541ce85-0e38-42ac-a9a0-20474bb5f2cd",
@@ -595,7 +622,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     },
     {
       "id": "d9adedc4-8fa1-4a36-84f9-43b8893a6865",
@@ -622,34 +649,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
-      "updatedAt": "2026-06-02T02:00:23Z"
-    },
-    {
-      "id": "c5783e2b-d458-4b99-9936-4043c236190b",
-      "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F",
-      "net": "2026-06-30T00:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "padLocation": "Vandenberg SFB, CA, USA",
-      "latitude": 34.632,
-      "longitude": -120.611,
-      "mission": "SDA Tranche 1 Transport Layer F",
-      "missionDescription": "Tranche 1 Transport Layer F is one of six missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Transport Layer constellation, which will provide assured, resilient, low-latency military data and connectivity worldwide to the full range of warfighter platforms from Low Earth Orbit satellites.\r\n\r\nThe constellation will be interconnected with Optical Inter-Satellite Links (OISLs) which have significantly increased performance over existing radio frequency crosslinks. It is expected to operate over Ka band, have stereo coverage and be dynamically networked for simpler hand-offs, greater bandwidth and fault tolerance.",
-      "orbit": "Polar Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
-      "updatedAt": "2026-06-02T02:00:23Z"
+      "updatedAt": "2026-06-02T06:53:19Z"
     }
   ]
 }
