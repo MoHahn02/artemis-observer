@@ -1,18 +1,18 @@
 {
-  "lastFeedRefreshAt": "2026-06-02T18:57:38Z",
-  "lastCheckRunAt": "2026-06-02T18:57:38Z",
-  "lastSatelliteRefreshAt": "2026-06-02T15:16:45Z",
+  "lastFeedRefreshAt": "2026-06-02T21:54:40Z",
+  "lastCheckRunAt": "2026-06-02T21:54:40Z",
+  "lastSatelliteRefreshAt": "2026-06-02T21:54:40Z",
   "pendingChecks": [
     {
       "id": "cfff5e89-af2e-46b1-9446-7b0f18de4ef7",
       "phase": "preflight",
-      "dueAt": "2026-06-03T07:47:00Z",
+      "dueAt": "2026-06-03T09:56:00Z",
       "overdue": false
     },
     {
       "id": "cfff5e89-af2e-46b1-9446-7b0f18de4ef7",
       "phase": "postflight",
-      "dueAt": "2026-06-03T08:32:00Z",
+      "dueAt": "2026-06-03T10:41:00Z",
       "overdue": false
     },
     {
@@ -133,6 +133,30 @@
       "id": "c7b7e18f-1b42-467e-a8ed-181fb58080e8",
       "phase": "postflight",
       "dueAt": "2026-06-10T14:30:00Z",
+      "overdue": false
+    },
+    {
+      "id": "229267d8-74ca-4d0b-8711-b2efe621fc6b",
+      "phase": "preflight",
+      "dueAt": "2026-06-11T12:34:00Z",
+      "overdue": false
+    },
+    {
+      "id": "229267d8-74ca-4d0b-8711-b2efe621fc6b",
+      "phase": "postflight",
+      "dueAt": "2026-06-11T13:19:00Z",
+      "overdue": false
+    },
+    {
+      "id": "bad5ea8c-8b17-4cb3-a063-d427fb092275",
+      "phase": "preflight",
+      "dueAt": "2026-06-14T01:56:00Z",
+      "overdue": false
+    },
+    {
+      "id": "bad5ea8c-8b17-4cb3-a063-d427fb092275",
+      "phase": "postflight",
+      "dueAt": "2026-06-14T02:41:00Z",
       "overdue": false
     },
     {
@@ -388,11 +412,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "satellite refresh failed: <urlopen error timed out>",
-    "satellite profile refresh failed: <urlopen error timed out>"
-  ],
-  "lastIssOemRefreshAt": "2026-06-02T18:57:38Z",
-  "lastSatelliteProfileRefreshAt": "2026-06-02T15:16:45Z",
+  "lastErrors": [],
+  "lastIssOemRefreshAt": "2026-06-02T21:54:40Z",
+  "lastSatelliteProfileRefreshAt": "2026-06-02T21:54:40Z",
   "lastEarthObservationRefreshAt": "2026-06-02T02:00:23Z"
 }
