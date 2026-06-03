@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-03T07:17:01Z",
+  "generatedAt": "2026-06-03T20:37:18Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15587,
+      "activeCount": 15608,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -903,7 +903,7 @@
         "2021-12-09": 3,
         "2021-12-10": 2,
         "2021-12-13": 3,
-        "2021-12-18": 38,
+        "2021-12-18": 37,
         "2021-12-19": 1,
         "2021-12-22": 1,
         "2021-12-23": 2,
@@ -1384,7 +1384,7 @@
         "2025-04-28": 85,
         "2025-04-29": 24,
         "2025-05-02": 27,
-        "2025-05-04": 29,
+        "2025-05-04": 28,
         "2025-05-07": 27,
         "2025-05-10": 52,
         "2025-05-11": 3,
@@ -1417,7 +1417,7 @@
         "2025-06-18": 28,
         "2025-06-19": 1,
         "2025-06-20": 1,
-        "2025-06-23": 120,
+        "2025-06-23": 119,
         "2025-06-25": 27,
         "2025-06-26": 4,
         "2025-06-28": 55,
@@ -1620,7 +1620,7 @@
         "2026-05-25": 29,
         "2026-05-26": 25,
         "2026-05-29": 29,
-        "2026-05-30": 4,
+        "2026-05-30": 28,
         "2026-06-01": 2
       },
       "decayedByDay": {
@@ -16538,6 +16538,7 @@
         "2022-07-10": 6,
         "2025-11-07": 2,
         "2025-11-22": 3,
+        "2026-06-03": 2,
         "2021-12-31": 4,
         "2022-07-16": 4,
         "2023-03-03": 2,
@@ -16637,6 +16638,7 @@
         "2025-09-28": 1,
         "2026-02-21": 2,
         "2025-08-14": 1,
+        "2026-06-02": 1,
         "2025-07-05": 1,
         "2026-05-17": 2,
         "2026-04-11": 1,
@@ -16647,7 +16649,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10476,
+        "activeCount": 10498,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16681,7 +16683,7 @@
           "2021-09-14": 38,
           "2021-11-13": 48,
           "2021-12-02": 45,
-          "2021-12-18": 38,
+          "2021-12-18": 37,
           "2022-01-06": 39,
           "2022-01-19": 43,
           "2022-02-03": 9,
@@ -16890,7 +16892,7 @@
           "2025-04-28": 48,
           "2025-04-29": 23,
           "2025-05-02": 27,
-          "2025-05-04": 29,
+          "2025-05-04": 28,
           "2025-05-07": 27,
           "2025-05-10": 52,
           "2025-05-13": 54,
@@ -17014,7 +17016,8 @@
           "2026-05-21": 29,
           "2026-05-25": 29,
           "2026-05-26": 24,
-          "2026-05-29": 29
+          "2026-05-29": 29,
+          "2026-05-30": 24
         },
         "decayedByDay": {
           "2020-10-01": 1,
@@ -17679,6 +17682,7 @@
           "2021-12-28": 1,
           "2025-08-13": 1,
           "2026-03-05": 1,
+          "2026-06-03": 1,
           "2026-02-25": 2,
           "2024-07-25": 4,
           "2024-09-29": 1,
@@ -17858,6 +17862,7 @@
           "2026-04-26": 2,
           "2025-11-12": 1,
           "2026-05-05": 1,
+          "2026-06-02": 1,
           "2025-05-18": 1,
           "2026-05-08": 1,
           "2026-01-17": 1
@@ -17935,7 +17940,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11700,
+        "activeCount": 11722,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -17993,7 +17998,7 @@
           "2021-10-14": 36,
           "2021-11-13": 48,
           "2021-12-02": 45,
-          "2021-12-18": 38,
+          "2021-12-18": 37,
           "2021-12-27": 36,
           "2022-01-06": 39,
           "2022-01-19": 43,
@@ -18216,7 +18221,7 @@
           "2025-04-28": 75,
           "2025-04-29": 23,
           "2025-05-02": 27,
-          "2025-05-04": 29,
+          "2025-05-04": 28,
           "2025-05-07": 27,
           "2025-05-10": 52,
           "2025-05-13": 54,
@@ -18350,6 +18355,7 @@
           "2026-05-25": 29,
           "2026-05-26": 24,
           "2026-05-29": 29,
+          "2026-05-30": 24,
           "2026-06-01": 2
         },
         "decayedByDay": {
@@ -19536,6 +19542,7 @@
           "2021-12-28": 1,
           "2025-08-13": 1,
           "2026-03-05": 1,
+          "2026-06-03": 1,
           "2026-02-25": 2,
           "2024-09-29": 2,
           "2025-11-16": 1,
@@ -19700,6 +19707,7 @@
           "2025-12-05": 1,
           "2026-04-26": 2,
           "2026-05-05": 1,
+          "2026-06-02": 1,
           "2025-05-18": 1,
           "2026-05-08": 1,
           "2026-01-17": 1
@@ -20666,7 +20674,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3567,
+        "activeCount": 3566,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21783,7 +21791,7 @@
           "2025-06-14": 1,
           "2025-06-19": 1,
           "2025-06-20": 1,
-          "2025-06-23": 62,
+          "2025-06-23": 61,
           "2025-06-26": 4,
           "2025-06-28": 2,
           "2025-07-01": 1,
@@ -36610,6 +36618,7 @@
           "2025-05-25": 1,
           "2026-01-19": 1,
           "2025-09-17": 1,
+          "2026-06-03": 1,
           "2025-07-03": 1,
           "2025-07-05": 1,
           "2026-05-06": 1,
@@ -92897,27 +92906,6 @@
         "NORAD_CAT_ID": "50200",
         "OBJECT_NAME": "STARLINK-3235",
         "OBJECT_ID": "2021-125AW",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2021-12-18"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "50201": {
-      "satcat": {
-        "NORAD_CAT_ID": "50201",
-        "OBJECT_NAME": "STARLINK-3255",
-        "OBJECT_ID": "2021-125AX",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2021-12-18"
@@ -251209,27 +251197,6 @@
       },
       "wikidata": null
     },
-    "63811": {
-      "satcat": {
-        "NORAD_CAT_ID": "63811",
-        "OBJECT_NAME": "STARLINK-34110",
-        "OBJECT_ID": "2025-092H",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2025-05-04"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
     "63812": {
       "satcat": {
         "NORAD_CAT_ID": "63812",
@@ -265281,24 +265248,6 @@
         "NORAD_CAT_ID": "64542",
         "OBJECT_NAME": "T1DES 1 (DRAGOON 1)",
         "OBJECT_ID": "2025-135Q",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2025-06-23"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "64543": {
-      "satcat": {
-        "NORAD_CAT_ID": "64543",
-        "OBJECT_NAME": "W-SERIES 4",
-        "OBJECT_ID": "2025-135R",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2025-06-23"
@@ -353801,6 +353750,510 @@
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2026-05-29"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69296": {
+      "satcat": {
+        "NORAD_CAT_ID": "69296",
+        "OBJECT_NAME": "STARLINK-37501",
+        "OBJECT_ID": "2026-119A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69297": {
+      "satcat": {
+        "NORAD_CAT_ID": "69297",
+        "OBJECT_NAME": "STARLINK-37496",
+        "OBJECT_ID": "2026-119B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69298": {
+      "satcat": {
+        "NORAD_CAT_ID": "69298",
+        "OBJECT_NAME": "STARLINK-37519",
+        "OBJECT_ID": "2026-119C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69299": {
+      "satcat": {
+        "NORAD_CAT_ID": "69299",
+        "OBJECT_NAME": "STARLINK-37455",
+        "OBJECT_ID": "2026-119D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69300": {
+      "satcat": {
+        "NORAD_CAT_ID": "69300",
+        "OBJECT_NAME": "STARLINK-37456",
+        "OBJECT_ID": "2026-119E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69301": {
+      "satcat": {
+        "NORAD_CAT_ID": "69301",
+        "OBJECT_NAME": "STARLINK-37630",
+        "OBJECT_ID": "2026-119F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69302": {
+      "satcat": {
+        "NORAD_CAT_ID": "69302",
+        "OBJECT_NAME": "STARLINK-37804",
+        "OBJECT_ID": "2026-119G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69303": {
+      "satcat": {
+        "NORAD_CAT_ID": "69303",
+        "OBJECT_NAME": "STARLINK-37730",
+        "OBJECT_ID": "2026-119H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69304": {
+      "satcat": {
+        "NORAD_CAT_ID": "69304",
+        "OBJECT_NAME": "STARLINK-37731",
+        "OBJECT_ID": "2026-119J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69305": {
+      "satcat": {
+        "NORAD_CAT_ID": "69305",
+        "OBJECT_NAME": "STARLINK-37734",
+        "OBJECT_ID": "2026-119K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69306": {
+      "satcat": {
+        "NORAD_CAT_ID": "69306",
+        "OBJECT_NAME": "STARLINK-37701",
+        "OBJECT_ID": "2026-119L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69307": {
+      "satcat": {
+        "NORAD_CAT_ID": "69307",
+        "OBJECT_NAME": "STARLINK-37732",
+        "OBJECT_ID": "2026-119M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69308": {
+      "satcat": {
+        "NORAD_CAT_ID": "69308",
+        "OBJECT_NAME": "STARLINK-37689",
+        "OBJECT_ID": "2026-119N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69309": {
+      "satcat": {
+        "NORAD_CAT_ID": "69309",
+        "OBJECT_NAME": "STARLINK-37619",
+        "OBJECT_ID": "2026-119P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69310": {
+      "satcat": {
+        "NORAD_CAT_ID": "69310",
+        "OBJECT_NAME": "STARLINK-37794",
+        "OBJECT_ID": "2026-119Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69311": {
+      "satcat": {
+        "NORAD_CAT_ID": "69311",
+        "OBJECT_NAME": "STARLINK-37795",
+        "OBJECT_ID": "2026-119R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69312": {
+      "satcat": {
+        "NORAD_CAT_ID": "69312",
+        "OBJECT_NAME": "STARLINK-37790",
+        "OBJECT_ID": "2026-119S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69313": {
+      "satcat": {
+        "NORAD_CAT_ID": "69313",
+        "OBJECT_NAME": "STARLINK-37676",
+        "OBJECT_ID": "2026-119T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69314": {
+      "satcat": {
+        "NORAD_CAT_ID": "69314",
+        "OBJECT_NAME": "STARLINK-37617",
+        "OBJECT_ID": "2026-119U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69315": {
+      "satcat": {
+        "NORAD_CAT_ID": "69315",
+        "OBJECT_NAME": "STARLINK-37627",
+        "OBJECT_ID": "2026-119V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69316": {
+      "satcat": {
+        "NORAD_CAT_ID": "69316",
+        "OBJECT_NAME": "STARLINK-37738",
+        "OBJECT_ID": "2026-119W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69317": {
+      "satcat": {
+        "NORAD_CAT_ID": "69317",
+        "OBJECT_NAME": "STARLINK-37799",
+        "OBJECT_ID": "2026-119X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69318": {
+      "satcat": {
+        "NORAD_CAT_ID": "69318",
+        "OBJECT_NAME": "STARLINK-37802",
+        "OBJECT_ID": "2026-119Y",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69319": {
+      "satcat": {
+        "NORAD_CAT_ID": "69319",
+        "OBJECT_NAME": "STARLINK-37803",
+        "OBJECT_ID": "2026-119Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-05-30"
       },
       "profile": {
         "type": "Kommunikationssatellit",
