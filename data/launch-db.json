@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T19:03:38Z",
+  "generatedAt": "2026-06-05T08:15:22Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -122,7 +122,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-07T04:00:45Z"
     },
     {
@@ -145,7 +145,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -175,7 +175,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z"
@@ -205,7 +205,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -241,7 +241,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -294,7 +294,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-24T09:57:45Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -547,7 +547,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-07T15:39:36Z",
       "previousNets": [
         "2026-05-21T03:15:00Z",
@@ -580,7 +580,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-29T18:20:57Z",
       "previousNets": [
         "2026-06-10T00:30:00Z"
@@ -609,7 +609,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -667,7 +667,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -690,7 +690,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -736,7 +736,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -759,7 +759,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qKVmmnzPgmxB",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-54",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bad5ea8c-8b17-4cb3-a063-d427fb092275/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-02T21:54:40Z",
       "previousNets": [
         "2026-06-14T02:11:00Z"
@@ -789,7 +789,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AxRnnezVPzxl",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-54",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/229267d8-74ca-4d0b-8711-b2efe621fc6b/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-02T21:54:40Z",
       "previousNets": [
         "2026-06-11T12:49:00Z"
@@ -818,7 +818,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6cefffc-19a6-4a4b-a7f0-ebe907d5a6aa/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6cefffc-19a6-4a4b-a7f0-ebe907d5a6aa/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -841,7 +841,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoBmZWdGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-44",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c7b7e18f-1b42-467e-a8ed-181fb58080e8/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-21T21:12:41Z",
       "previousNets": [
         "2026-06-04T14:00:00Z"
@@ -871,7 +871,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-02T06:53:19Z",
       "previousNets": [
         "2026-06-10T06:00:00Z"
@@ -900,7 +900,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-04-26T23:55:22Z"
     },
     {
@@ -922,7 +922,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/93cd9d2d-d8e2-49a1-8a85-a0eb8aef4804/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/93cd9d2d-d8e2-49a1-8a85-a0eb8aef4804/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -945,7 +945,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AKEmmPDOpRKL",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-35",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/114577dc-7617-461c-aaeb-9bd0f64b5a4b/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-27T23:02:16Z",
       "previousNets": [
         "2026-06-08T10:07:00Z",
@@ -976,39 +976,41 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-43",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/af8d71dd-f439-47b3-91ed-57f959a581e0/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-06-03T17:21:41Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1dGYllmOkOMKX"
     },
     {
       "id": "3dd21d77-a37d-419c-86fb-8591fe256583",
-      "name": "Long March 8 | Unknown Payload",
-      "net": "2026-06-05T06:30:00Z",
+      "name": "Long March 8 | SpaceSail Polar Group #12",
+      "net": "2026-06-05T06:34:00Z",
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 8",
       "pad": "Commercial LC-1",
       "padLocation": "Wenchang Space Launch Site, People's Republic of China",
       "latitude": 19.597275,
       "longitude": 110.930753,
-      "mission": "Unknown Payload",
-      "missionDescription": "Details TBD, probably SpaceSail Polar Orbit LEO communication satellites.",
-      "orbit": "Unknown",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
+      "mission": "SpaceSail Polar Group #12",
+      "missionDescription": "18 Low Earth Orbit communication satellites with Ku, Q and V band payloads for the G60 constellation operated by Shanghai Spacesail Technologies with funding backed by the Shanghai local government.\r\n\r\nInitial constellation will consist of 1296 satellites by 2027 with long term plans to expand it to 12000 satellites.",
+      "orbit": "Polar Orbit",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
+      "sourceUrl": "https://www.youtube.com/watch?v=mGaZ7f-c2Dk",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3dd21d77-a37d-419c-86fb-8591fe256583/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-26T19:06:30Z",
       "previousNets": [
-        "2026-06-05T05:00:00Z"
+        "2026-06-05T05:00:00Z",
+        "2026-06-05T06:30:00Z"
       ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
+      "preflightCheckedAt": "2026-06-05T08:15:22Z",
+      "postflightCheckedAt": "2026-06-05T08:15:22Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "success",
+      "livestreamUrl": "https://www.youtube.com/watch?v=mGaZ7f-c2Dk"
     },
     {
       "id": "5db6b0f1-446d-4209-824f-1187e1b6d212",
@@ -1029,7 +1031,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5db6b0f1-446d-4209-824f-1187e1b6d212/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-28T16:30:32Z",
       "outcome": "success",
       "previousNets": [
@@ -1059,7 +1061,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-43",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cfff5e89-af2e-46b1-9446-7b0f18de4ef7/",
-      "updatedAt": "2026-06-04T19:03:38Z",
+      "updatedAt": "2026-06-05T08:15:22Z",
       "firstSeenAt": "2026-05-21T19:22:05Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=ZBpk_W5VFBI",
       "previousNets": [
