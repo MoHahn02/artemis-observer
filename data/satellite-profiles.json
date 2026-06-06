@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-05T20:29:25Z",
+  "generatedAt": "2026-06-06T18:52:44Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15630,
+      "activeCount": 15629,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1578,7 +1578,7 @@
         "2026-03-19": 29,
         "2026-03-20": 26,
         "2026-03-22": 40,
-        "2026-03-23": 16,
+        "2026-03-23": 15,
         "2026-03-25": 2,
         "2026-03-26": 25,
         "2026-03-27": 1,
@@ -16644,6 +16644,7 @@
         "2026-05-17": 2,
         "2026-04-11": 1,
         "2026-03-12": 2,
+        "2026-06-06": 1,
         "2026-05-12": 1
       },
       "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -20678,7 +20679,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3563,
+        "activeCount": 3562,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21892,7 +21893,7 @@
           "2026-03-16": 8,
           "2026-03-20": 1,
           "2026-03-22": 11,
-          "2026-03-23": 16,
+          "2026-03-23": 15,
           "2026-03-25": 2,
           "2026-03-27": 1,
           "2026-03-28": 2,
@@ -36637,6 +36638,7 @@
           "2026-04-04": 1,
           "2026-03-12": 2,
           "2026-03-24": 1,
+          "2026-06-06": 1,
           "2026-05-19": 1,
           "2026-05-12": 1,
           "2026-05-18": 1
@@ -336615,24 +336617,6 @@
         "NORAD_CAT_ID": "68362",
         "OBJECT_NAME": "RASSVET-3 3",
         "OBJECT_ID": "2026-061C",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "CIS",
-        "LAUNCH_DATE": "2026-03-23"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "CIS",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "68363": {
-      "satcat": {
-        "NORAD_CAT_ID": "68363",
-        "OBJECT_NAME": "RASSVET-3 4",
-        "OBJECT_ID": "2026-061D",
         "OBJECT_TYPE": "PAY",
         "OWNER": "CIS",
         "LAUNCH_DATE": "2026-03-23"
