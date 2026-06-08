@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T05:13:05Z",
+  "generatedAt": "2026-06-08T14:16:33Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -122,7 +122,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-07T04:00:45Z"
     },
     {
@@ -145,7 +145,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -175,7 +175,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z"
@@ -205,7 +205,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -241,7 +241,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -271,7 +271,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-21T04:43:17Z"
     },
     {
@@ -294,7 +294,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-22T12:09:28Z"
     },
     {
@@ -517,7 +517,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-07T15:39:36Z",
       "previousNets": [
         "2026-05-21T03:15:00Z",
@@ -550,7 +550,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-29T18:20:57Z",
       "previousNets": [
         "2026-06-10T00:30:00Z"
@@ -579,7 +579,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -637,7 +637,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -659,7 +659,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/tenowloften/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/add0a5be-1cf0-49cb-975a-e8c8e18d37ec/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-08T00:20:40Z"
     },
     {
@@ -682,7 +682,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-04-24T09:57:45Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -713,7 +713,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -742,7 +742,7 @@
     {
       "id": "0ff43072-5407-425b-8c8d-6bca068143b9",
       "name": "Long March 3B/E | Unknown Payload",
-      "net": "2026-06-16T08:00:00Z",
+      "net": "2026-06-16T09:45:00Z",
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 3B/E",
       "pad": "Launch Complex 2 (LC-2)",
@@ -752,15 +752,44 @@
       "mission": "Unknown Payload",
       "missionDescription": "Details TBD.",
       "orbit": "Unknown",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Confirmed",
-      "statusAbbrev": "TBC",
-      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
-      "updatedAt": "2026-06-08T05:13:05Z",
-      "firstSeenAt": "2026-06-04T13:40:02Z"
+      "updatedAt": "2026-06-08T14:16:33Z",
+      "firstSeenAt": "2026-06-04T13:40:02Z",
+      "previousNets": [
+        "2026-06-16T08:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "ffc0aee1-fdd7-4638-b098-9d0c01b40663",
+      "name": "Kinetica 1 | Unknown Payload",
+      "net": "2026-06-15T03:40:00Z",
+      "provider": "CAS Space",
+      "rocket": "Kinetica 1",
+      "pad": "Launch Area 130",
+      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
+      "latitude": 40.8182,
+      "longitude": 100.22514,
+      "mission": "Unknown Payload",
+      "missionDescription": "Details TBD.",
+      "orbit": "Unknown",
+      "status": "go",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ffc0aee1-fdd7-4638-b098-9d0c01b40663/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ffc0aee1-fdd7-4638-b098-9d0c01b40663/",
+      "updatedAt": "2026-06-08T14:16:33Z",
+      "firstSeenAt": "2026-06-08T14:16:33Z"
     },
     {
       "id": "bad5ea8c-8b17-4cb3-a063-d427fb092275",
@@ -782,7 +811,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qKVmmnzPgmxB",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-54",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bad5ea8c-8b17-4cb3-a063-d427fb092275/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-02T21:54:40Z",
       "previousNets": [
         "2026-06-14T02:11:00Z"
@@ -812,10 +841,71 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AxRnnezVPzxl",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-54",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/229267d8-74ca-4d0b-8711-b2efe621fc6b/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-02T21:54:40Z",
       "previousNets": [
         "2026-06-11T12:49:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
+      "name": "H3-30 | H3-30 Test Flight",
+      "net": "2026-06-12T00:00:00Z",
+      "provider": "Mitsubishi Heavy Industries",
+      "rocket": "H3-30",
+      "pad": "Yoshinobu Launch Complex LP-2",
+      "padLocation": "Tanegashima Space Center, Japan",
+      "latitude": 30.400938,
+      "longitude": 130.97564,
+      "mission": "H3-30 Test Flight",
+      "missionDescription": "Test flight of the H3-30 variant of the H3 launch vehicle with 3 LE-9 engines in the first stage and no SRBs. The flight will carry a dummy main payload (Vehicle Evaluation Payload 5, VEP-5) and several hitchhiking small satellites:\r\n\r\n* PETREL\r\n\r\n* STARS-X\r\n\r\n* BRO-22\r\n\r\n* VERTECS\r\n\r\n* HORN-L/R",
+      "orbit": "Sun-Synchronous Orbit",
+      "status": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
+      "updatedAt": "2026-06-08T14:16:33Z",
+      "firstSeenAt": "2026-04-26T23:55:22Z",
+      "outcome": "delayed",
+      "previousNets": [
+        "2026-06-10T00:53:59Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "2670e4f1-d58b-4787-9c3f-f9eb03349513",
+      "name": "Long March 5 | Unknown Payload",
+      "net": "2026-06-11T07:30:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 5",
+      "pad": "101",
+      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
+      "latitude": 19.614334,
+      "longitude": 110.951011,
+      "mission": "Unknown Payload",
+      "missionDescription": "Details TBD.",
+      "orbit": "Unknown",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
+      "updatedAt": "2026-06-08T14:16:33Z",
+      "firstSeenAt": "2026-06-02T06:53:19Z",
+      "previousNets": [
+        "2026-06-10T06:00:00Z",
+        "2026-06-10T07:30:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -841,7 +931,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6cefffc-19a6-4a4b-a7f0-ebe907d5a6aa/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e6cefffc-19a6-4a4b-a7f0-ebe907d5a6aa/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -864,7 +954,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1rGmqoBmZWdGy",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-44",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c7b7e18f-1b42-467e-a8ed-181fb58080e8/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-21T21:12:41Z",
       "previousNets": [
         "2026-06-04T14:00:00Z"
@@ -873,58 +963,6 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
-    },
-    {
-      "id": "2670e4f1-d58b-4787-9c3f-f9eb03349513",
-      "name": "Long March 5 | Unknown Payload",
-      "net": "2026-06-10T07:30:00Z",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 5",
-      "pad": "101",
-      "padLocation": "Wenchang Space Launch Site, People's Republic of China",
-      "latitude": 19.614334,
-      "longitude": 110.951011,
-      "mission": "Unknown Payload",
-      "missionDescription": "Details TBD.",
-      "orbit": "Unknown",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/",
-      "updatedAt": "2026-06-08T05:13:05Z",
-      "firstSeenAt": "2026-06-02T06:53:19Z",
-      "previousNets": [
-        "2026-06-10T06:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
-      "id": "e1a3b702-464f-435d-8c1f-ade9be196b77",
-      "name": "H3-30 | H3-30 Test Flight",
-      "net": "2026-06-10T00:53:59Z",
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-30",
-      "pad": "Yoshinobu Launch Complex LP-2",
-      "padLocation": "Tanegashima Space Center, Japan",
-      "latitude": 30.400938,
-      "longitude": 130.97564,
-      "mission": "H3-30 Test Flight",
-      "missionDescription": "Test flight of the H3-30 variant of the H3 launch vehicle with 3 LE-9 engines in the first stage and no SRBs. The flight will carry a dummy main payload (Vehicle Evaluation Payload 5, VEP-5) and several hitchhiking small satellites:\r\n\r\n* PETREL\r\n\r\n* STARS-X\r\n\r\n* BRO-22\r\n\r\n* VERTECS\r\n\r\n* HORN-L/R",
-      "orbit": "Sun-Synchronous Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e1a3b702-464f-435d-8c1f-ade9be196b77/",
-      "updatedAt": "2026-06-08T05:13:05Z",
-      "firstSeenAt": "2026-04-26T23:55:22Z"
     },
     {
       "id": "93cd9d2d-d8e2-49a1-8a85-a0eb8aef4804",
@@ -945,7 +983,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/93cd9d2d-d8e2-49a1-8a85-a0eb8aef4804/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/93cd9d2d-d8e2-49a1-8a85-a0eb8aef4804/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -961,23 +999,24 @@
       "mission": "Starlink Group 10-35",
       "missionDescription": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "livestreamUrl": "https://www.youtube.com/watch?v=pGDQkw3Bevg",
+      "status": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
+      "livestreamUrl": "https://www.youtube.com/watch?v=oCtjRao7f0k",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-35",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/114577dc-7617-461c-aaeb-9bd0f64b5a4b/",
-      "updatedAt": "2026-06-08T05:13:05Z",
+      "updatedAt": "2026-06-08T14:16:33Z",
       "firstSeenAt": "2026-05-27T23:02:16Z",
       "previousNets": [
         "2026-06-08T10:07:00Z",
         "2026-06-07T10:30:00Z"
       ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
+      "preflightCheckedAt": "2026-06-08T14:16:33Z",
+      "postflightCheckedAt": "2026-06-08T14:16:33Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "success",
+      "outcome": "success"
     },
     {
       "id": "af8d71dd-f439-47b3-91ed-57f959a581e0",
