@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-10T04:44:01Z",
+  "generatedAt": "2026-06-10T18:37:12Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15679,
+      "activeCount": 15680,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1625,7 +1625,7 @@
         "2026-06-01": 2,
         "2026-06-03": 24,
         "2026-06-04": 29,
-        "2026-06-09": 1
+        "2026-06-09": 2
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -20695,7 +20695,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3562,
+        "activeCount": 3563,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21936,7 +21936,7 @@
           "2026-05-24": 1,
           "2026-05-26": 1,
           "2026-05-30": 4,
-          "2026-06-09": 1
+          "2026-06-09": 2
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -355919,6 +355919,24 @@
         "NORAD_CAT_ID": "69472",
         "OBJECT_NAME": "DTC TEST OBJECT A",
         "OBJECT_ID": "2026-128A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-09"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69473": {
+      "satcat": {
+        "NORAD_CAT_ID": "69473",
+        "OBJECT_NAME": "DTC TEST OBJECT B",
+        "OBJECT_ID": "2026-128B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2026-06-09"
