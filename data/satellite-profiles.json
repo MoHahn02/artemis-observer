@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-11T22:08:07Z",
+  "generatedAt": "2026-06-12T04:08:59Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15696,
+      "activeCount": 15697,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1625,7 +1625,8 @@
         "2026-06-01": 2,
         "2026-06-03": 24,
         "2026-06-04": 47,
-        "2026-06-09": 2
+        "2026-06-09": 2,
+        "2026-06-11": 1
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -20697,7 +20698,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3561,
+        "activeCount": 3562,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21938,7 +21939,8 @@
           "2026-05-24": 1,
           "2026-05-26": 1,
           "2026-05-30": 4,
-          "2026-06-09": 2
+          "2026-06-09": 2,
+          "2026-06-11": 1
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -338361,15 +338363,15 @@
     "68468": {
       "satcat": {
         "NORAD_CAT_ID": "68468",
-        "OBJECT_NAME": "DB BECON-2-VU",
+        "OBJECT_NAME": "ERMIS-1",
         "OBJECT_ID": "2026-067BE",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
+        "OWNER": "GREC",
         "LAUNCH_DATE": "2026-03-30"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "USA",
+        "country": "GREC",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -356285,6 +356287,24 @@
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2026-06-09"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69474": {
+      "satcat": {
+        "NORAD_CAT_ID": "69474",
+        "OBJECT_NAME": "TJS-25",
+        "OBJECT_ID": "2026-129A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-11"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
