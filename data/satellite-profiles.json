@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-13T06:18:37Z",
+  "generatedAt": "2026-06-13T21:18:07Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15700,
+      "activeCount": 15699,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -79,7 +79,6 @@
         "2001-02-27": 1,
         "2001-03-08": 1,
         "2001-06-19": 1,
-        "2001-08-06": 1,
         "2001-08-30": 1,
         "2001-09-30": 1,
         "2001-10-22": 1,
@@ -693,7 +692,7 @@
         "2018-11-21": 1,
         "2018-11-29": 1,
         "2018-11-30": 3,
-        "2018-12-03": 35,
+        "2018-12-03": 34,
         "2018-12-04": 2,
         "2018-12-07": 2,
         "2018-12-19": 1,
@@ -1627,7 +1626,7 @@
         "2026-06-04": 47,
         "2026-06-09": 2,
         "2026-06-11": 1,
-        "2026-06-12": 5
+        "2026-06-12": 6
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -15280,6 +15279,7 @@
         "2024-05-19": 3,
         "2024-11-22": 3,
         "2026-04-01": 4,
+        "2025-10-05": 7,
         "2024-12-28": 5,
         "2024-10-23": 5,
         "2022-11-06": 1,
@@ -15858,7 +15858,6 @@
         "2019-05-12": 1,
         "2019-06-04": 1,
         "2018-11-28": 1,
-        "2025-10-05": 6,
         "2025-10-16": 7,
         "2023-06-02": 4,
         "2023-03-25": 4,
@@ -19874,7 +19873,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "earth-observation": {
-        "activeCount": 138,
+        "activeCount": 137,
         "addedByDay": {
           "2013-02-11": 1,
           "2013-11-21": 1,
@@ -19888,7 +19887,7 @@
           "2017-10-13": 1,
           "2017-10-31": 6,
           "2018-04-25": 1,
-          "2018-12-03": 2,
+          "2018-12-03": 1,
           "2020-11-21": 1,
           "2021-09-27": 1,
           "2023-11-11": 16,
@@ -20775,7 +20774,6 @@
           "2001-02-27": 1,
           "2001-03-08": 1,
           "2001-06-19": 1,
-          "2001-08-06": 1,
           "2001-08-30": 1,
           "2001-09-30": 1,
           "2001-10-22": 1,
@@ -21945,7 +21943,7 @@
           "2026-05-30": 4,
           "2026-06-09": 2,
           "2026-06-11": 1,
-          "2026-06-12": 5
+          "2026-06-12": 6
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -35354,6 +35352,7 @@
           "2026-04-01": 2,
           "2024-12-03": 5,
           "2014-10-19": 1,
+          "2025-10-05": 3,
           "2023-08-03": 6,
           "2024-12-28": 1,
           "2024-10-23": 2,
@@ -35859,7 +35858,6 @@
           "2019-05-12": 1,
           "2019-06-04": 1,
           "2018-11-28": 1,
-          "2025-10-05": 2,
           "2025-10-16": 6,
           "2023-06-02": 4,
           "2023-03-17": 4,
@@ -38276,24 +38274,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "NICO",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "26880": {
-      "satcat": {
-        "NORAD_CAT_ID": "26880",
-        "OBJECT_NAME": "USA 159 (DSP 21)",
-        "OBJECT_ID": "2001-033A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2001-08-06"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -59781,26 +59761,6 @@
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "43802": {
-      "satcat": {
-        "NORAD_CAT_ID": "43802",
-        "OBJECT_NAME": "SKYSAT-C13",
-        "OBJECT_ID": "2018-099AW",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2018-12-03"
-      },
-      "profile": {
-        "type": "Erdbeobachtung",
-        "operator": "Planet Labs",
-        "country": "USA",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Planet",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "planet"
       },
       "wikidata": null
     },
@@ -356291,7 +356251,7 @@
       "satcat": {
         "NORAD_CAT_ID": "69502",
         "OBJECT_NAME": "OBJECT A",
-        "OBJECT_ID": "2026-131A",
+        "OBJECT_ID": "2026-132A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-06-12"
@@ -356309,7 +356269,7 @@
       "satcat": {
         "NORAD_CAT_ID": "69503",
         "OBJECT_NAME": "OBJECT B",
-        "OBJECT_ID": "2026-131B",
+        "OBJECT_ID": "2026-132B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-06-12"
@@ -356327,7 +356287,7 @@
       "satcat": {
         "NORAD_CAT_ID": "69504",
         "OBJECT_NAME": "OBJECT C",
-        "OBJECT_ID": "2026-131C",
+        "OBJECT_ID": "2026-132C",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-06-12"
@@ -356345,7 +356305,7 @@
       "satcat": {
         "NORAD_CAT_ID": "69505",
         "OBJECT_NAME": "OBJECT D",
-        "OBJECT_ID": "2026-131D",
+        "OBJECT_ID": "2026-132D",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-06-12"
@@ -356363,7 +356323,25 @@
       "satcat": {
         "NORAD_CAT_ID": "69506",
         "OBJECT_NAME": "OBJECT E",
-        "OBJECT_ID": "2026-131E",
+        "OBJECT_ID": "2026-132E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-06-12"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69507": {
+      "satcat": {
+        "NORAD_CAT_ID": "69507",
+        "OBJECT_NAME": "OBJECT F",
+        "OBJECT_ID": "2026-132F",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-06-12"
