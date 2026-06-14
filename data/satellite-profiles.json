@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-13T21:18:07Z",
+  "generatedAt": "2026-06-14T20:48:46Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15699,
+      "activeCount": 15698,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1150,7 +1150,7 @@
         "2023-11-03": 23,
         "2023-11-08": 22,
         "2023-11-09": 1,
-        "2023-11-11": 43,
+        "2023-11-11": 42,
         "2023-11-12": 2,
         "2023-11-16": 1,
         "2023-11-18": 22,
@@ -19873,7 +19873,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "earth-observation": {
-        "activeCount": 137,
+        "activeCount": 136,
         "addedByDay": {
           "2013-02-11": 1,
           "2013-11-21": 1,
@@ -19890,7 +19890,7 @@
           "2018-12-03": 1,
           "2020-11-21": 1,
           "2021-09-27": 1,
-          "2023-11-11": 16,
+          "2023-11-11": 15,
           "2024-08-16": 27,
           "2024-09-05": 1,
           "2024-12-05": 1,
@@ -171611,26 +171611,6 @@
         "NORAD_CAT_ID": "58273",
         "OBJECT_NAME": "FLOCK 4Q-11",
         "OBJECT_ID": "2023-174T",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-11-11"
-      },
-      "profile": {
-        "type": "Erdbeobachtung",
-        "operator": "Planet Labs",
-        "country": "USA",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Planet",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "planet"
-      },
-      "wikidata": null
-    },
-    "58274": {
-      "satcat": {
-        "NORAD_CAT_ID": "58274",
-        "OBJECT_NAME": "FLOCK 4Q-36",
-        "OBJECT_ID": "2023-174U",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2023-11-11"
