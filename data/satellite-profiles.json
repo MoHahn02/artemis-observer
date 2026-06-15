@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-14T23:20:20Z",
+  "generatedAt": "2026-06-15T18:15:10Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15692,
+      "activeCount": 15698,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -827,7 +827,7 @@
         "2020-12-27": 2,
         "2021-01-08": 1,
         "2021-01-19": 1,
-        "2021-01-20": 43,
+        "2021-01-20": 42,
         "2021-01-24": 8,
         "2021-01-29": 3,
         "2021-02-02": 1,
@@ -928,7 +928,7 @@
         "2022-03-05": 6,
         "2022-03-09": 40,
         "2022-03-17": 1,
-        "2022-03-19": 43,
+        "2022-03-19": 42,
         "2022-03-22": 1,
         "2022-03-29": 2,
         "2022-03-30": 3,
@@ -1626,7 +1626,8 @@
         "2026-06-04": 47,
         "2026-06-09": 2,
         "2026-06-11": 1,
-        "2026-06-12": 6
+        "2026-06-12": 6,
+        "2026-06-15": 8
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -16402,6 +16403,7 @@
         "2023-01-29": 2,
         "2021-09-16": 1,
         "2025-12-27": 1,
+        "2026-06-15": 1,
         "2021-12-17": 3,
         "2022-01-23": 3,
         "2021-12-27": 2,
@@ -16484,7 +16486,7 @@
         "2022-09-15": 10,
         "2021-11-25": 1,
         "2023-08-25": 3,
-        "2026-06-14": 4,
+        "2026-06-14": 5,
         "2024-03-05": 3,
         "2024-03-04": 3,
         "2025-12-16": 1,
@@ -16664,7 +16666,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10544,
+        "activeCount": 10542,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16681,7 +16683,7 @@
           "2020-10-18": 16,
           "2020-10-24": 10,
           "2020-11-25": 10,
-          "2021-01-20": 42,
+          "2021-01-20": 41,
           "2021-02-04": 11,
           "2021-02-16": 17,
           "2021-03-04": 28,
@@ -16706,7 +16708,7 @@
           "2022-02-25": 43,
           "2022-03-03": 45,
           "2022-03-09": 40,
-          "2022-03-19": 43,
+          "2022-03-19": 42,
           "2022-04-21": 46,
           "2022-04-29": 47,
           "2022-05-06": 47,
@@ -17554,6 +17556,7 @@
           "2022-07-22": 1,
           "2024-07-26": 3,
           "2025-01-03": 4,
+          "2026-06-15": 1,
           "2024-07-11": 2,
           "2024-12-09": 1,
           "2025-03-15": 3,
@@ -17683,7 +17686,7 @@
           "2025-03-27": 1,
           "2024-08-22": 2,
           "2024-08-11": 2,
-          "2026-06-14": 1,
+          "2026-06-14": 2,
           "2026-05-20": 1,
           "2025-10-07": 3,
           "2024-10-07": 1,
@@ -17965,7 +17968,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11815,
+        "activeCount": 11813,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18000,7 +18003,7 @@
           "2020-10-24": 10,
           "2020-11-25": 10,
           "2020-12-18": 36,
-          "2021-01-20": 42,
+          "2021-01-20": 41,
           "2021-02-04": 11,
           "2021-02-16": 17,
           "2021-03-04": 28,
@@ -18033,7 +18036,7 @@
           "2022-02-25": 43,
           "2022-03-03": 45,
           "2022-03-09": 40,
-          "2022-03-19": 43,
+          "2022-03-19": 42,
           "2022-04-21": 46,
           "2022-04-29": 47,
           "2022-05-06": 47,
@@ -19435,6 +19438,7 @@
           "2024-08-13": 3,
           "2021-12-14": 1,
           "2024-07-26": 3,
+          "2026-06-15": 1,
           "2024-07-11": 2,
           "2024-12-09": 1,
           "2025-03-15": 3,
@@ -19552,7 +19556,7 @@
           "2025-03-27": 1,
           "2024-08-22": 2,
           "2024-08-11": 2,
-          "2026-06-14": 1,
+          "2026-06-14": 2,
           "2022-03-30": 1,
           "2026-05-20": 1,
           "2025-10-07": 3,
@@ -20708,7 +20712,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3562,
+        "activeCount": 3570,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21950,7 +21954,8 @@
           "2026-05-30": 4,
           "2026-06-09": 2,
           "2026-06-11": 1,
-          "2026-06-12": 6
+          "2026-06-12": 6,
+          "2026-06-15": 8
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -73006,27 +73011,6 @@
       },
       "wikidata": null
     },
-    "47393": {
-      "satcat": {
-        "NORAD_CAT_ID": "47393",
-        "OBJECT_NAME": "STARLINK-2114",
-        "OBJECT_ID": "2021-005AW",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2021-01-20"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
     "47397": {
       "satcat": {
         "NORAD_CAT_ID": "47397",
@@ -101051,27 +101035,6 @@
         "NORAD_CAT_ID": "52134",
         "OBJECT_NAME": "STARLINK-3721",
         "OBJECT_ID": "2022-029AY",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2022-03-19"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "52135": {
-      "satcat": {
-        "NORAD_CAT_ID": "52135",
-        "OBJECT_NAME": "STARLINK-3729",
-        "OBJECT_ID": "2022-029AZ",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2022-03-19"
@@ -356219,6 +356182,150 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69538": {
+      "satcat": {
+        "NORAD_CAT_ID": "69538",
+        "OBJECT_NAME": "OBJECT A",
+        "OBJECT_ID": "2026-134A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69539": {
+      "satcat": {
+        "NORAD_CAT_ID": "69539",
+        "OBJECT_NAME": "OBJECT B",
+        "OBJECT_ID": "2026-134B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69540": {
+      "satcat": {
+        "NORAD_CAT_ID": "69540",
+        "OBJECT_NAME": "OBJECT C",
+        "OBJECT_ID": "2026-134C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69541": {
+      "satcat": {
+        "NORAD_CAT_ID": "69541",
+        "OBJECT_NAME": "OBJECT D",
+        "OBJECT_ID": "2026-134D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69542": {
+      "satcat": {
+        "NORAD_CAT_ID": "69542",
+        "OBJECT_NAME": "OBJECT E",
+        "OBJECT_ID": "2026-134E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69543": {
+      "satcat": {
+        "NORAD_CAT_ID": "69543",
+        "OBJECT_NAME": "OBJECT F",
+        "OBJECT_ID": "2026-134F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69544": {
+      "satcat": {
+        "NORAD_CAT_ID": "69544",
+        "OBJECT_NAME": "OBJECT G",
+        "OBJECT_ID": "2026-134G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69545": {
+      "satcat": {
+        "NORAD_CAT_ID": "69545",
+        "OBJECT_NAME": "OBJECT H",
+        "OBJECT_ID": "2026-134H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
