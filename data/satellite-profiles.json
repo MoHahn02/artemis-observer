@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-15T21:27:06Z",
+  "generatedAt": "2026-06-16T07:40:06Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15695,
+      "activeCount": 15697,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1315,7 +1315,7 @@
         "2024-11-30": 46,
         "2024-12-03": 1,
         "2024-12-04": 26,
-        "2024-12-05": 41,
+        "2024-12-05": 42,
         "2024-12-08": 23,
         "2024-12-12": 5,
         "2024-12-13": 21,
@@ -1439,7 +1439,7 @@
         "2025-08-05": 1,
         "2025-08-08": 11,
         "2025-08-11": 24,
-        "2025-08-13": 11,
+        "2025-08-13": 12,
         "2025-08-14": 52,
         "2025-08-17": 6,
         "2025-08-18": 24,
@@ -20710,7 +20710,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3570,
+        "activeCount": 3572,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21766,7 +21766,7 @@
           "2024-11-30": 2,
           "2024-12-03": 1,
           "2024-12-04": 2,
-          "2024-12-05": 2,
+          "2024-12-05": 3,
           "2024-12-12": 5,
           "2024-12-16": 14,
           "2024-12-17": 2,
@@ -21844,7 +21844,7 @@
           "2025-08-04": 9,
           "2025-08-05": 1,
           "2025-08-08": 11,
-          "2025-08-13": 11,
+          "2025-08-13": 12,
           "2025-08-17": 6,
           "2025-08-19": 5,
           "2025-08-21": 4,
@@ -224293,6 +224293,24 @@
       },
       "wikidata": null
     },
+    "62256": {
+      "satcat": {
+        "NORAD_CAT_ID": "62256",
+        "OBJECT_NAME": "PROBA-3 CSC",
+        "OBJECT_ID": "2024-233A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "ESA",
+        "LAUNCH_DATE": "2024-12-05"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "ESA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "62258": {
       "satcat": {
         "NORAD_CAT_ID": "62258",
@@ -274717,6 +274735,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "Europa",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "65160": {
+      "satcat": {
+        "NORAD_CAT_ID": "65160",
+        "OBJECT_NAME": "NTS-3",
+        "OBJECT_ID": "2025-173A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2025-08-13"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
