@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-17T17:15:37Z",
+  "generatedAt": "2026-06-17T19:32:15Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15753,
+      "activeCount": 15756,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -742,7 +742,7 @@
         "2019-09-25": 1,
         "2019-09-26": 1,
         "2019-10-04": 1,
-        "2019-10-09": 1,
+        "2019-10-09": 2,
         "2019-10-17": 2,
         "2019-11-03": 1,
         "2019-11-11": 14,
@@ -819,6 +819,7 @@
         "2020-12-02": 1,
         "2020-12-03": 4,
         "2020-12-06": 1,
+        "2020-12-09": 2,
         "2020-12-13": 1,
         "2020-12-14": 1,
         "2020-12-17": 1,
@@ -20721,7 +20722,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3575,
+        "activeCount": 3578,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21385,7 +21386,7 @@
           "2019-09-25": 1,
           "2019-09-26": 1,
           "2019-10-04": 1,
-          "2019-10-09": 1,
+          "2019-10-09": 2,
           "2019-10-17": 2,
           "2019-11-03": 1,
           "2019-11-13": 6,
@@ -21441,6 +21442,7 @@
           "2020-12-02": 1,
           "2020-12-03": 4,
           "2020-12-06": 1,
+          "2020-12-09": 2,
           "2020-12-13": 1,
           "2020-12-14": 1,
           "2020-12-17": 1,
@@ -62067,6 +62069,24 @@
       },
       "wikidata": null
     },
+    "44625": {
+      "satcat": {
+        "NORAD_CAT_ID": "44625",
+        "OBJECT_NAME": "MEV-1",
+        "OBJECT_ID": "2019-067B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2019-10-09"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "44634": {
       "satcat": {
         "NORAD_CAT_ID": "44634",
@@ -71296,6 +71316,42 @@
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2020-12-06"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "47234": {
+      "satcat": {
+        "NORAD_CAT_ID": "47234",
+        "OBJECT_NAME": "GECAM-A",
+        "OBJECT_ID": "2020-094A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2020-12-09"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "47235": {
+      "satcat": {
+        "NORAD_CAT_ID": "47235",
+        "OBJECT_NAME": "GECAM-B",
+        "OBJECT_ID": "2020-094B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2020-12-09"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
