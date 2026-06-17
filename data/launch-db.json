@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T17:36:42Z",
+  "generatedAt": "2026-06-17T05:11:02Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -30,6 +30,36 @@
       ],
       "preflightCheckedAt": "2026-06-04T19:03:38Z",
       "postflightCheckedAt": "2026-06-04T19:03:38Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "delayed"
+    },
+    {
+      "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
+      "name": "Soyuz 2.1b | Progress MS-35 (96P)",
+      "net": "2026-09-09T16:10:00Z",
+      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
+      "rocket": "Soyuz 2.1b",
+      "pad": "31/6",
+      "padLocation": "Baikonur Cosmodrome, Republic of Kazakhstan",
+      "latitude": 45.996034,
+      "longitude": 63.564003,
+      "mission": "Progress MS-35 (96P)",
+      "missionDescription": "Progress resupply mission to the International Space Station.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
+      "updatedAt": "2026-06-17T05:11:02Z",
+      "firstSeenAt": "2026-04-27T16:11:41Z",
+      "previousNets": [
+        "2026-06-17T01:40:00Z"
+      ],
+      "preflightCheckedAt": "2026-06-17T05:11:02Z",
+      "postflightCheckedAt": "2026-06-17T05:11:02Z",
       "preflightStatus": "missed",
       "postflightStatus": "delayed"
     },
@@ -122,7 +152,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -152,7 +182,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-21T04:43:17Z"
     },
     {
@@ -175,7 +205,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-22T12:09:28Z"
     },
     {
@@ -198,7 +228,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-23T10:55:32Z"
     },
     {
@@ -221,7 +251,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-23T23:39:26Z"
     },
     {
@@ -244,7 +274,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-25T16:23:44Z"
     },
     {
@@ -267,7 +297,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-26T16:32:37Z"
     },
     {
@@ -352,7 +382,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-31T15:56:19Z"
     },
     {
@@ -431,7 +461,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-29T18:20:57Z",
       "previousNets": [
         "2026-06-10T00:30:00Z"
@@ -460,7 +490,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -495,7 +525,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -506,6 +536,36 @@
         "2026-05-20T12:04:00Z",
         "2026-06-30T00:00:00Z",
         "2026-06-20T06:39:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "add0a5be-1cf0-49cb-975a-e8c8e18d37ec",
+      "name": "Electron | Ten Owl Of Ten (StriX Launch 10)",
+      "net": "2026-06-30T00:00:00Z",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "pad": "Unknown Pad",
+      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "latitude": -39.260881,
+      "longitude": 177.865826,
+      "mission": "Ten Owl Of Ten (StriX Launch 10)",
+      "missionDescription": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
+      "orbit": "Sun-Synchronous Orbit",
+      "status": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://rocketlabcorp.com/missions/launches/tenowloften/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/add0a5be-1cf0-49cb-975a-e8c8e18d37ec/",
+      "updatedAt": "2026-06-17T05:11:02Z",
+      "firstSeenAt": "2026-06-08T00:20:40Z",
+      "outcome": "delayed",
+      "previousNets": [
+        "2026-06-17T20:40:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -532,7 +592,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z",
@@ -586,7 +646,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLLzylYExR",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-45",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a4fb0d1a-2655-4552-b950-f2f6340ef85a/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-10T21:13:24Z",
       "previousNets": [
         "2026-06-23T11:00:00Z",
@@ -617,7 +677,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-04T13:40:02Z"
     },
     {
@@ -640,7 +700,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/74bf8472-9ba1-42d6-9245-b014f8e91de9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/74bf8472-9ba1-42d6-9245-b014f8e91de9/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-15T23:19:33Z"
     },
     {
@@ -663,7 +723,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1jGXggXNMdVKZ",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-28",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/de5fbae3-66b9-4bbf-8938-4d55f3318c07/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-10T18:37:12Z"
     },
     {
@@ -687,7 +747,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -720,7 +780,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/nrol179",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5d4099bf-a0be-4f54-b236-b6ab3aed4146/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-09T14:04:39Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1dGYllVmbpAKX",
       "previousNets": [
@@ -730,28 +790,6 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
-    },
-    {
-      "id": "add0a5be-1cf0-49cb-975a-e8c8e18d37ec",
-      "name": "Electron | Ten Owl Of Ten (StriX Launch 10)",
-      "net": "2026-06-17T20:40:00Z",
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "latitude": -39.260881,
-      "longitude": 177.865826,
-      "mission": "Ten Owl Of Ten (StriX Launch 10)",
-      "missionDescription": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
-      "orbit": "Sun-Synchronous Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://rocketlabcorp.com/missions/launches/tenowloften/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/add0a5be-1cf0-49cb-975a-e8c8e18d37ec/",
-      "updatedAt": "2026-06-16T17:36:42Z",
-      "firstSeenAt": "2026-06-08T00:20:40Z"
     },
     {
       "id": "ed8ccd18-b530-4f55-92ae-bda89ac2985c",
@@ -773,7 +811,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://newsroom.arianespace.com/ariane-6-flight-va269/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ed8ccd18-b530-4f55-92ae-bda89ac2985c/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-04-24T09:57:45Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -805,7 +843,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/bluebird8-10",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c3f48f48-0e0a-4bca-917e-de494cfca35b/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-05-07T04:00:45Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -835,62 +873,44 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cf655887-1cc5-4ef5-b8be-2821d5af17c9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cf655887-1cc5-4ef5-b8be-2821d5af17c9/",
-      "updatedAt": "2026-06-16T17:36:42Z",
-      "firstSeenAt": "2026-06-13T15:13:22Z"
+      "updatedAt": "2026-06-17T05:11:02Z",
+      "firstSeenAt": "2026-06-13T15:13:22Z",
+      "postflightCheckedAt": "2026-06-17T05:11:02Z",
+      "postflightStatus": "go",
+      "preflightCheckedAt": "2026-06-17T05:11:02Z",
+      "preflightStatus": "missed"
     },
     {
       "id": "756a042f-3da8-4a21-bb42-5996fc148050",
-      "name": "Long March 12 | Unknown Payload",
-      "net": "2026-06-17T02:45:00Z",
+      "name": "Long March 12 | SatNet LEO Group 22",
+      "net": "2026-06-17T02:44:00Z",
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 12",
       "pad": "Commercial LC-2",
       "padLocation": "Wenchang Space Launch Site, People's Republic of China",
       "latitude": 19.59755,
       "longitude": 110.936481,
-      "mission": "Unknown Payload",
-      "missionDescription": "Details TBD.",
-      "orbit": "Unknown",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "mission": "SatNet LEO Group 22",
+      "missionDescription": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
+      "orbit": "Low Earth Orbit",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/756a042f-3da8-4a21-bb42-5996fc148050/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-04T13:40:02Z",
       "previousNets": [
         "2026-06-17T02:00:00Z",
-        "2026-06-30T00:00:00Z"
+        "2026-06-30T00:00:00Z",
+        "2026-06-17T02:45:00Z"
       ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
-      "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
-      "name": "Soyuz 2.1a | Progress MS-35 (96P)",
-      "net": "2026-06-17T01:40:00Z",
-      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
-      "rocket": "Soyuz 2.1a",
-      "pad": "31/6",
-      "padLocation": "Baikonur Cosmodrome, Republic of Kazakhstan",
-      "latitude": 45.996034,
-      "longitude": 63.564003,
-      "mission": "Progress MS-35 (96P)",
-      "missionDescription": "Progress resupply mission to the International Space Station.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Confirmed",
-      "statusAbbrev": "TBC",
-      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-04-29T17:53:40Z",
-      "firstSeenAt": "2026-04-27T16:11:41Z"
+      "preflightCheckedAt": "2026-06-17T05:11:02Z",
+      "postflightCheckedAt": "2026-06-17T05:11:02Z",
+      "preflightStatus": "missed",
+      "postflightStatus": "success"
     },
     {
       "id": "0ff43072-5407-425b-8c8d-6bca068143b9",
@@ -912,7 +932,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0ff43072-5407-425b-8c8d-6bca068143b9/",
-      "updatedAt": "2026-06-16T17:36:42Z",
+      "updatedAt": "2026-06-17T05:11:02Z",
       "firstSeenAt": "2026-06-04T13:40:02Z",
       "previousNets": [
         "2026-06-16T08:00:00Z"
