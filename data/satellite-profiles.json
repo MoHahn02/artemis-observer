@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-17T10:08:33Z",
+  "generatedAt": "2026-06-17T17:15:37Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15751,
+      "activeCount": 15753,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -804,7 +804,7 @@
         "2020-09-28": 12,
         "2020-10-06": 13,
         "2020-10-11": 1,
-        "2020-10-18": 16,
+        "2020-10-18": 15,
         "2020-10-24": 10,
         "2020-10-25": 1,
         "2020-10-26": 4,
@@ -1628,7 +1628,8 @@
         "2026-06-11": 1,
         "2026-06-12": 35,
         "2026-06-15": 8,
-        "2026-06-16": 1
+        "2026-06-16": 1,
+        "2026-06-17": 3
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -16353,6 +16354,7 @@
         "2021-09-06": 1,
         "2025-04-24": 5,
         "2026-03-26": 3,
+        "2026-06-17": 1,
         "2026-04-05": 3,
         "2021-11-11": 1,
         "2021-05-28": 1,
@@ -16668,7 +16670,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10595,
+        "activeCount": 10594,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16682,7 +16684,7 @@
           "2020-08-18": 15,
           "2020-09-03": 16,
           "2020-10-06": 13,
-          "2020-10-18": 16,
+          "2020-10-18": 15,
           "2020-10-24": 10,
           "2020-11-25": 10,
           "2021-01-20": 41,
@@ -17487,6 +17489,7 @@
           "2023-11-18": 1,
           "2025-01-13": 6,
           "2026-03-26": 2,
+          "2026-06-17": 1,
           "2026-05-22": 2,
           "2025-06-24": 1,
           "2026-04-05": 2,
@@ -17972,7 +17975,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11866,
+        "activeCount": 11865,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18003,7 +18006,7 @@
           "2020-08-18": 15,
           "2020-09-03": 16,
           "2020-10-06": 13,
-          "2020-10-18": 16,
+          "2020-10-18": 15,
           "2020-10-24": 10,
           "2020-11-25": 10,
           "2020-12-18": 36,
@@ -19364,6 +19367,7 @@
           "2023-11-18": 1,
           "2025-01-13": 6,
           "2026-03-26": 2,
+          "2026-06-17": 1,
           "2026-05-22": 2,
           "2025-06-24": 1,
           "2026-04-05": 2,
@@ -20717,7 +20721,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3572,
+        "activeCount": 3575,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21961,7 +21965,8 @@
           "2026-06-11": 1,
           "2026-06-12": 6,
           "2026-06-15": 8,
-          "2026-06-16": 1
+          "2026-06-16": 1,
+          "2026-06-17": 3
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -70341,27 +70346,6 @@
         "NORAD_CAT_ID": "46709",
         "OBJECT_NAME": "STARLINK-1810",
         "OBJECT_ID": "2020-073AR",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2020-10-18"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "46713": {
-      "satcat": {
-        "NORAD_CAT_ID": "46713",
-        "OBJECT_NAME": "STARLINK-1815",
-        "OBJECT_ID": "2020-073AV",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2020-10-18"
@@ -357443,6 +357427,60 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69589": {
+      "satcat": {
+        "NORAD_CAT_ID": "69589",
+        "OBJECT_NAME": "BLUEBIRD OBJECT A",
+        "OBJECT_ID": "2026-139A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69590": {
+      "satcat": {
+        "NORAD_CAT_ID": "69590",
+        "OBJECT_NAME": "BLUEBIRD OBJECT B",
+        "OBJECT_ID": "2026-139B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69591": {
+      "satcat": {
+        "NORAD_CAT_ID": "69591",
+        "OBJECT_NAME": "BLUEBIRD OBJECT C",
+        "OBJECT_ID": "2026-139C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
