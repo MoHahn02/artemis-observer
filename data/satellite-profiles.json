@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-17T19:32:15Z",
+  "generatedAt": "2026-06-18T06:27:12Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15756,
+      "activeCount": 15811,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1624,13 +1624,14 @@
         "2026-06-01": 2,
         "2026-06-03": 24,
         "2026-06-04": 47,
+        "2026-06-05": 18,
         "2026-06-08": 29,
         "2026-06-09": 2,
-        "2026-06-11": 1,
+        "2026-06-11": 22,
         "2026-06-12": 35,
         "2026-06-15": 8,
         "2026-06-16": 1,
-        "2026-06-17": 3
+        "2026-06-17": 19
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -16671,7 +16672,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10594,
+        "activeCount": 10615,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -17043,6 +17044,7 @@
           "2026-06-03": 24,
           "2026-06-04": 29,
           "2026-06-08": 29,
+          "2026-06-11": 21,
           "2026-06-12": 29
         },
         "decayedByDay": {
@@ -17904,7 +17906,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "qianfan": {
-        "activeCount": 182,
+        "activeCount": 200,
         "addedByDay": {
           "2024-08-06": 18,
           "2024-10-15": 18,
@@ -17916,7 +17918,8 @@
           "2026-05-12": 18,
           "2026-05-17": 18,
           "2026-06-01": 2,
-          "2026-06-04": 18
+          "2026-06-04": 18,
+          "2026-06-05": 18
         },
         "decayedByDay": {},
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -17976,7 +17979,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11865,
+        "activeCount": 11904,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18395,7 +18398,9 @@
           "2026-06-01": 2,
           "2026-06-03": 24,
           "2026-06-04": 47,
+          "2026-06-05": 18,
           "2026-06-08": 29,
+          "2026-06-11": 21,
           "2026-06-12": 29
         },
         "decayedByDay": {
@@ -20722,7 +20727,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3578,
+        "activeCount": 3594,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21968,7 +21973,7 @@
           "2026-06-12": 6,
           "2026-06-15": 8,
           "2026-06-16": 1,
-          "2026-06-17": 3
+          "2026-06-17": 19
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -355947,6 +355952,384 @@
       },
       "wikidata": null
     },
+    "69401": {
+      "satcat": {
+        "NORAD_CAT_ID": "69401",
+        "OBJECT_NAME": "QIANFAN OBJECT A",
+        "OBJECT_ID": "2026-125A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69402": {
+      "satcat": {
+        "NORAD_CAT_ID": "69402",
+        "OBJECT_NAME": "QIANFAN OBJECT B",
+        "OBJECT_ID": "2026-125B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69403": {
+      "satcat": {
+        "NORAD_CAT_ID": "69403",
+        "OBJECT_NAME": "QIANFAN OBJECT C",
+        "OBJECT_ID": "2026-125C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69404": {
+      "satcat": {
+        "NORAD_CAT_ID": "69404",
+        "OBJECT_NAME": "QIANFAN OBJECT D",
+        "OBJECT_ID": "2026-125D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69405": {
+      "satcat": {
+        "NORAD_CAT_ID": "69405",
+        "OBJECT_NAME": "QIANFAN OBJECT E",
+        "OBJECT_ID": "2026-125E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69406": {
+      "satcat": {
+        "NORAD_CAT_ID": "69406",
+        "OBJECT_NAME": "QIANFAN OBJECT F",
+        "OBJECT_ID": "2026-125F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69407": {
+      "satcat": {
+        "NORAD_CAT_ID": "69407",
+        "OBJECT_NAME": "QIANFAN OBJECT G",
+        "OBJECT_ID": "2026-125G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69408": {
+      "satcat": {
+        "NORAD_CAT_ID": "69408",
+        "OBJECT_NAME": "QIANFAN OBJECT H",
+        "OBJECT_ID": "2026-125H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69409": {
+      "satcat": {
+        "NORAD_CAT_ID": "69409",
+        "OBJECT_NAME": "QIANFAN OBJECT J",
+        "OBJECT_ID": "2026-125J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69410": {
+      "satcat": {
+        "NORAD_CAT_ID": "69410",
+        "OBJECT_NAME": "QIANFAN OBJECT K",
+        "OBJECT_ID": "2026-125K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69411": {
+      "satcat": {
+        "NORAD_CAT_ID": "69411",
+        "OBJECT_NAME": "QIANFAN OBJECT L",
+        "OBJECT_ID": "2026-125L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69412": {
+      "satcat": {
+        "NORAD_CAT_ID": "69412",
+        "OBJECT_NAME": "QIANFAN OBJECT M",
+        "OBJECT_ID": "2026-125M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69413": {
+      "satcat": {
+        "NORAD_CAT_ID": "69413",
+        "OBJECT_NAME": "QIANFAN OBJECT N",
+        "OBJECT_ID": "2026-125N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69414": {
+      "satcat": {
+        "NORAD_CAT_ID": "69414",
+        "OBJECT_NAME": "QIANFAN OBJECT P",
+        "OBJECT_ID": "2026-125P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69415": {
+      "satcat": {
+        "NORAD_CAT_ID": "69415",
+        "OBJECT_NAME": "QIANFAN OBJECT Q",
+        "OBJECT_ID": "2026-125Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69416": {
+      "satcat": {
+        "NORAD_CAT_ID": "69416",
+        "OBJECT_NAME": "QIANFAN OBJECT R",
+        "OBJECT_ID": "2026-125R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69417": {
+      "satcat": {
+        "NORAD_CAT_ID": "69417",
+        "OBJECT_NAME": "QIANFAN OBJECT S",
+        "OBJECT_ID": "2026-125S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69418": {
+      "satcat": {
+        "NORAD_CAT_ID": "69418",
+        "OBJECT_NAME": "QIANFAN OBJECT T",
+        "OBJECT_ID": "2026-125T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
     "69443": {
       "satcat": {
         "NORAD_CAT_ID": "69443",
@@ -356607,6 +356990,447 @@
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69478": {
+      "satcat": {
+        "NORAD_CAT_ID": "69478",
+        "OBJECT_NAME": "STARLINK-37816",
+        "OBJECT_ID": "2026-131A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69480": {
+      "satcat": {
+        "NORAD_CAT_ID": "69480",
+        "OBJECT_NAME": "STARLINK-37817",
+        "OBJECT_ID": "2026-131C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69481": {
+      "satcat": {
+        "NORAD_CAT_ID": "69481",
+        "OBJECT_NAME": "STARLINK-37727",
+        "OBJECT_ID": "2026-131D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69482": {
+      "satcat": {
+        "NORAD_CAT_ID": "69482",
+        "OBJECT_NAME": "STARLINK-37814",
+        "OBJECT_ID": "2026-131E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69483": {
+      "satcat": {
+        "NORAD_CAT_ID": "69483",
+        "OBJECT_NAME": "STARLINK-37869",
+        "OBJECT_ID": "2026-131F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69484": {
+      "satcat": {
+        "NORAD_CAT_ID": "69484",
+        "OBJECT_NAME": "STARLINK-37873",
+        "OBJECT_ID": "2026-131G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69485": {
+      "satcat": {
+        "NORAD_CAT_ID": "69485",
+        "OBJECT_NAME": "STARLINK-37892",
+        "OBJECT_ID": "2026-131H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69486": {
+      "satcat": {
+        "NORAD_CAT_ID": "69486",
+        "OBJECT_NAME": "STARLINK-37893",
+        "OBJECT_ID": "2026-131J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69487": {
+      "satcat": {
+        "NORAD_CAT_ID": "69487",
+        "OBJECT_NAME": "STARLINK-37842",
+        "OBJECT_ID": "2026-131K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69488": {
+      "satcat": {
+        "NORAD_CAT_ID": "69488",
+        "OBJECT_NAME": "STARLINK-37449",
+        "OBJECT_ID": "2026-131L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69490": {
+      "satcat": {
+        "NORAD_CAT_ID": "69490",
+        "OBJECT_NAME": "STARLINK-37879",
+        "OBJECT_ID": "2026-131N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69491": {
+      "satcat": {
+        "NORAD_CAT_ID": "69491",
+        "OBJECT_NAME": "STARLINK-37856",
+        "OBJECT_ID": "2026-131P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69492": {
+      "satcat": {
+        "NORAD_CAT_ID": "69492",
+        "OBJECT_NAME": "STARLINK-37568",
+        "OBJECT_ID": "2026-131Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69493": {
+      "satcat": {
+        "NORAD_CAT_ID": "69493",
+        "OBJECT_NAME": "STARLINK-37855",
+        "OBJECT_ID": "2026-131R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69494": {
+      "satcat": {
+        "NORAD_CAT_ID": "69494",
+        "OBJECT_NAME": "STARLINK-37854",
+        "OBJECT_ID": "2026-131S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69495": {
+      "satcat": {
+        "NORAD_CAT_ID": "69495",
+        "OBJECT_NAME": "STARLINK-37789",
+        "OBJECT_ID": "2026-131T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69496": {
+      "satcat": {
+        "NORAD_CAT_ID": "69496",
+        "OBJECT_NAME": "STARLINK-37839",
+        "OBJECT_ID": "2026-131U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69497": {
+      "satcat": {
+        "NORAD_CAT_ID": "69497",
+        "OBJECT_NAME": "STARLINK-37798",
+        "OBJECT_ID": "2026-131V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69498": {
+      "satcat": {
+        "NORAD_CAT_ID": "69498",
+        "OBJECT_NAME": "STARLINK-37853",
+        "OBJECT_ID": "2026-131W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69499": {
+      "satcat": {
+        "NORAD_CAT_ID": "69499",
+        "OBJECT_NAME": "STARLINK-37849",
+        "OBJECT_ID": "2026-131X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69501": {
+      "satcat": {
+        "NORAD_CAT_ID": "69501",
+        "OBJECT_NAME": "STARLINK-37843",
+        "OBJECT_ID": "2026-131Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-11"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
       },
       "wikidata": null
     },
@@ -357479,6 +358303,294 @@
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2026-06-16"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69572": {
+      "satcat": {
+        "NORAD_CAT_ID": "69572",
+        "OBJECT_NAME": "GUOWANG OBJECT A",
+        "OBJECT_ID": "2026-137A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69573": {
+      "satcat": {
+        "NORAD_CAT_ID": "69573",
+        "OBJECT_NAME": "GUOWANG OBJECT B",
+        "OBJECT_ID": "2026-137B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69574": {
+      "satcat": {
+        "NORAD_CAT_ID": "69574",
+        "OBJECT_NAME": "GUOWANG OBJECT C",
+        "OBJECT_ID": "2026-137C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69575": {
+      "satcat": {
+        "NORAD_CAT_ID": "69575",
+        "OBJECT_NAME": "GUOWANG OBJECT D",
+        "OBJECT_ID": "2026-137D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69576": {
+      "satcat": {
+        "NORAD_CAT_ID": "69576",
+        "OBJECT_NAME": "GUOWANG OBJECT E",
+        "OBJECT_ID": "2026-137E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69577": {
+      "satcat": {
+        "NORAD_CAT_ID": "69577",
+        "OBJECT_NAME": "GUOWANG OBJECT F",
+        "OBJECT_ID": "2026-137F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69578": {
+      "satcat": {
+        "NORAD_CAT_ID": "69578",
+        "OBJECT_NAME": "GUOWANG OBJECT G",
+        "OBJECT_ID": "2026-137G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69579": {
+      "satcat": {
+        "NORAD_CAT_ID": "69579",
+        "OBJECT_NAME": "GUOWANG OBJECT H",
+        "OBJECT_ID": "2026-137H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69580": {
+      "satcat": {
+        "NORAD_CAT_ID": "69580",
+        "OBJECT_NAME": "GUOWANG OBJECT J",
+        "OBJECT_ID": "2026-137J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69582": {
+      "satcat": {
+        "NORAD_CAT_ID": "69582",
+        "OBJECT_NAME": "OBJECT A",
+        "OBJECT_ID": "2026-138A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69583": {
+      "satcat": {
+        "NORAD_CAT_ID": "69583",
+        "OBJECT_NAME": "OBJECT B",
+        "OBJECT_ID": "2026-138B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69584": {
+      "satcat": {
+        "NORAD_CAT_ID": "69584",
+        "OBJECT_NAME": "OBJECT C",
+        "OBJECT_ID": "2026-138C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69585": {
+      "satcat": {
+        "NORAD_CAT_ID": "69585",
+        "OBJECT_NAME": "OBJECT D",
+        "OBJECT_ID": "2026-138D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69586": {
+      "satcat": {
+        "NORAD_CAT_ID": "69586",
+        "OBJECT_NAME": "OBJECT E",
+        "OBJECT_ID": "2026-138E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69587": {
+      "satcat": {
+        "NORAD_CAT_ID": "69587",
+        "OBJECT_NAME": "OBJECT F",
+        "OBJECT_ID": "2026-138F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69588": {
+      "satcat": {
+        "NORAD_CAT_ID": "69588",
+        "OBJECT_NAME": "OBJECT G",
+        "OBJECT_ID": "2026-138G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-06-17"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
