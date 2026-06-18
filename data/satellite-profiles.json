@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T10:55:00Z",
+  "generatedAt": "2026-06-18T19:53:20Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15814,
+      "activeCount": 15812,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1324,7 +1324,7 @@
         "2024-12-17": 3,
         "2024-12-19": 4,
         "2024-12-20": 1,
-        "2024-12-21": 27,
+        "2024-12-21": 26,
         "2024-12-23": 19,
         "2024-12-25": 1,
         "2024-12-29": 25,
@@ -1610,7 +1610,7 @@
         "2026-05-11": 1,
         "2026-05-12": 18,
         "2026-05-14": 1,
-        "2026-05-15": 6,
+        "2026-05-15": 5,
         "2026-05-17": 18,
         "2026-05-19": 1,
         "2026-05-20": 24,
@@ -16356,7 +16356,7 @@
         "2021-09-06": 1,
         "2025-04-24": 5,
         "2026-03-26": 3,
-        "2026-06-17": 1,
+        "2026-06-17": 3,
         "2026-04-05": 3,
         "2021-11-11": 1,
         "2021-05-28": 1,
@@ -20727,7 +20727,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3594,
+        "activeCount": 3592,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21790,7 +21790,7 @@
           "2024-12-17": 2,
           "2024-12-19": 4,
           "2024-12-20": 1,
-          "2024-12-21": 27,
+          "2024-12-21": 26,
           "2024-12-25": 1,
           "2024-12-29": 4,
           "2024-12-30": 2,
@@ -21962,7 +21962,7 @@
           "2026-05-03": 45,
           "2026-05-11": 1,
           "2026-05-14": 1,
-          "2026-05-15": 6,
+          "2026-05-15": 5,
           "2026-05-19": 1,
           "2026-05-22": 1,
           "2026-05-24": 1,
@@ -36683,6 +36683,7 @@
           "2025-10-03": 1,
           "2025-04-03": 1,
           "2025-03-02": 2,
+          "2026-06-17": 2,
           "2026-04-09": 1,
           "2026-06-10": 1,
           "2025-07-28": 1,
@@ -226025,24 +226026,6 @@
       },
       "wikidata": null
     },
-    "62393": {
-      "satcat": {
-        "NORAD_CAT_ID": "62393",
-        "OBJECT_NAME": "BANDWAGON-2 OBJECT S",
-        "OBJECT_ID": "2024-247S",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
-        "LAUNCH_DATE": "2024-12-21"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "TBD",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "62394": {
       "satcat": {
         "NORAD_CAT_ID": "62394",
@@ -349913,24 +349896,6 @@
       },
       "wikidata": null
     },
-    "69103": {
-      "satcat": {
-        "NORAD_CAT_ID": "69103",
-        "OBJECT_NAME": "DRAGON CRS-34",
-        "OBJECT_ID": "2026-107A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2026-05-15"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
     "69104": {
       "satcat": {
         "NORAD_CAT_ID": "69104",
@@ -355955,7 +355920,7 @@
     "69401": {
       "satcat": {
         "NORAD_CAT_ID": "69401",
-        "OBJECT_NAME": "QIANFAN OBJECT A",
+        "OBJECT_NAME": "QIANFAN-183",
         "OBJECT_ID": "2026-125A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -355976,7 +355941,7 @@
     "69402": {
       "satcat": {
         "NORAD_CAT_ID": "69402",
-        "OBJECT_NAME": "QIANFAN OBJECT B",
+        "OBJECT_NAME": "QIANFAN-184",
         "OBJECT_ID": "2026-125B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -355997,7 +355962,7 @@
     "69403": {
       "satcat": {
         "NORAD_CAT_ID": "69403",
-        "OBJECT_NAME": "QIANFAN OBJECT C",
+        "OBJECT_NAME": "QIANFAN-185",
         "OBJECT_ID": "2026-125C",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356018,7 +355983,7 @@
     "69404": {
       "satcat": {
         "NORAD_CAT_ID": "69404",
-        "OBJECT_NAME": "QIANFAN OBJECT D",
+        "OBJECT_NAME": "QIANFAN-186",
         "OBJECT_ID": "2026-125D",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356039,7 +356004,7 @@
     "69405": {
       "satcat": {
         "NORAD_CAT_ID": "69405",
-        "OBJECT_NAME": "QIANFAN OBJECT E",
+        "OBJECT_NAME": "QIANFAN-187",
         "OBJECT_ID": "2026-125E",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356060,7 +356025,7 @@
     "69406": {
       "satcat": {
         "NORAD_CAT_ID": "69406",
-        "OBJECT_NAME": "QIANFAN OBJECT F",
+        "OBJECT_NAME": "QIANFAN-188",
         "OBJECT_ID": "2026-125F",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356081,7 +356046,7 @@
     "69407": {
       "satcat": {
         "NORAD_CAT_ID": "69407",
-        "OBJECT_NAME": "QIANFAN OBJECT G",
+        "OBJECT_NAME": "QIANFAN-189",
         "OBJECT_ID": "2026-125G",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356102,7 +356067,7 @@
     "69408": {
       "satcat": {
         "NORAD_CAT_ID": "69408",
-        "OBJECT_NAME": "QIANFAN OBJECT H",
+        "OBJECT_NAME": "QIANFAN-190",
         "OBJECT_ID": "2026-125H",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356123,7 +356088,7 @@
     "69409": {
       "satcat": {
         "NORAD_CAT_ID": "69409",
-        "OBJECT_NAME": "QIANFAN OBJECT J",
+        "OBJECT_NAME": "QIANFAN-191",
         "OBJECT_ID": "2026-125J",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356144,7 +356109,7 @@
     "69410": {
       "satcat": {
         "NORAD_CAT_ID": "69410",
-        "OBJECT_NAME": "QIANFAN OBJECT K",
+        "OBJECT_NAME": "QIANFAN-192",
         "OBJECT_ID": "2026-125K",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356165,7 +356130,7 @@
     "69411": {
       "satcat": {
         "NORAD_CAT_ID": "69411",
-        "OBJECT_NAME": "QIANFAN OBJECT L",
+        "OBJECT_NAME": "QIANFAN-193",
         "OBJECT_ID": "2026-125L",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356186,7 +356151,7 @@
     "69412": {
       "satcat": {
         "NORAD_CAT_ID": "69412",
-        "OBJECT_NAME": "QIANFAN OBJECT M",
+        "OBJECT_NAME": "QIANFAN-194",
         "OBJECT_ID": "2026-125M",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356207,7 +356172,7 @@
     "69413": {
       "satcat": {
         "NORAD_CAT_ID": "69413",
-        "OBJECT_NAME": "QIANFAN OBJECT N",
+        "OBJECT_NAME": "QIANFAN-195",
         "OBJECT_ID": "2026-125N",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356228,7 +356193,7 @@
     "69414": {
       "satcat": {
         "NORAD_CAT_ID": "69414",
-        "OBJECT_NAME": "QIANFAN OBJECT P",
+        "OBJECT_NAME": "QIANFAN-196",
         "OBJECT_ID": "2026-125P",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356249,7 +356214,7 @@
     "69415": {
       "satcat": {
         "NORAD_CAT_ID": "69415",
-        "OBJECT_NAME": "QIANFAN OBJECT Q",
+        "OBJECT_NAME": "QIANFAN-197",
         "OBJECT_ID": "2026-125Q",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356270,7 +356235,7 @@
     "69416": {
       "satcat": {
         "NORAD_CAT_ID": "69416",
-        "OBJECT_NAME": "QIANFAN OBJECT R",
+        "OBJECT_NAME": "QIANFAN-198",
         "OBJECT_ID": "2026-125R",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356291,7 +356256,7 @@
     "69417": {
       "satcat": {
         "NORAD_CAT_ID": "69417",
-        "OBJECT_NAME": "QIANFAN OBJECT S",
+        "OBJECT_NAME": "QIANFAN-199",
         "OBJECT_ID": "2026-125S",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -356312,7 +356277,7 @@
     "69418": {
       "satcat": {
         "NORAD_CAT_ID": "69418",
-        "OBJECT_NAME": "QIANFAN OBJECT T",
+        "OBJECT_NAME": "QIANFAN-200",
         "OBJECT_ID": "2026-125T",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358361,7 +358326,7 @@
     "69570": {
       "satcat": {
         "NORAD_CAT_ID": "69570",
-        "OBJECT_NAME": "SHIJIAN-31",
+        "OBJECT_NAME": "SHIJIAN-31 (SJ-31)",
         "OBJECT_ID": "2026-136A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358541,7 +358506,7 @@
     "69582": {
       "satcat": {
         "NORAD_CAT_ID": "69582",
-        "OBJECT_NAME": "OBJECT A",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT A",
         "OBJECT_ID": "2026-138A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358559,7 +358524,7 @@
     "69583": {
       "satcat": {
         "NORAD_CAT_ID": "69583",
-        "OBJECT_NAME": "OBJECT B",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT B",
         "OBJECT_ID": "2026-138B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358577,7 +358542,7 @@
     "69584": {
       "satcat": {
         "NORAD_CAT_ID": "69584",
-        "OBJECT_NAME": "OBJECT C",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT C",
         "OBJECT_ID": "2026-138C",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358595,7 +358560,7 @@
     "69585": {
       "satcat": {
         "NORAD_CAT_ID": "69585",
-        "OBJECT_NAME": "OBJECT D",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT D",
         "OBJECT_ID": "2026-138D",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358613,7 +358578,7 @@
     "69586": {
       "satcat": {
         "NORAD_CAT_ID": "69586",
-        "OBJECT_NAME": "OBJECT E",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT E",
         "OBJECT_ID": "2026-138E",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358631,7 +358596,7 @@
     "69587": {
       "satcat": {
         "NORAD_CAT_ID": "69587",
-        "OBJECT_NAME": "OBJECT F",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT F",
         "OBJECT_ID": "2026-138F",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358649,7 +358614,7 @@
     "69588": {
       "satcat": {
         "NORAD_CAT_ID": "69588",
-        "OBJECT_NAME": "OBJECT G",
+        "OBJECT_NAME": "CENTISPACE-1 GROUP 05 OBJECT G",
         "OBJECT_ID": "2026-138G",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
@@ -358667,7 +358632,7 @@
     "69589": {
       "satcat": {
         "NORAD_CAT_ID": "69589",
-        "OBJECT_NAME": "BLUEBIRD OBJECT A",
+        "OBJECT_NAME": "SPACEMOBILE-008",
         "OBJECT_ID": "2026-139A",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
@@ -358685,7 +358650,7 @@
     "69590": {
       "satcat": {
         "NORAD_CAT_ID": "69590",
-        "OBJECT_NAME": "BLUEBIRD OBJECT B",
+        "OBJECT_NAME": "SPACEMOBILE-009",
         "OBJECT_ID": "2026-139B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
@@ -358703,7 +358668,7 @@
     "69591": {
       "satcat": {
         "NORAD_CAT_ID": "69591",
-        "OBJECT_NAME": "BLUEBIRD OBJECT C",
+        "OBJECT_NAME": "SPACEMOBILE-010",
         "OBJECT_ID": "2026-139C",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
