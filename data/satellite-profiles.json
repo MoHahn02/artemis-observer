@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-19T16:23:56Z",
+  "generatedAt": "2026-06-19T22:30:45Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15830,
+      "activeCount": 15831,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1583,7 +1583,7 @@
         "2026-03-26": 25,
         "2026-03-27": 1,
         "2026-03-28": 2,
-        "2026-03-30": 124,
+        "2026-03-30": 125,
         "2026-04-02": 29,
         "2026-04-03": 1,
         "2026-04-04": 29,
@@ -20728,7 +20728,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3593,
+        "activeCount": 3594,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21948,7 +21948,7 @@
           "2026-03-25": 2,
           "2026-03-27": 1,
           "2026-03-28": 2,
-          "2026-03-30": 85,
+          "2026-03-30": 86,
           "2026-04-03": 1,
           "2026-04-07": 9,
           "2026-04-08": 5,
@@ -345036,6 +345036,24 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "PAKI",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "68836": {
+      "satcat": {
+        "NORAD_CAT_ID": "68836",
+        "OBJECT_NAME": "BESSA",
+        "OBJECT_ID": "2026-067CX",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "POR",
+        "LAUNCH_DATE": "2026-03-30"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "POR",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
