@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T19:53:20Z",
+  "generatedAt": "2026-06-19T05:20:54Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15812,
+      "activeCount": 15811,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1150,7 +1150,7 @@
         "2023-11-03": 23,
         "2023-11-08": 22,
         "2023-11-09": 1,
-        "2023-11-11": 41,
+        "2023-11-11": 39,
         "2023-11-12": 2,
         "2023-11-16": 1,
         "2023-11-18": 22,
@@ -1275,7 +1275,7 @@
         "2024-08-11": 1,
         "2024-08-12": 25,
         "2024-08-15": 2,
-        "2024-08-16": 103,
+        "2024-08-16": 102,
         "2024-08-20": 22,
         "2024-08-22": 1,
         "2024-08-28": 19,
@@ -1625,6 +1625,7 @@
         "2026-06-03": 24,
         "2026-06-04": 47,
         "2026-06-05": 18,
+        "2026-06-07": 2,
         "2026-06-08": 29,
         "2026-06-09": 2,
         "2026-06-11": 25,
@@ -16672,7 +16673,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10618,
+        "activeCount": 10620,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -17043,6 +17044,7 @@
           "2026-05-30": 24,
           "2026-06-03": 24,
           "2026-06-04": 29,
+          "2026-06-07": 2,
           "2026-06-08": 29,
           "2026-06-11": 24,
           "2026-06-12": 29
@@ -17979,7 +17981,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11907,
+        "activeCount": 11909,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18399,6 +18401,7 @@
           "2026-06-03": 24,
           "2026-06-04": 47,
           "2026-06-05": 18,
+          "2026-06-07": 2,
           "2026-06-08": 29,
           "2026-06-11": 24,
           "2026-06-12": 29
@@ -19898,7 +19901,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "earth-observation": {
-        "activeCount": 135,
+        "activeCount": 132,
         "addedByDay": {
           "2013-02-11": 1,
           "2013-11-21": 1,
@@ -19915,8 +19918,8 @@
           "2018-12-03": 1,
           "2020-11-21": 1,
           "2021-09-27": 1,
-          "2023-11-11": 14,
-          "2024-08-16": 27,
+          "2023-11-11": 12,
+          "2024-08-16": 26,
           "2024-09-05": 1,
           "2024-12-05": 1,
           "2025-01-14": 32,
@@ -171561,46 +171564,6 @@
       },
       "wikidata": null
     },
-    "58285": {
-      "satcat": {
-        "NORAD_CAT_ID": "58285",
-        "OBJECT_NAME": "FLOCK 4Q-31",
-        "OBJECT_ID": "2023-174AF",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-11-11"
-      },
-      "profile": {
-        "type": "Erdbeobachtung",
-        "operator": "Planet Labs",
-        "country": "USA",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Planet",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "planet"
-      },
-      "wikidata": null
-    },
-    "58286": {
-      "satcat": {
-        "NORAD_CAT_ID": "58286",
-        "OBJECT_NAME": "FLOCK 4Q-30",
-        "OBJECT_ID": "2023-174AG",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-11-11"
-      },
-      "profile": {
-        "type": "Erdbeobachtung",
-        "operator": "Planet Labs",
-        "country": "USA",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Planet",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "planet"
-      },
-      "wikidata": null
-    },
     "58287": {
       "satcat": {
         "NORAD_CAT_ID": "58287",
@@ -206001,26 +205964,6 @@
         "NORAD_CAT_ID": "60490",
         "OBJECT_NAME": "FLOCK 4BE-23",
         "OBJECT_ID": "2024-149Y",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2024-08-16"
-      },
-      "profile": {
-        "type": "Erdbeobachtung",
-        "operator": "Planet Labs",
-        "country": "USA",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Planet",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "planet"
-      },
-      "wikidata": null
-    },
-    "60491": {
-      "satcat": {
-        "NORAD_CAT_ID": "60491",
-        "OBJECT_NAME": "FLOCK 4BE-15",
-        "OBJECT_ID": "2024-149Z",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2024-08-16"
@@ -356292,6 +356235,48 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69420": {
+      "satcat": {
+        "NORAD_CAT_ID": "69420",
+        "OBJECT_NAME": "STARLINK-37537",
+        "OBJECT_ID": "2026-126A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-07"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69421": {
+      "satcat": {
+        "NORAD_CAT_ID": "69421",
+        "OBJECT_NAME": "STARLINK-37585",
+        "OBJECT_ID": "2026-126B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-07"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
       },
       "wikidata": null
     },

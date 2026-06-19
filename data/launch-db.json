@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:32:55Z",
+  "generatedAt": "2026-06-19T05:20:54Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -83,7 +83,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a556b963-0f36-4660-95a8-fdffdba653e2/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-18T14:11:11Z"
     },
     {
@@ -106,7 +106,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9eb09815-c237-4fdd-9057-5b161131240c/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-02T18:31:05Z",
       "previousNets": [
         "2026-06-30T00:00:00Z",
@@ -183,7 +183,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z"
@@ -213,7 +213,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-21T04:43:17Z"
     },
     {
@@ -236,7 +236,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-22T12:09:28Z"
     },
     {
@@ -259,7 +259,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-23T10:55:32Z"
     },
     {
@@ -282,7 +282,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-23T23:39:26Z"
     },
     {
@@ -305,7 +305,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/4541ce85-0e38-42ac-a9a0-20474bb5f2cd/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-25T16:23:44Z"
     },
     {
@@ -328,7 +328,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d9adedc4-8fa1-4a36-84f9-43b8893a6865/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-26T16:32:37Z"
     },
     {
@@ -413,7 +413,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c5783e2b-d458-4b99-9936-4043c236190b/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-31T15:56:19Z"
     },
     {
@@ -436,7 +436,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ce3db8f7-ba9b-4a2a-953c-c6c6ee926541/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ce3db8f7-ba9b-4a2a-953c-c6c6ee926541/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-31T18:36:51Z"
     },
     {
@@ -492,7 +492,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-29T18:20:57Z",
       "previousNets": [
         "2026-06-10T00:30:00Z"
@@ -521,7 +521,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -556,7 +556,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -592,7 +592,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/tenowloften/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/add0a5be-1cf0-49cb-975a-e8c8e18d37ec/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-08T00:20:40Z",
       "outcome": "delayed",
       "previousNets": [
@@ -624,7 +624,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -659,7 +659,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-18T06:27:12Z"
     },
     {
@@ -682,7 +682,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a8d8d683-3ab0-40ab-beb0-e66bb55afd91/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a8d8d683-3ab0-40ab-beb0-e66bb55afd91/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-18T06:27:12Z"
     },
     {
@@ -705,7 +705,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-04-25T06:44:24Z",
       "previousNets": [
         "2026-06-01T00:00:00Z",
@@ -736,7 +736,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLLzylYExR",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-45",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a4fb0d1a-2655-4552-b950-f2f6340ef85a/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-10T21:13:24Z",
       "previousNets": [
         "2026-06-23T11:00:00Z",
@@ -784,14 +784,14 @@
       "mission": "Project Starfall Demonstration Mission",
       "missionDescription": "Note: Mission profile and payload details are TBD.\r\n\r\nDemonstration mission for SpaceX\u2019s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth, including for in-orbit manufacturing. \r\n\r\nStarfall is a cylindrical shaped capsule approximately 0.75 meters tall with a diameter of 3.1 meters, weighing approximately 2100 kilograms, and capable of carrying 1000 kilograms of payload. It is designed to be carried on Starship flights.",
       "orbit": "Low Earth Orbit",
-      "status": "delayed",
+      "status": "go",
       "outcome": "delayed",
-      "statusName": "To Be Confirmed",
-      "statusAbbrev": "TBC",
-      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/74bf8472-9ba1-42d6-9245-b014f8e91de9/",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://www.spacex.com/launches/starfalldemo",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/74bf8472-9ba1-42d6-9245-b014f8e91de9/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-15T23:19:33Z",
       "previousNets": [
         "2026-06-21T10:43:00Z"
@@ -799,7 +799,8 @@
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
       "preflightStatus": "",
-      "postflightStatus": ""
+      "postflightStatus": "",
+      "livestreamUrl": "https://x.com/i/broadcasts/1qGoNNmPYeBKv"
     },
     {
       "id": "f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8",
@@ -821,7 +822,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-04T13:40:02Z",
       "previousNets": [
         "2026-06-23T02:00:00Z"
@@ -851,7 +852,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1jGXggXNMdVKZ",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-28",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/de5fbae3-66b9-4bbf-8938-4d55f3318c07/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-10T18:37:12Z",
       "previousNets": [
         "2026-06-20T14:00:00Z"
@@ -864,7 +865,7 @@
     {
       "id": "5d4099bf-a0be-4f54-b236-b6ab3aed4146",
       "name": "Falcon 9 Block 5 | NROL-179",
-      "net": "2026-06-19T08:40:00Z",
+      "net": "2026-06-19T08:50:40Z",
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "pad": "Space Launch Complex 4E",
@@ -881,12 +882,13 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/nrol179",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5d4099bf-a0be-4f54-b236-b6ab3aed4146/",
-      "updatedAt": "2026-06-18T17:32:55Z",
+      "updatedAt": "2026-06-19T05:20:54Z",
       "firstSeenAt": "2026-06-09T14:04:39Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=QoA12hmA3co",
       "previousNets": [
         "2026-06-17T09:08:00Z",
-        "2026-06-18T08:54:00Z"
+        "2026-06-18T08:54:00Z",
+        "2026-06-19T08:40:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
