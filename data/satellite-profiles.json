@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-19T09:59:34Z",
+  "generatedAt": "2026-06-19T16:23:56Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15831,
+      "activeCount": 15830,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -99,7 +99,6 @@
         "2003-01-25": 1,
         "2003-01-29": 1,
         "2003-03-11": 1,
-        "2003-03-31": 1,
         "2003-04-08": 1,
         "2003-04-12": 1,
         "2003-05-13": 1,
@@ -19771,14 +19770,13 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "navigation": {
-        "activeCount": 156,
+        "activeCount": 155,
         "addedByDay": {
           "1997-07-23": 1,
           "1999-10-07": 1,
           "2000-07-16": 1,
           "2000-11-10": 1,
           "2003-01-29": 1,
-          "2003-03-31": 1,
           "2003-12-21": 1,
           "2004-03-20": 1,
           "2004-06-23": 1,
@@ -38770,28 +38768,6 @@
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "27704": {
-      "satcat": {
-        "NORAD_CAT_ID": "27704",
-        "OBJECT_NAME": "NAVSTAR 52 (USA 168)",
-        "OBJECT_ID": "2003-010A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2003-03-31",
-        "RCS": "4.0247"
-      },
-      "profile": {
-        "type": "Navigationssatellit",
-        "operator": "U.S. Space Force",
-        "country": "USA",
-        "sizeLabel": "mehrere Meter",
-        "source": "CelesTrak SATCAT + Systemregel: GPS/Navstar",
-        "confidence": "system",
-        "operatorAmbiguous": false,
-        "ruleId": "gps-navstar"
       },
       "wikidata": null
     },
