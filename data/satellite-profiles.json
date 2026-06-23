@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T08:53:27Z",
+  "generatedAt": "2026-06-23T21:14:58Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
@@ -357748,15 +357748,15 @@
     "69506": {
       "satcat": {
         "NORAD_CAT_ID": "69506",
-        "OBJECT_NAME": "OBJECT E",
+        "OBJECT_NAME": "VERTECS",
         "OBJECT_ID": "2026-132E",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-06-12"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
