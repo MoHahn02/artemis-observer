@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-22T05:34:27Z",
+  "generatedAt": "2026-06-23T05:50:01Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15827,
+      "activeCount": 15824,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -206,7 +206,6 @@
         "2008-06-09": 1,
         "2008-06-11": 1,
         "2008-06-12": 2,
-        "2008-07-07": 1,
         "2008-07-16": 1,
         "2008-08-14": 1,
         "2008-08-18": 1,
@@ -801,7 +800,7 @@
         "2020-09-21": 1,
         "2020-09-27": 2,
         "2020-09-28": 12,
-        "2020-10-06": 13,
+        "2020-10-06": 12,
         "2020-10-11": 1,
         "2020-10-18": 15,
         "2020-10-24": 10,
@@ -830,7 +829,7 @@
         "2021-01-24": 8,
         "2021-01-29": 3,
         "2021-02-02": 1,
-        "2021-02-04": 12,
+        "2021-02-04": 11,
         "2021-02-16": 17,
         "2021-02-24": 3,
         "2021-02-28": 2,
@@ -16339,6 +16338,7 @@
         "2021-12-12": 2,
         "2026-05-18": 2,
         "2022-04-10": 10,
+        "2026-06-22": 2,
         "2026-03-17": 5,
         "2021-07-18": 1,
         "2026-05-19": 3,
@@ -16676,7 +16676,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10636,
+        "activeCount": 10634,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16689,12 +16689,12 @@
           "2020-08-07": 34,
           "2020-08-18": 15,
           "2020-09-03": 16,
-          "2020-10-06": 13,
+          "2020-10-06": 12,
           "2020-10-18": 15,
           "2020-10-24": 10,
           "2020-11-25": 10,
           "2021-01-20": 41,
-          "2021-02-04": 11,
+          "2021-02-04": 10,
           "2021-02-16": 17,
           "2021-03-04": 28,
           "2021-03-11": 47,
@@ -17465,6 +17465,7 @@
           "2024-10-18": 1,
           "2022-04-30": 4,
           "2023-06-27": 2,
+          "2026-06-22": 2,
           "2026-01-23": 2,
           "2025-06-12": 1,
           "2026-03-17": 4,
@@ -17986,7 +17987,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11925,
+        "activeCount": 11923,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18016,13 +18017,13 @@
           "2020-08-07": 34,
           "2020-08-18": 15,
           "2020-09-03": 16,
-          "2020-10-06": 13,
+          "2020-10-06": 12,
           "2020-10-18": 15,
           "2020-10-24": 10,
           "2020-11-25": 10,
           "2020-12-18": 36,
           "2021-01-20": 41,
-          "2021-02-04": 11,
+          "2021-02-04": 10,
           "2021-02-16": 17,
           "2021-03-04": 28,
           "2021-03-11": 47,
@@ -19349,6 +19350,7 @@
           "2022-04-10": 1,
           "2022-04-30": 4,
           "2023-06-27": 2,
+          "2026-06-22": 2,
           "2026-01-23": 2,
           "2025-06-12": 1,
           "2026-03-17": 4,
@@ -20738,7 +20740,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3594,
+        "activeCount": 3593,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20926,7 +20928,6 @@
           "2008-06-09": 1,
           "2008-06-11": 1,
           "2008-06-12": 2,
-          "2008-07-07": 1,
           "2008-07-16": 1,
           "2008-08-14": 1,
           "2008-08-18": 1,
@@ -41530,25 +41531,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "TURK",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "33153": {
-      "satcat": {
-        "NORAD_CAT_ID": "33153",
-        "OBJECT_NAME": "INTELSAT 25 (IS-25)",
-        "OBJECT_ID": "2008-034A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "ITSO",
-        "LAUNCH_DATE": "2008-07-07",
-        "RCS": "12.6850"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "ITSO",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -70092,27 +70074,6 @@
       },
       "wikidata": null
     },
-    "46576": {
-      "satcat": {
-        "NORAD_CAT_ID": "46576",
-        "OBJECT_NAME": "STARLINK-1677",
-        "OBJECT_ID": "2020-070AW",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2020-10-06"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
     "46582": {
       "satcat": {
         "NORAD_CAT_ID": "46582",
@@ -73324,27 +73285,6 @@
         "NORAD_CAT_ID": "47555",
         "OBJECT_NAME": "STARLINK-1954",
         "OBJECT_ID": "2021-009H",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2021-02-04"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "47559": {
-      "satcat": {
-        "NORAD_CAT_ID": "47559",
-        "OBJECT_NAME": "STARLINK-1958",
-        "OBJECT_ID": "2021-009M",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2021-02-04"
