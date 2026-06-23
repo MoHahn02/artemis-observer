@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-23T05:50:01Z",
+  "generatedAt": "2026-06-23T08:53:27Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15824,
+      "activeCount": 15823,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -496,7 +496,7 @@
         "2015-08-27": 2,
         "2015-08-28": 1,
         "2015-09-02": 1,
-        "2015-09-11": 2,
+        "2015-09-11": 1,
         "2015-09-12": 1,
         "2015-09-14": 2,
         "2015-09-19": 1,
@@ -19780,7 +19780,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "navigation": {
-        "activeCount": 155,
+        "activeCount": 154,
         "addedByDay": {
           "1997-07-23": 1,
           "1999-10-07": 1,
@@ -19836,7 +19836,7 @@
           "2015-03-30": 1,
           "2015-07-15": 1,
           "2015-07-25": 2,
-          "2015-09-11": 2,
+          "2015-09-11": 1,
           "2015-09-29": 1,
           "2015-10-31": 1,
           "2015-12-17": 2,
@@ -20740,7 +20740,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3593,
+        "activeCount": 3592,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21190,7 +21190,7 @@
           "2015-08-27": 2,
           "2015-08-28": 1,
           "2015-09-02": 1,
-          "2015-09-11": 2,
+          "2015-09-11": 1,
           "2015-09-12": 1,
           "2015-09-14": 2,
           "2015-09-19": 1,
@@ -51346,25 +51346,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "40889": {
-      "satcat": {
-        "NORAD_CAT_ID": "40889",
-        "OBJECT_NAME": "GSAT0205 (GALILEO 9)",
-        "OBJECT_ID": "2015-045A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "ESA",
-        "LAUNCH_DATE": "2015-09-11",
-        "RCS": "9.5282"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "ESA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
