@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-25T05:49:53Z",
+  "generatedAt": "2026-06-25T11:28:11Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15821,
+      "activeCount": 15881,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1628,9 +1628,9 @@
         "2026-06-09": 2,
         "2026-06-11": 25,
         "2026-06-12": 35,
-        "2026-06-15": 8,
+        "2026-06-15": 32,
         "2026-06-16": 1,
-        "2026-06-17": 20,
+        "2026-06-17": 56,
         "2026-06-19": 1,
         "2026-06-23": 1
       },
@@ -16225,7 +16225,7 @@
         "2026-05-21": 2,
         "2025-03-07": 7,
         "2024-01-20": 3,
-        "2026-06-24": 2,
+        "2026-06-24": 3,
         "2024-06-22": 2,
         "2021-06-27": 1,
         "2020-07-07": 1,
@@ -16679,7 +16679,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10631,
+        "activeCount": 10655,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -17053,7 +17053,8 @@
           "2026-06-07": 21,
           "2026-06-08": 29,
           "2026-06-11": 24,
-          "2026-06-12": 29
+          "2026-06-12": 29,
+          "2026-06-15": 24
         },
         "decayedByDay": {
           "2020-10-01": 1,
@@ -17967,7 +17968,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "kuiper": {
-        "activeCount": 328,
+        "activeCount": 364,
         "addedByDay": {
           "2025-04-28": 27,
           "2025-06-23": 26,
@@ -17980,7 +17981,8 @@
           "2026-04-04": 29,
           "2026-04-28": 29,
           "2026-04-30": 32,
-          "2026-05-29": 29
+          "2026-05-29": 29,
+          "2026-06-17": 36
         },
         "decayedByDay": {
           "2025-04-29": 1,
@@ -17991,7 +17993,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 11920,
+        "activeCount": 11980,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18414,7 +18416,9 @@
           "2026-06-07": 21,
           "2026-06-08": 29,
           "2026-06-11": 24,
-          "2026-06-12": 29
+          "2026-06-12": 29,
+          "2026-06-15": 24,
+          "2026-06-17": 36
         },
         "decayedByDay": {
           "2017-11-24": 1,
@@ -36639,6 +36643,7 @@
           "2023-03-31": 1,
           "2023-10-10": 4,
           "2025-06-19": 2,
+          "2026-06-24": 1,
           "2024-03-15": 1,
           "2025-10-12": 3,
           "2024-12-29": 2,
@@ -358466,6 +358471,510 @@
       },
       "wikidata": null
     },
+    "69546": {
+      "satcat": {
+        "NORAD_CAT_ID": "69546",
+        "OBJECT_NAME": "STARLINK-37880",
+        "OBJECT_ID": "2026-135A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69547": {
+      "satcat": {
+        "NORAD_CAT_ID": "69547",
+        "OBJECT_NAME": "STARLINK-37881",
+        "OBJECT_ID": "2026-135B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69548": {
+      "satcat": {
+        "NORAD_CAT_ID": "69548",
+        "OBJECT_NAME": "STARLINK-37265",
+        "OBJECT_ID": "2026-135C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69549": {
+      "satcat": {
+        "NORAD_CAT_ID": "69549",
+        "OBJECT_NAME": "STARLINK-37871",
+        "OBJECT_ID": "2026-135D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69550": {
+      "satcat": {
+        "NORAD_CAT_ID": "69550",
+        "OBJECT_NAME": "STARLINK-37865",
+        "OBJECT_ID": "2026-135E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69551": {
+      "satcat": {
+        "NORAD_CAT_ID": "69551",
+        "OBJECT_NAME": "STARLINK-37862",
+        "OBJECT_ID": "2026-135F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69552": {
+      "satcat": {
+        "NORAD_CAT_ID": "69552",
+        "OBJECT_NAME": "STARLINK-37861",
+        "OBJECT_ID": "2026-135G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69553": {
+      "satcat": {
+        "NORAD_CAT_ID": "69553",
+        "OBJECT_NAME": "STARLINK-37859",
+        "OBJECT_ID": "2026-135H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69554": {
+      "satcat": {
+        "NORAD_CAT_ID": "69554",
+        "OBJECT_NAME": "STARLINK-37860",
+        "OBJECT_ID": "2026-135J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69555": {
+      "satcat": {
+        "NORAD_CAT_ID": "69555",
+        "OBJECT_NAME": "STARLINK-37858",
+        "OBJECT_ID": "2026-135K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69556": {
+      "satcat": {
+        "NORAD_CAT_ID": "69556",
+        "OBJECT_NAME": "STARLINK-37927",
+        "OBJECT_ID": "2026-135L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69557": {
+      "satcat": {
+        "NORAD_CAT_ID": "69557",
+        "OBJECT_NAME": "STARLINK-37929",
+        "OBJECT_ID": "2026-135M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69558": {
+      "satcat": {
+        "NORAD_CAT_ID": "69558",
+        "OBJECT_NAME": "STARLINK-37954",
+        "OBJECT_ID": "2026-135N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69559": {
+      "satcat": {
+        "NORAD_CAT_ID": "69559",
+        "OBJECT_NAME": "STARLINK-37958",
+        "OBJECT_ID": "2026-135P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69560": {
+      "satcat": {
+        "NORAD_CAT_ID": "69560",
+        "OBJECT_NAME": "STARLINK-37950",
+        "OBJECT_ID": "2026-135Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69561": {
+      "satcat": {
+        "NORAD_CAT_ID": "69561",
+        "OBJECT_NAME": "STARLINK-37952",
+        "OBJECT_ID": "2026-135R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69562": {
+      "satcat": {
+        "NORAD_CAT_ID": "69562",
+        "OBJECT_NAME": "STARLINK-37935",
+        "OBJECT_ID": "2026-135S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69563": {
+      "satcat": {
+        "NORAD_CAT_ID": "69563",
+        "OBJECT_NAME": "STARLINK-37936",
+        "OBJECT_ID": "2026-135T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69564": {
+      "satcat": {
+        "NORAD_CAT_ID": "69564",
+        "OBJECT_NAME": "STARLINK-37932",
+        "OBJECT_ID": "2026-135U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69565": {
+      "satcat": {
+        "NORAD_CAT_ID": "69565",
+        "OBJECT_NAME": "STARLINK-37916",
+        "OBJECT_ID": "2026-135V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69566": {
+      "satcat": {
+        "NORAD_CAT_ID": "69566",
+        "OBJECT_NAME": "STARLINK-37909",
+        "OBJECT_ID": "2026-135W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69567": {
+      "satcat": {
+        "NORAD_CAT_ID": "69567",
+        "OBJECT_NAME": "STARLINK-37934",
+        "OBJECT_ID": "2026-135X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69568": {
+      "satcat": {
+        "NORAD_CAT_ID": "69568",
+        "OBJECT_NAME": "STARLINK-37938",
+        "OBJECT_ID": "2026-135Y",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69569": {
+      "satcat": {
+        "NORAD_CAT_ID": "69569",
+        "OBJECT_NAME": "STARLINK-37924",
+        "OBJECT_ID": "2026-135Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-15"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "SpaceX",
+        "country": "USA",
+        "sizeLabel": "ca. 2,8 x 1,4 m",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
     "69570": {
       "satcat": {
         "NORAD_CAT_ID": "69570",
@@ -358823,6 +359332,762 @@
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69592": {
+      "satcat": {
+        "NORAD_CAT_ID": "69592",
+        "OBJECT_NAME": "KUIPER-00423",
+        "OBJECT_ID": "2026-140A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69593": {
+      "satcat": {
+        "NORAD_CAT_ID": "69593",
+        "OBJECT_NAME": "KUIPER-00428",
+        "OBJECT_ID": "2026-140B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69594": {
+      "satcat": {
+        "NORAD_CAT_ID": "69594",
+        "OBJECT_NAME": "KUIPER-00481",
+        "OBJECT_ID": "2026-140C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69595": {
+      "satcat": {
+        "NORAD_CAT_ID": "69595",
+        "OBJECT_NAME": "KUIPER-00490",
+        "OBJECT_ID": "2026-140D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69596": {
+      "satcat": {
+        "NORAD_CAT_ID": "69596",
+        "OBJECT_NAME": "KUIPER-00493",
+        "OBJECT_ID": "2026-140E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69597": {
+      "satcat": {
+        "NORAD_CAT_ID": "69597",
+        "OBJECT_NAME": "KUIPER-00496",
+        "OBJECT_ID": "2026-140F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69598": {
+      "satcat": {
+        "NORAD_CAT_ID": "69598",
+        "OBJECT_NAME": "KUIPER-00513",
+        "OBJECT_ID": "2026-140G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69599": {
+      "satcat": {
+        "NORAD_CAT_ID": "69599",
+        "OBJECT_NAME": "KUIPER-00516",
+        "OBJECT_ID": "2026-140H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69600": {
+      "satcat": {
+        "NORAD_CAT_ID": "69600",
+        "OBJECT_NAME": "KUIPER-00517",
+        "OBJECT_ID": "2026-140J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69601": {
+      "satcat": {
+        "NORAD_CAT_ID": "69601",
+        "OBJECT_NAME": "KUIPER-00520",
+        "OBJECT_ID": "2026-140K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69602": {
+      "satcat": {
+        "NORAD_CAT_ID": "69602",
+        "OBJECT_NAME": "KUIPER-00522",
+        "OBJECT_ID": "2026-140L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69603": {
+      "satcat": {
+        "NORAD_CAT_ID": "69603",
+        "OBJECT_NAME": "KUIPER-00528",
+        "OBJECT_ID": "2026-140M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69604": {
+      "satcat": {
+        "NORAD_CAT_ID": "69604",
+        "OBJECT_NAME": "KUIPER-00532",
+        "OBJECT_ID": "2026-140N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69605": {
+      "satcat": {
+        "NORAD_CAT_ID": "69605",
+        "OBJECT_NAME": "KUIPER-00533",
+        "OBJECT_ID": "2026-140P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69606": {
+      "satcat": {
+        "NORAD_CAT_ID": "69606",
+        "OBJECT_NAME": "KUIPER-00534",
+        "OBJECT_ID": "2026-140Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69607": {
+      "satcat": {
+        "NORAD_CAT_ID": "69607",
+        "OBJECT_NAME": "KUIPER-00537",
+        "OBJECT_ID": "2026-140R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69608": {
+      "satcat": {
+        "NORAD_CAT_ID": "69608",
+        "OBJECT_NAME": "KUIPER-00538",
+        "OBJECT_ID": "2026-140S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69609": {
+      "satcat": {
+        "NORAD_CAT_ID": "69609",
+        "OBJECT_NAME": "KUIPER-00540",
+        "OBJECT_ID": "2026-140T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69610": {
+      "satcat": {
+        "NORAD_CAT_ID": "69610",
+        "OBJECT_NAME": "KUIPER-00541",
+        "OBJECT_ID": "2026-140U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69611": {
+      "satcat": {
+        "NORAD_CAT_ID": "69611",
+        "OBJECT_NAME": "KUIPER-00542",
+        "OBJECT_ID": "2026-140V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69612": {
+      "satcat": {
+        "NORAD_CAT_ID": "69612",
+        "OBJECT_NAME": "KUIPER-00543",
+        "OBJECT_ID": "2026-140W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69613": {
+      "satcat": {
+        "NORAD_CAT_ID": "69613",
+        "OBJECT_NAME": "KUIPER-00544",
+        "OBJECT_ID": "2026-140X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69614": {
+      "satcat": {
+        "NORAD_CAT_ID": "69614",
+        "OBJECT_NAME": "KUIPER-00546",
+        "OBJECT_ID": "2026-140Y",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69615": {
+      "satcat": {
+        "NORAD_CAT_ID": "69615",
+        "OBJECT_NAME": "KUIPER-00547",
+        "OBJECT_ID": "2026-140Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69616": {
+      "satcat": {
+        "NORAD_CAT_ID": "69616",
+        "OBJECT_NAME": "KUIPER-00549",
+        "OBJECT_ID": "2026-140AA",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69617": {
+      "satcat": {
+        "NORAD_CAT_ID": "69617",
+        "OBJECT_NAME": "KUIPER-00550",
+        "OBJECT_ID": "2026-140AB",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69618": {
+      "satcat": {
+        "NORAD_CAT_ID": "69618",
+        "OBJECT_NAME": "KUIPER-00551",
+        "OBJECT_ID": "2026-140AC",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69619": {
+      "satcat": {
+        "NORAD_CAT_ID": "69619",
+        "OBJECT_NAME": "KUIPER-00554",
+        "OBJECT_ID": "2026-140AD",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69620": {
+      "satcat": {
+        "NORAD_CAT_ID": "69620",
+        "OBJECT_NAME": "KUIPER-00555",
+        "OBJECT_ID": "2026-140AE",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69621": {
+      "satcat": {
+        "NORAD_CAT_ID": "69621",
+        "OBJECT_NAME": "KUIPER-00556",
+        "OBJECT_ID": "2026-140AF",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69622": {
+      "satcat": {
+        "NORAD_CAT_ID": "69622",
+        "OBJECT_NAME": "KUIPER-00557",
+        "OBJECT_ID": "2026-140AG",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69623": {
+      "satcat": {
+        "NORAD_CAT_ID": "69623",
+        "OBJECT_NAME": "KUIPER-00560",
+        "OBJECT_ID": "2026-140AH",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69624": {
+      "satcat": {
+        "NORAD_CAT_ID": "69624",
+        "OBJECT_NAME": "KUIPER-00561",
+        "OBJECT_ID": "2026-140AJ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69625": {
+      "satcat": {
+        "NORAD_CAT_ID": "69625",
+        "OBJECT_NAME": "KUIPER-00564",
+        "OBJECT_ID": "2026-140AK",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69626": {
+      "satcat": {
+        "NORAD_CAT_ID": "69626",
+        "OBJECT_NAME": "KUIPER-00567",
+        "OBJECT_ID": "2026-140AL",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
+      },
+      "wikidata": null
+    },
+    "69627": {
+      "satcat": {
+        "NORAD_CAT_ID": "69627",
+        "OBJECT_NAME": "KUIPER-00573",
+        "OBJECT_ID": "2026-140AM",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-06-17"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit",
+        "operator": "Amazon Project Kuiper",
+        "country": "USA",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Project Kuiper",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "kuiper"
       },
       "wikidata": null
     },
