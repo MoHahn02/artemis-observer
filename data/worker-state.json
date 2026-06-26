@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-06-26T20:52:36Z",
-  "lastCheckRunAt": "2026-06-26T20:52:36Z",
+  "lastFeedRefreshAt": "2026-06-26T22:15:07Z",
+  "lastCheckRunAt": "2026-06-26T22:15:07Z",
   "lastSatelliteRefreshAt": "2026-06-26T20:52:36Z",
   "pendingChecks": [
     {
@@ -250,18 +250,6 @@
       "overdue": false
     },
     {
-      "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
-      "phase": "preflight",
-      "dueAt": "2026-07-06T13:45:00Z",
-      "overdue": false
-    },
-    {
-      "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
-      "phase": "postflight",
-      "dueAt": "2026-07-06T14:30:00Z",
-      "overdue": false
-    },
-    {
       "id": "62d4cd48-ed28-418b-b58c-526781a50a39",
       "phase": "preflight",
       "dueAt": "2026-07-09T08:50:00Z",
@@ -283,6 +271,18 @@
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
       "phase": "postflight",
       "dueAt": "2026-07-10T05:30:00Z",
+      "overdue": false
+    },
+    {
+      "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
+      "phase": "preflight",
+      "dueAt": "2026-07-10T13:45:00Z",
+      "overdue": false
+    },
+    {
+      "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
+      "phase": "postflight",
+      "dueAt": "2026-07-10T14:30:00Z",
       "overdue": false
     },
     {
