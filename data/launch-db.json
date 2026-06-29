@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T16:06:27Z",
+  "generatedAt": "2026-06-29T18:20:53Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1048,13 +1048,13 @@
       "statusDescription": "Launch in Flight",
       "sourceUrl": "https://www.spacex.com/launches/sxm11",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ce3db8f7-ba9b-4a2a-953c-c6c6ee926541/",
-      "updatedAt": "2026-06-29T16:06:27Z",
+      "updatedAt": "2026-06-29T18:20:53Z",
       "firstSeenAt": "2026-05-31T18:36:51Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
       ],
       "preflightCheckedAt": "2026-06-29T06:59:55Z",
-      "postflightCheckedAt": "2026-06-29T16:06:27Z",
+      "postflightCheckedAt": "2026-06-29T18:20:53Z",
       "preflightStatus": "missed",
       "postflightStatus": "live",
       "livestreamUrl": "https://www.youtube.com/watch?v=rz4QAc0BkEA"
