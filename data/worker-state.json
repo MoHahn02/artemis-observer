@@ -1,20 +1,8 @@
 {
-  "lastFeedRefreshAt": "2026-06-29T01:58:00Z",
-  "lastCheckRunAt": "2026-06-29T01:58:00Z",
-  "lastSatelliteRefreshAt": "2026-06-29T01:58:00Z",
+  "lastFeedRefreshAt": "2026-06-29T06:59:55Z",
+  "lastCheckRunAt": "2026-06-29T06:59:55Z",
+  "lastSatelliteRefreshAt": "2026-06-29T06:59:55Z",
   "pendingChecks": [
-    {
-      "id": "ce3db8f7-ba9b-4a2a-953c-c6c6ee926541",
-      "phase": "preflight",
-      "dueAt": "2026-06-29T02:10:00Z",
-      "overdue": false
-    },
-    {
-      "id": "ce3db8f7-ba9b-4a2a-953c-c6c6ee926541",
-      "phase": "postflight",
-      "dueAt": "2026-06-29T02:55:00Z",
-      "overdue": false
-    },
     {
       "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
       "phase": "preflight",
@@ -130,18 +118,6 @@
       "overdue": false
     },
     {
-      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
-      "phase": "preflight",
-      "dueAt": "2026-06-30T01:00:00Z",
-      "overdue": false
-    },
-    {
-      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
-      "phase": "postflight",
-      "dueAt": "2026-06-30T01:45:00Z",
-      "overdue": false
-    },
-    {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
       "phase": "preflight",
       "dueAt": "2026-06-30T04:45:00Z",
@@ -163,6 +139,18 @@
       "id": "f596ad48-881e-47d6-806d-113c6dd97427",
       "phase": "postflight",
       "dueAt": "2026-06-30T10:53:00Z",
+      "overdue": false
+    },
+    {
+      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
+      "phase": "preflight",
+      "dueAt": "2026-07-01T12:45:00Z",
+      "overdue": false
+    },
+    {
+      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
+      "phase": "postflight",
+      "dueAt": "2026-07-01T13:30:00Z",
       "overdue": false
     },
     {
@@ -443,7 +431,7 @@
     }
   ],
   "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-06-29T01:58:00Z",
-  "lastSatelliteProfileRefreshAt": "2026-06-29T01:58:00Z",
+  "lastIssOemRefreshAt": "2026-06-29T06:59:55Z",
+  "lastSatelliteProfileRefreshAt": "2026-06-29T06:59:55Z",
   "lastEarthObservationRefreshAt": "2026-06-28T18:47:50Z"
 }
