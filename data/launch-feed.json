@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T13:12:42Z",
+  "generatedAt": "2026-07-01T15:57:27Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-07-01T14:12:42Z",
+  "nextRefreshAfter": "2026-07-01T16:57:27Z",
   "launches": [
     {
       "id": "2bedbf8c-8df2-4e24-8397-8c2a08fab581",
@@ -28,7 +28,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2bedbf8c-8df2-4e24-8397-8c2a08fab581/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2bedbf8c-8df2-4e24-8397-8c2a08fab581/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "491122a3-3eff-42db-aff3-424b3431fc0b",
@@ -55,7 +55,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qKVmmrbbEdxB",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-46",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/491122a3-3eff-42db-aff3-424b3431fc0b/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "9eb09815-c237-4fdd-9057-5b161131240c",
@@ -82,7 +82,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=IxEYrkqNH8s",
       "sourceUrl": "https://www.ulalaunch.com/missions/next-launch/atlas-v-amazon-leo-8",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9eb09815-c237-4fdd-9057-5b161131240c/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "f596ad48-881e-47d6-806d-113c6dd97427",
@@ -109,7 +109,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "888e0de3-ce4d-4daf-8140-bb0d3a4c8245",
@@ -136,7 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/888e0de3-ce4d-4daf-8140-bb0d3a4c8245/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/888e0de3-ce4d-4daf-8140-bb0d3a4c8245/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "1ef27ca1-af91-48bb-b934-3da5abd9f711",
@@ -163,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1oKMvvkZZAOGQ",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-50",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1ef27ca1-af91-48bb-b934-3da5abd9f711/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "9e0f6efb-4742-4ba3-9fd4-4ea218576c71",
@@ -190,7 +190,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e0f6efb-4742-4ba3-9fd4-4ea218576c71/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e0f6efb-4742-4ba3-9fd4-4ea218576c71/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "a6db1e67-5860-47c9-a674-adc0f35b62e0",
@@ -217,7 +217,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1YxNrryLloQxw",
       "sourceUrl": "https://www.spacex.com/launches/transporter17",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a6db1e67-5860-47c9-a674-adc0f35b62e0/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "62d4cd48-ed28-418b-b58c-526781a50a39",
@@ -244,7 +244,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1kKzDDNnkOLJv",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-42",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/62d4cd48-ed28-418b-b58c-526781a50a39/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "1e79a5e9-c02c-470f-882f-884120100fef",
@@ -271,7 +271,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1e79a5e9-c02c-470f-882f-884120100fef/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "135fb199-a39e-48cc-ba27-0aecd96ba9f8",
@@ -298,7 +298,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1PKqrrkYpNwGb",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-48",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/135fb199-a39e-48cc-ba27-0aecd96ba9f8/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "e09f254f-18bc-4985-963e-6075fa3d7a1c",
@@ -325,7 +325,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qKDzzywYMVJV",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-14",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e09f254f-18bc-4985-963e-6075fa3d7a1c/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "a556b963-0f36-4660-95a8-fdffdba653e2",
@@ -352,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a556b963-0f36-4660-95a8-fdffdba653e2/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
@@ -379,7 +379,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
@@ -406,7 +406,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
@@ -433,7 +433,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I",
       "sourceUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -460,7 +460,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -487,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "a2234679-5efe-4a00-9aff-cf82dbac22b0",
@@ -514,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a2234679-5efe-4a00-9aff-cf82dbac22b0/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "d8eb4b68-5307-4b3b-b585-5598958defc2",
@@ -541,7 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d8eb4b68-5307-4b3b-b585-5598958defc2/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -568,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -595,7 +595,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "ac897b9f-44d2-4ff4-8416-1a0a076e98a2",
@@ -622,7 +622,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ac897b9f-44d2-4ff4-8416-1a0a076e98a2/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     },
     {
       "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
@@ -649,7 +649,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
-      "updatedAt": "2026-07-01T13:12:42Z"
+      "updatedAt": "2026-07-01T15:57:27Z"
     }
   ]
 }
