@@ -66,6 +66,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const EARTH_OBSERVATION_REFRESH_MS = 6 * 60 * 60 * 1000;
     const EARTH_OBSERVATION_TARGET_COVERAGE = 0.86;
     const EARTH_OBSERVATION_MIN_COVERAGE = 0.66;
+    const AUTO_OBSERVER_IDLE_MS = 2 * 60 * 1000;
+    const AUTO_OBSERVER_DISTANCE = 270;
+    const AUTO_OBSERVER_HEIGHT = 92;
+    const AUTO_OBSERVER_ORBIT_SPEED = 0.018;
     const MOON_TEX_URL = 'assets/textures/moon.jpg';
     const SATELLITE_RESULT_LIMIT = 40;
     const SATELLITES_IN_ORBIT_ESTIMATE = 16910;
@@ -150,6 +154,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'earth.obs.fallback': 'Blue Marble fallback',
             'earth.obs.toggleOn': 'NASA layer on',
             'earth.obs.toggleOff': 'NASA layer off',
+            'auto.observer.toggleOn': 'Auto observer on',
+            'auto.observer.toggleOff': 'Auto observer off',
             'launch.unknownOrg': 'Unknown',
             'launch.unknownPad': 'Unknown pad',
             'launch.unknownRocket': 'Rocket unknown',
@@ -380,6 +386,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'earth.obs.fallback': 'Blue Marble Fallback',
             'earth.obs.toggleOn': 'NASA-Layer an',
             'earth.obs.toggleOff': 'NASA-Layer aus',
+            'auto.observer.toggleOn': 'Beobachtungsmodus an',
+            'auto.observer.toggleOff': 'Beobachtungsmodus aus',
             'launch.unknownOrg': 'Unbekannt',
             'launch.unknownPad': 'Unbekanntes Pad',
             'launch.unknownRocket': 'Rakete unbekannt',
@@ -602,6 +610,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'Erde & Wolken': 'Earth & clouds',
             'Schalte die echten NASA-GIBS-Erdbeobachtungs- und Wolkenlayer ein oder aus.': 'Toggle the real NASA GIBS Earth observation and cloud layers.',
             'NASA-Layer an': 'NASA layer on',
+            'Automatischer Beobachter': 'Automatic observer',
+            'Schwebt nach kurzer Ruhe wieder sanft um die Erde.': 'Returns to a gentle Earth orbit after a short idle period.',
+            'Beobachtungsmodus an': 'Observer mode on',
             'Satelliten-Tracking': 'Satellite tracking',
             'Lege fest, wie weit die vorausberechnete Flugbahn fuer den verfolgten Satelliten angezeigt wird.': 'Choose how far the predicted path for the tracked satellite is shown.',
             'Flugbahn-Laenge': 'Path length',
@@ -1040,6 +1051,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         followMoon: false,
         followOrion: false,
         userNavigatingCamera: false,
+        autoObserverActive: false,
+        autoObserverAngle: 0,
+        autoObserverLastInteractionMs: 0,
         freeCameraMode: false,
         flyKeys: { ArrowUp: false, ArrowDown: false, ArrowLeft: false, ArrowRight: false },
         raycaster: new THREE.Raycaster(),
@@ -1150,6 +1164,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             launchGroundTrackRevolutions: LAUNCH_GROUND_TRACK_DEFAULT_REVOLUTIONS,
             satelliteSizeScale: SATELLITE_SIZE_SCALE_DEFAULT,
             earthObservationLayer: true,
+            autoObserverMode: true,
             language: defaultUiLanguage()
         };
         try {
@@ -1168,6 +1183,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             delete parsed.satelliteSizeMode;
             delete parsed.satelliteRealisticSize;
             parsed.earthObservationLayer = parsed.earthObservationLayer !== false;
+            parsed.autoObserverMode = parsed.autoObserverMode !== false;
             parsed.language = normalizeLanguage(parsed.language);
             return parsed;
         } catch (error) {
@@ -1387,6 +1403,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             'settings-close',
             'settings-scrim',
             'toggle-earth-observation-layer',
+            'toggle-auto-observer-mode',
             'mobile-dock',
             'mobile-sheet-scrim',
             'mobile-nav-info',
@@ -1588,6 +1605,28 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         updateSelectedLaunchTrajectory(state.selectedLaunchId || state.launchDetailActive ? getSelectedLaunch() : null);
     }
 
+    function syncAutoObserverSettingsUi() {
+        const enabled = state.panelVisibility.autoObserverMode !== false;
+        if (!dom['toggle-auto-observer-mode']) return;
+        dom['toggle-auto-observer-mode'].textContent = enabled
+            ? t('auto.observer.toggleOn')
+            : t('auto.observer.toggleOff');
+        dom['toggle-auto-observer-mode'].setAttribute('aria-pressed', String(enabled));
+        dom['toggle-auto-observer-mode'].classList.toggle('active', enabled);
+    }
+
+    function setAutoObserverModeEnabled(enabled) {
+        state.panelVisibility.autoObserverMode = Boolean(enabled);
+        syncAutoObserverSettingsUi();
+        writeUiState();
+        if (!state.panelVisibility.autoObserverMode) {
+            deactivateAutoObserver();
+        } else {
+            state.autoObserverLastInteractionMs = 0;
+            maybeActivateAutoObserver(performance.now(), true);
+        }
+    }
+
     function translatedStaticText(originalText) {
         const trimmed = String(originalText || '').trim();
         if (!trimmed) return originalText;
@@ -1655,6 +1694,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         syncSatelliteOrbitSettingsUi();
         syncSatelliteSizeSettingsUi();
         syncLaunchGroundTrackSettingsUi();
+        syncAutoObserverSettingsUi();
         applyEarthObservationVisibility();
         populateSatelliteGroupFilter();
         syncStatsWindowControls();
@@ -1937,6 +1977,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['toggle-earth-observation-layer']?.addEventListener('click', () => {
             setEarthObservationLayerEnabled(!state.panelVisibility.earthObservationLayer);
         });
+        dom['toggle-auto-observer-mode']?.addEventListener('click', () => {
+            setAutoObserverModeEnabled(state.panelVisibility.autoObserverMode === false);
+        });
         dom['stat-insight-close']?.addEventListener('click', closeStatsPanel);
         ensureMobileSheetHandles();
 
@@ -1984,7 +2027,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['sat-focus-stop']?.addEventListener('click', stopSatellitePanelContext);
         dom['sat-focus-stop-wide']?.addEventListener('click', stopSatellitePanelContext);
         dom['sat-focus-constellation']?.addEventListener('click', jumpFocusedSatelliteToConstellation);
-        dom['earth-view-btn']?.addEventListener('click', resetView);
+        dom['earth-view-btn']?.addEventListener('click', () => resetView(true));
         dom['observer-view-btn']?.addEventListener('click', toggleFollowObserver);
         dom['moon-view-btn']?.addEventListener('click', toggleMoonView);
         dom['solar-view-btn']?.addEventListener('click', solarSystemView);
@@ -2071,6 +2114,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         syncSatelliteOrbitSettingsUi();
         syncSatelliteSizeSettingsUi();
         syncLaunchGroundTrackSettingsUi();
+        syncAutoObserverSettingsUi();
         initScene();
         bindUi();
         buildMissionTimeline();
@@ -3465,6 +3509,62 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
     function setFocusTarget(target) {
         state.controls.target.copy(target);
+    }
+
+    function hasManualCameraFocus() {
+        return Boolean(
+            state.freeCameraMode ||
+            state.followSatelliteId ||
+            state.focusLaunchId ||
+            state.focusedBody ||
+            state.followMoon ||
+            state.followOrion ||
+            state.followObserver
+        );
+    }
+
+    function deactivateAutoObserver() {
+        state.autoObserverActive = false;
+    }
+
+    function markCameraActivity() {
+        state.autoObserverLastInteractionMs = performance.now();
+        deactivateAutoObserver();
+    }
+
+    function activateAutoObserver(now = performance.now()) {
+        if (!state.camera || !state.controls || state.panelVisibility.autoObserverMode === false) return;
+        exitFreeCamera();
+        clearFocusModes();
+        state.userNavigatingCamera = false;
+        const offset = state.camera.position.clone().sub(state.controls.target);
+        state.autoObserverAngle = Math.atan2(offset.z, offset.x);
+        state.autoObserverLastInteractionMs = state.autoObserverLastInteractionMs || now;
+        state.autoObserverActive = true;
+    }
+
+    function maybeActivateAutoObserver(now = performance.now(), force = false) {
+        if (state.panelVisibility.autoObserverMode === false || state.autoObserverActive) return;
+        const last = state.autoObserverLastInteractionMs || 0;
+        if (!force && hasManualCameraFocus() && last && now - last < AUTO_OBSERVER_IDLE_MS) return;
+        if (force || !last || now - last >= AUTO_OBSERVER_IDLE_MS) {
+            activateAutoObserver(now);
+        }
+    }
+
+    function updateAutoObserver(now, dtReal) {
+        maybeActivateAutoObserver(now);
+        if (!state.autoObserverActive || !state.camera || !state.controls) return;
+        state.autoObserverAngle += dtReal * AUTO_OBSERVER_ORBIT_SPEED;
+        const target = new THREE.Vector3(0, 0, 0);
+        const desired = new THREE.Vector3(
+            Math.cos(state.autoObserverAngle) * AUTO_OBSERVER_DISTANCE,
+            AUTO_OBSERVER_HEIGHT + Math.sin(state.autoObserverAngle * 0.37) * 18,
+            Math.sin(state.autoObserverAngle) * AUTO_OBSERVER_DISTANCE
+        );
+        state.controls.target.lerp(target, 0.045);
+        state.camera.position.lerp(desired, 0.018);
+        state.camera.updateProjectionMatrix();
     }
 
     function updateArtemisVisibility() {
@@ -7616,6 +7716,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function toggleFollowObserver() {
         const world = getObserverWorldPosition();
         if (!world) return;
+        markCameraActivity();
         exitFreeCamera();
         const next = !state.followObserver;
         clearFocusModes();
@@ -7629,6 +7730,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function focusSatelliteById(satelliteId, follow) {
         const satellite = state.satelliteIndex.get(satelliteId);
         if (!satellite) return;
+        markCameraActivity();
         if (follow && state.followSatelliteId === satelliteId) {
             stopSatelliteFollow();
             return;
@@ -7679,6 +7781,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.userNavigatingCamera = false;
             return;
         }
+        markCameraActivity();
         state.userNavigatingCamera = true;
         clearFocusModes();
     }
@@ -7718,6 +7821,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const launchId = launchKey(launch);
         const world = getLaunchMarkerWorldData(launchId);
         if (!world) return;
+        markCameraActivity();
         exitFreeCamera();
         state.focusLaunchId = launchId;
         state.focusedBody = null;
@@ -7746,6 +7850,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function focusLaunchPad(row) {
         const world = launchPadWorldData(row);
         if (!world) return;
+        markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
         state.focusLaunchId = null;
@@ -7753,6 +7858,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function focusFromPick(kind, planetIndex) {
+        markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
         if (kind === 'sun') {
@@ -7858,6 +7964,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function toggleFreeCamera() {
+        markCameraActivity();
         state.freeCameraMode = !state.freeCameraMode;
         dom['free-cam-btn']?.classList.toggle('active', state.freeCameraMode);
         state.controls.enabled = true;
@@ -7877,6 +7984,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function toggleMoonView() {
+        markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
         setFocusTarget(state.moonMesh.position.clone());
@@ -7884,6 +7992,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function toggleFollowOrion() {
+        markCameraActivity();
         if (!state.artemisReplayEnabled) {
             setArtemisReplayEnabled(true);
         }
@@ -7902,19 +8011,22 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['follow-artemis']?.classList.toggle('active', state.followOrion);
     }
 
-    function resetView() {
+    function resetView(userInitiated = false) {
+        if (userInitiated) markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
         setFocusTarget(new THREE.Vector3(0, 0, 0));
     }
 
     function solarSystemView() {
+        markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
         setFocusTarget(state.sunScenePos.clone());
     }
 
     function jumpToNow() {
+        markCameraActivity();
         state.simTime = Date.now();
         warpToOne();
         clearFocusModes();
@@ -8256,6 +8368,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function onKeyDown(event) {
+        if (!event.repeat && !['Shift', 'Control', 'Alt', 'Meta', 'Tab'].includes(event.key)) {
+            markCameraActivity();
+        }
         if (state.freeCameraMode && Object.prototype.hasOwnProperty.call(state.flyKeys, event.key)) {
             event.preventDefault();
             state.flyKeys[event.key] = true;
@@ -8344,6 +8459,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
 
         if (!state.freeCameraMode) {
+            updateAutoObserver(now, dtReal);
             if (state.followSatelliteId) {
                 const satelliteWorld = getSatelliteWorldPosition(state.followSatelliteId);
                 if (satelliteWorld) {
