@@ -1,8 +1,20 @@
 {
-  "lastFeedRefreshAt": "2026-07-02T23:43:06Z",
-  "lastCheckRunAt": "2026-07-03T01:20:26Z",
-  "lastSatelliteRefreshAt": "2026-07-02T23:43:06Z",
+  "lastFeedRefreshAt": "2026-07-03T05:27:10Z",
+  "lastCheckRunAt": "2026-07-03T05:27:10Z",
+  "lastSatelliteRefreshAt": "2026-07-03T05:27:10Z",
   "pendingChecks": [
+    {
+      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
+      "phase": "preflight",
+      "dueAt": "2026-07-03T08:20:00Z",
+      "overdue": false
+    },
+    {
+      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
+      "phase": "postflight",
+      "dueAt": "2026-07-03T09:05:00Z",
+      "overdue": false
+    },
     {
       "id": "9e0f6efb-4742-4ba3-9fd4-4ea218576c71",
       "phase": "preflight",
@@ -190,12 +202,6 @@
       "overdue": false
     },
     {
-      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
-      "phase": "preflight",
-      "dueAt": "2026-07-30T23:45:00Z",
-      "overdue": false
-    },
-    {
       "id": "10fa7952-f00b-4292-80a2-4207e208844e",
       "phase": "postflight",
       "dueAt": "2026-07-31T00:30:00Z",
@@ -262,12 +268,6 @@
       "overdue": false
     },
     {
-      "id": "f596ad48-881e-47d6-806d-113c6dd97427",
-      "phase": "postflight",
-      "dueAt": "2026-07-31T00:30:00Z",
-      "overdue": false
-    },
-    {
       "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
       "phase": "preflight",
       "dueAt": "2026-08-06T19:15:00Z",
@@ -301,6 +301,18 @@
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
       "phase": "postflight",
       "dueAt": "2026-08-27T00:30:00Z",
+      "overdue": false
+    },
+    {
+      "id": "521f3a1c-f977-4306-9b7f-495858719adf",
+      "phase": "preflight",
+      "dueAt": "2026-08-29T23:45:00Z",
+      "overdue": false
+    },
+    {
+      "id": "521f3a1c-f977-4306-9b7f-495858719adf",
+      "phase": "postflight",
+      "dueAt": "2026-08-30T00:30:00Z",
       "overdue": false
     },
     {
@@ -346,10 +358,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "feed refresh failed: The read operation timed out"
-  ],
-  "lastIssOemRefreshAt": "2026-07-02T23:43:06Z",
-  "lastSatelliteProfileRefreshAt": "2026-07-02T23:43:06Z",
+  "lastErrors": [],
+  "lastIssOemRefreshAt": "2026-07-03T05:27:10Z",
+  "lastSatelliteProfileRefreshAt": "2026-07-03T05:27:10Z",
   "lastEarthObservationRefreshAt": "2026-07-02T23:43:06Z"
 }
