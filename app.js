@@ -117,6 +117,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const SATELLITE_ORBIT_PERIOD_MIN_MINUTES = 80;
     const SATELLITE_ORBIT_PERIOD_MAX_MINUTES = 8 * SIDEREAL_DAY_MINUTES;
     const SATELLITE_ORBIT_REFRESH_MS = 30 * 1000;
+    const EARTH_TRANSPARENT_RENDER_ORDER = 5;
+    const SATELLITE_OVERLAY_RENDER_ORDER = 40;
     const SCENE_CLICK_DRAG_TOLERANCE_PX = 7;
     const PROVIDER_STATS_WINDOW_DAYS = 100;
 
@@ -2745,6 +2747,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             })
         );
         state.earthObservationMesh.visible = false;
+        state.earthObservationMesh.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER;
         state.earthGroup.add(state.earthObservationMesh);
 
         state.earthCloudMesh = new THREE.Mesh(
@@ -2756,6 +2759,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 depthWrite: false
             })
         );
+        state.earthCloudMesh.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER + 1;
         loadTextureCandidates(loader, EARTH_CLOUD_TEX_URLS, (texture) => {
             prepareColorTexture(texture);
             state.earthCloudMesh.material.map = texture;
@@ -2784,6 +2788,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 depthWrite: false
             })
         );
+        state.earthAtmosphereMesh.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER + 2;
         state.earthGroup.add(state.earthAtmosphereMesh);
 
         const glow = new THREE.Mesh(
@@ -2797,6 +2802,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             })
         );
         state.earthGlowMesh = glow;
+        state.earthGlowMesh.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER + 3;
         state.earthGroup.add(glow);
 
         state.launchMarkerRoot = new THREE.Group();
@@ -2885,9 +2891,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 vertexColors: true,
                 transparent: true,
                 opacity: SATELLITE_LAYER_OPACITY,
-                depthWrite: false
+                depthWrite: false,
+                depthTest: true
             })
         );
+        state.satellitePoints.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER;
         state.satellitePoints.frustumCulled = false;
         state.satellitePoints.visible = false;
         state.earthMesh.add(state.satellitePoints);
@@ -2904,9 +2912,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 gapSize: 0.3,
                 transparent: true,
                 opacity: 0.78,
-                depthWrite: false
+                depthWrite: false,
+                depthTest: true
             })
         );
+        state.satelliteOrbitLine.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER - 1;
         state.satelliteOrbitLine.frustumCulled = false;
         state.satelliteOrbitLine.visible = false;
         state.earthGroup.add(state.satelliteOrbitLine);
@@ -2919,9 +2929,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 gapSize: 0.18,
                 transparent: true,
                 opacity: 0.68,
-                depthWrite: false
+                depthWrite: false,
+                depthTest: true
             })
         );
+        state.satelliteGroundTrackLine.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER - 1;
         state.satelliteGroundTrackLine.frustumCulled = false;
         state.satelliteGroundTrackLine.visible = false;
         state.earthMesh.add(state.satelliteGroundTrackLine);
@@ -2937,6 +2949,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             depthWrite: false,
             depthTest: false
         }));
+        focusRing.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER + 2;
         focusRing.userData.baseScale = 1.65;
         focusRing.frustumCulled = false;
 
@@ -2944,6 +2957,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         focusLight.position.set(0, 0.65, 0.55);
 
         group.add(focusRing, focusLight);
+        group.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER + 1;
         group.userData.focusRing = focusRing;
         group.userData.focusLight = focusLight;
         group.userData.modelRoot = new THREE.Group();
@@ -3017,7 +3031,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             roughness: options.roughness ?? 0.55,
             metalness: options.metalness ?? 0.35,
             emissive: options.emissive ?? 0x000000,
-            emissiveIntensity: options.emissiveIntensity ?? 0
+            emissiveIntensity: options.emissiveIntensity ?? 0,
+            transparent: true,
+            opacity: 1,
+            depthWrite: false,
+            depthTest: true
         });
     }
 
@@ -3129,8 +3147,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
 
         group.traverse((child) => {
+            child.renderOrder = SATELLITE_OVERLAY_RENDER_ORDER + 1;
             child.frustumCulled = false;
-            if (child.isMesh) child.castShadow = false;
+            if (child.isMesh) {
+                child.castShadow = false;
+                child.material.depthWrite = false;
+                child.material.depthTest = true;
+                child.material.transparent = true;
+                child.material.opacity = 1;
+                child.material.needsUpdate = true;
+            }
         });
         return group;
     }
