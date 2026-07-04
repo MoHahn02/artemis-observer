@@ -2166,6 +2166,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.controls.target.set(0, 0, 0);
         state.controls.addEventListener('start', onControlStart);
         state.controls.addEventListener('end', onControlEnd);
+        syncCameraPanMode();
 
         state.scene.add(new THREE.AmbientLight(0x334055, 1.6));
 
@@ -3556,8 +3557,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         );
     }
 
+    function shouldLockPanToEarth() {
+        return isMobileViewport() && !state.freeCameraMode && !hasManualCameraFocus();
+    }
+
+    function syncCameraPanMode() {
+        if (!state.controls) return;
+        state.controls.enablePan = !state.freeCameraMode && !shouldLockPanToEarth();
+    }
+
     function shouldKeepMobileEarthFocus() {
-        return isMobileViewport() && !state.autoObserverActive && !hasManualCameraFocus();
+        return isMobileViewport() && !state.autoObserverActive && !state.freeCameraMode && !hasManualCameraFocus();
     }
 
     function keepCameraTargetOnEarth(alpha = 1) {
@@ -6207,6 +6217,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             : null;
         state.satelliteGroupFilter = 'all';
         state.followSatelliteId = null;
+        syncCameraPanMode();
         if (dom['satellite-group-filter']) {
             dom['satellite-group-filter'].value = 'all';
         }
@@ -7699,6 +7710,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function stopSatelliteFollow() {
         if (!state.followSatelliteId) return;
         state.followSatelliteId = null;
+        syncCameraPanMode();
         refreshSatelliteFocusVisuals();
         renderSatelliteSearchResults();
     }
@@ -7720,6 +7732,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const group = satelliteConstellationGroup(satellite);
         if (!group) return;
         state.followSatelliteId = null;
+        syncCameraPanMode();
         closeSearch();
         setSatelliteGroupFilter(group.id);
         renderSatelliteSearchResults();
@@ -7768,6 +7781,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             state.followObserver = true;
             setFocusTarget(world);
         }
+        syncCameraPanMode();
         dom['observer-view-btn']?.classList.toggle('active', state.followObserver);
     }
 
@@ -7799,6 +7813,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             frameFollowedSatellite(world, satellite);
             if (isMobileViewport()) openMobilePanel('satellite');
         }
+        syncCameraPanMode();
         refreshSatelliteFocusVisuals();
         renderSatelliteSearchResults();
     }
@@ -7817,6 +7832,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (document.body.classList.contains('search-open')) {
             renderSatelliteSearchResults();
         }
+        syncCameraPanMode();
     }
 
     function onControlStart() {
@@ -7880,6 +7896,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         dom['observer-view-btn']?.classList.remove('active');
         dom['moon-view-btn']?.classList.remove('active');
         dom['follow-artemis']?.classList.remove('active');
+        syncCameraPanMode();
         frameLaunchMarker(world);
     }
 
@@ -7909,19 +7926,26 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         exitFreeCamera();
         clearFocusModes();
         if (kind === 'sun') {
+            state.focusedBody = { kind: 'sun' };
             setFocusTarget(state.sunScenePos.clone());
+            syncCameraPanMode();
             return;
         }
         if (kind === 'moon') {
+            state.followMoon = true;
             setFocusTarget(state.moonMesh.position.clone());
+            dom['moon-view-btn']?.classList.add('active');
+            syncCameraPanMode();
             return;
         }
         if (kind === 'planet') {
             if (planetIndex === 2) {
                 setFocusTarget(new THREE.Vector3(0, 0, 0));
             } else if (state.planetMeshes[planetIndex]) {
+                state.focusedBody = { kind: 'planet', index: planetIndex };
                 setFocusTarget(state.planetMeshes[planetIndex].position.clone());
             }
+            syncCameraPanMode();
         }
     }
 
@@ -8015,27 +8039,29 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.freeCameraMode = !state.freeCameraMode;
         dom['free-cam-btn']?.classList.toggle('active', state.freeCameraMode);
         state.controls.enabled = true;
-        state.controls.enablePan = !state.freeCameraMode;
         if (state.freeCameraMode) {
             clearFocusModes();
         }
+        syncCameraPanMode();
     }
 
     function exitFreeCamera() {
         if (!state.freeCameraMode) return;
         state.freeCameraMode = false;
         state.controls.enabled = true;
-        state.controls.enablePan = true;
         dom['free-cam-btn']?.classList.remove('active');
         Object.keys(state.flyKeys).forEach((key) => { state.flyKeys[key] = false; });
+        syncCameraPanMode();
     }
 
     function toggleMoonView() {
         markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
+        state.followMoon = true;
         setFocusTarget(state.moonMesh.position.clone());
         dom['moon-view-btn']?.classList.add('active');
+        syncCameraPanMode();
     }
 
     function toggleFollowOrion() {
@@ -8056,6 +8082,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             dom['moon-view-btn']?.classList.remove('active');
         }
         dom['follow-artemis']?.classList.toggle('active', state.followOrion);
+        syncCameraPanMode();
     }
 
     function resetView(userInitiated = false) {
@@ -8069,7 +8096,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         markCameraActivity();
         exitFreeCamera();
         clearFocusModes();
+        state.focusedBody = { kind: 'sun' };
         setFocusTarget(state.sunScenePos.clone());
+        syncCameraPanMode();
     }
 
     function jumpToNow() {
@@ -8460,6 +8489,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             const limits = mobileSheetLimits(key);
             state.mobileSheetHeights[key] = THREE.MathUtils.clamp(state.mobileSheetHeights[key], limits.min, limits.max);
         });
+        syncCameraPanMode();
         applyMobilePanelState();
     }
 
@@ -8571,6 +8601,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                     state.camera.position.add(state.controls.target.clone().sub(previousTarget));
                 } else {
                     state.focusLaunchId = null;
+                    syncCameraPanMode();
                 }
             } else if (!state.userNavigatingCamera && state.focusedBody) {
                 const target = new THREE.Vector3();
