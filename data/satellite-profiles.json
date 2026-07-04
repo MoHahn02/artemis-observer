@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-03T23:30:32Z",
+  "generatedAt": "2026-07-04T12:46:22Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15924,
+      "activeCount": 15923,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -25,7 +25,6 @@
         "1990-04-24": 1,
         "1990-08-30": 1,
         "1991-08-02": 1,
-        "1992-10-22": 1,
         "1993-01-13": 1,
         "1993-02-09": 1,
         "1993-09-03": 1,
@@ -20790,7 +20789,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3587,
+        "activeCount": 3586,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20812,7 +20811,6 @@
           "1990-04-24": 1,
           "1990-08-30": 1,
           "1991-08-02": 1,
-          "1992-10-22": 1,
           "1993-01-13": 1,
           "1993-02-09": 1,
           "1993-09-03": 1,
@@ -37241,25 +37239,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "22195": {
-      "satcat": {
-        "NORAD_CAT_ID": "22195",
-        "OBJECT_NAME": "LAGEOS 2",
-        "OBJECT_ID": "1992-070B",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "IT",
-        "LAUNCH_DATE": "1992-10-22",
-        "RCS": "0.3981"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "IT",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
