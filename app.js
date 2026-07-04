@@ -67,6 +67,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const EARTH_OBSERVATION_MIN_COVERAGE = 0.66;
     const AUTO_OBSERVER_IDLE_MS = 2 * 60 * 1000;
     const AUTO_OBSERVER_DISTANCE = 270;
+    const AUTO_OBSERVER_DISTANCE_SWING = 145;
     const AUTO_OBSERVER_HEIGHT = 92;
     const AUTO_OBSERVER_ORBIT_SPEED = 0.018;
     const EARTH_ORBIT_VISIBLE_DISTANCE = 700;
@@ -3611,13 +3612,22 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (!state.autoObserverActive || !state.camera || !state.controls) return;
         state.autoObserverAngle += dtReal * AUTO_OBSERVER_ORBIT_SPEED;
         const target = new THREE.Vector3(0, 0, 0);
+        const zoomWave = Math.sin(state.autoObserverAngle * 0.56);
+        const driftWave = Math.sin(state.autoObserverAngle * 0.21 + 1.4);
+        const orbitDistance = AUTO_OBSERVER_DISTANCE + AUTO_OBSERVER_DISTANCE_SWING * (zoomWave * 0.78 + driftWave * 0.22);
+        const orbitHeight = AUTO_OBSERVER_HEIGHT
+            + Math.sin(state.autoObserverAngle * 0.37) * 38
+            + Math.cos(state.autoObserverAngle * 0.18) * 18;
+        const crossTrack = Math.sin(state.autoObserverAngle * 0.73) * 34;
         const desired = new THREE.Vector3(
-            Math.cos(state.autoObserverAngle) * AUTO_OBSERVER_DISTANCE,
-            AUTO_OBSERVER_HEIGHT + Math.sin(state.autoObserverAngle * 0.37) * 18,
-            Math.sin(state.autoObserverAngle) * AUTO_OBSERVER_DISTANCE
+            Math.cos(state.autoObserverAngle) * orbitDistance,
+            orbitHeight,
+            Math.sin(state.autoObserverAngle) * orbitDistance
         );
+        desired.x += Math.cos(state.autoObserverAngle + Math.PI / 2) * crossTrack;
+        desired.z += Math.sin(state.autoObserverAngle + Math.PI / 2) * crossTrack;
         state.controls.target.lerp(target, 0.045);
-        state.camera.position.lerp(desired, 0.018);
+        state.camera.position.lerp(desired, 0.014);
         state.camera.updateProjectionMatrix();
     }
 
