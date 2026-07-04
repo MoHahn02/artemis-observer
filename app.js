@@ -3553,6 +3553,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         );
     }
 
+    function shouldKeepMobileEarthFocus() {
+        return isMobileViewport() && !state.autoObserverActive && !hasManualCameraFocus();
+    }
+
+    function keepCameraTargetOnEarth(alpha = 1) {
+        if (!state.camera || !state.controls) return;
+        const previousTarget = state.controls.target.clone();
+        state.controls.target.lerp(new THREE.Vector3(0, 0, 0), alpha);
+        state.camera.position.add(state.controls.target.clone().sub(previousTarget));
+    }
+
     function deactivateAutoObserver() {
         state.autoObserverActive = false;
     }
@@ -7818,6 +7829,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
     function onControlEnd() {
         state.userNavigatingCamera = false;
+        if (shouldKeepMobileEarthFocus()) {
+            keepCameraTargetOnEarth();
+        }
     }
 
     function onScenePointerDown(event) {
@@ -8538,6 +8552,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                 state.controls.target.lerp(state.moonMesh.position, 0.1);
             } else if (!state.userNavigatingCamera && state.followOrion && state.artemisReplayEnabled) {
                 state.controls.target.lerp(state.orionMarker.position, 0.08);
+            } else if (!state.userNavigatingCamera && shouldKeepMobileEarthFocus()) {
+                keepCameraTargetOnEarth(0.18);
             }
         }
 
