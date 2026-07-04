@@ -70,6 +70,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const AUTO_OBSERVER_DISTANCE = 270;
     const AUTO_OBSERVER_HEIGHT = 92;
     const AUTO_OBSERVER_ORBIT_SPEED = 0.018;
+    const EARTH_ORBIT_VISIBLE_DISTANCE = 700;
+    const EARTH_LABEL_VISIBLE_DISTANCE = 520;
     const MOON_TEX_URL = 'assets/textures/moon.jpg';
     const SATELLITE_RESULT_LIMIT = 40;
     const SATELLITES_IN_ORBIT_ESTIMATE = 16910;
@@ -8498,8 +8500,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const camTargetDist = state.camera.position.distanceTo(state.controls.target);
         updateSatellitePointSizing(camTargetDist);
         const showAllOrbits = camTargetDist >= ORBITS_ALL_DISTANCE;
+        const showEarthOrbit = camTargetDist >= EARTH_ORBIT_VISIBLE_DISTANCE;
+        const showEarthLabel = camTargetDist >= EARTH_LABEL_VISIBLE_DISTANCE;
         state.planetOrbitList.forEach((line) => { line.visible = showAllOrbits; });
-        if (state.planetOrbits[2]) state.planetOrbits[2].visible = true;
+        if (state.planetOrbits[2]) state.planetOrbits[2].visible = showEarthOrbit;
+        if (state.earthLabel) state.earthLabel.visible = showEarthLabel;
         if (state.moonOrbitLine) state.moonOrbitLine.visible = true;
 
         if (state.planetOrbits[2] && state.planetOrbits[2].visible) {
