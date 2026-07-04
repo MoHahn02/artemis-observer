@@ -3444,15 +3444,18 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const texture = new THREE.CanvasTexture(canvas);
         texture.colorSpace = THREE.SRGBColorSpace;
 
-        state.northPoleMarker = new THREE.Sprite(new THREE.SpriteMaterial({
-            map: texture,
-            transparent: true,
-            opacity: 0.92,
-            depthTest: true,
-            depthWrite: false
-        }));
-        state.northPoleMarker.position.set(0, ARTEMIS.EARTH_RADIUS + 1.2, 0);
-        state.northPoleMarker.scale.set(4.2, 4.2, 1);
+        state.northPoleMarker = new THREE.Mesh(
+            new THREE.PlaneGeometry(4.2, 4.2),
+            new THREE.MeshBasicMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.92,
+                depthTest: true,
+                depthWrite: false,
+                side: THREE.DoubleSide
+            })
+        );
+        state.northPoleMarker.position.set(0, ARTEMIS.EARTH_RADIUS + 2.4, 0);
         state.northPoleMarker.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER + 3;
         state.earthGroup.add(state.northPoleMarker);
     }
@@ -8331,20 +8334,32 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         line.computeLineDistances();
     }
 
-    function isSunGlowOccludedByEarth() {
-        if (!state.camera || !state.sunScenePos) return false;
+    function getSunGlowOpacityByEarth() {
+        if (!state.camera || !state.sunScenePos || !state.sunGlow) return 1;
         const toSun = state.sunScenePos.clone().sub(state.camera.position);
+        const toEarth = state.camera.position.clone().multiplyScalar(-1);
         const sunDistance = toSun.length();
-        if (sunDistance <= 0) return false;
+        const earthDistance = toEarth.length();
+        if (sunDistance <= 0 || earthDistance <= ARTEMIS.EARTH_RADIUS) return 1;
 
-        const direction = toSun.multiplyScalar(1 / sunDistance);
-        const toEarthCenter = state.camera.position.clone().multiplyScalar(-1);
-        const closestApproach = toEarthCenter.dot(direction);
-        if (closestApproach <= 0 || closestApproach >= sunDistance) return false;
+        const sunDirection = toSun.multiplyScalar(1 / sunDistance);
+        const earthDirection = toEarth.multiplyScalar(1 / earthDistance);
+        const angularSeparation = Math.acos(THREE.MathUtils.clamp(
+            sunDirection.dot(earthDirection),
+            -1,
+            1
+        ));
+        const earthAngularRadius = Math.asin(THREE.MathUtils.clamp(
+            (ARTEMIS.EARTH_RADIUS * 1.01) / earthDistance,
+            0,
+            1
+        ));
+        const glowAngularRadius = Math.atan((state.sunGlow.scale.x * 0.5) / sunDistance);
+        const fullCoverMargin = earthAngularRadius - angularSeparation - glowAngularRadius;
+        if (fullCoverMargin <= 0) return 1;
 
-        const earthOcclusionRadius = ARTEMIS.EARTH_RADIUS * 1.04;
-        const missDistanceSq = toEarthCenter.lengthSq() - closestApproach * closestApproach;
-        return missDistanceSq <= earthOcclusionRadius * earthOcclusionRadius;
+        const fadeBand = Math.max(THREE.MathUtils.degToRad(0.08), glowAngularRadius * 0.25);
+        return 1 - THREE.MathUtils.clamp(fullCoverMargin / fadeBand, 0, 1);
     }
 
     function earthRotationAngleForMs(dateMs) {
@@ -8566,7 +8581,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         if (state.planetOrbits[2]) state.planetOrbits[2].visible = showEarthOrbit;
         if (state.earthLabel) state.earthLabel.visible = showEarthLabel;
         if (state.moonOrbitLine) state.moonOrbitLine.visible = showEarthOrbit;
-        if (state.sunGlow) state.sunGlow.visible = !isSunGlowOccludedByEarth();
+        if (state.sunGlow) {
+            const sunGlowOpacity = getSunGlowOpacityByEarth();
+            state.sunGlow.material.opacity = sunGlowOpacity;
+            state.sunGlow.visible = sunGlowOpacity > 0.02;
+        }
 
         if (state.planetOrbits[2] && state.planetOrbits[2].visible) {
             const dash = THREE.MathUtils.clamp(camTargetDist * 0.07, 18, 16000);
