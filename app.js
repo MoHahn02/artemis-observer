@@ -8362,6 +8362,27 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         return 1 - THREE.MathUtils.clamp(fullCoverMargin / fadeBand, 0, 1);
     }
 
+    function isPointOccludedByEarth(point, radiusScale = 1.015) {
+        if (!state.camera || !point) return false;
+        const toPoint = point.clone().sub(state.camera.position);
+        const pointDistance = toPoint.length();
+        if (pointDistance <= 0) return false;
+
+        const direction = toPoint.multiplyScalar(1 / pointDistance);
+        const toEarthCenter = state.camera.position.clone().multiplyScalar(-1);
+        if (toEarthCenter.length() <= ARTEMIS.EARTH_RADIUS * 0.98) return false;
+        const closestApproach = toEarthCenter.dot(direction);
+        if (closestApproach <= 0 || closestApproach >= pointDistance) return false;
+
+        const earthOcclusionRadius = ARTEMIS.EARTH_RADIUS * radiusScale;
+        const missDistanceSq = toEarthCenter.lengthSq() - closestApproach * closestApproach;
+        return missDistanceSq <= earthOcclusionRadius * earthOcclusionRadius;
+    }
+
+    function isLabelOccludedByEarth(label) {
+        return Boolean(label && isPointOccludedByEarth(label.position));
+    }
+
     function earthRotationAngleForMs(dateMs) {
         const jd = (dateMs / 86400000) + 2440587.5;
         const T = (jd - 2451545.0) / 36525;
@@ -8579,7 +8600,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         const showEarthLabel = camTargetDist >= EARTH_LABEL_VISIBLE_DISTANCE;
         state.planetOrbitList.forEach((line) => { line.visible = showAllOrbits; });
         if (state.planetOrbits[2]) state.planetOrbits[2].visible = showEarthOrbit;
-        if (state.earthLabel) state.earthLabel.visible = showEarthLabel;
+        if (state.earthLabel) state.earthLabel.visible = showEarthLabel && !isLabelOccludedByEarth(state.earthLabel);
+        if (state.moonLabel) state.moonLabel.visible = !isLabelOccludedByEarth(state.moonLabel);
+        if (state.orionLabel) state.orionLabel.visible = state.artemisReplayEnabled && !isLabelOccludedByEarth(state.orionLabel);
         if (state.moonOrbitLine) state.moonOrbitLine.visible = showEarthOrbit;
         if (state.sunGlow) {
             const sunGlowOpacity = getSunGlowOpacityByEarth();
@@ -8616,6 +8639,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             if (label._anchor && label._offsetY !== undefined) {
                 const offsetY = distance * 0.012;
                 label.position.set(label._anchor.x, label._anchor.y + offsetY, label._anchor.z);
+            }
+            label.visible = label !== state.earthLabel || showEarthLabel;
+            if (label.visible && isLabelOccludedByEarth(label)) {
+                label.visible = false;
             }
         });
 
