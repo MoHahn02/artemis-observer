@@ -1918,12 +1918,17 @@ body.hide-controls .panel-restore-bottom {
     }
 
     #controls-panel {
-        padding-top: 42px;
+        height: var(--mobile-sheet-height, min(30dvh, 280px));
+        padding: 34px 14px 12px;
     }
 
     .panel-arrow-controls {
-        top: 12px;
-        right: 12px;
+        top: 9px;
+        right: 10px;
+    }
+
+    #controls-panel .controls-grid {
+        gap: 8px;
     }
 
     .controls-grid-inline {
@@ -1938,6 +1943,7 @@ body.hide-controls .panel-restore-bottom {
         width: 100%;
         min-width: 0;
         flex: 1 1 100%;
+        gap: 8px;
     }
 
     .controls-row {
@@ -1950,6 +1956,7 @@ body.hide-controls .panel-restore-bottom {
     .time-row .action-btn,
     .warp-cluster .action-btn {
         min-width: 0;
+        padding: 8px 10px;
         text-align: center;
         white-space: normal;
     }

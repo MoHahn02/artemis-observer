@@ -32,7 +32,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     const SATELLITE_PROPAGATION_INTERVAL_MS = 1000;
     const HUD_UPDATE_INTERVAL_MS = 220;
     const OBLIQUITY_RAD = 23.4393 * Math.PI / 180;
-    const EARTH_POLE = new THREE.Vector3(-Math.sin(OBLIQUITY_RAD), Math.cos(OBLIQUITY_RAD), 0);
     const EARTH_SIDEREAL_REFERENCE_OFFSET_RAD = Math.PI / 2;
     const ORBITS_ALL_DISTANCE = 100000;
     const ZOOM_DIST_MIN = 2.6;
@@ -972,6 +971,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         earthAtmosphereMesh: null,
         earthGlowMesh: null,
         earthNightUniforms: null,
+        northPoleMarker: null,
         earthObservationRefreshTimer: null,
         earthObservationLoading: false,
         earthObservationDate: '',
@@ -1797,11 +1797,16 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }[id] || '';
     }
 
-    function mobileSheetLimits() {
+    function mobileSheetLimits(panelKey = '') {
         const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 640;
         const dockHeight = dom['mobile-dock']?.getBoundingClientRect().height || 78;
         const topClearance = 78;
         const max = Math.max(240, viewportHeight - dockHeight - topClearance - 24);
+        if (panelKey === 'controls') {
+            const controlsMax = Math.min(max, Math.max(230, Math.round(viewportHeight * 0.38)));
+            const controlsDefault = THREE.MathUtils.clamp(Math.round(viewportHeight * 0.3), 220, controlsMax);
+            return { min: Math.min(controlsMax, 150), max: controlsMax, defaultHeight: controlsDefault };
+        }
         const min = Math.min(max, 34);
         const defaultHeight = THREE.MathUtils.clamp(Math.round(viewportHeight * 0.54), min, max);
         return { min, max, defaultHeight };
@@ -1809,7 +1814,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
     function ensureMobileSheetHeight(panelKey) {
         if (!state.mobileSheetHeights[panelKey]) {
-            state.mobileSheetHeights[panelKey] = mobileSheetLimits().defaultHeight;
+            state.mobileSheetHeights[panelKey] = mobileSheetLimits(panelKey).defaultHeight;
         }
         return state.mobileSheetHeights[panelKey];
     }
@@ -1858,7 +1863,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             pointerId: event.pointerId,
             startY: event.clientY,
             startHeight: rect.height,
-            limits: mobileSheetLimits()
+            limits: mobileSheetLimits(panelKey)
         };
         panel.classList.add('mobile-sheet-dragging');
         panel.setPointerCapture?.(event.pointerId);
@@ -3308,7 +3313,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             map: new THREE.CanvasTexture(glowCanvas),
             transparent: true,
             blending: THREE.AdditiveBlending,
-            depthTest: false
+            depthTest: true,
+            depthWrite: false
         }));
         state.sunGlow.scale.set(40000, 40000, 1);
         state.sunGlow.position.copy(state.sunScenePos);
@@ -3410,6 +3416,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     function createLabels() {
         state.earthLabel = makeTextSprite('Erde', '#8cc3ff');
         state.earthLabel.position.set(ARTEMIS.EARTH_RADIUS + 8, 0, 0);
+        state.dynamicLabels.push(state.earthLabel);
         state.scene.add(state.earthLabel);
 
         state.moonLabel = makeTextSprite('Mond', '#e1e7f2');
@@ -3420,13 +3427,34 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function createNorthPoleAxis() {
-        const axisLength = ARTEMIS.EARTH_RADIUS * 2.5;
-        const north = EARTH_POLE.clone().multiplyScalar(axisLength);
-        const south = EARTH_POLE.clone().multiplyScalar(-axisLength);
-        state.scene.add(new THREE.Line(
-            new THREE.BufferGeometry().setFromPoints([south, north]),
-            new THREE.LineBasicMaterial({ color: 0xff4e4e, transparent: true, opacity: 0.6 })
-        ));
+        const canvas = document.createElement('canvas');
+        canvas.width = 96;
+        canvas.height = 96;
+
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#ff6b6b';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.font = '700 30px Bahnschrift, Arial Narrow, Segoe UI, sans-serif';
+        ctx.fillText('^', 48, 26);
+        ctx.font = '700 34px Bahnschrift, Arial Narrow, Segoe UI, sans-serif';
+        ctx.fillText('N', 48, 58);
+
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.colorSpace = THREE.SRGBColorSpace;
+
+        state.northPoleMarker = new THREE.Sprite(new THREE.SpriteMaterial({
+            map: texture,
+            transparent: true,
+            opacity: 0.92,
+            depthTest: true,
+            depthWrite: false
+        }));
+        state.northPoleMarker.position.set(0, ARTEMIS.EARTH_RADIUS + 1.2, 0);
+        state.northPoleMarker.scale.set(4.2, 4.2, 1);
+        state.northPoleMarker.renderOrder = EARTH_TRANSPARENT_RENDER_ORDER + 3;
+        state.earthGroup.add(state.northPoleMarker);
     }
 
     function createMoonOrbit() {
@@ -8289,6 +8317,22 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         line.computeLineDistances();
     }
 
+    function isSunGlowOccludedByEarth() {
+        if (!state.camera || !state.sunScenePos) return false;
+        const toSun = state.sunScenePos.clone().sub(state.camera.position);
+        const sunDistance = toSun.length();
+        if (sunDistance <= 0) return false;
+
+        const direction = toSun.multiplyScalar(1 / sunDistance);
+        const toEarthCenter = state.camera.position.clone().multiplyScalar(-1);
+        const closestApproach = toEarthCenter.dot(direction);
+        if (closestApproach <= 0 || closestApproach >= sunDistance) return false;
+
+        const earthOcclusionRadius = ARTEMIS.EARTH_RADIUS * 1.04;
+        const missDistanceSq = toEarthCenter.lengthSq() - closestApproach * closestApproach;
+        return missDistanceSq <= earthOcclusionRadius * earthOcclusionRadius;
+    }
+
     function earthRotationAngleForMs(dateMs) {
         const jd = (dateMs / 86400000) + 2440587.5;
         const T = (jd - 2451545.0) / 36525;
@@ -8362,8 +8406,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.camera.updateProjectionMatrix();
         state.renderer.setSize(window.innerWidth, window.innerHeight);
         if (isMobileViewport()) closeSettings();
-        const limits = mobileSheetLimits();
         Object.keys(state.mobileSheetHeights).forEach((key) => {
+            const limits = mobileSheetLimits(key);
             state.mobileSheetHeights[key] = THREE.MathUtils.clamp(state.mobileSheetHeights[key], limits.min, limits.max);
         });
         applyMobilePanelState();
@@ -8505,7 +8549,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         state.planetOrbitList.forEach((line) => { line.visible = showAllOrbits; });
         if (state.planetOrbits[2]) state.planetOrbits[2].visible = showEarthOrbit;
         if (state.earthLabel) state.earthLabel.visible = showEarthLabel;
-        if (state.moonOrbitLine) state.moonOrbitLine.visible = true;
+        if (state.moonOrbitLine) state.moonOrbitLine.visible = showEarthOrbit;
+        if (state.sunGlow) state.sunGlow.visible = !isSunGlowOccludedByEarth();
 
         if (state.planetOrbits[2] && state.planetOrbits[2].visible) {
             const dash = THREE.MathUtils.clamp(camTargetDist * 0.07, 18, 16000);
