@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-05T08:20:08Z",
+  "generatedAt": "2026-07-05T23:41:16Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15919,
+      "activeCount": 15917,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -859,7 +859,7 @@
         "2021-06-17": 1,
         "2021-06-18": 4,
         "2021-06-25": 1,
-        "2021-06-30": 14,
+        "2021-06-30": 13,
         "2021-07-01": 34,
         "2021-07-03": 1,
         "2021-07-04": 1,
@@ -1055,7 +1055,7 @@
         "2023-03-23": 1,
         "2023-03-24": 54,
         "2023-03-26": 36,
-        "2023-03-29": 48,
+        "2023-03-29": 47,
         "2023-03-30": 4,
         "2023-03-31": 1,
         "2023-04-02": 10,
@@ -16289,7 +16289,7 @@
         "2025-02-05": 7,
         "2026-06-27": 5,
         "2026-02-20": 2,
-        "2026-07-04": 2,
+        "2026-07-04": 3,
         "2021-09-12": 2,
         "2020-09-21": 1,
         "2020-09-13": 1,
@@ -16516,6 +16516,7 @@
         "2024-03-04": 3,
         "2025-12-16": 1,
         "2026-02-13": 6,
+        "2026-07-05": 1,
         "2022-03-30": 8,
         "2026-04-22": 1,
         "2023-12-26": 2,
@@ -16694,7 +16695,7 @@
     },
     "groups": {
       "starlink": {
-        "activeCount": 10703,
+        "activeCount": 10702,
         "addedByDay": {
           "2019-11-11": 14,
           "2020-01-07": 6,
@@ -16772,7 +16773,7 @@
           "2023-03-03": 45,
           "2023-03-17": 48,
           "2023-03-24": 52,
-          "2023-03-29": 48,
+          "2023-03-29": 47,
           "2023-04-19": 18,
           "2023-04-27": 45,
           "2023-05-04": 50,
@@ -17432,7 +17433,7 @@
           "2024-09-05": 2,
           "2025-09-22": 2,
           "2026-02-20": 2,
-          "2026-07-04": 2,
+          "2026-07-04": 3,
           "2024-06-24": 5,
           "2025-06-14": 3,
           "2025-05-08": 5,
@@ -18019,7 +18020,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 12028,
+        "activeCount": 12027,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18129,7 +18130,7 @@
           "2023-03-17": 48,
           "2023-03-24": 52,
           "2023-03-26": 36,
-          "2023-03-29": 48,
+          "2023-03-29": 47,
           "2023-04-19": 18,
           "2023-04-27": 45,
           "2023-05-04": 50,
@@ -19336,7 +19337,7 @@
           "2024-09-05": 2,
           "2025-09-22": 2,
           "2026-02-20": 2,
-          "2026-07-04": 2,
+          "2026-07-04": 3,
           "2024-06-24": 5,
           "2025-06-14": 3,
           "2025-05-08": 5,
@@ -20792,7 +20793,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3586,
+        "activeCount": 3585,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21539,7 +21540,7 @@
           "2021-06-11": 1,
           "2021-06-18": 4,
           "2021-06-25": 1,
-          "2021-06-30": 13,
+          "2021-06-30": 12,
           "2021-07-03": 1,
           "2021-07-04": 1,
           "2021-07-06": 1,
@@ -36481,6 +36482,7 @@
           "2025-02-19": 3,
           "2025-12-31": 3,
           "2026-02-13": 2,
+          "2026-07-05": 1,
           "2025-10-01": 2,
           "2026-04-22": 1,
           "2026-05-01": 6,
@@ -84534,24 +84536,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "48963": {
-      "satcat": {
-        "NORAD_CAT_ID": "48963",
-        "OBJECT_NAME": "NAPA-2",
-        "OBJECT_ID": "2021-059CN",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "THAI",
-        "LAUNCH_DATE": "2021-06-30"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "THAI",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -142960,27 +142944,6 @@
         "NORAD_CAT_ID": "56146",
         "OBJECT_NAME": "STARLINK-5111",
         "OBJECT_ID": "2023-046BG",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-03-29"
-      },
-      "profile": {
-        "type": "Kommunikationssatellit",
-        "operator": "SpaceX",
-        "country": "USA",
-        "sizeLabel": "ca. 2,8 x 1,4 m",
-        "source": "CelesTrak SATCAT + Konstellationsregel: Starlink",
-        "confidence": "constellation",
-        "operatorAmbiguous": false,
-        "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "56147": {
-      "satcat": {
-        "NORAD_CAT_ID": "56147",
-        "OBJECT_NAME": "STARLINK-5140",
-        "OBJECT_ID": "2023-046BH",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2023-03-29"
