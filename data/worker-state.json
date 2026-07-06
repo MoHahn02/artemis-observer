@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-07-06T10:58:35Z",
-  "lastCheckRunAt": "2026-07-06T10:58:35Z",
+  "lastFeedRefreshAt": "2026-07-06T14:32:06Z",
+  "lastCheckRunAt": "2026-07-06T14:32:06Z",
   "lastSatelliteRefreshAt": "2026-07-06T10:58:35Z",
   "pendingChecks": [
     {
@@ -154,12 +154,6 @@
       "overdue": false
     },
     {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
-      "phase": "preflight",
-      "dueAt": "2026-07-30T23:45:00Z",
-      "overdue": false
-    },
-    {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
       "phase": "preflight",
       "dueAt": "2026-07-30T23:45:00Z",
@@ -209,12 +203,6 @@
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
-      "phase": "postflight",
-      "dueAt": "2026-07-31T00:30:00Z",
-      "overdue": false
-    },
-    {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
       "phase": "postflight",
       "dueAt": "2026-07-31T00:30:00Z",
       "overdue": false
@@ -304,6 +292,18 @@
       "overdue": false
     },
     {
+      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
+      "phase": "preflight",
+      "dueAt": "2026-08-30T23:45:00Z",
+      "overdue": false
+    },
+    {
+      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
+      "phase": "postflight",
+      "dueAt": "2026-08-31T00:30:00Z",
+      "overdue": false
+    },
+    {
       "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
       "phase": "postflight",
       "dueAt": "2026-09-30T00:30:00Z",
@@ -346,8 +346,10 @@
       "overdue": false
     }
   ],
-  "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-07-06T10:58:35Z",
-  "lastSatelliteProfileRefreshAt": "2026-07-06T10:58:35Z",
+  "lastErrors": [
+    "satellite refresh failed: HTTP Error 500: Internal Server Error"
+  ],
+  "lastIssOemRefreshAt": "2026-07-06T14:32:06Z",
+  "lastSatelliteProfileRefreshAt": "2026-07-06T14:32:06Z",
   "lastEarthObservationRefreshAt": "2026-07-06T06:04:16Z"
 }
