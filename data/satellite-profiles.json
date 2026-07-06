@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-05T23:41:16Z",
+  "generatedAt": "2026-07-06T06:04:16Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15917,
+      "activeCount": 15916,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -910,7 +910,6 @@
         "2022-01-13": 4,
         "2022-01-17": 1,
         "2022-01-19": 43,
-        "2022-01-21": 1,
         "2022-01-25": 1,
         "2022-01-31": 1,
         "2022-02-03": 9,
@@ -20793,7 +20792,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3585,
+        "activeCount": 3584,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21583,7 +21582,6 @@
           "2021-12-29": 3,
           "2022-01-13": 4,
           "2022-01-17": 1,
-          "2022-01-21": 1,
           "2022-01-25": 1,
           "2022-01-31": 1,
           "2022-02-14": 1,
@@ -94990,24 +94988,6 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
-      },
-      "wikidata": null
-    },
-    "51280": {
-      "satcat": {
-        "NORAD_CAT_ID": "51280",
-        "OBJECT_NAME": "USA 324",
-        "OBJECT_ID": "2022-006A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2022-01-21"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
       },
       "wikidata": null
     },
