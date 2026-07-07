@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-07T19:08:10Z",
+  "generatedAt": "2026-07-07T22:16:19Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15931,
+      "activeCount": 15932,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1635,7 +1635,8 @@
         "2026-06-28": 24,
         "2026-06-29": 1,
         "2026-07-01": 1,
-        "2026-07-02": 24
+        "2026-07-02": 24,
+        "2026-07-03": 1
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -20802,7 +20803,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3582,
+        "activeCount": 3583,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -22047,7 +22048,8 @@
           "2026-06-23": 1,
           "2026-06-26": 1,
           "2026-06-29": 1,
-          "2026-07-01": 1
+          "2026-07-01": 1,
+          "2026-07-03": 1
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -361301,6 +361303,24 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69792": {
+      "satcat": {
+        "NORAD_CAT_ID": "69792",
+        "OBJECT_NAME": "LINK",
+        "OBJECT_ID": "2026-152A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "US",
+        "LAUNCH_DATE": "2026-07-03"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "USA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     }
