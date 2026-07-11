@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-10T01:19:33Z",
+  "generatedAt": "2026-07-11T00:13:11Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15985,
+      "activeCount": 15993,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -51,7 +51,7 @@
         "1998-08-02": 2,
         "1998-09-23": 1,
         "1998-10-23": 1,
-        "1998-11-20": 9,
+        "1998-11-20": 15,
         "1998-12-06": 1,
         "1998-12-04": 1,
         "1999-05-26": 1,
@@ -1638,7 +1638,8 @@
         "2026-07-01": 1,
         "2026-07-02": 53,
         "2026-07-03": 1,
-        "2026-07-05": 29
+        "2026-07-05": 29,
+        "2026-07-10": 2
       },
       "decayedByDay": {
         "1957-12-01": 1,
@@ -20818,7 +20819,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3583,
+        "activeCount": 3591,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -20865,7 +20866,7 @@
           "1998-08-02": 2,
           "1998-09-23": 1,
           "1998-10-23": 1,
-          "1998-11-20": 9,
+          "1998-11-20": 15,
           "1998-12-06": 1,
           "1998-12-04": 1,
           "1999-05-26": 1,
@@ -22065,7 +22066,8 @@
           "2026-06-26": 1,
           "2026-06-29": 1,
           "2026-07-01": 1,
-          "2026-07-03": 1
+          "2026-07-03": 1,
+          "2026-07-10": 2
         },
         "decayedByDay": {
           "1957-12-01": 1,
@@ -361847,6 +361849,114 @@
       },
       "wikidata": null
     },
+    "69794": {
+      "satcat": {
+        "NORAD_CAT_ID": "69794",
+        "OBJECT_NAME": "ISS OBJECT YJ",
+        "OBJECT_ID": "1998-067YJ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69795": {
+      "satcat": {
+        "NORAD_CAT_ID": "69795",
+        "OBJECT_NAME": "ISS OBJECT YK",
+        "OBJECT_ID": "1998-067YK",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69796": {
+      "satcat": {
+        "NORAD_CAT_ID": "69796",
+        "OBJECT_NAME": "ISS OBJECT YL",
+        "OBJECT_ID": "1998-067YL",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69797": {
+      "satcat": {
+        "NORAD_CAT_ID": "69797",
+        "OBJECT_NAME": "ISS OBJECT YM",
+        "OBJECT_ID": "1998-067YM",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69798": {
+      "satcat": {
+        "NORAD_CAT_ID": "69798",
+        "OBJECT_NAME": "ISS OBJECT YN",
+        "OBJECT_ID": "1998-067YN",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69799": {
+      "satcat": {
+        "NORAD_CAT_ID": "69799",
+        "OBJECT_NAME": "ISS OBJECT YP",
+        "OBJECT_ID": "1998-067YP",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "1998-11-20"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "69819": {
       "satcat": {
         "NORAD_CAT_ID": "69819",
@@ -362453,6 +362563,42 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69972": {
+      "satcat": {
+        "NORAD_CAT_ID": "69972",
+        "OBJECT_NAME": "OBJECT A",
+        "OBJECT_ID": "2026-158A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-10"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69973": {
+      "satcat": {
+        "NORAD_CAT_ID": "69973",
+        "OBJECT_NAME": "OBJECT B",
+        "OBJECT_ID": "2026-158B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-10"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "China",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     }
