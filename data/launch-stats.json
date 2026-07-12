@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-11T06:03:11Z",
+  "generatedAt": "2026-07-12T22:24:27Z",
   "source": "launch-db",
   "timezone": "Europe/Berlin",
   "week": {
-    "current": 4,
-    "previous": 8,
+    "current": 0,
+    "previous": 4,
     "delta": -4
   },
   "month": {
