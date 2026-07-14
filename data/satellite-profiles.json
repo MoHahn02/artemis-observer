@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-14T05:55:11Z",
+  "generatedAt": "2026-07-14T10:08:23Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15983,
+      "activeCount": 16021,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1638,7 +1638,8 @@
         "2026-07-01": 1,
         "2026-07-02": 53,
         "2026-07-03": 1,
-        "2026-07-05": 29,
+        "2026-07-04": 18,
+        "2026-07-05": 49,
         "2026-07-10": 1
       },
       "decayedByDay": {
@@ -17967,7 +17968,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "qianfan": {
-        "activeCount": 200,
+        "activeCount": 238,
         "addedByDay": {
           "2024-08-06": 18,
           "2024-10-15": 18,
@@ -17980,7 +17981,9 @@
           "2026-05-17": 18,
           "2026-06-01": 2,
           "2026-06-04": 18,
-          "2026-06-05": 18
+          "2026-06-05": 18,
+          "2026-07-04": 18,
+          "2026-07-05": 20
         },
         "decayedByDay": {},
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
@@ -18042,7 +18045,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "communications": {
-        "activeCount": 12090,
+        "activeCount": 12128,
         "addedByDay": {
           "2007-05-29": 2,
           "2007-10-20": 1,
@@ -18472,7 +18475,8 @@
           "2026-06-25": 24,
           "2026-06-28": 24,
           "2026-07-02": 53,
-          "2026-07-05": 29
+          "2026-07-04": 18,
+          "2026-07-05": 49
         },
         "decayedByDay": {
           "2017-11-24": 1,
@@ -361783,6 +361787,384 @@
       },
       "wikidata": null
     },
+    "69801": {
+      "satcat": {
+        "NORAD_CAT_ID": "69801",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT B",
+        "OBJECT_ID": "2026-153B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69802": {
+      "satcat": {
+        "NORAD_CAT_ID": "69802",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT C",
+        "OBJECT_ID": "2026-153C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69803": {
+      "satcat": {
+        "NORAD_CAT_ID": "69803",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT D",
+        "OBJECT_ID": "2026-153D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69804": {
+      "satcat": {
+        "NORAD_CAT_ID": "69804",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT E",
+        "OBJECT_ID": "2026-153E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69805": {
+      "satcat": {
+        "NORAD_CAT_ID": "69805",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT F",
+        "OBJECT_ID": "2026-153F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69806": {
+      "satcat": {
+        "NORAD_CAT_ID": "69806",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT G",
+        "OBJECT_ID": "2026-153G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69807": {
+      "satcat": {
+        "NORAD_CAT_ID": "69807",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT H",
+        "OBJECT_ID": "2026-153H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69808": {
+      "satcat": {
+        "NORAD_CAT_ID": "69808",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT J",
+        "OBJECT_ID": "2026-153J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69809": {
+      "satcat": {
+        "NORAD_CAT_ID": "69809",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT K",
+        "OBJECT_ID": "2026-153K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69810": {
+      "satcat": {
+        "NORAD_CAT_ID": "69810",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT L",
+        "OBJECT_ID": "2026-153L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69811": {
+      "satcat": {
+        "NORAD_CAT_ID": "69811",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT M",
+        "OBJECT_ID": "2026-153M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69812": {
+      "satcat": {
+        "NORAD_CAT_ID": "69812",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT N",
+        "OBJECT_ID": "2026-153N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69813": {
+      "satcat": {
+        "NORAD_CAT_ID": "69813",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT P",
+        "OBJECT_ID": "2026-153P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69814": {
+      "satcat": {
+        "NORAD_CAT_ID": "69814",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT Q",
+        "OBJECT_ID": "2026-153Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69815": {
+      "satcat": {
+        "NORAD_CAT_ID": "69815",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT R",
+        "OBJECT_ID": "2026-153R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69816": {
+      "satcat": {
+        "NORAD_CAT_ID": "69816",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT S",
+        "OBJECT_ID": "2026-153S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69817": {
+      "satcat": {
+        "NORAD_CAT_ID": "69817",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT T",
+        "OBJECT_ID": "2026-153T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69818": {
+      "satcat": {
+        "NORAD_CAT_ID": "69818",
+        "OBJECT_NAME": "QIANFAN-13 OBJECT U",
+        "OBJECT_ID": "2026-153U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-04"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
     "69819": {
       "satcat": {
         "NORAD_CAT_ID": "69819",
@@ -362389,6 +362771,426 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "69848": {
+      "satcat": {
+        "NORAD_CAT_ID": "69848",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT A",
+        "OBJECT_ID": "2026-155A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69849": {
+      "satcat": {
+        "NORAD_CAT_ID": "69849",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT B",
+        "OBJECT_ID": "2026-155B",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69850": {
+      "satcat": {
+        "NORAD_CAT_ID": "69850",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT C",
+        "OBJECT_ID": "2026-155C",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69851": {
+      "satcat": {
+        "NORAD_CAT_ID": "69851",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT D",
+        "OBJECT_ID": "2026-155D",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69852": {
+      "satcat": {
+        "NORAD_CAT_ID": "69852",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT E",
+        "OBJECT_ID": "2026-155E",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69853": {
+      "satcat": {
+        "NORAD_CAT_ID": "69853",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT F",
+        "OBJECT_ID": "2026-155F",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69854": {
+      "satcat": {
+        "NORAD_CAT_ID": "69854",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT G",
+        "OBJECT_ID": "2026-155G",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69855": {
+      "satcat": {
+        "NORAD_CAT_ID": "69855",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT H",
+        "OBJECT_ID": "2026-155H",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69856": {
+      "satcat": {
+        "NORAD_CAT_ID": "69856",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT J",
+        "OBJECT_ID": "2026-155J",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69857": {
+      "satcat": {
+        "NORAD_CAT_ID": "69857",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT K",
+        "OBJECT_ID": "2026-155K",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69858": {
+      "satcat": {
+        "NORAD_CAT_ID": "69858",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT L",
+        "OBJECT_ID": "2026-155L",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69859": {
+      "satcat": {
+        "NORAD_CAT_ID": "69859",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT M",
+        "OBJECT_ID": "2026-155M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69860": {
+      "satcat": {
+        "NORAD_CAT_ID": "69860",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT N",
+        "OBJECT_ID": "2026-155N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69861": {
+      "satcat": {
+        "NORAD_CAT_ID": "69861",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT P",
+        "OBJECT_ID": "2026-155P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69862": {
+      "satcat": {
+        "NORAD_CAT_ID": "69862",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT Q",
+        "OBJECT_ID": "2026-155Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69863": {
+      "satcat": {
+        "NORAD_CAT_ID": "69863",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT R",
+        "OBJECT_ID": "2026-155R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69864": {
+      "satcat": {
+        "NORAD_CAT_ID": "69864",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT S",
+        "OBJECT_ID": "2026-155S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69865": {
+      "satcat": {
+        "NORAD_CAT_ID": "69865",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT T",
+        "OBJECT_ID": "2026-155T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69866": {
+      "satcat": {
+        "NORAD_CAT_ID": "69866",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT U",
+        "OBJECT_ID": "2026-155U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69867": {
+      "satcat": {
+        "NORAD_CAT_ID": "69867",
+        "OBJECT_NAME": "QIANFAN-14 OBJECT V",
+        "OBJECT_ID": "2026-155V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "PRC",
+        "LAUNCH_DATE": "2026-07-05"
+      },
+      "profile": {
+        "type": "Kommunikationssatellit (Qianfan/Spacesail)",
+        "operator": "Shanghai Spacecom Satellite Technology (SSST)",
+        "country": "China",
+        "sizeLabel": "nicht veroeffentlicht",
+        "source": "CelesTrak SATCAT + Konstellationsregel: Qianfan/Spacesail",
+        "confidence": "constellation",
+        "operatorAmbiguous": false,
+        "ruleId": "qianfan"
       },
       "wikidata": null
     },
