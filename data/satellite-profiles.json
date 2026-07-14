@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-14T03:30:15Z",
+  "generatedAt": "2026-07-14T05:55:11Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 15982,
+      "activeCount": 15983,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1607,6 +1607,7 @@
         "2026-05-14": 1,
         "2026-05-15": 5,
         "2026-05-17": 18,
+        "2026-05-19": 1,
         "2026-05-20": 24,
         "2026-05-21": 29,
         "2026-05-22": 1,
@@ -20828,7 +20829,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3588,
+        "activeCount": 3589,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -22059,6 +22060,7 @@
           "2026-05-11": 1,
           "2026-05-14": 1,
           "2026-05-15": 5,
+          "2026-05-19": 1,
           "2026-05-22": 1,
           "2026-05-24": 1,
           "2026-05-26": 1,
@@ -348791,6 +348793,24 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "qianfan"
+      },
+      "wikidata": null
+    },
+    "69123": {
+      "satcat": {
+        "NORAD_CAT_ID": "69123",
+        "OBJECT_NAME": "SMILE",
+        "OBJECT_ID": "2026-109A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "ESA",
+        "LAUNCH_DATE": "2026-05-19"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "ESA",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     },
