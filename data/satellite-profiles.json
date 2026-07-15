@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-15T03:32:15Z",
+  "generatedAt": "2026-07-15T16:57:40Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16072,
+      "activeCount": 16073,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1483,7 +1483,7 @@
         "2025-10-28": 28,
         "2025-10-29": 29,
         "2025-10-31": 29,
-        "2025-11-02": 17,
+        "2025-11-02": 18,
         "2025-11-03": 1,
         "2025-11-04": 1,
         "2025-11-05": 1,
@@ -20844,7 +20844,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3588,
+        "activeCount": 3589,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -22001,7 +22001,7 @@
           "2025-10-19": 3,
           "2025-10-23": 1,
           "2025-10-26": 2,
-          "2025-11-02": 16,
+          "2025-11-02": 17,
           "2025-11-03": 1,
           "2025-11-05": 1,
           "2025-11-08": 2,
@@ -294881,6 +294881,24 @@
         "confidence": "constellation",
         "operatorAmbiguous": false,
         "ruleId": "starlink"
+      },
+      "wikidata": null
+    },
+    "66293": {
+      "satcat": {
+        "NORAD_CAT_ID": "66293",
+        "OBJECT_NAME": "KORSAT-4",
+        "OBJECT_ID": "2025-248A",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "SKOR",
+        "LAUNCH_DATE": "2025-11-02"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "SKOR",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
       },
       "wikidata": null
     },
