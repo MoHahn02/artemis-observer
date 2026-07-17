@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-17T01:08:45Z",
+  "generatedAt": "2026-07-17T06:38:03Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16070,
+      "activeCount": 16069,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -814,7 +814,7 @@
         "2020-12-02": 1,
         "2020-12-03": 4,
         "2020-12-06": 1,
-        "2020-12-09": 2,
+        "2020-12-09": 1,
         "2020-12-13": 1,
         "2020-12-14": 1,
         "2020-12-17": 1,
@@ -20844,7 +20844,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3587,
+        "activeCount": 3586,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21559,7 +21559,7 @@
           "2020-12-02": 1,
           "2020-12-03": 4,
           "2020-12-06": 1,
-          "2020-12-09": 2,
+          "2020-12-09": 1,
           "2020-12-13": 1,
           "2020-12-14": 1,
           "2020-12-17": 1,
@@ -70826,24 +70826,6 @@
         "NORAD_CAT_ID": "47234",
         "OBJECT_NAME": "GECAM-A",
         "OBJECT_ID": "2020-094A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2020-12-09"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "47235": {
-      "satcat": {
-        "NORAD_CAT_ID": "47235",
-        "OBJECT_NAME": "GECAM-B",
-        "OBJECT_ID": "2020-094B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2020-12-09"
@@ -361706,15 +361688,15 @@
     "69799": {
       "satcat": {
         "NORAD_CAT_ID": "69799",
-        "OBJECT_NAME": "ISS OBJECT YP",
+        "OBJECT_NAME": "PROVES-ELECTRA",
         "OBJECT_ID": "1998-067YP",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "1998-11-20"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
