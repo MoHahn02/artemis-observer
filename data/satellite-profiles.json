@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-16T04:27:53Z",
+  "generatedAt": "2026-07-17T01:08:45Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16071,
+      "activeCount": 16070,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -738,7 +738,7 @@
         "2019-09-25": 1,
         "2019-09-26": 1,
         "2019-10-04": 1,
-        "2019-10-09": 2,
+        "2019-10-09": 1,
         "2019-10-17": 2,
         "2019-11-03": 1,
         "2019-11-11": 14,
@@ -20844,7 +20844,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3588,
+        "activeCount": 3587,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21504,7 +21504,7 @@
           "2019-09-25": 1,
           "2019-09-26": 1,
           "2019-10-04": 1,
-          "2019-10-09": 2,
+          "2019-10-09": 1,
           "2019-10-17": 2,
           "2019-11-03": 1,
           "2019-11-13": 6,
@@ -62077,24 +62077,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "Frankreich",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "44625": {
-      "satcat": {
-        "NORAD_CAT_ID": "44625",
-        "OBJECT_NAME": "MEV-1",
-        "OBJECT_ID": "2019-067B",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2019-10-09"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
