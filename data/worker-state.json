@@ -1,7 +1,7 @@
 {
   "lastFeedRefreshAt": "2026-07-17T17:49:38Z",
-  "lastCheckRunAt": "2026-07-17T17:49:38Z",
-  "lastSatelliteRefreshAt": "2026-07-17T16:40:18Z",
+  "lastCheckRunAt": "2026-07-17T18:46:05Z",
+  "lastSatelliteRefreshAt": "2026-07-17T18:46:05Z",
   "pendingChecks": [
     {
       "id": "10fa7952-f00b-4292-80a2-4207e208844e",
@@ -378,6 +378,6 @@
   ],
   "lastErrors": [],
   "lastIssOemRefreshAt": "2026-07-17T17:49:38Z",
-  "lastSatelliteProfileRefreshAt": "2026-07-17T16:40:18Z",
+  "lastSatelliteProfileRefreshAt": "2026-07-17T18:46:05Z",
   "lastEarthObservationRefreshAt": "2026-07-17T16:40:18Z"
 }
