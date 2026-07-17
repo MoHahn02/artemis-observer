@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-17T08:55:52Z",
+  "generatedAt": "2026-07-17T16:40:18Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16068,
+      "activeCount": 16065,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1164,7 +1164,7 @@
         "2023-12-19": 21,
         "2023-12-21": 1,
         "2023-12-23": 21,
-        "2023-12-25": 7,
+        "2023-12-25": 4,
         "2023-12-26": 2,
         "2023-12-27": 4,
         "2023-12-29": 20,
@@ -20843,7 +20843,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3585,
+        "activeCount": 3582,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21804,7 +21804,7 @@
           "2023-12-15": 2,
           "2023-12-16": 1,
           "2023-12-21": 1,
-          "2023-12-25": 7,
+          "2023-12-25": 4,
           "2023-12-27": 4,
           "2023-12-30": 3,
           "2024-01-01": 1,
@@ -175315,60 +175315,6 @@
         "NORAD_CAT_ID": "58648",
         "OBJECT_NAME": "TIANMU-1 14",
         "OBJECT_ID": "2023-205D",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2023-12-25"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "58650": {
-      "satcat": {
-        "NORAD_CAT_ID": "58650",
-        "OBJECT_NAME": "SHIYAN-24C 01",
-        "OBJECT_ID": "2023-206A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2023-12-25"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "58651": {
-      "satcat": {
-        "NORAD_CAT_ID": "58651",
-        "OBJECT_NAME": "SHIYAN-24C 02",
-        "OBJECT_ID": "2023-206B",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "PRC",
-        "LAUNCH_DATE": "2023-12-25"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "China",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "58652": {
-      "satcat": {
-        "NORAD_CAT_ID": "58652",
-        "OBJECT_NAME": "SHIYAN-24C 03",
-        "OBJECT_ID": "2023-206C",
         "OBJECT_TYPE": "PAY",
         "OWNER": "PRC",
         "LAUNCH_DATE": "2023-12-25"
