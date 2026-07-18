@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T17:18:58Z",
+  "generatedAt": "2026-07-18T18:12:33Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1129,7 +1129,7 @@
       "statusDescription": "Launch in Flight",
       "sourceUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEP0r_fB1mHMQ/feedshare-document-url-metadata-scrapper-pdf/B56Z9vY_B.GQA4-/0/1784280250603?e=1784901600&v=beta&t=kOr_IRRS-0Wq2KSGtQOIqe8Z32qrVed8oyY",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/10fa7952-f00b-4292-80a2-4207e208844e/?format=json",
-      "updatedAt": "2026-07-18T17:18:58Z",
+      "updatedAt": "2026-07-18T18:12:33Z",
       "firstSeenAt": "2026-07-02T07:53:52Z",
       "previousNets": [
         "2026-07-31T00:00:00Z",
@@ -1139,7 +1139,7 @@
         "2026-07-18T06:00:00Z"
       ],
       "preflightCheckedAt": "2026-07-18T07:14:48Z",
-      "postflightCheckedAt": "2026-07-18T17:18:58Z",
+      "postflightCheckedAt": "2026-07-18T18:12:33Z",
       "preflightStatus": "missed",
       "postflightStatus": "live",
       "livestreamUrl": "https://www.youtube.com/watch?v=2KKZbSX9SgI"
