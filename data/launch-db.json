@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T19:35:50Z",
+  "generatedAt": "2026-07-18T20:25:44Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1122,14 +1122,14 @@
       "mission": "Demo Flight",
       "missionDescription": "First launch of Skyroot Aerospace's Vikram-I launch vehicle. \r\n\r\nThis first launch will carry 4 payloads:\r\n- Grahaa Space's SOLARAS S3 satellite\r\n- Cosmoserve Space's in-orbit robotic arm Embrace\r\n- An in-orbit demonstration from DCUBED\r\n- Skyroot's own SCOPE satellite",
       "orbit": "Low Earth Orbit",
-      "status": "live",
-      "outcome": "",
-      "statusName": "Launch in Flight",
-      "statusAbbrev": "In Flight",
-      "statusDescription": "Launch in Flight",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEP0r_fB1mHMQ/feedshare-document-url-metadata-scrapper-pdf/B56Z9vY_B.GQA4-/0/1784280250603?e=1784901600&v=beta&t=kOr_IRRS-0Wq2KSGtQOIqe8Z32qrVed8oyY",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/10fa7952-f00b-4292-80a2-4207e208844e/",
-      "updatedAt": "2026-07-18T19:35:50Z",
+      "updatedAt": "2026-07-18T20:25:44Z",
       "firstSeenAt": "2026-07-02T07:53:52Z",
       "previousNets": [
         "2026-07-31T00:00:00Z",
@@ -1139,9 +1139,9 @@
         "2026-07-18T06:00:00Z"
       ],
       "preflightCheckedAt": "2026-07-18T07:14:48Z",
-      "postflightCheckedAt": "2026-07-18T19:35:50Z",
+      "postflightCheckedAt": "2026-07-18T20:25:44Z",
       "preflightStatus": "missed",
-      "postflightStatus": "live",
+      "postflightStatus": "success",
       "livestreamUrl": "https://www.youtube.com/watch?v=2KKZbSX9SgI"
     },
     {
