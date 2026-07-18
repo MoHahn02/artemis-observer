@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-07-18T16:13:13Z",
-  "lastCheckRunAt": "2026-07-18T16:13:13Z",
+  "lastFeedRefreshAt": "2026-07-18T17:18:58Z",
+  "lastCheckRunAt": "2026-07-18T17:18:58Z",
   "lastSatelliteRefreshAt": "2026-07-18T16:13:13Z",
   "pendingChecks": [
     {
@@ -379,5 +379,5 @@
   "lastErrors": [],
   "lastIssOemRefreshAt": "2026-07-18T16:13:13Z",
   "lastSatelliteProfileRefreshAt": "2026-07-18T16:13:13Z",
-  "lastEarthObservationRefreshAt": "2026-07-17T16:40:18Z"
+  "lastEarthObservationRefreshAt": "2026-07-18T17:18:58Z"
 }
