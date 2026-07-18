@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-07-18T07:14:48Z",
-  "lastCheckRunAt": "2026-07-18T07:14:48Z",
-  "lastSatelliteRefreshAt": "2026-07-18T05:27:40Z",
+  "lastFeedRefreshAt": "2026-07-18T09:01:24Z",
+  "lastCheckRunAt": "2026-07-18T09:01:24Z",
+  "lastSatelliteRefreshAt": "2026-07-18T09:01:24Z",
   "pendingChecks": [
     {
       "id": "e1079d3a-c0a6-4b42-bc1d-92e48a5a78fc",
@@ -364,8 +364,10 @@
       "overdue": false
     }
   ],
-  "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-07-18T05:27:40Z",
-  "lastSatelliteProfileRefreshAt": "2026-07-18T05:27:40Z",
+  "lastErrors": [
+    "postflight check failed for 10fa7952-f00b-4292-80a2-4207e208844e: The read operation timed out"
+  ],
+  "lastIssOemRefreshAt": "2026-07-18T09:01:24Z",
+  "lastSatelliteProfileRefreshAt": "2026-07-18T09:01:24Z",
   "lastEarthObservationRefreshAt": "2026-07-17T16:40:18Z"
 }
