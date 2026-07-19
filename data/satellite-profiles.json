@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-18T22:23:16Z",
+  "generatedAt": "2026-07-19T11:59:27Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16062,
+      "activeCount": 16061,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1028,7 +1028,7 @@
         "2023-01-10": 40,
         "2023-01-12": 2,
         "2023-01-13": 1,
-        "2023-01-15": 2,
+        "2023-01-15": 1,
         "2023-01-18": 1,
         "2023-01-19": 46,
         "2023-01-24": 3,
@@ -20847,7 +20847,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3581,
+        "activeCount": 3580,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -21727,7 +21727,7 @@
           "2023-01-09": 2,
           "2023-01-12": 2,
           "2023-01-13": 1,
-          "2023-01-15": 2,
+          "2023-01-15": 1,
           "2023-01-24": 3,
           "2023-02-05": 1,
           "2023-02-07": 1,
@@ -130445,24 +130445,6 @@
         "NORAD_CAT_ID": "55263",
         "OBJECT_NAME": "USA 342",
         "OBJECT_ID": "2023-008A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "US",
-        "LAUNCH_DATE": "2023-01-15"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "USA",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "55264": {
-      "satcat": {
-        "NORAD_CAT_ID": "55264",
-        "OBJECT_NAME": "LDPE-3A",
-        "OBJECT_ID": "2023-008B",
         "OBJECT_TYPE": "PAY",
         "OWNER": "US",
         "LAUNCH_DATE": "2023-01-15"
