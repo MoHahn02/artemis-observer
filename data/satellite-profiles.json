@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-21T04:27:50Z",
+  "generatedAt": "2026-07-21T07:13:02Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16073,
+      "activeCount": 16129,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1638,7 +1638,7 @@
         "2026-07-03": 1,
         "2026-07-04": 18,
         "2026-07-05": 49,
-        "2026-07-07": 18,
+        "2026-07-07": 74,
         "2026-07-09": 29,
         "2026-07-10": 1,
         "2026-07-11": 24
@@ -20857,7 +20857,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3595,
+        "activeCount": 3651,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -22103,7 +22103,7 @@
           "2026-06-29": 1,
           "2026-07-01": 1,
           "2026-07-03": 1,
-          "2026-07-07": 18,
+          "2026-07-07": 74,
           "2026-07-10": 1
         },
         "decayedByDay": {
@@ -363058,6 +363058,564 @@
       },
       "wikidata": null
     },
+    "69880": {
+      "satcat": {
+        "NORAD_CAT_ID": "69880",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT M",
+        "OBJECT_ID": "2026-156M",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69881": {
+      "satcat": {
+        "NORAD_CAT_ID": "69881",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT N",
+        "OBJECT_ID": "2026-156N",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69882": {
+      "satcat": {
+        "NORAD_CAT_ID": "69882",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT P",
+        "OBJECT_ID": "2026-156P",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69883": {
+      "satcat": {
+        "NORAD_CAT_ID": "69883",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT Q",
+        "OBJECT_ID": "2026-156Q",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69884": {
+      "satcat": {
+        "NORAD_CAT_ID": "69884",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT R",
+        "OBJECT_ID": "2026-156R",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69885": {
+      "satcat": {
+        "NORAD_CAT_ID": "69885",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT S",
+        "OBJECT_ID": "2026-156S",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69886": {
+      "satcat": {
+        "NORAD_CAT_ID": "69886",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT T",
+        "OBJECT_ID": "2026-156T",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69887": {
+      "satcat": {
+        "NORAD_CAT_ID": "69887",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT U",
+        "OBJECT_ID": "2026-156U",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69888": {
+      "satcat": {
+        "NORAD_CAT_ID": "69888",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT V",
+        "OBJECT_ID": "2026-156V",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69889": {
+      "satcat": {
+        "NORAD_CAT_ID": "69889",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT W",
+        "OBJECT_ID": "2026-156W",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69890": {
+      "satcat": {
+        "NORAD_CAT_ID": "69890",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT X",
+        "OBJECT_ID": "2026-156X",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69891": {
+      "satcat": {
+        "NORAD_CAT_ID": "69891",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT Y",
+        "OBJECT_ID": "2026-156Y",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69892": {
+      "satcat": {
+        "NORAD_CAT_ID": "69892",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT Z",
+        "OBJECT_ID": "2026-156Z",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69893": {
+      "satcat": {
+        "NORAD_CAT_ID": "69893",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AA",
+        "OBJECT_ID": "2026-156AA",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69894": {
+      "satcat": {
+        "NORAD_CAT_ID": "69894",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AB",
+        "OBJECT_ID": "2026-156AB",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69895": {
+      "satcat": {
+        "NORAD_CAT_ID": "69895",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AC",
+        "OBJECT_ID": "2026-156AC",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69896": {
+      "satcat": {
+        "NORAD_CAT_ID": "69896",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AD",
+        "OBJECT_ID": "2026-156AD",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69897": {
+      "satcat": {
+        "NORAD_CAT_ID": "69897",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AE",
+        "OBJECT_ID": "2026-156AE",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69898": {
+      "satcat": {
+        "NORAD_CAT_ID": "69898",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AF",
+        "OBJECT_ID": "2026-156AF",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69899": {
+      "satcat": {
+        "NORAD_CAT_ID": "69899",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AG",
+        "OBJECT_ID": "2026-156AG",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69900": {
+      "satcat": {
+        "NORAD_CAT_ID": "69900",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AH",
+        "OBJECT_ID": "2026-156AH",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69901": {
+      "satcat": {
+        "NORAD_CAT_ID": "69901",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AJ",
+        "OBJECT_ID": "2026-156AJ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69902": {
+      "satcat": {
+        "NORAD_CAT_ID": "69902",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AK",
+        "OBJECT_ID": "2026-156AK",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69903": {
+      "satcat": {
+        "NORAD_CAT_ID": "69903",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AL",
+        "OBJECT_ID": "2026-156AL",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69904": {
+      "satcat": {
+        "NORAD_CAT_ID": "69904",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AM",
+        "OBJECT_ID": "2026-156AM",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69905": {
+      "satcat": {
+        "NORAD_CAT_ID": "69905",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AN",
+        "OBJECT_ID": "2026-156AN",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69906": {
+      "satcat": {
+        "NORAD_CAT_ID": "69906",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AP",
+        "OBJECT_ID": "2026-156AP",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69907": {
+      "satcat": {
+        "NORAD_CAT_ID": "69907",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AQ",
+        "OBJECT_ID": "2026-156AQ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69908": {
+      "satcat": {
+        "NORAD_CAT_ID": "69908",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AR",
+        "OBJECT_ID": "2026-156AR",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69909": {
+      "satcat": {
+        "NORAD_CAT_ID": "69909",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AS",
+        "OBJECT_ID": "2026-156AS",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69910": {
+      "satcat": {
+        "NORAD_CAT_ID": "69910",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AT",
+        "OBJECT_ID": "2026-156AT",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
     "69911": {
       "satcat": {
         "NORAD_CAT_ID": "69911",
@@ -363171,6 +363729,456 @@
         "NORAD_CAT_ID": "69917",
         "OBJECT_NAME": "TRANSPORTER-17 OBJECT BA",
         "OBJECT_ID": "2026-156BA",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69918": {
+      "satcat": {
+        "NORAD_CAT_ID": "69918",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BB",
+        "OBJECT_ID": "2026-156BB",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69919": {
+      "satcat": {
+        "NORAD_CAT_ID": "69919",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BC",
+        "OBJECT_ID": "2026-156BC",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69920": {
+      "satcat": {
+        "NORAD_CAT_ID": "69920",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BD",
+        "OBJECT_ID": "2026-156BD",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69921": {
+      "satcat": {
+        "NORAD_CAT_ID": "69921",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BE",
+        "OBJECT_ID": "2026-156BE",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69922": {
+      "satcat": {
+        "NORAD_CAT_ID": "69922",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BF",
+        "OBJECT_ID": "2026-156BF",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69923": {
+      "satcat": {
+        "NORAD_CAT_ID": "69923",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BG",
+        "OBJECT_ID": "2026-156BG",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69924": {
+      "satcat": {
+        "NORAD_CAT_ID": "69924",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BH",
+        "OBJECT_ID": "2026-156BH",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69925": {
+      "satcat": {
+        "NORAD_CAT_ID": "69925",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BJ",
+        "OBJECT_ID": "2026-156BJ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69926": {
+      "satcat": {
+        "NORAD_CAT_ID": "69926",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BK",
+        "OBJECT_ID": "2026-156BK",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69927": {
+      "satcat": {
+        "NORAD_CAT_ID": "69927",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BL",
+        "OBJECT_ID": "2026-156BL",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69928": {
+      "satcat": {
+        "NORAD_CAT_ID": "69928",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BM",
+        "OBJECT_ID": "2026-156BM",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69929": {
+      "satcat": {
+        "NORAD_CAT_ID": "69929",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BN",
+        "OBJECT_ID": "2026-156BN",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69930": {
+      "satcat": {
+        "NORAD_CAT_ID": "69930",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BP",
+        "OBJECT_ID": "2026-156BP",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69931": {
+      "satcat": {
+        "NORAD_CAT_ID": "69931",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BQ",
+        "OBJECT_ID": "2026-156BQ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69932": {
+      "satcat": {
+        "NORAD_CAT_ID": "69932",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BR",
+        "OBJECT_ID": "2026-156BR",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69933": {
+      "satcat": {
+        "NORAD_CAT_ID": "69933",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BS",
+        "OBJECT_ID": "2026-156BS",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69934": {
+      "satcat": {
+        "NORAD_CAT_ID": "69934",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BT",
+        "OBJECT_ID": "2026-156BT",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69935": {
+      "satcat": {
+        "NORAD_CAT_ID": "69935",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BU",
+        "OBJECT_ID": "2026-156BU",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69936": {
+      "satcat": {
+        "NORAD_CAT_ID": "69936",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BV",
+        "OBJECT_ID": "2026-156BV",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69937": {
+      "satcat": {
+        "NORAD_CAT_ID": "69937",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BW",
+        "OBJECT_ID": "2026-156BW",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69938": {
+      "satcat": {
+        "NORAD_CAT_ID": "69938",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BX",
+        "OBJECT_ID": "2026-156BX",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69939": {
+      "satcat": {
+        "NORAD_CAT_ID": "69939",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BY",
+        "OBJECT_ID": "2026-156BY",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69940": {
+      "satcat": {
+        "NORAD_CAT_ID": "69940",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BZ",
+        "OBJECT_ID": "2026-156BZ",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69941": {
+      "satcat": {
+        "NORAD_CAT_ID": "69941",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT CA",
+        "OBJECT_ID": "2026-156CA",
+        "OBJECT_TYPE": "PAY",
+        "OWNER": "TBD",
+        "LAUNCH_DATE": "2026-07-07"
+      },
+      "profile": {
+        "type": "Nutzlast/Satellit",
+        "country": "TBD",
+        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
+        "confidence": "catalog-only",
+        "operatorAmbiguous": true
+      },
+      "wikidata": null
+    },
+    "69942": {
+      "satcat": {
+        "NORAD_CAT_ID": "69942",
+        "OBJECT_NAME": "TRANSPORTER-17 OBJECT CB",
+        "OBJECT_ID": "2026-156CB",
         "OBJECT_TYPE": "PAY",
         "OWNER": "TBD",
         "LAUNCH_DATE": "2026-07-07"
