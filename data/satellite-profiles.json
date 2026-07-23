@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T04:40:35Z",
+  "generatedAt": "2026-07-23T20:13:00Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
@@ -16664,6 +16664,7 @@
         "2025-08-25": 2,
         "2024-12-01": 1,
         "2026-05-16": 4,
+        "2026-07-23": 1,
         "2026-05-08": 4,
         "2025-09-21": 2,
         "2025-09-20": 3,
@@ -36766,6 +36767,7 @@
           "2024-10-15": 2,
           "2023-12-09": 1,
           "2026-05-16": 4,
+          "2026-07-23": 1,
           "2026-05-08": 3,
           "2025-11-27": 2,
           "2023-01-06": 1,
@@ -363730,15 +363732,15 @@
     "69920": {
       "satcat": {
         "NORAD_CAT_ID": "69920",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BD",
+        "OBJECT_NAME": "MARINA",
         "OBJECT_ID": "2026-156BD",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "SVK",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "SVK",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -364000,15 +364002,15 @@
     "69935": {
       "satcat": {
         "NORAD_CAT_ID": "69935",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BU",
+        "OBJECT_NAME": "KOSTKA",
         "OBJECT_ID": "2026-156BU",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "CZCH",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "CZCH",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
