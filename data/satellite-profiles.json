@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T20:11:39Z",
+  "generatedAt": "2026-07-23T04:40:35Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
@@ -362812,15 +362812,15 @@
     "69869": {
       "satcat": {
         "NORAD_CAT_ID": "69869",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT A",
+        "OBJECT_NAME": "CAS500-4",
         "OBJECT_ID": "2026-156A",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "SKOR",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "SKOR",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -362848,15 +362848,15 @@
     "69871": {
       "satcat": {
         "NORAD_CAT_ID": "69871",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT C",
+        "OBJECT_NAME": "PELICAN-11",
         "OBJECT_ID": "2026-156C",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363082,15 +363082,15 @@
     "69884": {
       "satcat": {
         "NORAD_CAT_ID": "69884",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT R",
+        "OBJECT_NAME": "YAM-17",
         "OBJECT_ID": "2026-156R",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "US",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "USA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -364036,15 +364036,15 @@
     "69937": {
       "satcat": {
         "NORAD_CAT_ID": "69937",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BW",
+        "OBJECT_NAME": "LEONAV-1",
         "OBJECT_ID": "2026-156BW",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "UAE",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "UAE",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
