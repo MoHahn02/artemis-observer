@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T18:18:19Z",
+  "generatedAt": "2026-07-24T23:27:04Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
@@ -362813,15 +362813,15 @@
     "69872": {
       "satcat": {
         "NORAD_CAT_ID": "69872",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT D",
+        "OBJECT_NAME": "TOM-1",
         "OBJECT_ID": "2026-156D",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -362885,15 +362885,15 @@
     "69876": {
       "satcat": {
         "NORAD_CAT_ID": "69876",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT H",
+        "OBJECT_NAME": "ION SCV-023",
         "OBJECT_ID": "2026-156H",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "IT",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "IT",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -362921,15 +362921,15 @@
     "69878": {
       "satcat": {
         "NORAD_CAT_ID": "69878",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT K",
+        "OBJECT_NAME": "GRUS-3G",
         "OBJECT_ID": "2026-156K",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363011,15 +363011,15 @@
     "69883": {
       "satcat": {
         "NORAD_CAT_ID": "69883",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT Q",
+        "OBJECT_NAME": "HYPERION GR-1",
         "OBJECT_ID": "2026-156Q",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GREC",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GREC",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363047,15 +363047,15 @@
     "69885": {
       "satcat": {
         "NORAD_CAT_ID": "69885",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT S",
+        "OBJECT_NAME": "GRUS-3A",
         "OBJECT_ID": "2026-156S",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363155,15 +363155,15 @@
     "69891": {
       "satcat": {
         "NORAD_CAT_ID": "69891",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT Y",
+        "OBJECT_NAME": "GRUS-3C",
         "OBJECT_ID": "2026-156Y",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363209,15 +363209,15 @@
     "69894": {
       "satcat": {
         "NORAD_CAT_ID": "69894",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AB",
+        "OBJECT_NAME": "GRUS-3F",
         "OBJECT_ID": "2026-156AB",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363299,15 +363299,15 @@
     "69899": {
       "satcat": {
         "NORAD_CAT_ID": "69899",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AG",
+        "OBJECT_NAME": "FOSSASAT-2E26",
         "OBJECT_ID": "2026-156AG",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "SPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "SPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363425,15 +363425,15 @@
     "69906": {
       "satcat": {
         "NORAD_CAT_ID": "69906",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AP",
+        "OBJECT_NAME": "TOM-3",
         "OBJECT_ID": "2026-156AP",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363569,15 +363569,15 @@
     "69914": {
       "satcat": {
         "NORAD_CAT_ID": "69914",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT AX",
+        "OBJECT_NAME": "TOM-2",
         "OBJECT_ID": "2026-156AX",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363641,15 +363641,15 @@
     "69918": {
       "satcat": {
         "NORAD_CAT_ID": "69918",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BB",
+        "OBJECT_NAME": "GRUS-3B",
         "OBJECT_ID": "2026-156BB",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363659,15 +363659,15 @@
     "69919": {
       "satcat": {
         "NORAD_CAT_ID": "69919",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BC",
+        "OBJECT_NAME": "GRUS-3D",
         "OBJECT_ID": "2026-156BC",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "JPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "JPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -363713,15 +363713,15 @@
     "69922": {
       "satcat": {
         "NORAD_CAT_ID": "69922",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BF",
+        "OBJECT_NAME": "POSIDONIA",
         "OBJECT_ID": "2026-156BF",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "SPN",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "SPN",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -364001,15 +364001,15 @@
     "69938": {
       "satcat": {
         "NORAD_CAT_ID": "69938",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BX",
+        "OBJECT_NAME": "CYBERCUBE",
         "OBJECT_ID": "2026-156BX",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "ESA",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "ESA",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
@@ -364019,15 +364019,15 @@
     "69939": {
       "satcat": {
         "NORAD_CAT_ID": "69939",
-        "OBJECT_NAME": "TRANSPORTER-17 OBJECT BY",
+        "OBJECT_NAME": "CLOUDCT-PRECURSOR",
         "OBJECT_ID": "2026-156BY",
         "OBJECT_TYPE": "PAY",
-        "OWNER": "TBD",
+        "OWNER": "GER",
         "LAUNCH_DATE": "2026-07-07"
       },
       "profile": {
         "type": "Nutzlast/Satellit",
-        "country": "TBD",
+        "country": "GER",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
