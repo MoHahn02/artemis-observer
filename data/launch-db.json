@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T15:39:48Z",
+  "generatedAt": "2026-07-25T16:34:53Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1101,14 +1101,14 @@
       "mission": "Starlink Group 17-51",
       "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "livestreamUrl": "https://www.youtube.com/watch?v=Hg9PlxfvN4k",
+      "status": "live",
+      "statusName": "Launch in Flight",
+      "statusAbbrev": "In Flight",
+      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
+      "livestreamUrl": "https://www.youtube.com/watch?v=Lvt-g-X6JPs",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-51",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/5b2f05d7-9052-49fb-9bd7-2a05d4910576/",
-      "updatedAt": "2026-07-25T15:39:48Z",
+      "updatedAt": "2026-07-25T16:34:53Z",
       "firstSeenAt": "2026-07-10T17:58:28Z",
       "previousNets": [
         "2026-07-23T14:00:00Z",
@@ -1117,9 +1117,9 @@
         "2026-07-25T15:51:21Z"
       ],
       "preflightCheckedAt": "2026-07-25T15:39:48Z",
-      "postflightCheckedAt": null,
+      "postflightCheckedAt": "2026-07-25T16:34:53Z",
       "preflightStatus": "go",
-      "postflightStatus": ""
+      "postflightStatus": "live"
     },
     {
       "id": "ac897b9f-44d2-4ff4-8416-1a0a076e98a2",
