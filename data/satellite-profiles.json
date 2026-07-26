@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T20:42:13Z",
+  "generatedAt": "2026-07-26T22:44:00Z",
   "source": "celestrak-satcat",
   "stats": {
     "total": {
-      "activeCount": 16120,
+      "activeCount": 16119,
       "addedByDay": {
         "1964-10-06": 2,
         "1965-05-06": 1,
@@ -1500,7 +1500,6 @@
         "2025-11-23": 27,
         "2025-11-25": 4,
         "2025-11-26": 13,
-        "2025-11-27": 1,
         "2025-11-28": 120,
         "2025-12-01": 30,
         "2025-12-02": 56,
@@ -20872,7 +20871,7 @@
         "source": "CelesTrak SATCAT LAUNCH_DATE/DECAY_DATE"
       },
       "ambiguous": {
-        "activeCount": 3649,
+        "activeCount": 3648,
         "addedByDay": {
           "1964-10-06": 2,
           "1965-05-06": 1,
@@ -22040,7 +22039,6 @@
           "2025-11-20": 1,
           "2025-11-25": 4,
           "2025-11-26": 13,
-          "2025-11-27": 1,
           "2025-11-28": 75,
           "2025-12-01": 1,
           "2025-12-05": 2,
@@ -301425,24 +301423,6 @@
       "profile": {
         "type": "Nutzlast/Satellit",
         "country": "SKOR",
-        "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
-        "confidence": "catalog-only",
-        "operatorAmbiguous": true
-      },
-      "wikidata": null
-    },
-    "66664": {
-      "satcat": {
-        "NORAD_CAT_ID": "66664",
-        "OBJECT_NAME": "SOYUZ-MS 28",
-        "OBJECT_ID": "2025-275A",
-        "OBJECT_TYPE": "PAY",
-        "OWNER": "CIS",
-        "LAUNCH_DATE": "2025-11-27"
-      },
-      "profile": {
-        "type": "Nutzlast/Satellit",
-        "country": "CIS",
         "source": "CelesTrak SATCAT gepr\u00fcft; Betreiber nicht eindeutig",
         "confidence": "catalog-only",
         "operatorAmbiguous": true
