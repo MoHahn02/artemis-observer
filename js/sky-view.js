@@ -15,6 +15,11 @@ function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));
 }
 
+export function cameraElevationFromDeviceTilt(beta) {
+    if (!Number.isFinite(beta)) return null;
+    return clamp(beta - 90, -90, 90);
+}
+
 function geodeticToEcef({ lat, lon, altitudeKm = 0 }) {
     const latitude = Number(lat) * DEG_TO_RAD;
     const longitude = Number(lon) * DEG_TO_RAD;
@@ -225,7 +230,8 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         }
         const beta = typeof event.beta === 'number' ? event.beta : NaN;
         const gamma = typeof event.gamma === 'number' ? event.gamma : NaN;
-        state.elevation = Number.isFinite(beta) ? clamp(90 - beta, -85, 90) : state.elevation;
+        const cameraElevation = cameraElevationFromDeviceTilt(beta);
+        state.elevation = cameraElevation ?? state.elevation;
         state.roll = Number.isFinite(gamma) ? gamma : 0;
         state.orientationAvailable = true;
         if (isAbsolute) state.absoluteOrientationAvailable = true;

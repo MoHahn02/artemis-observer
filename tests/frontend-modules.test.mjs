@@ -13,6 +13,7 @@ import {
     SATELLITE_NAME_OPERATOR_PROFILES
 } from '../js/satellite-profile-data.js';
 import {
+    cameraElevationFromDeviceTilt,
     horizontalCoordinatesFromDisplayVector,
     lookAnglesFromGeodetic,
     normalizeDegrees
@@ -71,6 +72,12 @@ test('sky view normalizes headings and finds a satellite directly overhead', () 
     assert.ok(overhead);
     assert.ok(overhead.elevation > 89.9);
     assert.ok(overhead.rangeKm > 499 && overhead.rangeKm < 501);
+});
+
+test('rear camera tilt distinguishes ground, horizon, and sky', () => {
+    assert.equal(cameraElevationFromDeviceTilt(0), -90);
+    assert.equal(cameraElevationFromDeviceTilt(90), 0);
+    assert.equal(cameraElevationFromDeviceTilt(180), 90);
 });
 
 test('sky view converts display-space celestial vectors to finite horizon coordinates', () => {
