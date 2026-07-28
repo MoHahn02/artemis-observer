@@ -13,15 +13,21 @@ import {
     SATELLITE_NAME_OPERATOR_PROFILES
 } from '../js/satellite-profile-data.js';
 import {
-    cameraElevationFromDeviceTilt,
-    cameraViewFromDeviceOrientation,
     findSatelliteHit,
     horizontalCoordinatesFromDisplayVector,
-    horizontalFovForViewport,
     lookAnglesFromGeodetic,
-    normalizeDegrees,
-    stabilizedCameraViewFromDeviceOrientation
+    normalizeDegrees
 } from '../js/sky-view.js';
+import {
+    alignPoseToHeading,
+    calibrationDeltaFromPixels,
+    cameraProjectionForViewport,
+    directionFromAzimuthElevation,
+    multiplyQuaternions,
+    projectWorldDirection,
+    quaternionFromDeviceOrientation,
+    viewAnglesFromPose
+} from '../js/sky-projection.js';
 
 test('configuration keeps the default satellite scale inside its supported range', () => {
     assert.ok(SATELLITE_SIZE_SCALE_DEFAULT >= SATELLITE_SIZE_SCALE_MIN);
@@ -78,60 +84,83 @@ test('sky view normalizes headings and finds a satellite directly overhead', () 
     assert.ok(overhead.rangeKm > 499 && overhead.rangeKm < 501);
 });
 
-test('rear camera tilt distinguishes ground, horizon, and sky', () => {
-    assert.equal(cameraElevationFromDeviceTilt(0), -90);
-    assert.equal(cameraElevationFromDeviceTilt(90), 0);
-    assert.equal(cameraElevationFromDeviceTilt(180), 90);
-});
+test('W3C device-orientation quaternion points the rear camera at ground, horizon, and sky', () => {
+    const north = viewAnglesFromPose(quaternionFromDeviceOrientation({ alpha: 0, beta: 90, gamma: 0 }));
+    const east = viewAnglesFromPose(quaternionFromDeviceOrientation({ alpha: 270, beta: 90, gamma: 0 }));
+    const ground = viewAnglesFromPose(quaternionFromDeviceOrientation({ alpha: 0, beta: 0, gamma: 0 }));
+    const sky = viewAnglesFromPose(quaternionFromDeviceOrientation({ alpha: 0, beta: 180, gamma: 0 }));
 
-test('device orientation follows horizontal camera turns at full scale', () => {
-    const north = cameraViewFromDeviceOrientation({
-        alpha: 0,
-        beta: 90,
-        gamma: 0,
-        compassHeading: 0
-    });
-    const northEast = cameraViewFromDeviceOrientation({
-        alpha: 0,
-        beta: 90,
-        gamma: 0,
-        compassHeading: 45
-    });
-    const east = cameraViewFromDeviceOrientation({
-        alpha: 0,
-        beta: 90,
-        gamma: 0,
-        compassHeading: 90
-    });
-    const ground = cameraViewFromDeviceOrientation({ alpha: 0, beta: 0, gamma: 0, compassHeading: 0 });
-    const sky = cameraViewFromDeviceOrientation({ alpha: 0, beta: 180, gamma: 0, compassHeading: 0 });
-
-    assert.ok(north && northEast && east && ground && sky);
+    assert.ok(north && east && ground && sky);
     assert.ok(Math.abs(north.heading) < 1e-9);
-    assert.ok(Math.abs(northEast.heading - 45) < 1e-9);
+    assert.ok(Math.abs(north.elevation) < 1e-9);
     assert.ok(Math.abs(east.heading - 90) < 1e-9);
     assert.ok(Math.abs(east.elevation) < 1e-9);
     assert.ok(ground.elevation < -89.9);
     assert.ok(sky.elevation > 89.9);
 });
 
-test('portrait sky view uses a responsive phone-camera field of view', () => {
-    assert.equal(horizontalFovForViewport(390, 844), 46);
-    assert.equal(horizontalFovForViewport(844, 390), 68);
-});
-
-test('side tilt stays decoupled from compass heading and uses gentle roll', () => {
-    const view = stabilizedCameraViewFromDeviceOrientation({
-        alpha: 0,
-        beta: 90,
-        gamma: 45,
-        compassHeading: 0
+test('camera intrinsics account for object-fit cover cropping in portrait mode', () => {
+    const projection = cameraProjectionForViewport({
+        width: 390,
+        height: 844,
+        videoWidth: 480,
+        videoHeight: 640,
+        horizontalFov: 68
     });
 
-    assert.ok(view);
+    assert.ok(projection.focalLengthX > 460 && projection.focalLengthX < 480);
+    assert.deepEqual(projection.matrix.slice(6), [0, 0, 1]);
+});
+
+test('3D pose projection responds one-to-one to horizontal turns', () => {
+    const projection = cameraProjectionForViewport({ width: 400, height: 800, videoWidth: 400, videoHeight: 800 });
+    const northPose = quaternionFromDeviceOrientation({ alpha: 0, beta: 90, gamma: 0 });
+    const eastPose = quaternionFromDeviceOrientation({ alpha: 270, beta: 90, gamma: 0 });
+    const northTarget = directionFromAzimuthElevation(0, 0);
+    const eastTarget = directionFromAzimuthElevation(90, 0);
+    const tenDegreesRight = directionFromAzimuthElevation(10, 0);
+
+    const northCenter = projectWorldDirection(northTarget, northPose, projection);
+    const eastCenter = projectWorldDirection(eastTarget, eastPose, projection);
+    const rightPoint = projectWorldDirection(tenDegreesRight, northPose, projection);
+
+    assert.ok(northCenter && eastCenter && rightPoint);
+    assert.ok(Math.abs(northCenter.x - 200) < 1e-9);
+    assert.ok(Math.abs(eastCenter.x - 200) < 1e-9);
+    assert.ok(rightPoint.x > northCenter.x);
+});
+
+test('camera roll rotates the overlay without changing the optical-axis heading', () => {
+    const northPose = quaternionFromDeviceOrientation({ alpha: 0, beta: 90, gamma: 0 });
+    const halfRoll = 45 * Math.PI / 360;
+    const rolledPose = multiplyQuaternions(northPose, {
+        x: 0,
+        y: 0,
+        z: Math.sin(halfRoll),
+        w: Math.cos(halfRoll)
+    });
+    const view = viewAnglesFromPose(rolledPose);
+    const projection = cameraProjectionForViewport({ width: 400, height: 800, videoWidth: 400, videoHeight: 800 });
+    const point = projectWorldDirection(directionFromAzimuthElevation(0, 10), rolledPose, projection);
+
+    assert.ok(view && point);
     assert.ok(Math.abs(view.heading) < 1e-9);
     assert.ok(Math.abs(view.elevation) < 1e-9);
-    assert.equal(view.roll, 9.9);
+    assert.ok(point.x > projection.centerX);
+    assert.ok(point.y < projection.centerY);
+});
+
+test('compass alignment and calibration are rotations, not axis scaling', () => {
+    const northPose = quaternionFromDeviceOrientation({ alpha: 0, beta: 90, gamma: 0 });
+    const aligned = alignPoseToHeading(northPose, 45);
+    const alignedView = viewAnglesFromPose(aligned);
+    const projection = cameraProjectionForViewport({ width: 400, height: 800, videoWidth: 400, videoHeight: 800 });
+    const delta = calibrationDeltaFromPixels(projection.focalLengthX * Math.tan(10 * Math.PI / 180), 0, projection);
+
+    assert.ok(alignedView);
+    assert.ok(Math.abs(alignedView.heading - 45) < 1e-9);
+    assert.ok(Math.abs(delta.yaw - 10) < 1e-9);
+    assert.equal(delta.pitch, 0);
 });
 
 test('sky view selects only satellites inside a marker hit area', () => {

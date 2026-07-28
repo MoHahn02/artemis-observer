@@ -1,129 +1,24 @@
+import {
+    alignPoseToHeading,
+    calibrationDeltaFromPixels,
+    cameraProjectionForViewport,
+    directionFromAzimuthElevation,
+    normalizeDegrees,
+    projectWorldDirection,
+    quaternionFromDeviceOrientation,
+    viewAnglesFromPose
+} from './sky-projection.js';
+
+export { normalizeDegrees } from './sky-projection.js';
+
 const DEG_TO_RAD = Math.PI / 180;
 const RAD_TO_DEG = 180 / Math.PI;
 const EARTH_RADIUS_KM = 6378.137;
-
-export function normalizeDegrees(value) {
-    return ((Number(value) % 360) + 360) % 360;
-}
-
-function shortestAngleDegrees(value) {
-    const normalized = normalizeDegrees(value);
-    return normalized > 180 ? normalized - 360 : normalized;
-}
 
 function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));
 }
 
-export function cameraElevationFromDeviceTilt(beta) {
-    if (!Number.isFinite(beta)) return null;
-    return clamp(beta - 90, -90, 90);
-}
-
-function multiplyQuaternions(a, b) {
-    return {
-        x: a.w * b.x + a.x * b.w + a.y * b.z - a.z * b.y,
-        y: a.w * b.y - a.x * b.z + a.y * b.w + a.z * b.x,
-        z: a.w * b.z + a.x * b.y - a.y * b.x + a.z * b.w,
-        w: a.w * b.w - a.x * b.x - a.y * b.y - a.z * b.z
-    };
-}
-
-function axisQuaternion(axis, angle) {
-    const half = angle / 2;
-    const scale = Math.sin(half);
-    return {
-        x: axis.x * scale,
-        y: axis.y * scale,
-        z: axis.z * scale,
-        w: Math.cos(half)
-    };
-}
-
-function rotateVectorByQuaternion(vector, quaternion) {
-    const qVector = { x: vector.x, y: vector.y, z: vector.z, w: 0 };
-    const inverse = { x: -quaternion.x, y: -quaternion.y, z: -quaternion.z, w: quaternion.w };
-    const rotated = multiplyQuaternions(multiplyQuaternions(quaternion, qVector), inverse);
-    return { x: rotated.x, y: rotated.y, z: rotated.z };
-}
-
-function normalizeVector(vector) {
-    const length = Math.hypot(vector.x, vector.y, vector.z);
-    if (length <= 1e-9) return null;
-    return { x: vector.x / length, y: vector.y / length, z: vector.z / length };
-}
-
-function dotVectors(a, b) {
-    return a.x * b.x + a.y * b.y + a.z * b.z;
-}
-
-function crossVectors(a, b) {
-    return {
-        x: a.y * b.z - a.z * b.y,
-        y: a.z * b.x - a.x * b.z,
-        z: a.x * b.y - a.y * b.x
-    };
-}
-
-export function cameraViewFromDeviceOrientation({
-    alpha,
-    beta,
-    gamma,
-    screenAngle = 0,
-    compassHeading = NaN
-}) {
-    if (![beta, gamma].every(Number.isFinite)) return null;
-    const orientationAlpha = Number.isFinite(compassHeading)
-        ? normalizeDegrees(360 - compassHeading)
-        : alpha;
-    if (!Number.isFinite(orientationAlpha)) return null;
-
-    let quaternion = axisQuaternion({ x: 0, y: 1, z: 0 }, orientationAlpha * DEG_TO_RAD);
-    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 1, y: 0, z: 0 }, beta * DEG_TO_RAD));
-    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 0, y: 0, z: 1 }, -gamma * DEG_TO_RAD));
-    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 1, y: 0, z: 0 }, -Math.PI / 2));
-    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 0, y: 0, z: 1 }, -screenAngle * DEG_TO_RAD));
-
-    const forward = normalizeVector(rotateVectorByQuaternion({ x: 0, y: 0, z: -1 }, quaternion));
-    const cameraUp = normalizeVector(rotateVectorByQuaternion({ x: 0, y: 1, z: 0 }, quaternion));
-    if (!forward || !cameraUp) return null;
-
-    const horizontalRight = normalizeVector(crossVectors(forward, { x: 0, y: 1, z: 0 }));
-    let roll = 0;
-    if (horizontalRight) {
-        const horizonUp = normalizeVector(crossVectors(horizontalRight, forward));
-        if (horizonUp) {
-            roll = Math.atan2(dotVectors(cameraUp, horizontalRight), dotVectors(cameraUp, horizonUp)) * RAD_TO_DEG;
-        }
-    }
-
-    return {
-        heading: normalizeDegrees(Math.atan2(forward.x, -forward.z) * RAD_TO_DEG),
-        elevation: Math.asin(clamp(forward.y, -1, 1)) * RAD_TO_DEG,
-        roll
-    };
-}
-
-export function stabilizedCameraViewFromDeviceOrientation(options) {
-    const cameraView = cameraViewFromDeviceOrientation(options);
-    if (!cameraView) return null;
-    const compassHeading = Number(options?.compassHeading);
-    const alpha = Number(options?.alpha);
-    const stableHeading = Number.isFinite(compassHeading)
-        ? normalizeDegrees(compassHeading)
-        : Number.isFinite(alpha)
-            ? normalizeDegrees(360 - alpha)
-            : cameraView.heading;
-    const gamma = Number(options?.gamma);
-    const gentleRoll = Number.isFinite(gamma)
-        ? clamp(gamma * 0.22, -10, 10)
-        : clamp(cameraView.roll * 0.22, -10, 10);
-    return {
-        heading: stableHeading,
-        elevation: cameraView.elevation,
-        roll: gentleRoll
-    };
-}
 
 function geodeticToEcef({ lat, lon, altitudeKm = 0 }) {
     const latitude = Number(lat) * DEG_TO_RAD;
@@ -201,30 +96,6 @@ export function horizontalCoordinatesFromDisplayVector(vector, observer, dateMs)
     };
 }
 
-export function horizontalFovForViewport(width, height) {
-    return Number(width) < Number(height) ? 46 : 68;
-}
-
-function projectTarget(target, view, width, height) {
-    const horizontalFov = horizontalFovForViewport(width, height);
-    const verticalFov = clamp(horizontalFov * (height / Math.max(1, width)), 52, 92);
-    const deltaAzimuth = shortestAngleDegrees(target.azimuth - view.heading);
-    const deltaElevation = target.elevation - view.elevation;
-    let x = width * (0.5 + deltaAzimuth / horizontalFov);
-    let y = height * (0.5 - deltaElevation / verticalFov);
-    const roll = -view.roll * DEG_TO_RAD;
-    const offsetX = x - width / 2;
-    const offsetY = y - height / 2;
-    x = width / 2 + offsetX * Math.cos(roll) - offsetY * Math.sin(roll);
-    y = height / 2 + offsetX * Math.sin(roll) + offsetY * Math.cos(roll);
-    return {
-        x,
-        y,
-        visible: Math.abs(deltaAzimuth) <= horizontalFov * 0.58
-            && Math.abs(deltaElevation) <= verticalFov * 0.58
-    };
-}
-
 export function findSatelliteHit(hitTargets, x, y) {
     let nearest = null;
     let nearestDistance = Infinity;
@@ -284,11 +155,10 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         orientationAvailable: false,
         absoluteOrientationAvailable: false,
         cameraAvailable: false,
-        heading: 0,
-        elevation: 20,
-        roll: 0,
-        headingOffset: 0,
-        elevationOffset: 0,
+        poseQuaternion: quaternionFromDeviceOrientation({ alpha: 0, beta: 110, gamma: 0 }),
+        calibrationYaw: 0,
+        calibrationPitch: 0,
+        projection: null,
         showOffscreenObjects: true,
         calibrating: false,
         targets: [],
@@ -302,11 +172,10 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
     const t = (key, values = {}) => translate?.(key, values) || key;
 
     function currentView() {
-        return {
-            heading: normalizeDegrees(state.heading + state.headingOffset),
-            elevation: clamp(state.elevation + state.elevationOffset, -85, 90),
-            roll: state.roll
-        };
+        return viewAnglesFromPose(state.poseQuaternion, {
+            yaw: state.calibrationYaw,
+            pitch: state.calibrationPitch
+        }) || { heading: 0, elevation: 20 };
     }
 
     function setStatus(message) {
@@ -404,8 +273,8 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
     function toggleCalibration() {
         state.calibrating = !state.calibrating;
         if (state.calibrating) {
-            state.headingOffset = 0;
-            state.elevationOffset = 0;
+            state.calibrationYaw = 0;
+            state.calibrationPitch = 0;
             hideSatelliteCard();
         }
         refreshControlLabels();
@@ -418,28 +287,28 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
     }
 
     function handleOrientation(event) {
-        const isAbsolute = event.type === 'deviceorientationabsolute'
-            || event.absolute === true
-            || Number.isFinite(event.webkitCompassHeading);
-        if (state.absoluteOrientationAvailable && !isAbsolute) return;
+        const standardAbsolute = event.type === 'deviceorientationabsolute' || event.absolute === true;
         const compassHeading = typeof event.webkitCompassHeading === 'number'
             ? event.webkitCompassHeading
             : NaN;
+        const hasCompassHeading = Number.isFinite(compassHeading);
+        const isAbsolute = standardAbsolute || hasCompassHeading;
+        if (state.absoluteOrientationAvailable && !isAbsolute) return;
         const alpha = typeof event.alpha === 'number' ? event.alpha : NaN;
         const beta = typeof event.beta === 'number' ? event.beta : NaN;
         const gamma = typeof event.gamma === 'number' ? event.gamma : NaN;
         const screenAngle = Number(window.screen?.orientation?.angle ?? window.orientation ?? 0);
-        const cameraView = stabilizedCameraViewFromDeviceOrientation({
+        let poseQuaternion = quaternionFromDeviceOrientation({
             alpha,
             beta,
             gamma,
-            screenAngle: Number.isFinite(screenAngle) ? screenAngle : 0,
-            compassHeading
+            screenAngle: Number.isFinite(screenAngle) ? screenAngle : 0
         });
-        if (!cameraView) return;
-        state.heading = cameraView.heading;
-        state.elevation = cameraView.elevation;
-        state.roll = cameraView.roll;
+        if (!poseQuaternion) return;
+        if (!standardAbsolute && hasCompassHeading) {
+            poseQuaternion = alignPoseToHeading(poseQuaternion, compassHeading);
+        }
+        state.poseQuaternion = poseQuaternion;
         state.orientationAvailable = true;
         if (isAbsolute) state.absoluteOrientationAvailable = true;
     }
@@ -458,7 +327,13 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         const DeviceOrientation = window.DeviceOrientationEvent;
         if (!DeviceOrientation) return false;
         if (typeof DeviceOrientation.requestPermission === 'function') {
-            const permission = await DeviceOrientation.requestPermission();
+            let permission;
+            try {
+                permission = await DeviceOrientation.requestPermission(true);
+            } catch (error) {
+                if (!(error instanceof TypeError)) throw error;
+                permission = await DeviceOrientation.requestPermission();
+            }
             if (permission !== 'granted') return false;
         }
         if (!state.active || state.sessionId !== sessionId) return false;
@@ -588,6 +463,13 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         context.setTransform(dpr, 0, 0, dpr, 0, 0);
         context.clearRect(0, 0, width, height);
         const view = currentView();
+        const projection = cameraProjectionForViewport({
+            width,
+            height,
+            videoWidth: elements.video.videoWidth,
+            videoHeight: elements.video.videoHeight
+        });
+        state.projection = projection;
         state.hitTargets = [];
 
         context.save();
@@ -604,13 +486,23 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         const celestial = state.targets.filter((target) => target.kind !== 'satellite');
         const satellites = state.targets.filter((target) => target.kind === 'satellite');
         for (const target of satellites) {
-            const point = projectTarget(target, view, width, height);
+            const direction = directionFromAzimuthElevation(target.azimuth, target.elevation);
+            const point = projectWorldDirection(direction, state.poseQuaternion, projection, {
+                yaw: state.calibrationYaw,
+                pitch: state.calibrationPitch
+            });
+            if (!point) continue;
             if (!point.visible || point.x < 18 || point.x > width - 18 || point.y < 218 || point.y > height - 76) continue;
             drawMarker(context, target, point);
             state.hitTargets.push({ target, x: point.x, y: point.y, radius: 28 });
         }
         for (const target of celestial) {
-            const point = projectTarget(target, view, width, height);
+            const direction = directionFromAzimuthElevation(target.azimuth, target.elevation);
+            const point = projectWorldDirection(direction, state.poseQuaternion, projection, {
+                yaw: state.calibrationYaw,
+                pitch: state.calibrationPitch
+            });
+            if (!point) continue;
             if (point.visible && point.x >= 26 && point.x <= width - 26 && point.y >= 218 && point.y <= height - 76) {
                 drawMarker(context, target, point);
             } else if (state.showOffscreenObjects) {
@@ -646,8 +538,11 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         if (Math.hypot(event.clientX - state.pointer.startX, event.clientY - state.pointer.startY) > 7) {
             state.pointer.moved = true;
         }
-        state.headingOffset -= dx * 0.22;
-        state.elevationOffset = clamp(state.elevationOffset + dy * 0.16, -90, 90);
+        if (state.calibrating) {
+            const delta = calibrationDeltaFromPixels(dx, dy, state.projection);
+            state.calibrationYaw = clamp(state.calibrationYaw + delta.yaw, -180, 180);
+            state.calibrationPitch = clamp(state.calibrationPitch + delta.pitch, -80, 80);
+        }
         state.pointer.x = event.clientX;
         state.pointer.y = event.clientY;
     }
@@ -676,8 +571,10 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         state.cameraAvailable = false;
         state.orientationAvailable = false;
         state.absoluteOrientationAvailable = false;
-        state.headingOffset = 0;
-        state.elevationOffset = 0;
+        state.poseQuaternion = quaternionFromDeviceOrientation({ alpha: 0, beta: 110, gamma: 0 });
+        state.calibrationYaw = 0;
+        state.calibrationPitch = 0;
+        state.projection = null;
         state.calibrating = false;
         hideSatelliteCard();
         elements.root.setAttribute('aria-hidden', 'false');
