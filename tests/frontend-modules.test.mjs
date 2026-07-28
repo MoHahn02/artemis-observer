@@ -14,6 +14,7 @@ import {
 } from '../js/satellite-profile-data.js';
 import {
     cameraElevationFromDeviceTilt,
+    findSatelliteHit,
     horizontalCoordinatesFromDisplayVector,
     lookAnglesFromGeodetic,
     normalizeDegrees
@@ -78,6 +79,14 @@ test('rear camera tilt distinguishes ground, horizon, and sky', () => {
     assert.equal(cameraElevationFromDeviceTilt(0), -90);
     assert.equal(cameraElevationFromDeviceTilt(90), 0);
     assert.equal(cameraElevationFromDeviceTilt(180), 90);
+});
+
+test('sky view selects only satellites inside a marker hit area', () => {
+    const satellite = { id: '25544', name: 'ISS' };
+    const hitTargets = [{ target: satellite, x: 120, y: 240, radius: 28 }];
+
+    assert.equal(findSatelliteHit(hitTargets, 130, 245), satellite);
+    assert.equal(findSatelliteHit(hitTargets, 170, 245), null);
 });
 
 test('sky view converts display-space celestial vectors to finite horizon coordinates', () => {

@@ -70,7 +70,7 @@ Der lokale `server.py` ist nur ein bequemer Static-File-Server und bildet damit 
 
 ## Mobiler Live-Himmel
 
-Auf Handys oeffnet der Dock-Button `Himmel` eine Kameraansicht mit Live-Overlay fuer Satelliten ueber dem Horizont sowie Sonne, Mond und Planeten. Kamera und Bewegungssensoren werden erst beim Oeffnen angefragt; der bereits fuer den Beobachter verwendete Standort wird dabei aktualisiert. Beim Schliessen der Ansicht wird der Kamera-Stream beendet. Falls ein Sensor blockiert ist, bleibt die Ansicht per Wischgeste steuerbar. Kamera und Geolocation benoetigen HTTPS oder einen lokalen `localhost`-/`127.0.0.1`-Server.
+Auf Handys oeffnet der Dock-Button `Himmel` eine Kameraansicht mit Live-Overlay fuer Satelliten ueber dem Horizont sowie Sonne, Mond und Planeten. Satelliten lassen sich fuer Hoehen-, Richtungs-, Entfernungs- und Katalogdetails antippen. Ein Kalibrierungsmodus richtet das Overlay per Wischgeste aus; Randhinweise fuer Himmelskoerper ausserhalb des Sichtfelds sind umschaltbar. Kamera und Bewegungssensoren werden erst beim Oeffnen angefragt; der bereits fuer den Beobachter verwendete Standort wird dabei aktualisiert. Beim Schliessen der Ansicht wird der Kamera-Stream beendet. Falls ein Sensor blockiert ist, bleibt die Ansicht per Wischgeste steuerbar. Kamera und Geolocation benoetigen HTTPS oder einen lokalen `localhost`-/`127.0.0.1`-Server.
 
 ## Qualitaetspruefungen
 

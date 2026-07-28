@@ -47,7 +47,7 @@ import {
 } from './js/satellite-profile-data.js';
 import { latLonToVector3, destinationLatLon } from './js/geo.js';
 import { createLaunchUtils } from './js/launch-utils.js';
-import { createSkyView } from './js/sky-view.js?v=live-sky-3';
+import { createSkyView } from './js/sky-view.js?v=live-sky-4';
 
 (function () {
     'use strict';
@@ -633,6 +633,21 @@ import { createSkyView } from './js/sky-view.js?v=live-sky-3';
             'sky-heading',
             'sky-close',
             'sky-retry',
+            'sky-calibrate',
+            'sky-toggle-offscreen',
+            'sky-satellite-card',
+            'sky-satellite-kicker',
+            'sky-satellite-name',
+            'sky-satellite-close',
+            'sky-satellite-altitude-label',
+            'sky-satellite-altitude',
+            'sky-satellite-elevation-label',
+            'sky-satellite-elevation',
+            'sky-satellite-direction-label',
+            'sky-satellite-direction',
+            'sky-satellite-distance-label',
+            'sky-satellite-distance',
+            'sky-satellite-meta',
             'satellite-orbit-revolutions',
             'satellite-orbit-revolutions-readout',
             'satellite-size-scale',
@@ -5078,7 +5093,22 @@ import { createSkyView } from './js/sky-view.js?v=live-sky-3';
                 subtitle: dom['sky-subtitle'],
                 heading: dom['sky-heading'],
                 close: dom['sky-close'],
-                retry: dom['sky-retry']
+                retry: dom['sky-retry'],
+                calibrate: dom['sky-calibrate'],
+                toggleOffscreen: dom['sky-toggle-offscreen'],
+                satelliteCard: dom['sky-satellite-card'],
+                satelliteKicker: dom['sky-satellite-kicker'],
+                satelliteName: dom['sky-satellite-name'],
+                satelliteClose: dom['sky-satellite-close'],
+                satelliteAltitudeLabel: dom['sky-satellite-altitude-label'],
+                satelliteAltitude: dom['sky-satellite-altitude'],
+                satelliteElevationLabel: dom['sky-satellite-elevation-label'],
+                satelliteElevation: dom['sky-satellite-elevation'],
+                satelliteDirectionLabel: dom['sky-satellite-direction-label'],
+                satelliteDirection: dom['sky-satellite-direction'],
+                satelliteDistanceLabel: dom['sky-satellite-distance-label'],
+                satelliteDistance: dom['sky-satellite-distance'],
+                satelliteMeta: dom['sky-satellite-meta']
             },
             getSnapshot: skyViewSnapshot,
             translate: t,

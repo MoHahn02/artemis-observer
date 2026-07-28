@@ -116,6 +116,19 @@ function projectTarget(target, view, width, height) {
     };
 }
 
+export function findSatelliteHit(hitTargets, x, y) {
+    let nearest = null;
+    let nearestDistance = Infinity;
+    for (const hit of hitTargets || []) {
+        const distance = Math.hypot(Number(x) - hit.x, Number(y) - hit.y);
+        if (distance <= hit.radius && distance < nearestDistance) {
+            nearest = hit.target;
+            nearestDistance = distance;
+        }
+    }
+    return nearest;
+}
+
 function drawMarker(context, target, point, edge = false) {
     const isSatellite = target.kind === 'satellite';
     const radius = isSatellite ? 3.5 : target.kind === 'sun' ? 10 : target.kind === 'moon' ? 8 : 6;
@@ -167,7 +180,11 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         roll: 0,
         headingOffset: 0,
         elevationOffset: 0,
+        showOffscreenObjects: true,
+        calibrating: false,
         targets: [],
+        hitTargets: [],
+        selectedSatelliteId: null,
         overheadCount: 0,
         lastTargetRefresh: 0,
         pointer: null
@@ -187,16 +204,42 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         if (elements.status) elements.status.textContent = message;
     }
 
+    function setElementText(element, value) {
+        if (element) element.textContent = value;
+    }
+
+    function refreshControlLabels() {
+        if (elements.calibrate) {
+            elements.calibrate.textContent = state.calibrating ? t('sky.calibration.done') : t('sky.calibration.start');
+            elements.calibrate.setAttribute('aria-pressed', String(state.calibrating));
+        }
+        if (elements.toggleOffscreen) {
+            elements.toggleOffscreen.textContent = state.showOffscreenObjects
+                ? t('sky.offscreen.hide')
+                : t('sky.offscreen.show');
+            elements.toggleOffscreen.setAttribute('aria-pressed', String(state.showOffscreenObjects));
+        }
+    }
+
     function refreshLabels() {
         if (elements.title) elements.title.textContent = t('sky.title');
         if (elements.subtitle) elements.subtitle.textContent = t('sky.subtitle');
         if (elements.close) elements.close.setAttribute('aria-label', t('sky.close'));
         if (elements.retry) elements.retry.textContent = t('sky.retry');
+        setElementText(elements.satelliteKicker, t('sky.satellite.title'));
+        setElementText(elements.satelliteAltitudeLabel, t('sky.satellite.altitude'));
+        setElementText(elements.satelliteElevationLabel, t('sky.satellite.elevation'));
+        setElementText(elements.satelliteDirectionLabel, t('sky.satellite.direction'));
+        setElementText(elements.satelliteDistanceLabel, t('sky.satellite.distance'));
+        elements.satelliteClose?.setAttribute('aria-label', t('sky.satellite.close'));
+        refreshControlLabels();
     }
 
     function updateStatus() {
         const snapshot = getSnapshot?.() || {};
-        if (!snapshot.location) {
+        if (state.calibrating) {
+            setStatus(t('sky.calibration.status'));
+        } else if (!snapshot.location) {
             setStatus(t('sky.status.location'));
         } else if (!state.cameraAvailable && !state.orientationAvailable) {
             setStatus(t('sky.status.manual'));
@@ -210,6 +253,59 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         if (elements.retry) {
             elements.retry.hidden = state.cameraAvailable && state.orientationAvailable && Boolean(snapshot.location);
         }
+    }
+
+    function hideSatelliteCard() {
+        state.selectedSatelliteId = null;
+        if (elements.satelliteCard) elements.satelliteCard.hidden = true;
+        elements.root.classList.remove('sky-satellite-selected');
+    }
+
+    function cardinalDirection(azimuth) {
+        const labels = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+        return labels[Math.round(normalizeDegrees(azimuth) / 45) % labels.length];
+    }
+
+    function renderSatelliteCard(target) {
+        if (!target || !elements.satelliteCard) return;
+        state.selectedSatelliteId = String(target.id || target.name);
+        elements.satelliteCard.hidden = false;
+        elements.root.classList.add('sky-satellite-selected');
+        setElementText(elements.satelliteName, target.name || t('sky.satellite.title'));
+        setElementText(elements.satelliteAltitude, Number.isFinite(target.altitudeKm)
+            ? `${Math.round(target.altitudeKm)} km`
+            : '--');
+        setElementText(elements.satelliteElevation, `${Math.round(target.elevation)}°`);
+        setElementText(
+            elements.satelliteDirection,
+            `${cardinalDirection(target.azimuth)} · ${Math.round(normalizeDegrees(target.azimuth))}°`
+        );
+        setElementText(elements.satelliteDistance, Number.isFinite(target.rangeKm)
+            ? `${Math.round(target.rangeKm)} km`
+            : '--');
+        const meta = [
+            target.regime,
+            target.operator,
+            target.country,
+            target.id ? `NORAD ${target.id}` : ''
+        ].filter(Boolean).join(' · ');
+        setElementText(elements.satelliteMeta, meta || t('sky.satellite.noDetails'));
+    }
+
+    function toggleCalibration() {
+        state.calibrating = !state.calibrating;
+        if (state.calibrating) {
+            state.headingOffset = 0;
+            state.elevationOffset = 0;
+            hideSatelliteCard();
+        }
+        refreshControlLabels();
+        updateStatus();
+    }
+
+    function toggleOffscreenObjects() {
+        state.showOffscreenObjects = !state.showOffscreenObjects;
+        refreshControlLabels();
     }
 
     function handleOrientation(event) {
@@ -336,16 +432,26 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
             overheadCount += 1;
             satellites.push({
                 kind: 'satellite',
+                id: satellite.id,
                 name: satellite.name,
                 color: '#62ddff',
                 azimuth: angles.azimuth,
                 elevation: angles.elevation,
-                rangeKm: angles.rangeKm
+                rangeKm: angles.rangeKm,
+                altitudeKm: satellite.altitudeKm,
+                regime: satellite.regime,
+                operator: satellite.operator,
+                country: satellite.country
             });
         }
         satellites.sort((a, b) => b.elevation - a.elevation);
         state.overheadCount = overheadCount;
         state.targets = [...celestial, ...satellites.slice(0, 80)];
+        if (state.selectedSatelliteId) {
+            const selected = satellites.find((satellite) => String(satellite.id || satellite.name) === state.selectedSatelliteId);
+            if (selected) renderSatelliteCard(selected);
+            else hideSatelliteCard();
+        }
         updateStatus();
     }
 
@@ -371,6 +477,7 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         context.setTransform(dpr, 0, 0, dpr, 0, 0);
         context.clearRect(0, 0, width, height);
         const view = currentView();
+        state.hitTargets = [];
 
         context.save();
         context.strokeStyle = 'rgba(197, 229, 255, 0.26)';
@@ -387,17 +494,18 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         const satellites = state.targets.filter((target) => target.kind === 'satellite');
         for (const target of satellites) {
             const point = projectTarget(target, view, width, height);
-            if (!point.visible || point.x < 18 || point.x > width - 18 || point.y < 88 || point.y > height - 76) continue;
+            if (!point.visible || point.x < 18 || point.x > width - 18 || point.y < 218 || point.y > height - 76) continue;
             drawMarker(context, target, point);
+            state.hitTargets.push({ target, x: point.x, y: point.y, radius: 28 });
         }
         for (const target of celestial) {
             const point = projectTarget(target, view, width, height);
-            if (point.visible && point.x >= 26 && point.x <= width - 26 && point.y >= 88 && point.y <= height - 76) {
+            if (point.visible && point.x >= 26 && point.x <= width - 26 && point.y >= 218 && point.y <= height - 76) {
                 drawMarker(context, target, point);
-            } else {
+            } else if (state.showOffscreenObjects) {
                 drawMarker(context, target, {
                     x: clamp(point.x, 58, width - 58),
-                    y: clamp(point.y, 108, height - 104)
+                    y: clamp(point.y, 230, height - 104)
                 }, true);
             }
         }
@@ -409,7 +517,14 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
     }
 
     function onPointerDown(event) {
-        state.pointer = { id: event.pointerId, x: event.clientX, y: event.clientY };
+        state.pointer = {
+            id: event.pointerId,
+            startX: event.clientX,
+            startY: event.clientY,
+            x: event.clientX,
+            y: event.clientY,
+            moved: false
+        };
         elements.canvas.setPointerCapture?.(event.pointerId);
     }
 
@@ -417,6 +532,9 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         if (!state.pointer || state.pointer.id !== event.pointerId) return;
         const dx = event.clientX - state.pointer.x;
         const dy = event.clientY - state.pointer.y;
+        if (Math.hypot(event.clientX - state.pointer.startX, event.clientY - state.pointer.startY) > 7) {
+            state.pointer.moved = true;
+        }
         state.headingOffset -= dx * 0.22;
         state.elevationOffset = clamp(state.elevationOffset + dy * 0.16, -90, 90);
         state.pointer.x = event.clientX;
@@ -425,8 +543,18 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
 
     function onPointerEnd(event) {
         if (!state.pointer || state.pointer.id !== event.pointerId) return;
+        const pointer = state.pointer;
         elements.canvas.releasePointerCapture?.(event.pointerId);
         state.pointer = null;
+        if (pointer.moved || state.calibrating) return;
+        const rect = elements.canvas.getBoundingClientRect();
+        const target = findSatelliteHit(
+            state.hitTargets,
+            event.clientX - rect.left,
+            event.clientY - rect.top
+        );
+        if (target) renderSatelliteCard(target);
+        else hideSatelliteCard();
     }
 
     async function enter() {
@@ -439,6 +567,8 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         state.absoluteOrientationAvailable = false;
         state.headingOffset = 0;
         state.elevationOffset = 0;
+        state.calibrating = false;
+        hideSatelliteCard();
         elements.root.setAttribute('aria-hidden', 'false');
         refreshLabels();
         setStatus(t('sky.status.requesting'));
@@ -461,6 +591,8 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         state.stream?.getTracks().forEach((track) => track.stop());
         state.stream = null;
         state.cameraAvailable = false;
+        state.calibrating = false;
+        hideSatelliteCard();
         elements.video.pause();
         elements.video.srcObject = null;
         elements.root.setAttribute('aria-hidden', 'true');
@@ -476,6 +608,9 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         exit();
         enter();
     });
+    elements.calibrate?.addEventListener('click', toggleCalibration);
+    elements.toggleOffscreen?.addEventListener('click', toggleOffscreenObjects);
+    elements.satelliteClose?.addEventListener('click', hideSatelliteCard);
     elements.canvas?.addEventListener('pointerdown', onPointerDown);
     elements.canvas?.addEventListener('pointermove', onPointerMove);
     elements.canvas?.addEventListener('pointerup', onPointerEnd);
