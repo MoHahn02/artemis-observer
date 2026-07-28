@@ -4,7 +4,8 @@ Statische GitHub-Pages-Seite fuer Earth Launch Watch, Artemis-II-Replay und Sate
 
 ## Zielarchitektur
 
-- GitHub Pages hostet nur statische Dateien: `index.html`, `styles.css`, `app.js`, `trajectory.js` und `data/*`.
+- GitHub Pages hostet nur statische Dateien: `index.html`, `styles.css`, `app.js`, `trajectory.js`, `js/*` und `data/*`.
+- `app.js` bleibt der Orchestrator; Konfiguration, Uebersetzungen, Geometrie-Helfer und SATCAT-Zuordnungen liegen als eigenstaendige ES-Module unter `js/`.
 - `scripts/launch_worker.py` ist der einzige Code, der TheSpaceDevs Launch Library 2 abfragt.
 - Der Worker cached NASA-GIBS-Erdbeobachtungsbilder unter `assets/earth-observation/`; das Frontend liest nur `data/earth-observation.json` und lokale Bilddateien.
 - `.github/workflows/launch-worker.yml` fuehrt den Worker geplant aus und committet geaenderte Dateien unter `data/`.
@@ -31,6 +32,7 @@ Der GitHub-Action-Scheduler laeuft alle 10 Minuten. Der Worker:
 - speichert beobachtete Starts persistent in `data/launch-db.json`,
 - berechnet Wochen-, Monats- und Jahreszahlen aus dieser eigenen Datenbank,
 - aktualisiert den Satelliten-TLE-Snapshot hoechstens alle zwei Stunden.
+- aktualisiert die deutlich groesseren SATCAT-Profile hoechstens einmal pro Tag und speichert sie kompakt.
 
 Bei API-Fehlern bleiben vorhandene JSON-Dateien erhalten. Fehler werden in `data/worker-state.json` protokolliert.
 
@@ -64,7 +66,22 @@ python server.py --port 8000
 
 Dann `http://127.0.0.1:8000` oeffnen.
 
-Der lokale `server.py` bleibt als bequemer Static-File-Server erhalten. Die Website braucht seinen alten Satelliten-Proxy nicht mehr; Satelliten werden aus `data/active-satellites.tle` gelesen, sobald der Worker diese Datei erzeugt hat.
+Der lokale `server.py` ist nur ein bequemer Static-File-Server und bildet damit das Verhalten von GitHub Pages ab. Satelliten werden aus `data/active-satellites.tle` gelesen.
+
+## Qualitaetspruefungen
+
+Vor einem Push koennen dieselben Pruefungen wie in GitHub Actions lokal ausgefuehrt werden:
+
+```powershell
+python -m py_compile server.py scripts/launch_worker.py tests/test_launch_worker.py tests/test_data_contracts.py tests/test_server.py
+python -m unittest discover -s tests -v
+node --check app.js
+node --check trajectory.js
+node --check js/*.js
+node --test tests/frontend-modules.test.mjs
+```
+
+Die Datentests validieren unter anderem Launch-IDs, TLE-/SATCAT-Abdeckung, lokale GIBS-Assets und die Artemis-Trajektorie. Worker-Ausgaben werden atomar ersetzt, damit ein abgebrochener Schreibvorgang keine bestehende Datei teilweise ueberschreibt.
 
 ## API-Limit-Strategie
 
@@ -72,6 +89,7 @@ Der lokale `server.py` bleibt als bequemer Static-File-Server erhalten. Die Webs
 - Detailchecks: unabhaengig vom Feed-Limit, nur fuer Starts in T-15/T+30 oder verpasste Checks.
 - Pro Worker-Lauf werden standardmaessig hoechstens 8 Detailchecks ausgefuehrt (`MAX_DETAIL_CHECKS`).
 - Frontend: keine Launch-Library-Abfragen, keine Monitoring-Checks, nur statische Datenreads.
+- SATCAT-Profile: maximal einmal pro Tag; Standardwerte und leere Wikidata-Felder werden nicht wiederholt.
 
 ## Cloudflare-Alternative
 
