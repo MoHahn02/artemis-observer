@@ -20,6 +20,90 @@ export function cameraElevationFromDeviceTilt(beta) {
     return clamp(beta - 90, -90, 90);
 }
 
+function multiplyQuaternions(a, b) {
+    return {
+        x: a.w * b.x + a.x * b.w + a.y * b.z - a.z * b.y,
+        y: a.w * b.y - a.x * b.z + a.y * b.w + a.z * b.x,
+        z: a.w * b.z + a.x * b.y - a.y * b.x + a.z * b.w,
+        w: a.w * b.w - a.x * b.x - a.y * b.y - a.z * b.z
+    };
+}
+
+function axisQuaternion(axis, angle) {
+    const half = angle / 2;
+    const scale = Math.sin(half);
+    return {
+        x: axis.x * scale,
+        y: axis.y * scale,
+        z: axis.z * scale,
+        w: Math.cos(half)
+    };
+}
+
+function rotateVectorByQuaternion(vector, quaternion) {
+    const qVector = { x: vector.x, y: vector.y, z: vector.z, w: 0 };
+    const inverse = { x: -quaternion.x, y: -quaternion.y, z: -quaternion.z, w: quaternion.w };
+    const rotated = multiplyQuaternions(multiplyQuaternions(quaternion, qVector), inverse);
+    return { x: rotated.x, y: rotated.y, z: rotated.z };
+}
+
+function normalizeVector(vector) {
+    const length = Math.hypot(vector.x, vector.y, vector.z);
+    if (length <= 1e-9) return null;
+    return { x: vector.x / length, y: vector.y / length, z: vector.z / length };
+}
+
+function dotVectors(a, b) {
+    return a.x * b.x + a.y * b.y + a.z * b.z;
+}
+
+function crossVectors(a, b) {
+    return {
+        x: a.y * b.z - a.z * b.y,
+        y: a.z * b.x - a.x * b.z,
+        z: a.x * b.y - a.y * b.x
+    };
+}
+
+export function cameraViewFromDeviceOrientation({
+    alpha,
+    beta,
+    gamma,
+    screenAngle = 0,
+    compassHeading = NaN
+}) {
+    if (![beta, gamma].every(Number.isFinite)) return null;
+    const orientationAlpha = Number.isFinite(compassHeading)
+        ? normalizeDegrees(360 - compassHeading)
+        : alpha;
+    if (!Number.isFinite(orientationAlpha)) return null;
+
+    let quaternion = axisQuaternion({ x: 0, y: 1, z: 0 }, orientationAlpha * DEG_TO_RAD);
+    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 1, y: 0, z: 0 }, beta * DEG_TO_RAD));
+    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 0, y: 0, z: 1 }, -gamma * DEG_TO_RAD));
+    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 1, y: 0, z: 0 }, -Math.PI / 2));
+    quaternion = multiplyQuaternions(quaternion, axisQuaternion({ x: 0, y: 0, z: 1 }, -screenAngle * DEG_TO_RAD));
+
+    const forward = normalizeVector(rotateVectorByQuaternion({ x: 0, y: 0, z: -1 }, quaternion));
+    const cameraUp = normalizeVector(rotateVectorByQuaternion({ x: 0, y: 1, z: 0 }, quaternion));
+    if (!forward || !cameraUp) return null;
+
+    const horizontalRight = normalizeVector(crossVectors(forward, { x: 0, y: 1, z: 0 }));
+    let roll = 0;
+    if (horizontalRight) {
+        const horizonUp = normalizeVector(crossVectors(horizontalRight, forward));
+        if (horizonUp) {
+            roll = Math.atan2(dotVectors(cameraUp, horizontalRight), dotVectors(cameraUp, horizonUp)) * RAD_TO_DEG;
+        }
+    }
+
+    return {
+        heading: normalizeDegrees(Math.atan2(forward.x, -forward.z) * RAD_TO_DEG),
+        elevation: Math.asin(clamp(forward.y, -1, 1)) * RAD_TO_DEG,
+        roll
+    };
+}
+
 function geodeticToEcef({ lat, lon, altitudeKm = 0 }) {
     const latitude = Number(lat) * DEG_TO_RAD;
     const longitude = Number(lon) * DEG_TO_RAD;
@@ -96,8 +180,12 @@ export function horizontalCoordinatesFromDisplayVector(vector, observer, dateMs)
     };
 }
 
+export function horizontalFovForViewport(width, height) {
+    return Number(width) < Number(height) ? 46 : 68;
+}
+
 function projectTarget(target, view, width, height) {
-    const horizontalFov = 62;
+    const horizontalFov = horizontalFovForViewport(width, height);
     const verticalFov = clamp(horizontalFov * (height / Math.max(1, width)), 52, 92);
     const deltaAzimuth = shortestAngleDegrees(target.azimuth - view.heading);
     const deltaElevation = target.elevation - view.elevation;
@@ -317,18 +405,20 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
             ? event.webkitCompassHeading
             : NaN;
         const alpha = typeof event.alpha === 'number' ? event.alpha : NaN;
-        if (Number.isFinite(compassHeading)) {
-            state.heading = normalizeDegrees(compassHeading);
-        } else if (Number.isFinite(alpha)) {
-            state.heading = normalizeDegrees(360 - alpha);
-        } else {
-            return;
-        }
         const beta = typeof event.beta === 'number' ? event.beta : NaN;
         const gamma = typeof event.gamma === 'number' ? event.gamma : NaN;
-        const cameraElevation = cameraElevationFromDeviceTilt(beta);
-        state.elevation = cameraElevation ?? state.elevation;
-        state.roll = Number.isFinite(gamma) ? gamma : 0;
+        const screenAngle = Number(window.screen?.orientation?.angle ?? window.orientation ?? 0);
+        const cameraView = cameraViewFromDeviceOrientation({
+            alpha,
+            beta,
+            gamma,
+            screenAngle: Number.isFinite(screenAngle) ? screenAngle : 0,
+            compassHeading
+        });
+        if (!cameraView) return;
+        state.heading = cameraView.heading;
+        state.elevation = cameraView.elevation;
+        state.roll = cameraView.roll;
         state.orientationAvailable = true;
         if (isAbsolute) state.absoluteOrientationAvailable = true;
     }

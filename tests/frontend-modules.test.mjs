@@ -14,8 +14,10 @@ import {
 } from '../js/satellite-profile-data.js';
 import {
     cameraElevationFromDeviceTilt,
+    cameraViewFromDeviceOrientation,
     findSatelliteHit,
     horizontalCoordinatesFromDisplayVector,
+    horizontalFovForViewport,
     lookAnglesFromGeodetic,
     normalizeDegrees
 } from '../js/sky-view.js';
@@ -79,6 +81,42 @@ test('rear camera tilt distinguishes ground, horizon, and sky', () => {
     assert.equal(cameraElevationFromDeviceTilt(0), -90);
     assert.equal(cameraElevationFromDeviceTilt(90), 0);
     assert.equal(cameraElevationFromDeviceTilt(180), 90);
+});
+
+test('device orientation follows horizontal camera turns at full scale', () => {
+    const north = cameraViewFromDeviceOrientation({
+        alpha: 0,
+        beta: 90,
+        gamma: 0,
+        compassHeading: 0
+    });
+    const northEast = cameraViewFromDeviceOrientation({
+        alpha: 0,
+        beta: 90,
+        gamma: 0,
+        compassHeading: 45
+    });
+    const east = cameraViewFromDeviceOrientation({
+        alpha: 0,
+        beta: 90,
+        gamma: 0,
+        compassHeading: 90
+    });
+    const ground = cameraViewFromDeviceOrientation({ alpha: 0, beta: 0, gamma: 0, compassHeading: 0 });
+    const sky = cameraViewFromDeviceOrientation({ alpha: 0, beta: 180, gamma: 0, compassHeading: 0 });
+
+    assert.ok(north && northEast && east && ground && sky);
+    assert.ok(Math.abs(north.heading) < 1e-9);
+    assert.ok(Math.abs(northEast.heading - 45) < 1e-9);
+    assert.ok(Math.abs(east.heading - 90) < 1e-9);
+    assert.ok(Math.abs(east.elevation) < 1e-9);
+    assert.ok(ground.elevation < -89.9);
+    assert.ok(sky.elevation > 89.9);
+});
+
+test('portrait sky view uses a responsive phone-camera field of view', () => {
+    assert.equal(horizontalFovForViewport(390, 844), 46);
+    assert.equal(horizontalFovForViewport(844, 390), 68);
 });
 
 test('sky view selects only satellites inside a marker hit area', () => {
