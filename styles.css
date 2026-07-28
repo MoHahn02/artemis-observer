@@ -2184,9 +2184,11 @@ body.hide-controls .panel-restore-bottom {
         left: 10px;
         z-index: 12;
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 8px;
-        padding: 8px;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-template-rows: 1fr;
+        gap: 5px;
+        padding: 7px;
         border: 1px solid rgba(95, 216, 255, 0.18);
         border-radius: 18px;
         background: rgba(4, 9, 19, 0.78);
@@ -2194,14 +2196,6 @@ body.hide-controls .panel-restore-bottom {
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
         transition: transform 0.22s ease, opacity 0.22s ease;
-    }
-
-    body.mobile-has-context-sheet #mobile-dock {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-
-    body.mobile-has-dual-context #mobile-dock {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
     .search-open #mobile-dock,
@@ -2220,7 +2214,7 @@ body.hide-controls .panel-restore-bottom {
         background: rgba(11, 23, 43, 0.94);
         color: var(--muted);
         font: inherit;
-        font-size: 11px;
+        font-size: clamp(9px, 2.6vw, 11px);
         font-weight: 800;
         cursor: pointer;
     }
