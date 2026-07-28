@@ -328,6 +328,10 @@
             <span class="mobile-dock-icon" aria-hidden="true">&#9673;</span>
             <span>Steuerung</span>
         </button>
+        <button type="button" class="mobile-dock-btn mobile-sky-btn" id="mobile-nav-sky" aria-pressed="false">
+            <span class="mobile-dock-icon" aria-hidden="true">&#10022;</span>
+            <span>Himmel</span>
+        </button>
         <button type="button" class="mobile-dock-btn mobile-context-btn" id="mobile-nav-launch" data-mobile-panel="launch" aria-pressed="false" aria-hidden="true">
             <span class="mobile-dock-icon" aria-hidden="true">&#9679;</span>
             <span>Start</span>
@@ -337,6 +341,29 @@
             <span>Satellit</span>
         </button>
     </nav>
+
+    <section id="sky-view" aria-hidden="true" aria-label="Live-Himmel">
+        <div class="sky-camera-fallback" aria-hidden="true"></div>
+        <video id="sky-camera" autoplay muted playsinline aria-label="Kamera-Himmel"></video>
+        <canvas id="sky-overlay" aria-label="Live-Himmel mit Satelliten und Himmelskoerpern"></canvas>
+        <header class="sky-view-header">
+            <div>
+                <div class="section-kicker">Live-Himmel</div>
+                <h2 id="sky-title">Himmel ueber dir</h2>
+                <p id="sky-subtitle">Richte dein Handy in den Himmel. Ziehen kalibriert die Ansicht.</p>
+            </div>
+            <button type="button" class="sky-close-btn" id="sky-close" aria-label="Himmel schliessen">&times;</button>
+        </header>
+        <div class="sky-view-readout" aria-live="polite">
+            <strong id="sky-heading">000&deg; &middot; 20&deg;</strong>
+            <span id="sky-status">Kamera, Sensoren und Standort werden angefragt ...</span>
+        </div>
+        <button type="button" class="sky-retry-btn" id="sky-retry" hidden>Kamera &amp; Sensoren erneut starten</button>
+        <div class="sky-view-legend" aria-hidden="true">
+            <span><i class="sky-dot sky-dot-satellite"></i>Satellit</span>
+            <span><i class="sky-dot sky-dot-object"></i>Sonne, Mond &amp; Planeten</span>
+        </div>
+    </section>
 
     <div class="drawer-scrim" id="search-scrim"></div>
     <div class="drawer-scrim" id="settings-scrim"></div>
@@ -414,7 +441,7 @@
 
         <section class="drawer-section">
             <h3>Automatischer Beobachter</h3>
-            <p>Schwebt nach kurzer Ruhe wieder sanft um die Erde.</p>
+            <p>Startet beim Laden mit einer Kamerafahrt und endet dauerhaft, sobald du die Seite bedienst.</p>
             <div class="drawer-action-row">
                 <button type="button" class="action-btn action-btn-accent active" id="toggle-auto-observer-mode" aria-pressed="true">Beobachtungsmodus an</button>
             </div>

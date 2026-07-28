@@ -52,6 +52,7 @@ jobs:
           node --check js/i18n.js
           node --check js/launch-utils.js
           node --check js/satellite-profile-data.js
+          node --check js/sky-view.js
 
       - name: Run JavaScript module tests
         run: node --test tests/frontend-modules.test.mjs

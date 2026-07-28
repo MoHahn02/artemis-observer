@@ -13,7 +13,7 @@ import {
     EARTH_OBSERVATION_DATA_URL, EARTH_OBSERVATION_TEXTURE_WIDTH,
     EARTH_OBSERVATION_TEXTURE_HEIGHT, EARTH_OBSERVATION_REFRESH_MS,
     EARTH_OBSERVATION_TARGET_COVERAGE, EARTH_OBSERVATION_MIN_COVERAGE,
-    AUTO_OBSERVER_IDLE_MS, AUTO_OBSERVER_DISTANCE, AUTO_OBSERVER_DISTANCE_SWING,
+    AUTO_OBSERVER_DISTANCE, AUTO_OBSERVER_DISTANCE_SWING,
     AUTO_OBSERVER_HEIGHT, AUTO_OBSERVER_ORBIT_SPEED,
     EARTH_ORBIT_VISIBLE_DISTANCE, EARTH_LABEL_VISIBLE_DISTANCE, MOON_TEX_URL,
     SATELLITE_RESULT_LIMIT, SATELLITES_IN_ORBIT_ESTIMATE, ORBIT_REGIMES,
@@ -47,6 +47,7 @@ import {
 } from './js/satellite-profile-data.js';
 import { latLonToVector3, destinationLatLon } from './js/geo.js';
 import { createLaunchUtils } from './js/launch-utils.js';
+import { createSkyView } from './js/sky-view.js';
 
 (function () {
     'use strict';
@@ -214,6 +215,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
         observerPulse: null,
         observerLocation: null,
         observerWatchId: null,
+        skyView: null,
         satellitePoints: null,
         satelliteHighlight: null,
         satelliteFocusedModelKey: '',
@@ -262,8 +264,8 @@ import { createLaunchUtils } from './js/launch-utils.js';
         followOrion: false,
         userNavigatingCamera: false,
         autoObserverActive: false,
+        autoObserverDismissed: false,
         autoObserverAngle: 0,
-        autoObserverLastInteractionMs: 0,
         freeCameraMode: false,
         flyKeys: { ArrowUp: false, ArrowDown: false, ArrowLeft: false, ArrowRight: false },
         raycaster: new THREE.Raycaster(),
@@ -619,8 +621,18 @@ import { createLaunchUtils } from './js/launch-utils.js';
             'mobile-nav-info',
             'mobile-nav-feed',
             'mobile-nav-controls',
+            'mobile-nav-sky',
             'mobile-nav-launch',
             'mobile-nav-satellite',
+            'sky-view',
+            'sky-camera',
+            'sky-overlay',
+            'sky-status',
+            'sky-title',
+            'sky-subtitle',
+            'sky-heading',
+            'sky-close',
+            'sky-retry',
             'satellite-orbit-revolutions',
             'satellite-orbit-revolutions-readout',
             'satellite-size-scale',
@@ -830,10 +842,11 @@ import { createLaunchUtils } from './js/launch-utils.js';
         syncAutoObserverSettingsUi();
         writeUiState();
         if (!state.panelVisibility.autoObserverMode) {
+            state.autoObserverDismissed = true;
             deactivateAutoObserver();
         } else {
-            state.autoObserverLastInteractionMs = 0;
-            maybeActivateAutoObserver(performance.now(), true);
+            state.autoObserverDismissed = false;
+            maybeActivateAutoObserver(true);
         }
     }
 
@@ -923,6 +936,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
         buildMissionTimeline();
         const met = THREE.MathUtils.clamp(ARTEMIS.getMET(sceneTimeMs()), 0, state.totalMissionHours);
         updateArtemisPanel(met);
+        state.skyView?.refreshLabels();
     }
 
     function setLanguage(language) {
@@ -1183,6 +1197,10 @@ import { createLaunchUtils } from './js/launch-utils.js';
     }
 
     function bindUi() {
+        document.addEventListener('pointerdown', () => {
+            if (!state.autoObserverDismissed) markCameraActivity();
+        }, { capture: true, passive: true });
+
         dom['search-toggle']?.addEventListener('click', openSearch);
         dom['search-close']?.addEventListener('click', closeSearch);
         dom['search-scrim']?.addEventListener('click', closeSearch);
@@ -1196,6 +1214,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
             setAutoObserverModeEnabled(state.panelVisibility.autoObserverMode === false);
         });
         dom['stat-insight-close']?.addEventListener('click', closeStatsPanel);
+        dom['mobile-nav-sky']?.addEventListener('click', () => state.skyView?.toggle());
         ensureMobileSheetHandles();
 
         document.querySelectorAll('[data-stat-panel]').forEach((button) => {
@@ -1270,7 +1289,10 @@ import { createLaunchUtils } from './js/launch-utils.js';
         });
 
         if (dom['zoom-slider']) {
-            dom['zoom-slider'].addEventListener('pointerdown', () => { state.zoomSliderDragging = true; });
+            dom['zoom-slider'].addEventListener('pointerdown', () => {
+                state.zoomSliderDragging = true;
+                markCameraActivity();
+            });
             dom['zoom-slider'].addEventListener('pointerup', () => { state.zoomSliderDragging = false; });
             dom['zoom-slider'].addEventListener('pointercancel', () => { state.zoomSliderDragging = false; });
             dom['zoom-slider'].addEventListener('input', onZoomSliderInput);
@@ -1319,7 +1341,10 @@ import { createLaunchUtils } from './js/launch-utils.js';
         window.addEventListener('keydown', onKeyDown);
         window.addEventListener('keyup', onKeyUp);
         document.addEventListener('visibilitychange', () => {
-            if (document.hidden) return;
+            if (document.hidden) {
+                state.skyView?.exit();
+                return;
+            }
             state.lastFrameTime = performance.now();
             propagateSatellites(true);
         });
@@ -1336,6 +1361,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
         syncLaunchGroundTrackSettingsUi();
         syncAutoObserverSettingsUi();
         initScene();
+        initSkyView();
         bindUi();
         buildMissionTimeline();
         initLaunchFeed();
@@ -1415,6 +1441,8 @@ import { createLaunchUtils } from './js/launch-utils.js';
         state.renderer.domElement.addEventListener('pointercancel', onScenePointerCancel);
         updateEarthRotation(earthReferenceTimeMs());
         resetView();
+        state.autoObserverDismissed = state.panelVisibility.autoObserverMode === false;
+        maybeActivateAutoObserver(true);
         updateArtemisVisibility();
     }
 
@@ -2795,32 +2823,26 @@ import { createLaunchUtils } from './js/launch-utils.js';
     }
 
     function markCameraActivity() {
-        state.autoObserverLastInteractionMs = performance.now();
+        state.autoObserverDismissed = true;
         deactivateAutoObserver();
     }
 
-    function activateAutoObserver(now = performance.now()) {
-        if (!state.camera || !state.controls || state.panelVisibility.autoObserverMode === false) return;
+    function activateAutoObserver() {
+        if (!state.camera || !state.controls || state.panelVisibility.autoObserverMode === false || state.autoObserverDismissed) return;
         exitFreeCamera();
         clearFocusModes();
         state.userNavigatingCamera = false;
         const offset = state.camera.position.clone().sub(state.controls.target);
         state.autoObserverAngle = Math.atan2(offset.z, offset.x);
-        state.autoObserverLastInteractionMs = state.autoObserverLastInteractionMs || now;
         state.autoObserverActive = true;
     }
 
-    function maybeActivateAutoObserver(now = performance.now(), force = false) {
-        if (state.panelVisibility.autoObserverMode === false || state.autoObserverActive) return;
-        const last = state.autoObserverLastInteractionMs || 0;
-        if (!force && hasManualCameraFocus() && last && now - last < AUTO_OBSERVER_IDLE_MS) return;
-        if (force || !last || now - last >= AUTO_OBSERVER_IDLE_MS) {
-            activateAutoObserver(now);
-        }
+    function maybeActivateAutoObserver(force = false) {
+        if (state.panelVisibility.autoObserverMode === false || state.autoObserverActive || state.autoObserverDismissed) return;
+        if (force || !hasManualCameraFocus()) activateAutoObserver();
     }
 
-    function updateAutoObserver(now, dtReal) {
-        maybeActivateAutoObserver(now);
+    function updateAutoObserver(dtReal) {
         if (!state.autoObserverActive || !state.camera || !state.controls) return;
         state.autoObserverAngle += dtReal * AUTO_OBSERVER_ORBIT_SPEED;
         const target = new THREE.Vector3(0, 0, 0);
@@ -4999,6 +5021,85 @@ import { createLaunchUtils } from './js/launch-utils.js';
         state.observerMarker.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), normal);
     }
 
+    function skyViewSnapshot() {
+        const planetTranslationKeys = [
+            'planet.mercury',
+            'planet.venus',
+            'body.earth',
+            'planet.mars',
+            'planet.jupiter',
+            'planet.saturn',
+            'planet.uranus',
+            'planet.neptune'
+        ];
+        const celestial = [
+            {
+                kind: 'sun',
+                name: t('body.sun'),
+                color: '#ffd166',
+                vector: state.sunScenePos
+            },
+            {
+                kind: 'moon',
+                name: t('body.moon'),
+                color: '#e8efff',
+                vector: state.moonMesh?.position
+            }
+        ];
+
+        Object.entries(state.planetMeshes).forEach(([key, mesh]) => {
+            const index = Number(key);
+            if (index === 2 || !mesh?.position) return;
+            celestial.push({
+                kind: 'planet',
+                name: t(planetTranslationKeys[index]),
+                color: ARTEMIS.PLANETS[index]?.color || '#c8d5ff',
+                vector: mesh.position
+            });
+        });
+
+        return {
+            dateMs: earthReferenceTimeMs(),
+            location: state.observerLocation,
+            satellites: state.satelliteCatalog,
+            celestial
+        };
+    }
+
+    function initSkyView() {
+        if (!dom['sky-view'] || !dom['sky-camera'] || !dom['sky-overlay']) return;
+        state.skyView = createSkyView({
+            elements: {
+                root: dom['sky-view'],
+                video: dom['sky-camera'],
+                canvas: dom['sky-overlay'],
+                status: dom['sky-status'],
+                title: dom['sky-title'],
+                subtitle: dom['sky-subtitle'],
+                heading: dom['sky-heading'],
+                close: dom['sky-close'],
+                retry: dom['sky-retry']
+            },
+            getSnapshot: skyViewSnapshot,
+            translate: t,
+            onLocation(location) {
+                state.observerLocation = location;
+                updateObserverMarker();
+            },
+            onActiveChange(active) {
+                document.body.classList.toggle('sky-view-active', active);
+                dom['mobile-nav-sky']?.setAttribute('aria-pressed', String(active));
+                if (active) {
+                    markCameraActivity();
+                    closeMobileSheet();
+                    closeSearch();
+                    closeSettings();
+                }
+                state.lastFrameTime = performance.now();
+            }
+        });
+    }
+
     function initObserverLocation() {
         if (!('geolocation' in navigator)) return;
 
@@ -5006,6 +5107,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
             state.observerLocation = {
                 lat: position.coords.latitude,
                 lon: position.coords.longitude,
+                altitudeKm: Number.isFinite(position.coords.altitude) ? position.coords.altitude / 1000 : 0,
                 accuracy: position.coords.accuracy
             };
             updateObserverMarker();
@@ -7254,6 +7356,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
         state.camera.aspect = window.innerWidth / window.innerHeight;
         state.camera.updateProjectionMatrix();
         state.renderer.setSize(window.innerWidth, window.innerHeight);
+        if (!isMobileViewport()) state.skyView?.exit();
         if (isMobileViewport()) closeSettings();
         Object.keys(state.mobileSheetHeights).forEach((key) => {
             const limits = mobileSheetLimits(key);
@@ -7272,6 +7375,10 @@ import { createLaunchUtils } from './js/launch-utils.js';
             state.flyKeys[event.key] = true;
         }
         if (event.key === 'Escape') {
+            if (state.skyView?.isActive()) {
+                state.skyView.exit();
+                return;
+            }
             if (state.statsPanelOpen) {
                 closeStatsPanel();
                 return;
@@ -7355,7 +7462,7 @@ import { createLaunchUtils } from './js/launch-utils.js';
         }
 
         if (!state.freeCameraMode) {
-            updateAutoObserver(now, dtReal);
+            updateAutoObserver(dtReal);
             if (state.followSatelliteId) {
                 const satelliteWorld = getSatelliteWorldPosition(state.followSatelliteId);
                 if (satelliteWorld) {
@@ -7457,7 +7564,9 @@ import { createLaunchUtils } from './js/launch-utils.js';
         updateSatelliteHighlight(now);
         propagateSatellites();
         state.controls.update();
-        state.renderer.render(state.scene, state.camera);
+        if (!state.skyView?.isActive()) {
+            state.renderer.render(state.scene, state.camera);
+        }
     }
 
     window.addEventListener('DOMContentLoaded', init);

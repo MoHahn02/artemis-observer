@@ -12,6 +12,11 @@ import {
     SATCAT_OWNER_LABELS,
     SATELLITE_NAME_OPERATOR_PROFILES
 } from '../js/satellite-profile-data.js';
+import {
+    horizontalCoordinatesFromDisplayVector,
+    lookAnglesFromGeodetic,
+    normalizeDegrees
+} from '../js/sky-view.js';
 
 test('configuration keeps the default satellite scale inside its supported range', () => {
     assert.ok(SATELLITE_SIZE_SCALE_DEFAULT >= SATELLITE_SIZE_SCALE_MIN);
@@ -53,4 +58,29 @@ test('launch helpers normalize status, coordinates, and YouTube URLs', () => {
         launch.youtubeEmbedUrl('https://www.youtube.com/watch?v=abc123'),
         'https://www.youtube.com/embed/abc123?rel=0'
     );
+});
+
+test('sky view normalizes headings and finds a satellite directly overhead', () => {
+    assert.equal(normalizeDegrees(-10), 350);
+    assert.equal(normalizeDegrees(725), 5);
+
+    const overhead = lookAnglesFromGeodetic(
+        { lat: 0, lon: 0, altitudeKm: 0 },
+        { lat: 0, lon: 0, altitudeKm: 500 }
+    );
+    assert.ok(overhead);
+    assert.ok(overhead.elevation > 89.9);
+    assert.ok(overhead.rangeKm > 499 && overhead.rangeKm < 501);
+});
+
+test('sky view converts display-space celestial vectors to finite horizon coordinates', () => {
+    const result = horizontalCoordinatesFromDisplayVector(
+        { x: 0, y: 0, z: -1 },
+        { lat: 52.52, lon: 13.405 },
+        Date.UTC(2026, 6, 28, 12, 0, 0)
+    );
+
+    assert.ok(result);
+    assert.ok(result.azimuth >= 0 && result.azimuth < 360);
+    assert.ok(result.elevation >= -90 && result.elevation <= 90);
 });
