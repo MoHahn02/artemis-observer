@@ -1545,8 +1545,173 @@ body.satellite-group-active:not(.satellite-following-object) #sat-focus-details-
 }
 
 #mobile-dock,
-.mobile-sheet-scrim {
+.mobile-sheet-scrim,
+#sky-view {
     display: none;
+}
+
+#sky-view {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    overflow: hidden;
+    color: #f4f9ff;
+    background: #020713;
+}
+
+#sky-camera,
+.sky-camera-fallback,
+#sky-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#sky-camera {
+    z-index: 1;
+    object-fit: cover;
+}
+
+.sky-camera-fallback {
+    z-index: 0;
+    background:
+        radial-gradient(circle at 24% 20%, rgba(49, 129, 224, 0.22), transparent 34%),
+        radial-gradient(circle at 75% 68%, rgba(67, 222, 255, 0.1), transparent 38%),
+        #020713;
+}
+
+#sky-overlay {
+    z-index: 2;
+    touch-action: none;
+}
+
+.sky-view-header,
+.sky-view-readout,
+.sky-view-legend,
+.sky-retry-btn {
+    position: absolute;
+    z-index: 3;
+}
+
+.sky-view-header {
+    top: max(14px, env(safe-area-inset-top));
+    right: 14px;
+    left: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px 14px 13px;
+    border: 1px solid rgba(111, 211, 255, 0.25);
+    border-radius: 18px;
+    background: rgba(2, 8, 19, 0.72);
+    box-shadow: 0 15px 44px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.sky-view-header h2 {
+    margin: 2px 0 3px;
+    font-size: 20px;
+}
+
+.sky-view-header p {
+    margin: 0;
+    color: #a9bed8;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.sky-close-btn {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(111, 211, 255, 0.28);
+    border-radius: 50%;
+    background: rgba(9, 25, 44, 0.92);
+    color: #ffffff;
+    font: 300 28px/1 "Segoe UI", sans-serif;
+}
+
+.sky-view-readout {
+    top: calc(max(14px, env(safe-area-inset-top)) + 112px);
+    left: 50%;
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    width: min(88vw, 420px);
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(2, 8, 19, 0.66);
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#sky-heading {
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+}
+
+#sky-status {
+    overflow: hidden;
+    max-width: 100%;
+    color: #a9bed8;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sky-retry-btn {
+    bottom: calc(max(72px, env(safe-area-inset-bottom) + 58px));
+    left: 50%;
+    padding: 10px 16px;
+    border: 1px solid rgba(95, 216, 255, 0.5);
+    border-radius: 999px;
+    background: rgba(9, 40, 69, 0.9);
+    color: #ffffff;
+    font: 700 12px/1.2 inherit;
+    transform: translateX(-50%);
+}
+
+.sky-view-legend {
+    right: 14px;
+    bottom: max(15px, env(safe-area-inset-bottom));
+    left: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 13px;
+    border-radius: 14px;
+    background: rgba(2, 8, 19, 0.72);
+    color: #cad9ed;
+    font-size: 11px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.sky-view-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.sky-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.sky-dot-satellite {
+    background: #62ddff;
+    box-shadow: 0 0 10px #62ddff;
+}
+
+.sky-dot-object {
+    border: 2px solid #ffd166;
 }
 
 body.hide-news #launch-feed-panel,
@@ -1699,6 +1864,20 @@ body.hide-controls .panel-restore-bottom {
     body {
         height: 100%;
         overflow: hidden;
+    }
+
+    body.sky-view-active #sky-view {
+        display: block;
+    }
+
+    body.sky-view-active #canvas-container,
+    body.sky-view-active #topbar,
+    body.sky-view-active .panel,
+    body.sky-view-active #mobile-dock,
+    body.sky-view-active .drawer-scrim,
+    body.sky-view-active .mobile-sheet-scrim {
+        visibility: hidden;
+        pointer-events: none;
     }
 
     #topbar {
@@ -2005,7 +2184,7 @@ body.hide-controls .panel-restore-bottom {
         left: 10px;
         z-index: 12;
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 8px;
         padding: 8px;
         border: 1px solid rgba(95, 216, 255, 0.18);
@@ -2018,11 +2197,11 @@ body.hide-controls .panel-restore-bottom {
     }
 
     body.mobile-has-context-sheet #mobile-dock {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 
     body.mobile-has-dual-context #mobile-dock {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
     .search-open #mobile-dock,

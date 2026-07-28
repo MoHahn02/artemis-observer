@@ -68,6 +68,10 @@ Dann `http://127.0.0.1:8000` oeffnen.
 
 Der lokale `server.py` ist nur ein bequemer Static-File-Server und bildet damit das Verhalten von GitHub Pages ab. Satelliten werden aus `data/active-satellites.tle` gelesen.
 
+## Mobiler Live-Himmel
+
+Auf Handys oeffnet der Dock-Button `Himmel` eine Kameraansicht mit Live-Overlay fuer Satelliten ueber dem Horizont sowie Sonne, Mond und Planeten. Kamera und Bewegungssensoren werden erst beim Oeffnen angefragt; der bereits fuer den Beobachter verwendete Standort wird dabei aktualisiert. Beim Schliessen der Ansicht wird der Kamera-Stream beendet. Falls ein Sensor blockiert ist, bleibt die Ansicht per Wischgeste steuerbar. Kamera und Geolocation benoetigen HTTPS oder einen lokalen `localhost`-/`127.0.0.1`-Server.
+
 ## Qualitaetspruefungen
 
 Vor einem Push koennen dieselben Pruefungen wie in GitHub Actions lokal ausgefuehrt werden:
