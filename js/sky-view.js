@@ -104,6 +104,27 @@ export function cameraViewFromDeviceOrientation({
     };
 }
 
+export function stabilizedCameraViewFromDeviceOrientation(options) {
+    const cameraView = cameraViewFromDeviceOrientation(options);
+    if (!cameraView) return null;
+    const compassHeading = Number(options?.compassHeading);
+    const alpha = Number(options?.alpha);
+    const stableHeading = Number.isFinite(compassHeading)
+        ? normalizeDegrees(compassHeading)
+        : Number.isFinite(alpha)
+            ? normalizeDegrees(360 - alpha)
+            : cameraView.heading;
+    const gamma = Number(options?.gamma);
+    const gentleRoll = Number.isFinite(gamma)
+        ? clamp(gamma * 0.22, -10, 10)
+        : clamp(cameraView.roll * 0.22, -10, 10);
+    return {
+        heading: stableHeading,
+        elevation: cameraView.elevation,
+        roll: gentleRoll
+    };
+}
+
 function geodeticToEcef({ lat, lon, altitudeKm = 0 }) {
     const latitude = Number(lat) * DEG_TO_RAD;
     const longitude = Number(lon) * DEG_TO_RAD;
@@ -408,7 +429,7 @@ export function createSkyView({ elements, getSnapshot, onLocation, onActiveChang
         const beta = typeof event.beta === 'number' ? event.beta : NaN;
         const gamma = typeof event.gamma === 'number' ? event.gamma : NaN;
         const screenAngle = Number(window.screen?.orientation?.angle ?? window.orientation ?? 0);
-        const cameraView = cameraViewFromDeviceOrientation({
+        const cameraView = stabilizedCameraViewFromDeviceOrientation({
             alpha,
             beta,
             gamma,

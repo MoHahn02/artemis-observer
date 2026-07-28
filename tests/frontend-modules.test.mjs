@@ -19,7 +19,8 @@ import {
     horizontalCoordinatesFromDisplayVector,
     horizontalFovForViewport,
     lookAnglesFromGeodetic,
-    normalizeDegrees
+    normalizeDegrees,
+    stabilizedCameraViewFromDeviceOrientation
 } from '../js/sky-view.js';
 
 test('configuration keeps the default satellite scale inside its supported range', () => {
@@ -117,6 +118,20 @@ test('device orientation follows horizontal camera turns at full scale', () => {
 test('portrait sky view uses a responsive phone-camera field of view', () => {
     assert.equal(horizontalFovForViewport(390, 844), 46);
     assert.equal(horizontalFovForViewport(844, 390), 68);
+});
+
+test('side tilt stays decoupled from compass heading and uses gentle roll', () => {
+    const view = stabilizedCameraViewFromDeviceOrientation({
+        alpha: 0,
+        beta: 90,
+        gamma: 45,
+        compassHeading: 0
+    });
+
+    assert.ok(view);
+    assert.ok(Math.abs(view.heading) < 1e-9);
+    assert.ok(Math.abs(view.elevation) < 1e-9);
+    assert.equal(view.roll, 9.9);
 });
 
 test('sky view selects only satellites inside a marker hit area', () => {

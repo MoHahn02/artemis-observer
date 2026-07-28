@@ -47,7 +47,7 @@ import {
 } from './js/satellite-profile-data.js';
 import { latLonToVector3, destinationLatLon } from './js/geo.js';
 import { createLaunchUtils } from './js/launch-utils.js';
-import { createSkyView } from './js/sky-view.js?v=live-sky-5';
+import { createSkyView } from './js/sky-view.js?v=live-sky-6';
 
 (function () {
     'use strict';
