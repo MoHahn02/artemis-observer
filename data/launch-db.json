@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T23:41:40Z",
+  "generatedAt": "2026-07-28T14:31:34Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -350,36 +350,6 @@
       "postflightStatus": "delayed"
     },
     {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
-      "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.56194122,
-      "longitude": -80.57735736,
-      "mission": "BlueBird Block 2 #6-8",
-      "missionDescription": "AST SpaceMobile\u2019s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/56a85c82-ea71-449b-828c-b583f6f4a18b/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/56a85c82-ea71-449b-828c-b583f6f4a18b/",
-      "updatedAt": "2026-07-27T23:41:40Z",
-      "firstSeenAt": "2026-06-19T13:42:25Z",
-      "previousNets": [
-        "2026-07-31T00:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
       "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
       "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
       "net": "2026-08-31T00:00:00Z",
@@ -445,7 +415,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "previousNets": [
@@ -483,7 +453,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-19T07:12:10Z"
     },
     {
@@ -506,8 +476,106 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-22T23:40:28Z"
+    },
+    {
+      "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
+      "name": "Electron | StriX Launch 11",
+      "net": "2026-08-31T00:00:00Z",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "pad": "Unknown Pad",
+      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "latitude": -39.260881,
+      "longitude": 177.865826,
+      "mission": "StriX Launch 11",
+      "missionDescription": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
+      "orbit": "Sun-Synchronous Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
+      "updatedAt": "2026-07-28T14:31:34Z",
+      "firstSeenAt": "2026-06-26T23:37:01Z",
+      "previousNets": [
+        "2026-07-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
+      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
+      "net": "2026-08-31T00:00:00Z",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "pad": "Rocket Lab Launch Complex 1A",
+      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "latitude": -39.262833,
+      "longitude": 177.864469,
+      "mission": "The Grain Goddess Provides (iQPS Launch 7)",
+      "missionDescription": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
+      "updatedAt": "2026-07-28T14:31:34Z",
+      "firstSeenAt": "2026-04-19T13:07:28Z",
+      "previousNets": [
+        "2026-05-31T00:00:00Z",
+        "2026-06-30T00:00:00Z",
+        "2026-06-30T01:15:00Z",
+        "2026-07-01T13:00:00Z",
+        "2026-07-01T01:00:00Z",
+        "2026-07-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "livestreamUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I"
+    },
+    {
+      "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
+      "name": "Electron | LOXSAT 1",
+      "net": "2026-08-31T00:00:00Z",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "pad": "Unknown Pad",
+      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "latitude": -39.260881,
+      "longitude": 177.865826,
+      "mission": "LOXSAT 1",
+      "missionDescription": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program.\r\n\r\nThe system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Space plans to use technology developed for this mission to develop a truly commercial depot intended to serve multiple customers in the future.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
+      "updatedAt": "2026-07-28T14:31:34Z",
+      "firstSeenAt": "2026-04-30T15:18:38Z",
+      "previousNets": [
+        "2026-06-25T00:00:00Z",
+        "2026-07-17T00:00:00Z",
+        "2026-07-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
     },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -529,7 +597,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-03T05:27:10Z",
       "previousNets": [
         "2026-08-30T00:00:00Z",
@@ -560,7 +628,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-05-01T04:13:09Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -590,7 +658,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-18T14:05:20Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -620,7 +688,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-20T12:32:23Z"
     },
     {
@@ -666,7 +734,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nGnRRpkMDLGO",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-49",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6f94dbe4-1318-4ffb-a53d-351bbdcba733/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-27T17:08:52Z",
       "previousNets": [
         "2026-08-10T02:00:00Z"
@@ -696,7 +764,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nxeLLRRMQWJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-19",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/36ab6924-bb36-416a-b71d-cda9e88004be/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-27T17:08:52Z"
     },
     {
@@ -719,7 +787,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-20T12:32:23Z"
     },
     {
@@ -742,7 +810,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qxoNNApQWyJv",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-38",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e4316d4c-9eb8-4a18-9b0d-4307c3970ef6/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-27T17:08:52Z",
       "previousNets": [
         "2026-08-06T14:00:00Z"
@@ -771,7 +839,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-06-22T19:43:06Z"
     },
     {
@@ -795,7 +863,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -805,6 +873,37 @@
         "2026-06-18T20:00:00Z",
         "2026-06-20T20:00:00Z",
         "2026-07-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
+      "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
+      "net": "2026-08-05T07:42:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "BlueBird Block 2 #6-8",
+      "missionDescription": "AST SpaceMobile\u2019s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/56a85c82-ea71-449b-828c-b583f6f4a18b/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/56a85c82-ea71-449b-828c-b583f6f4a18b/",
+      "updatedAt": "2026-07-28T14:31:34Z",
+      "firstSeenAt": "2026-06-19T13:42:25Z",
+      "previousNets": [
+        "2026-07-31T00:00:00Z",
+        "2026-08-31T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -831,7 +930,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/12b9454b-d48b-4fd5-9c11-17c18f45dafe/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/12b9454b-d48b-4fd5-9c11-17c18f45dafe/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-13T16:10:23Z",
       "previousNets": [
         "2026-07-24T11:00:00Z",
@@ -862,7 +961,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1yKAPPDejLzxb",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-53",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0448d030-5175-4c1f-bd0b-4f3f87072921/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-23T17:43:14Z",
       "previousNets": [
         "2026-08-01T14:00:00Z",
@@ -893,7 +992,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1AxRnnrObgzxl",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-52",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e7e55b53-6f69-4c22-9fc5-df00df653a3f/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-16T20:13:49Z",
       "previousNets": [
         "2026-07-28T02:00:00Z",
@@ -995,29 +1094,6 @@
       "firstSeenAt": "2026-06-19T13:42:25Z"
     },
     {
-      "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
-      "name": "Electron | StriX Launch 11",
-      "net": "2026-07-31T00:00:00Z",
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "latitude": -39.260881,
-      "longitude": 177.865826,
-      "mission": "StriX Launch 11",
-      "missionDescription": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
-      "orbit": "Sun-Synchronous Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-07-27T23:41:40Z",
-      "firstSeenAt": "2026-06-26T23:37:01Z"
-    },
-    {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
       "name": "Mir | Demo Flight",
       "net": "2026-07-31T00:00:00Z",
@@ -1036,7 +1112,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -1048,72 +1124,6 @@
         "2026-06-30T00:00:00Z",
         "2026-06-29T05:00:00Z",
         "2026-06-30T05:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
-      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
-      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
-      "net": "2026-07-31T00:00:00Z",
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "pad": "Rocket Lab Launch Complex 1A",
-      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "latitude": -39.262833,
-      "longitude": 177.864469,
-      "mission": "The Grain Goddess Provides (iQPS Launch 7)",
-      "missionDescription": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-07-27T23:41:40Z",
-      "firstSeenAt": "2026-04-19T13:07:28Z",
-      "previousNets": [
-        "2026-05-31T00:00:00Z",
-        "2026-06-30T00:00:00Z",
-        "2026-06-30T01:15:00Z",
-        "2026-07-01T13:00:00Z",
-        "2026-07-01T01:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "livestreamUrl": "https://www.youtube.com/watch?v=C_JarlUSk5I"
-    },
-    {
-      "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
-      "name": "Electron | LOXSAT 1",
-      "net": "2026-07-31T00:00:00Z",
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "latitude": -39.260881,
-      "longitude": 177.865826,
-      "mission": "LOXSAT 1",
-      "missionDescription": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program.\r\n\r\nThe system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Space plans to use technology developed for this mission to develop a truly commercial depot intended to serve multiple customers in the future.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-07-27T23:41:40Z",
-      "firstSeenAt": "2026-04-30T15:18:38Z",
-      "previousNets": [
-        "2026-06-25T00:00:00Z",
-        "2026-07-17T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -1163,7 +1173,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/nrol95",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/24675e3d-2458-48a3-8c70-5196e44d4dc3/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-20T14:53:46Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1DxLddLoqayxm",
       "previousNets": [
@@ -1193,7 +1203,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/394d2745-610b-409e-b4ea-2071a35f8668/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/394d2745-610b-409e-b4ea-2071a35f8668/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-23T14:10:22Z"
     },
     {
@@ -1216,7 +1226,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/beac6ac1-97dd-4eb2-912c-8b4d4d15cd4e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/beac6ac1-97dd-4eb2-912c-8b4d4d15cd4e/",
-      "updatedAt": "2026-07-27T23:41:40Z",
+      "updatedAt": "2026-07-28T14:31:34Z",
       "firstSeenAt": "2026-07-03T13:15:47Z",
       "previousNets": [
         "2026-07-17T11:00:00Z",
