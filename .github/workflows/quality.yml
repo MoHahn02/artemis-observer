@@ -1,0 +1,57 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Compile Python sources
+        run: python -m py_compile server.py scripts/launch_worker.py tests/test_launch_worker.py tests/test_data_contracts.py tests/test_server.py
+
+      - name: Run unit and data-contract tests
+        run: python -m unittest discover -s tests -v
+
+  javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check trajectory.js
+          node --check js/config.js
+          node --check js/geo.js
+          node --check js/i18n-data.js
+          node --check js/i18n.js
+          node --check js/launch-utils.js
+          node --check js/satellite-profile-data.js
+
+      - name: Run JavaScript module tests
+        run: node --test tests/frontend-modules.test.mjs

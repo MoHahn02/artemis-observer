@@ -1,5 +1,52 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import {
+    UI_STORAGE_KEY, SATELLITE_CACHE_KEY,
+    LAUNCH_FEED_DATA_URL, LAUNCH_DB_DATA_URL, LAUNCH_STATS_DATA_URL,
+    SATELLITE_LIVE_HISTORY_DATA_URL, SATELLITE_PROFILE_DATA_URL,
+    LAUNCH_VERIFY_WINDOW_MS, LAUNCH_SUCCESS_CHECK_DELAY_MS, LAUNCH_DATA_REFRESH_MS,
+    SATELLITE_TLE_URL, ISS_OEM_URL, ISS_NORAD_ID, SATELLITE_LIB_CANDIDATES,
+    SATELLITE_FETCH_INTERVAL_MS, SATELLITE_PROPAGATION_INTERVAL_MS, HUD_UPDATE_INTERVAL_MS,
+    OBLIQUITY_RAD, EARTH_SIDEREAL_REFERENCE_OFFSET_RAD, ORBITS_ALL_DISTANCE,
+    ZOOM_DIST_MIN, ZOOM_DIST_MAX,
+    EARTH_TEX_URLS, EARTH_BUMP_TEX_URLS, EARTH_NIGHT_TEX_URLS, EARTH_CLOUD_TEX_URLS,
+    EARTH_OBSERVATION_DATA_URL, EARTH_OBSERVATION_TEXTURE_WIDTH,
+    EARTH_OBSERVATION_TEXTURE_HEIGHT, EARTH_OBSERVATION_REFRESH_MS,
+    EARTH_OBSERVATION_TARGET_COVERAGE, EARTH_OBSERVATION_MIN_COVERAGE,
+    AUTO_OBSERVER_IDLE_MS, AUTO_OBSERVER_DISTANCE, AUTO_OBSERVER_DISTANCE_SWING,
+    AUTO_OBSERVER_HEIGHT, AUTO_OBSERVER_ORBIT_SPEED,
+    EARTH_ORBIT_VISIBLE_DISTANCE, EARTH_LABEL_VISIBLE_DISTANCE, MOON_TEX_URL,
+    SATELLITE_RESULT_LIMIT, SATELLITES_IN_ORBIT_ESTIMATE, ORBIT_REGIMES,
+    SATELLITE_GROUP_FILTERS, WGS84_EARTH_RADIUS_KM, EARTH_MU_KM3_S2,
+    GEOSTATIONARY_ALTITUDE_KM, SIDEREAL_DAY_MINUTES,
+    SATELLITE_LAYER_OPACITY, SATELLITE_LAYER_DIMMED_OPACITY, SATELLITE_PICK_THRESHOLD,
+    SATELLITE_POINT_BASE_SIZE, SATELLITE_POINT_REDUCED_MIN_SIZE,
+    SATELLITE_POINT_REALISTIC_MIN_SIZE, SATELLITE_POINT_REALISTIC_FAR_DISTANCE,
+    SATELLITE_SIZE_SCALE_DEFAULT, SATELLITE_SIZE_SCALE_MIN, SATELLITE_SIZE_SCALE_MAX,
+    RECENT_SATELLITE_WINDOW_DAYS, RECENT_SATELLITE_LIST_LIMIT, RECENT_MISSION_GROUP_LIMIT,
+    REENTRY_WATCH_PERIGEE_KM, REENTRY_WATCH_LIMIT,
+    LAUNCH_FOCUS_VIEW_DISTANCE, LAUNCH_ASCENT_SAMPLE_COUNT,
+    LAUNCH_ORBIT_PREVIEW_SAMPLE_COUNT, LAUNCH_GROUND_TRACK_DEFAULT_REVOLUTIONS,
+    LAUNCH_GROUND_TRACK_MIN_REVOLUTIONS, LAUNCH_GROUND_TRACK_MAX_REVOLUTIONS,
+    SATELLITE_ORBIT_SAMPLE_COUNT, SATELLITE_ORBIT_DEFAULT_REVOLUTIONS,
+    SATELLITE_ORBIT_MIN_REVOLUTIONS, SATELLITE_ORBIT_MAX_REVOLUTIONS,
+    SATELLITE_ORBIT_PERIOD_MIN_MINUTES, SATELLITE_ORBIT_PERIOD_MAX_MINUTES,
+    SATELLITE_ORBIT_REFRESH_MS, EARTH_TRANSPARENT_RENDER_ORDER,
+    SATELLITE_OVERLAY_RENDER_ORDER, SCENE_CLICK_DRAG_TOLERANCE_PX,
+    PROVIDER_STATS_WINDOW_DAYS
+} from './js/config.js';
+import { STATIC_TRANSLATIONS } from './js/i18n-data.js';
+import { createI18n } from './js/i18n.js';
+import {
+    SATCAT_OWNER_LABELS,
+    SATCAT_COUNTRY_OVERRIDES,
+    SATCAT_OPERATOR_LABELS,
+    SATELLITE_NAME_OPERATOR_PROFILES,
+    SATELLITE_NAME_TYPE_PROFILES,
+    SATELLITE_NAME_SIZE_PROFILES
+} from './js/satellite-profile-data.js';
+import { latLonToVector3, destinationLatLon } from './js/geo.js';
+import { createLaunchUtils } from './js/launch-utils.js';
 
 (function () {
     'use strict';
@@ -8,894 +55,53 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     if (!ARTEMIS) {
         throw new Error('ARTEMIS2 data source is missing.');
     }
+    let state;
+    const {
+        normalizeLanguage,
+        defaultUiLanguage,
+        currentLanguage,
+        currentLocale,
+        t,
+        formatNumber,
+        formatLocalDateTime,
+        formatLocalShortDateTime,
+        formatLocalTimeOnly,
+        translateDataLabel,
+        getLocalTimeZoneLabel
+    } = createI18n(() => state?.panelVisibility?.language);
 
-    const UI_STORAGE_KEY = 'earth-ui-v2';
-    const SATELLITE_CACHE_KEY = 'earth-satellite-cache-v1';
-    const LAUNCH_FEED_DATA_URL = 'data/launch-feed.json';
-    const LAUNCH_DB_DATA_URL = 'data/launch-db.json';
-    const LAUNCH_STATS_DATA_URL = 'data/launch-stats.json';
-    const SATELLITE_LIVE_HISTORY_DATA_URL = 'data/satellite-live-history.json';
-    const SATELLITE_PROFILE_DATA_URL = 'data/satellite-profiles.json';
-    const LAUNCH_VERIFY_WINDOW_MS = 15 * 60 * 1000;
-    const LAUNCH_SUCCESS_CHECK_DELAY_MS = 30 * 60 * 1000;
-    const LAUNCH_DATA_REFRESH_MS = 15 * 60 * 1000;
-    const SATELLITE_TLE_URL = 'data/active-satellites.tle';
-    const ISS_OEM_URL = 'data/iss-oem-j2k.txt';
-    const ISS_NORAD_ID = '25544';
-    const SATELLITE_LIB_CANDIDATES = [
-        'vendor/satellite/satellite.min.js',
-        'https://unpkg.com/satellite.js/dist/satellite.min.js',
-        'https://cdn.jsdelivr.net/npm/satellite.js@6.0.2/dist/satellite.min.js',
-        'https://unpkg.com/satellite.js@6.0.2/dist/satellite.min.js'
-    ];
-    const SATELLITE_FETCH_INTERVAL_MS = 2 * 60 * 60 * 1000;
-    const SATELLITE_PROPAGATION_INTERVAL_MS = 1000;
-    const HUD_UPDATE_INTERVAL_MS = 220;
-    const OBLIQUITY_RAD = 23.4393 * Math.PI / 180;
-    const EARTH_SIDEREAL_REFERENCE_OFFSET_RAD = Math.PI / 2;
-    const ORBITS_ALL_DISTANCE = 100000;
-    const ZOOM_DIST_MIN = 2.6;
-    const ZOOM_DIST_MAX = 10000000;
-    const EARTH_TEX_URLS = [
-        'assets/textures/earth-blue-marble.jpg',
-        'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg',
-        'https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg',
-        'https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-blue-marble.jpg'
-    ];
-    const EARTH_BUMP_TEX_URLS = [
-        'assets/textures/earth-topology.png',
-        'https://unpkg.com/three-globe/example/img/earth-topology.png',
-        'https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png',
-        'https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-topology.png'
-    ];
-    const EARTH_NIGHT_TEX_URLS = [
-        'assets/textures/earth-night.jpg',
-        'https://unpkg.com/three-globe/example/img/earth-night.jpg',
-        'https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg',
-        'https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-night.jpg'
-    ];
-    const EARTH_CLOUD_TEX_URLS = [
-        'assets/textures/fair_clouds_4k.png',
-        'https://raw.githubusercontent.com/turban/webgl-earth/master/images/fair_clouds_4k.png',
-        'https://cdn.jsdelivr.net/gh/turban/webgl-earth/images/fair_clouds_4k.png'
-    ];
-    const EARTH_OBSERVATION_DATA_URL = 'data/earth-observation.json';
-    const EARTH_OBSERVATION_TEXTURE_WIDTH = 2048;
-    const EARTH_OBSERVATION_TEXTURE_HEIGHT = 1024;
-    const EARTH_OBSERVATION_REFRESH_MS = 6 * 60 * 60 * 1000;
-    const EARTH_OBSERVATION_TARGET_COVERAGE = 0.86;
-    const EARTH_OBSERVATION_MIN_COVERAGE = 0.66;
-    const AUTO_OBSERVER_IDLE_MS = 2 * 60 * 1000;
-    const AUTO_OBSERVER_DISTANCE = 270;
-    const AUTO_OBSERVER_DISTANCE_SWING = 145;
-    const AUTO_OBSERVER_HEIGHT = 92;
-    const AUTO_OBSERVER_ORBIT_SPEED = 0.018;
-    const EARTH_ORBIT_VISIBLE_DISTANCE = 700;
-    const EARTH_LABEL_VISIBLE_DISTANCE = 520;
-    const MOON_TEX_URL = 'assets/textures/moon.jpg';
-    const SATELLITE_RESULT_LIMIT = 40;
-    const SATELLITES_IN_ORBIT_ESTIMATE = 16910;
-    const ORBIT_REGIMES = ['LEO', 'MEO', 'GEO', 'HEO'];
-    const SATELLITE_GROUP_FILTERS = [
-        { id: 'all', labelKey: 'sat.group.all' },
-        { id: 'starlink', labelKey: 'sat.group.starlink' },
-        { id: 'qianfan', labelKey: 'sat.group.qianfan' },
-        { id: 'oneweb', labelKey: 'sat.group.oneweb' },
-        { id: 'kuiper', labelKey: 'sat.group.kuiper' },
-        { id: 'communications', labelKey: 'sat.group.communications' },
-        { id: 'navigation', labelKey: 'sat.group.navigation' },
-        { id: 'earth-observation', labelKey: 'sat.group.earthObservation' },
-        { id: 'weather', labelKey: 'sat.group.weather' },
-        { id: 'military', labelKey: 'sat.group.military' },
-        { id: 'science', labelKey: 'sat.group.science' },
-        { id: 'ambiguous', labelKey: 'sat.group.ambiguous' }
-    ];
-    const WGS84_EARTH_RADIUS_KM = 6378.137;
-    const EARTH_MU_KM3_S2 = 398600.4418;
-    const GEOSTATIONARY_ALTITUDE_KM = 35786;
-    const SIDEREAL_DAY_MINUTES = 1436.068;
-    const SATELLITE_LAYER_OPACITY = 0.88;
-    const SATELLITE_LAYER_DIMMED_OPACITY = 0.22;
-    const SATELLITE_PICK_THRESHOLD = 0.18;
-    const SATELLITE_POINT_BASE_SIZE = 0.11;
-    const SATELLITE_POINT_REDUCED_MIN_SIZE = 0.012;
-    const SATELLITE_POINT_REALISTIC_MIN_SIZE = 0.000012;
-    const SATELLITE_POINT_REALISTIC_FAR_DISTANCE = 180;
-    const SATELLITE_SIZE_SCALE_DEFAULT = 110;
-    const SATELLITE_SIZE_SCALE_MIN = 5;
-    const SATELLITE_SIZE_SCALE_MAX = 250;
-    const RECENT_SATELLITE_WINDOW_DAYS = 30;
-    const RECENT_SATELLITE_LIST_LIMIT = 60;
-    const RECENT_MISSION_GROUP_LIMIT = 30;
-    const REENTRY_WATCH_PERIGEE_KM = 260;
-    const REENTRY_RISK_LIMIT = 60;
-    const REENTRY_WATCH_LIMIT = 40;
-    const LAUNCH_FOCUS_VIEW_DISTANCE = 10.5;
-    const LAUNCH_ASCENT_SAMPLE_COUNT = 144;
-    const LAUNCH_ORBIT_PREVIEW_SAMPLE_COUNT = 220;
-    const LAUNCH_GROUND_TRACK_DEFAULT_REVOLUTIONS = 2;
-    const LAUNCH_GROUND_TRACK_MIN_REVOLUTIONS = 1;
-    const LAUNCH_GROUND_TRACK_MAX_REVOLUTIONS = 5;
-    const SATELLITE_ORBIT_SAMPLE_COUNT = 360;
-    const SATELLITE_ORBIT_DEFAULT_REVOLUTIONS = 2;
-    const SATELLITE_ORBIT_MIN_REVOLUTIONS = 1;
-    const SATELLITE_ORBIT_MAX_REVOLUTIONS = 5;
-    const SATELLITE_ORBIT_PERIOD_MIN_MINUTES = 80;
-    const SATELLITE_ORBIT_PERIOD_MAX_MINUTES = 8 * SIDEREAL_DAY_MINUTES;
-    const SATELLITE_ORBIT_REFRESH_MS = 30 * 1000;
-    const EARTH_TRANSPARENT_RENDER_ORDER = 5;
-    const SATELLITE_OVERLAY_RENDER_ORDER = 40;
-    const SCENE_CLICK_DRAG_TOLERANCE_PX = 7;
-    const PROVIDER_STATS_WINDOW_DAYS = 100;
-
-    const SUPPORTED_LANGUAGES = ['en', 'de'];
-    const DACH_REGIONS = new Set(['DE', 'AT', 'CH', 'LI']);
-    const DACH_TIME_ZONES = new Set(['Europe/Berlin', 'Europe/Vienna', 'Europe/Zurich', 'Europe/Busingen']);
-
-    const TEXT = {
-        en: {
-            'a11y.language': 'Overlay language',
-            'language.title': 'Language',
-            'language.description': 'Choose the language used by the overlay. The first visit defaults to German in the DACH region and English everywhere else.',
-            'language.label': 'Overlay language',
-            'language.english': 'English',
-            'language.german': 'Deutsch',
-            'settings.artemis.open': 'Open Artemis',
-            'settings.artemis.close': 'Close Artemis',
-            'artemis.replay.on': 'Space replay on',
-            'artemis.replay.off': 'Space replay off',
-            'scene.replay': 'Replay mode: Artemis II active in space',
-            'scene.home': 'Home mode: Earth Launch Tracker',
-            'countdown.reached': 'Launch window reached',
-            'common.unknown': 'Unknown',
-            'common.none': 'none',
-            'common.provider': 'Provider',
-            'earth.obs.loading': 'NASA GIBS loading',
-            'earth.obs.ready': 'NASA GIBS {date}',
-            'earth.obs.off': 'NASA GIBS off',
-            'earth.obs.fallback': 'Blue Marble fallback',
-            'earth.obs.toggleOn': 'NASA layer on',
-            'earth.obs.toggleOff': 'NASA layer off',
-            'auto.observer.toggleOn': 'Auto observer on',
-            'auto.observer.toggleOff': 'Auto observer off',
-            'launch.unknownOrg': 'Unknown',
-            'launch.unknownPad': 'Unknown pad',
-            'launch.unknownRocket': 'Rocket unknown',
-            'launch.unknownStatus': 'Status unknown',
-            'launch.unnamed': 'Unnamed launch',
-            'launch.noStory': 'No mission description is available for this launch in the feed.',
-            'launch.selected': 'Selected launch',
-            'launch.chooseFromFeed': 'Select a launch from the Launch Feed on the right.',
-            'launch.noUpcoming': 'No upcoming Earth launches with coordinates found.',
-            'launch.loading': 'Loading launch data ...',
-            'launch.staticUnavailable': 'Static launch data unavailable',
-            'launch.historyLoading': 'Loading launch history ...',
-            'launch.historyEmpty': 'No historical launches loaded yet.',
-            'launch.historyMoreLoading': 'Loading more history ...',
-            'launch.historyMoreHint': 'Scroll further for older launches',
-            'launch.historyWaiting': 'Launch history waiting ({error})',
-            'launch.historyStatus': 'Worker history | {count} observed launches',
-            'launch.workerStatus': 'Worker data | {age} | {count} launches',
-            'launch.staticHistoryUnavailable': 'Static history unavailable',
-            'launch.status.success': 'Successful',
-            'launch.status.failure': 'Failed',
-            'launch.status.cancelled': 'Scrubbed / cancelled',
-            'launch.status.delayed': 'Delayed',
-            'launch.status.goT15': 'Go at T-15',
-            'launch.intel.cancelled': 'Launch cancelled - watch stays red.',
-            'launch.intel.delayed': 'Launch delayed or not yet confirmed.',
-            'launch.intel.failure': 'Launch failure confirmed.',
-            'launch.intel.success': 'Launch success confirmed.',
-            'launch.intel.go': 'T-15 confirmed by worker - timer is live green.',
-            'launch.intel.noTime': 'Monitoring is waiting for a valid launch time.',
-            'launch.intel.t15Queued': 'Worker has queued the T-15 check.',
-            'launch.intel.preflightLoaded': 'Preflight status loaded from worker data.',
-            'launch.intel.preflightChecking': 'Worker is checking T-15 status.',
-            'launch.intel.windowReached': 'Launch window reached - worker checks T+30.',
-            'launch.intel.postflightLoaded': 'Postflight status loaded from worker data.',
-            'launch.intel.postflightChecking': 'Worker is catching up the T+30 check.',
-            'stream.found': 'Official stream found.',
-            'stream.open': 'Open livestream',
-            'stream.searchReady': 'No official stream in the feed yet - search prepared.',
-            'stream.searchYoutube': 'Search YouTube',
-            'launch.satellites.title': 'Deployed satellites',
-            'launch.satellites.action': 'Show satellites',
-            'launch.satellites.constellation': 'Constellation: {value}',
-            'launch.satellites.mixedConstellation': 'Mixed / multiple',
-            'stats.deltaSame': 'same vs {label}',
-            'stats.previous.week': 'Previous week',
-            'stats.previous.month': 'Previous month',
-            'stats.previous.year': 'Previous year',
-            'stats.title.week': 'Successful week',
-            'stats.title.month': 'Successful month',
-            'stats.title.year': 'Successful year',
-            'stats.title.success': 'Successful launches',
-            'stats.title.providers': 'Providers',
-            'stats.title.pads': 'Launch pads',
-            'stats.title.live': 'Live tracked',
-            'stats.title.recentSatellites': 'New satellites',
-            'stats.title.reentryWatch': 'Reentry Watch',
-            'stats.title.decayed': 'Decayed/reentered',
-            'stats.subtitle.loadingHistory': 'Launch history is loading',
-            'stats.subtitle.history': 'Trend from {count} stored launches',
-            'stats.subtitle.providers': 'Total launches in the last {days} days',
-            'stats.subtitle.pads': 'Known pads from upcoming launches and stored launch history',
-            'stats.subtitle.workerGlobal': 'Global worker trend',
-            'stats.subtitle.recentSatellites': 'Catalog additions from the last {days} days',
-            'stats.subtitle.reentryWatch': 'Decay risk from orbit geometry and TLE drag',
-            'stats.subtitle.decayed': 'Last {days} days',
-            'stats.window': '{days} days',
-            'stats.windowLabel': 'Statistics window',
-            'stats.metric.current': 'Current',
-            'stats.metric.total': 'Total',
-            'stats.metric.providers': 'Providers',
-            'stats.metric.now': 'Now',
-            'stats.metric.samples': 'Samples',
-            'stats.metric.window': 'Window',
-            'stats.metric.missions': 'Missions',
-            'stats.empty.loadingTrend': 'Loading launch data for the trend ...',
-            'stats.empty.providersLoading': 'Loading provider statistics ...',
-            'stats.empty.providersNone': 'No launches found in the last 100 days.',
-            'stats.empty.padsNone': 'No launch pads with coordinates found yet.',
-            'stats.empty.satHistory': 'No global satellite history loaded yet.',
-            'stats.empty.recentSatellites': 'No recently cataloged satellites found yet.',
-            'stats.empty.reentryWatch': 'No active low-perigee candidates found.',
-            'stats.empty.decayHistory': 'No SATCAT decay history loaded yet.',
-            'stats.chart.satHistory': 'Live tracked satellites over time',
-            'stats.chart.decayHistory': 'SATCAT decays/reentries over time',
-            'time.range': '{start} to {end}',
-            'age.notGenerated': 'not generated yet',
-            'age.minutes': '{count} min old',
-            'age.hours': '{count} h old',
-            'orbit.rev.one': '1 orbit',
-            'orbit.rev.many': '{count} orbits',
-            'sat.libraryMissing': 'The satellite library could not be loaded.',
-            'sat.libraryLoadFailed': 'Satellite library could not be loaded ({count} CDN attempts).',
-            'sat.catalogLoading': 'Loading satellite catalog ...',
-            'sat.catalogReady': '{total} estimated in orbit | {trackable} publicly trackable | {live} visible live | Filter: {enabled}',
-            'sat.catalogIntro': 'Matches will appear here once the public satellite catalog is loaded.',
-            'sat.noResults': 'No publicly trackable satellite currently matches your search.',
-            'sat.typeFallback': 'Satellite',
-            'sat.typeGeo': 'Satellite (GEO)',
-            'sat.profilePending': 'Profile pending',
-            'sat.satcatPending': 'SATCAT lookup pending',
-            'sat.notClear': 'Not clear',
-            'sat.group.all': 'All satellites',
-            'sat.group.starlink': 'Starlink',
-            'sat.group.qianfan': 'Qianfan / Spacesail',
-            'sat.group.oneweb': 'OneWeb',
-            'sat.group.kuiper': 'Project Kuiper',
-            'sat.group.communications': 'Communications satellites',
-            'sat.group.navigation': 'Navigation satellites',
-            'sat.group.earthObservation': 'Earth observation',
-            'sat.group.weather': 'Weather / environment',
-            'sat.group.military': 'Military / reconnaissance',
-            'sat.group.science': 'Science / telescopes',
-            'sat.group.ambiguous': 'Not clear after SATCAT check',
-            'sat.group.label': 'Group',
-            'sat.group.panelKicker': 'Constellation filter',
-            'sat.group.subtitle': 'Only matching satellites are visible',
-            'sat.group.missionKicker': 'Mission filter',
-            'sat.group.missionSubtitle': 'Only payloads from this mission are visible',
-            'sat.group.active': 'Active in catalog',
-            'sat.group.visible': 'Visible with orbit filters',
-            'sat.group.added': 'Added in window',
-            'sat.group.decayed': 'Decayed/reentered',
-            'sat.group.clear': 'Clear constellation filter',
-            'sat.group.jump': 'Show constellation',
-            'sat.activity.focus': 'Satellite',
-            'sat.activity.mission': 'Mission',
-            'sat.activity.noMission': 'No matching mission',
-            'sat.activity.showAll': 'Show all',
-            'sat.activity.payloads': '{count} payloads',
-            'sat.activity.payloadsOne': '1 payload',
-            'sat.activity.unknownMission': 'Catalog group',
-            'sat.decay.critical': 'critical',
-            'sat.decay.high': 'high',
-            'sat.decay.medium': 'medium',
-            'sat.decay.low': 'low',
-            'sat.decay.estimateDays': '~{days} d',
-            'sat.decay.estimateWeeks': '~{weeks} wk',
-            'sat.decay.estimateMonths': '~{months} mo',
-            'sat.decay.estimateUnknown': 'uncertain',
-            'sat.tleNoOperator': 'TLE without operator field',
-            'sat.panelKicker': 'Satellite tracking',
-            'sat.focus': 'Focus',
-            'sat.follow': 'Follow',
-            'sat.following': 'Tracking on',
-            'sat.stopFollowing': 'Stop tracking',
-            'sat.height': 'Altitude',
-            'sat.noActiveFollow': 'No tracking active',
-            'sat.cacheFallback': 'Satellites from local cache | Live source currently unreachable ({error}).',
-            'sat.catalogLoadFailed': 'Satellite catalog could not be loaded ({error}).',
-            'sat.libraryUnavailable': 'Satellite library unavailable.',
-            'sat.staticCatalogEmpty': 'static satellite catalog empty',
-            'sat.unknownError': 'unknown error',
-            'sat.rcsNoSize': 'no physical size',
-            'satcat.notConfirmed': 'Not confirmed',
-            'satcat.unknown': 'Unknown',
-            'satcat.payload': 'Payload/satellite',
-            'satcat.rocketBody': 'Rocket body',
-            'satcat.debris': 'Space debris',
-            'satcat.unknownObject': 'Unknown object',
-            'profile.queryRunning': 'SATCAT/Wikidata lookup running',
-            'profile.offline': 'TLE/NORAD | Profile offline ({error})',
-            'profile.checkedAmbiguous': 'Not clear (SATCAT checked)',
-            'profile.fromName': 'Derived from name',
-            'profile.tleName': 'TLE name',
-            'profile.spaceDebris': 'Space debris',
-            'profile.rocketBody': 'Rocket body',
-            'profile.uncataloged': 'Uncataloged payload/object',
-            'profile.noActiveOperator': 'No active operator',
-            'size.classOneMeter': 'approx. 1 m class',
-            'size.severalMeters': 'several meters',
-            'size.notPublished': 'not published',
-            'size.severalMetersDeployed': 'several meters deployed',
-            'size.espaCubesat': 'approx. ESPA/CubeSat class',
-            'zoom.millionKm': '{value} million km',
-            'body.sun': 'Sun',
-            'body.earth': 'Earth',
-            'body.moon': 'Moon',
-            'mission.beforeStart': 'Before launch',
-            'mission.phase.earthOrbit': 'Launch & Earth orbit',
-            'mission.phase.highOrbit': 'High elliptical orbit',
-            'mission.phase.tli': 'TLI burn & Earth departure',
-            'mission.phase.outbound': 'Lunar transit (outbound)',
-            'mission.phase.flyby': 'Lunar flyby',
-            'mission.phase.return': 'Return transit to Earth',
-            'mission.phase.entry': 'Reentry & splashdown',
-            'mission.milestone.boosterSep': 'Booster separation (SRB)',
-            'mission.milestone.icpsSep': 'ICPS separation',
-            'mission.milestone.prm': 'Perigee raise maneuver (PRM)',
-            'mission.milestone.arb': 'Apogee raise maneuver (ARB)',
-            'mission.milestone.icpsProximity': 'Proximity ops test with ICPS',
-            'mission.milestone.prb': 'Perigee correction (PRB)',
-            'mission.milestone.tli': 'TLI burn (lunar course)',
-            'mission.milestone.otc1': 'Outbound trajectory correction OTC-1',
-            'mission.milestone.otc2': 'Outbound trajectory correction OTC-2',
-            'mission.milestone.moonApproach': 'Approach to the Moon',
-            'mission.milestone.signalLoss': 'Signal loss (far side of Moon)',
-            'mission.milestone.closestMoon': 'Closest lunar approach',
-            'mission.milestone.signalReturn': 'Signal reacquired',
-            'mission.milestone.flybyComplete': 'Lunar flyby complete',
-            'mission.milestone.rtc1': 'Return trajectory correction RTC-1',
-            'mission.milestone.rtc2': 'Return trajectory correction RTC-2',
-            'mission.milestone.serviceModuleSep': 'Service module separation',
-            'mission.milestone.reentry': 'Reentry (Entry Interface)',
-            'mission.milestone.parachute': 'Parachute deployment',
-            'mission.milestone.splashdown': 'Splashdown in the Pacific'
-        },
-        de: {
-            'a11y.language': 'Overlay-Sprache',
-            'language.title': 'Sprache',
-            'language.description': 'Waehle die Sprache fuer das Overlay. Beim ersten Besuch ist Deutsch im DACH-Raum aktiv, sonst Englisch.',
-            'language.label': 'Overlay-Sprache',
-            'language.english': 'English',
-            'language.german': 'Deutsch',
-            'settings.artemis.open': 'Artemis oeffnen',
-            'settings.artemis.close': 'Artemis schliessen',
-            'artemis.replay.on': 'Replay im Raum an',
-            'artemis.replay.off': 'Replay im Raum aus',
-            'scene.replay': 'Replay-Modus: Artemis II im Raum aktiv',
-            'scene.home': 'Home-Modus: Earth Launch Tracker',
-            'countdown.reached': 'Startfenster erreicht',
-            'common.unknown': 'Unbekannt',
-            'common.none': 'keine',
-            'common.provider': 'Anbieter',
-            'earth.obs.loading': 'NASA GIBS laedt',
-            'earth.obs.ready': 'NASA GIBS {date}',
-            'earth.obs.off': 'NASA GIBS aus',
-            'earth.obs.fallback': 'Blue Marble Fallback',
-            'earth.obs.toggleOn': 'NASA-Layer an',
-            'earth.obs.toggleOff': 'NASA-Layer aus',
-            'auto.observer.toggleOn': 'Beobachtungsmodus an',
-            'auto.observer.toggleOff': 'Beobachtungsmodus aus',
-            'launch.unknownOrg': 'Unbekannt',
-            'launch.unknownPad': 'Unbekanntes Pad',
-            'launch.unknownRocket': 'Rakete unbekannt',
-            'launch.unknownStatus': 'Status unbekannt',
-            'launch.unnamed': 'Unbenannter Start',
-            'launch.noStory': 'Zu diesem Start liegt im Feed keine Missionsbeschreibung vor.',
-            'launch.selected': 'Ausgewaehlter Start',
-            'launch.chooseFromFeed': 'Waehle rechts im Launch Feed einen Start aus.',
-            'launch.noUpcoming': 'Keine anstehenden Earth-Launches mit Koordinaten gefunden.',
-            'launch.loading': 'Lade Startdaten ...',
-            'launch.staticUnavailable': 'Statische Startdaten nicht erreichbar',
-            'launch.historyLoading': 'Lade Starthistorie ...',
-            'launch.historyEmpty': 'Noch keine historischen Starts geladen.',
-            'launch.historyMoreLoading': 'Laedt weitere Historie ...',
-            'launch.historyMoreHint': 'Weiter scrollen fuer aeltere Starts',
-            'launch.historyWaiting': 'Starthistorie wartet ({error})',
-            'launch.historyStatus': 'Worker-Historie | {count} beobachtete Starts',
-            'launch.workerStatus': 'Worker-Daten | {age} | {count} Starts',
-            'launch.staticHistoryUnavailable': 'Statische Historie nicht erreichbar',
-            'launch.status.success': 'Erfolgreich',
-            'launch.status.failure': 'Fehlgeschlagen',
-            'launch.status.cancelled': 'Scrubbed / abgesagt',
-            'launch.status.delayed': 'Verschoben',
-            'launch.status.goT15': 'Go bei T-15',
-            'launch.intel.cancelled': 'Start abgesagt - Watch bleibt auf rot.',
-            'launch.intel.delayed': 'Start verzoegert oder noch nicht bestaetigt.',
-            'launch.intel.failure': 'Start fehlgeschlagen bestaetigt.',
-            'launch.intel.success': 'Start erfolgreich bestaetigt.',
-            'launch.intel.go': 'T-15 vom Worker bestaetigt - Timer ist live-gruen.',
-            'launch.intel.noTime': 'Monitoring wartet auf eine gueltige Startzeit.',
-            'launch.intel.t15Queued': 'Worker hat T-15 Check vorgemerkt.',
-            'launch.intel.preflightLoaded': 'Preflight-Status aus Worker-Daten geladen.',
-            'launch.intel.preflightChecking': 'Worker prueft den T-15 Status.',
-            'launch.intel.windowReached': 'Startfenster erreicht - Worker prueft T+30.',
-            'launch.intel.postflightLoaded': 'Postflight-Status aus Worker-Daten geladen.',
-            'launch.intel.postflightChecking': 'Worker holt den T+30 Check nach.',
-            'stream.found': 'Offizieller Stream gefunden.',
-            'stream.open': 'Livestream oeffnen',
-            'stream.searchReady': 'Noch kein offizieller Stream im Feed - Suche vorbereitet.',
-            'stream.searchYoutube': 'Auf YouTube suchen',
-            'launch.satellites.title': 'Verteilte Satelliten',
-            'launch.satellites.action': 'Satelliten anzeigen',
-            'launch.satellites.constellation': 'Konstellation: {value}',
-            'launch.satellites.mixedConstellation': 'Gemischt / mehrere',
-            'stats.deltaSame': 'gleich vs {label}',
-            'stats.previous.week': 'Vorwoche',
-            'stats.previous.month': 'Vormonat',
-            'stats.previous.year': 'Vorjahr',
-            'stats.title.week': 'Erfolgreich Woche',
-            'stats.title.month': 'Erfolgreich Monat',
-            'stats.title.year': 'Erfolgreich Jahr',
-            'stats.title.success': 'Erfolgreiche Starts',
-            'stats.title.providers': 'Anbieter',
-            'stats.title.pads': 'Launchpads',
-            'stats.title.live': 'Live getrackt',
-            'stats.title.recentSatellites': 'Neue Satelliten',
-            'stats.title.reentryWatch': 'Reentry Watch',
-            'stats.title.decayed': 'Decayed/Reentry',
-            'stats.subtitle.loadingHistory': 'Starthistorie wird geladen',
-            'stats.subtitle.history': 'Verlauf aus {count} gespeicherten Starts',
-            'stats.subtitle.providers': 'Gesamtstarts der letzten {days} Tage',
-            'stats.subtitle.pads': 'Bekannte Pads aus anstehenden Starts und gespeicherter Starthistorie',
-            'stats.subtitle.workerGlobal': 'Globaler Worker-Verlauf',
-            'stats.subtitle.recentSatellites': 'Katalogzugaenge der letzten {days} Tage',
-            'stats.subtitle.reentryWatch': 'Decay-Risiko aus Orbitgeometrie und TLE-Drag',
-            'stats.subtitle.decayed': 'Letzte {days} Tage',
-            'stats.window': '{days} Tage',
-            'stats.windowLabel': 'Statistikfenster',
-            'stats.metric.current': 'Aktuell',
-            'stats.metric.total': 'Gesamt',
-            'stats.metric.providers': 'Anbieter',
-            'stats.metric.now': 'Jetzt',
-            'stats.metric.samples': 'Samples',
-            'stats.metric.window': 'Zeitraum',
-            'stats.metric.missions': 'Missionen',
-            'stats.empty.loadingTrend': 'Lade Startdaten fuer den Verlauf ...',
-            'stats.empty.providersLoading': 'Lade Anbieterstatistik ...',
-            'stats.empty.providersNone': 'Keine Starts in den letzten 100 Tagen gefunden.',
-            'stats.empty.padsNone': 'Noch keine Launchpads mit Koordinaten gefunden.',
-            'stats.empty.satHistory': 'Noch keine globale Satellitenhistorie geladen.',
-            'stats.empty.recentSatellites': 'Noch keine kuerzlich katalogisierten Satelliten gefunden.',
-            'stats.empty.reentryWatch': 'Keine aktiven Low-Perigaeum-Kandidaten gefunden.',
-            'stats.empty.decayHistory': 'Noch keine SATCAT-Decay-Historie geladen.',
-            'stats.chart.satHistory': 'Live getrackte Satelliten im Verlauf',
-            'stats.chart.decayHistory': 'SATCAT Decays/Reentries im Verlauf',
-            'time.range': '{start} bis {end}',
-            'age.notGenerated': 'noch nicht generiert',
-            'age.minutes': '{count} min alt',
-            'age.hours': '{count} h alt',
-            'orbit.rev.one': '1 Umlauf',
-            'orbit.rev.many': '{count} Umlaeufe',
-            'sat.libraryMissing': 'Die Satellitenbibliothek konnte nicht geladen werden.',
-            'sat.libraryLoadFailed': 'Satellitenbibliothek konnte nicht geladen werden ({count} CDN-Versuche).',
-            'sat.catalogLoading': 'Lade Satellitenkatalog ...',
-            'sat.catalogReady': '{total} im Orbit geschaetzt | {trackable} oeffentlich trackbar | {live} live sichtbar | Filter: {enabled}',
-            'sat.catalogIntro': 'Sobald der oeffentliche Satellitenkatalog geladen ist, erscheinen hier Treffer.',
-            'sat.noResults': 'Kein oeffentlich trackbarer Satellit passt gerade zu deiner Suche.',
-            'sat.typeFallback': 'Satellit',
-            'sat.typeGeo': 'Satellit (GEO)',
-            'sat.profilePending': 'Profil ausstehend',
-            'sat.satcatPending': 'SATCAT-Abfrage ausstehend',
-            'sat.notClear': 'Nicht eindeutig',
-            'sat.group.all': 'Alle Satelliten',
-            'sat.group.starlink': 'Starlink',
-            'sat.group.qianfan': 'Qianfan / Spacesail',
-            'sat.group.oneweb': 'OneWeb',
-            'sat.group.kuiper': 'Project Kuiper',
-            'sat.group.communications': 'Kommunikationssatelliten',
-            'sat.group.navigation': 'Navigationssatelliten',
-            'sat.group.earthObservation': 'Erdbeobachtung',
-            'sat.group.weather': 'Wetter / Umwelt',
-            'sat.group.military': 'Militaer / Aufklaerung',
-            'sat.group.science': 'Wissenschaft / Teleskope',
-            'sat.group.ambiguous': 'Nach SATCAT-Pruefung unklar',
-            'sat.group.label': 'Gruppe',
-            'sat.group.panelKicker': 'Konstellationsfilter',
-            'sat.group.subtitle': 'Nur passende Satelliten sind sichtbar',
-            'sat.group.missionKicker': 'Missionsfilter',
-            'sat.group.missionSubtitle': 'Nur Payloads dieser Mission sind sichtbar',
-            'sat.group.active': 'Aktiv im Katalog',
-            'sat.group.visible': 'Sichtbar mit Orbitfiltern',
-            'sat.group.added': 'Neu im Zeitraum',
-            'sat.group.decayed': 'Decayed/Reentry',
-            'sat.group.clear': 'Konstellationsfilter loeschen',
-            'sat.group.jump': 'Konstellation anzeigen',
-            'sat.activity.focus': 'Satellit',
-            'sat.activity.mission': 'Mission',
-            'sat.activity.noMission': 'Keine passende Mission',
-            'sat.activity.showAll': 'Alle anzeigen',
-            'sat.activity.payloads': '{count} Payloads',
-            'sat.activity.payloadsOne': '1 Payload',
-            'sat.activity.unknownMission': 'Kataloggruppe',
-            'sat.decay.critical': 'kritisch',
-            'sat.decay.high': 'hoch',
-            'sat.decay.medium': 'mittel',
-            'sat.decay.low': 'niedrig',
-            'sat.decay.estimateDays': '~{days} d',
-            'sat.decay.estimateWeeks': '~{weeks} Wo.',
-            'sat.decay.estimateMonths': '~{months} Mon.',
-            'sat.decay.estimateUnknown': 'unsicher',
-            'sat.tleNoOperator': 'TLE ohne Betreiberfeld',
-            'sat.panelKicker': 'Satellit verfolgt',
-            'sat.focus': 'Fokus',
-            'sat.follow': 'Folgen',
-            'sat.following': 'Verfolgung an',
-            'sat.stopFollowing': 'Verfolgung beenden',
-            'sat.height': 'Hoehe',
-            'sat.noActiveFollow': 'Keine Verfolgung aktiv',
-            'sat.cacheFallback': 'Satelliten aus lokalem Cache | Live-Quelle aktuell nicht erreichbar ({error}).',
-            'sat.catalogLoadFailed': 'Satellitenkatalog konnte nicht geladen werden ({error}).',
-            'sat.libraryUnavailable': 'Satellitenbibliothek nicht verfuegbar.',
-            'sat.staticCatalogEmpty': 'statischer Satellitenkatalog leer',
-            'sat.unknownError': 'unbekannter Fehler',
-            'sat.rcsNoSize': 'keine Baugroesse',
-            'satcat.notConfirmed': 'Nicht bestaetigt',
-            'satcat.unknown': 'Unbekannt',
-            'satcat.payload': 'Nutzlast/Satellit',
-            'satcat.rocketBody': 'Raketenkörper',
-            'satcat.debris': 'Weltraumschrott',
-            'satcat.unknownObject': 'Unbekanntes Objekt',
-            'profile.queryRunning': 'SATCAT/Wikidata-Abfrage laeuft',
-            'profile.offline': 'TLE/NORAD | Profil offline ({error})',
-            'profile.checkedAmbiguous': 'Nicht eindeutig (SATCAT geprueft)',
-            'profile.fromName': 'Aus Name abgeleitet',
-            'profile.tleName': 'TLE-Name',
-            'profile.spaceDebris': 'Weltraumschrott',
-            'profile.rocketBody': 'Raketenkörper',
-            'profile.uncataloged': 'Nicht katalogisierte Nutzlast/Objekt',
-            'profile.noActiveOperator': 'Kein aktiver Betreiber',
-            'size.classOneMeter': 'ca. 1 m Klasse',
-            'size.severalMeters': 'mehrere Meter',
-            'size.notPublished': 'nicht veroeffentlicht',
-            'size.severalMetersDeployed': 'mehrere Meter entfaltet',
-            'size.espaCubesat': 'ca. ESPA/CubeSat-Klasse',
-            'zoom.millionKm': '{value} Mio km',
-            'body.sun': 'Sonne',
-            'body.earth': 'Erde',
-            'body.moon': 'Mond',
-            'mission.beforeStart': 'Vor dem Start',
-            'mission.phase.earthOrbit': 'Start & Erdorbit',
-            'mission.phase.highOrbit': 'Hochelliptischer Orbit',
-            'mission.phase.tli': 'TLI-Burn & Erdabflug',
-            'mission.phase.outbound': 'Mondtransit (Hinflug)',
-            'mission.phase.flyby': 'Mond-Flyby',
-            'mission.phase.return': 'Ruecktransit zur Erde',
-            'mission.phase.entry': 'Wiedereintritt & Landung',
-            'mission.milestone.boosterSep': 'Booster-Abtrennung (SRB)',
-            'mission.milestone.icpsSep': 'ICPS-Abtrennung',
-            'mission.milestone.prm': 'Perigaeum-Anhebung (PRM)',
-            'mission.milestone.arb': 'Apogaeum-Anhebung (ARB)',
-            'mission.milestone.icpsProximity': 'Proximity-Ops-Test mit ICPS',
-            'mission.milestone.prb': 'Perigaeum-Korrektur (PRB)',
-            'mission.milestone.tli': 'TLI-Burn (Mondkurs)',
-            'mission.milestone.otc1': 'Outbound-Kurskorrektur OTC-1',
-            'mission.milestone.otc2': 'Outbound-Kurskorrektur OTC-2',
-            'mission.milestone.moonApproach': 'Annaeherung an den Mond',
-            'mission.milestone.signalLoss': 'Funkverlust (Mondrueckseite)',
-            'mission.milestone.closestMoon': 'Naechste Mondannaeherung',
-            'mission.milestone.signalReturn': 'Funkkontakt wiederhergestellt',
-            'mission.milestone.flybyComplete': 'Mond-Flyby abgeschlossen',
-            'mission.milestone.rtc1': 'Return-Kurskorrektur RTC-1',
-            'mission.milestone.rtc2': 'Return-Kurskorrektur RTC-2',
-            'mission.milestone.serviceModuleSep': 'Service-Modul-Abtrennung',
-            'mission.milestone.reentry': 'Wiedereintritt (Entry Interface)',
-            'mission.milestone.parachute': 'Fallschirm-Entfaltung',
-            'mission.milestone.splashdown': 'Splashdown im Pazifik'
-        }
-    };
-
-    const STATIC_TRANSLATIONS = {
-        en: {
-            'Einstellungen': 'Settings',
-            'Settings': 'Settings',
-            'Settings schliessen': 'Close settings',
-            'Sprache': 'Language',
-            'Waehle die Sprache fuer das Overlay. Im DACH-Raum startet die App auf Deutsch, sonst auf Englisch.': 'Choose the language for the overlay. In the DACH region the app starts in German, otherwise in English.',
-            'Overlay-Sprache': 'Overlay language',
-            'Deutsch': 'German',
-            'Tracking, Flugbahn und optionale Missionsansichten.': 'Tracking, trajectories, and optional mission views.',
-            'Erde & Wolken': 'Earth & clouds',
-            'Schalte die echten NASA-GIBS-Erdbeobachtungs- und Wolkenlayer ein oder aus.': 'Toggle the real NASA GIBS Earth observation and cloud layers.',
-            'NASA-Layer an': 'NASA layer on',
-            'Automatischer Beobachter': 'Automatic observer',
-            'Schwebt nach kurzer Ruhe wieder sanft um die Erde.': 'Returns to a gentle Earth orbit after a short idle period.',
-            'Beobachtungsmodus an': 'Observer mode on',
-            'Satelliten-Tracking': 'Satellite tracking',
-            'Lege fest, wie weit die vorausberechnete Flugbahn fuer den verfolgten Satelliten angezeigt wird.': 'Choose how far the predicted path for the tracked satellite is shown.',
-            'Flugbahn-Laenge': 'Path length',
-            'Punktgroesse': 'Point size',
-            'Normal': 'Normal',
-            'Kleiner': 'Smaller',
-            'Realistisch': 'Realistic',
-            'Launch-Groundtrack': 'Launch ground track',
-            'Lege fest, wie weit die blaue Bodenprojektion einer ausgewaehlten Mission vorauslaeuft.': 'Choose how far the blue ground projection for a selected mission runs ahead.',
-            'Bodenroute-Laenge': 'Ground route length',
-            'Replay-Deck und Missionsmarken nur bei Bedarf anzeigen.': 'Show the replay deck and mission markers only when needed.',
-            'Replay im Raum aus': 'Space replay off',
-            'Phase': 'Phase',
-            'Datum & Uhrzeit': 'Date & time',
-            'Entfernung Erde': 'Distance from Earth',
-            'Abstand Mond': 'Distance from Moon',
-            'Geschwindigkeit': 'Velocity',
-            'Missionsposition': 'Mission position',
-            'Zum Start': 'To launch',
-            'Zur Landung': 'To landing',
-            'Orion folgen': 'Follow Orion',
-            'Satelliten-Suche': 'Satellite Search',
-            'Suche nach ISS, Hubble, Tiangong, Starlink und allen anderen oeffentlich trackbaren Satelliten und filtere die Orbits live nach Regime.': 'Search for ISS, Hubble, Tiangong, Starlink, and all other publicly trackable satellites. Filter live orbits by regime.',
-            'Suche schliessen': 'Close search',
-            'Lade Satellitenkatalog ...': 'Loading satellite catalog ...',
-            'Ergebnisse': 'Results',
-            'Jeder Treffer kann fokussiert oder direkt verfolgt werden.': 'Each result can be focused or tracked directly.',
-            'Overview': 'Overview',
-            'Startseite': 'Home',
-            'Launches & Satelliten': 'Launches & Satellites',
-            'Getrackte Starts': 'Tracked launches',
-            'Naechster Countdown': 'Next countdown',
-            'Anbieter': 'Providers',
-            'Pads': 'Pads',
-            'Erfolgreich Woche': 'Successful week',
-            'Erfolgreich Monat': 'Successful month',
-            'Erfolgreich Jahr': 'Successful year',
-            'Satelliten im Orbit': 'Satellites in orbit',
-            'Live getrackt': 'Live tracked',
-            'Uebersicht ein- oder ausblenden': 'Show or hide overview',
-            'Anbieter-Statistik oeffnen': 'Open provider statistics',
-            'Wochenverlauf erfolgreicher Starts oeffnen': 'Open weekly trend for successful launches',
-            'Monatsverlauf erfolgreicher Starts oeffnen': 'Open monthly trend for successful launches',
-            'Jahresverlauf erfolgreicher Starts oeffnen': 'Open yearly trend for successful launches',
-            'Statistik': 'Statistics',
-            'Verlauf': 'Trend',
-            'Statistik schliessen': 'Close statistics',
-            'Mission Control schliessen': 'Close Mission Control',
-            'Ausgewaehlter Start': 'Selected launch',
-            'LiveStream': 'Livestream',
-            'Streamsuche wartet auf T-15.': 'Stream search waits for T-15.',
-            'Livestream oeffnen': 'Open livestream',
-            'Verteilte Satelliten': 'Deployed satellites',
-            'Satelliten anzeigen': 'Show satellites',
-            'Status': 'Status',
-            'Countdown': 'Countdown',
-            'Startfenster': 'Launch window',
-            'Pad': 'Pad',
-            'Koordinaten': 'Coordinates',
-            'Zum Startplatz': 'To launch pad',
-            'Monitoring wartet auf Startdaten.': 'Monitoring is waiting for launch data.',
-            'Sobald Launch-Daten geladen sind, erscheint hier die Missionsbeschreibung oder ein kurzer Kontext zum Flug.': 'Once launch data is loaded, the mission description or a short flight context appears here.',
-            'Firma': 'Company',
-            'Rakete': 'Rocket',
-            'Externe Quelle oeffnen': 'Open external source',
-            'Raketenstarts': 'Rocket launches',
-            'Launch Feed aktualisieren': 'Refresh Launch Feed',
-            'Launch Feed ein- oder ausblenden': 'Show or hide Launch Feed',
-            'Launch Feed Ansicht': 'Launch Feed view',
-            'Anstehend': 'Upcoming',
-            'Starthistorie': 'Launch history',
-            'Lade Startdaten ...': 'Loading launch data ...',
-            'Satellit verfolgt': 'Satellite tracked',
-            'Keine Verfolgung aktiv': 'No tracking active',
-            'Satellitenverfolgung beenden': 'Stop satellite tracking',
-            'Typ': 'Type',
-            'Betreiber': 'Operator',
-            'Land/Region': 'Country/region',
-            'Zuordnung': 'Assignment',
-            'Groesse': 'Size',
-            'Regime': 'Regime',
-            'Live-Hoehe': 'Live altitude',
-            'Perigaeum': 'Perigee',
-            'Apogaeum': 'Apogee',
-            'Inklination': 'Inclination',
-            'Periode': 'Period',
-            'Exzentrizitaet': 'Eccentricity',
-            'Breite': 'Latitude',
-            'Laenge': 'Longitude',
-            'Verfolgung beenden': 'Stop tracking',
-            'Steuerung ein- oder ausblenden': 'Show or hide controls',
-            'Zoom': 'Zoom',
-            'Naechster Start': 'Next launch',
-            'Erde': 'Earth',
-            'Mein Standort': 'My location',
-            'Mond': 'Moon',
-            'Sonnensystem': 'Solar system',
-            'Freie Kamera': 'Free camera',
-            'Zeit': 'Time',
-            'Jetzt': 'Now',
-            'Uebersicht einblenden': 'Show overview',
-            'Launch Feed einblenden': 'Show Launch Feed',
-            'Steuerung einblenden': 'Show controls',
-            'Mobile Navigation': 'Mobile navigation',
-            'Steuerung': 'Controls',
-            'Info': 'Info',
-            'Feed': 'Feed',
-            'Satellit': 'Satellite',
-            'Start': 'Launch'
-        },
-        de: {
-            'Settings': 'Einstellungen',
-            'Overview': 'Uebersicht',
-            'Mission Control': 'Mission Control',
-            'Launch Feed': 'Launch Feed',
-            'Earth': 'Earth'
-        }
-    };
-
-    const DATA_LABEL_TRANSLATIONS_EN = {
-        'Unbekannt': 'Unknown',
-        'Nicht eindeutig': 'Not clear',
-        'Nicht bestaetigt': 'Not confirmed',
-        'Profil ausstehend': 'Profile pending',
-        'SATCAT-Abfrage ausstehend': 'SATCAT lookup pending',
-        'Nicht eindeutig (SATCAT geprueft)': 'Not clear (SATCAT checked)',
-        'TLE ohne Betreiberfeld': 'TLE without operator field',
-        'Aus Name abgeleitet': 'Derived from name',
-        'TLE-Name': 'TLE name',
-        'Satellit': 'Satellite',
-        'Satellit (GEO)': 'Satellite (GEO)',
-        'Nutzlast/Satellit': 'Payload/satellite',
-        'Raketenk\u00f6rper': 'Rocket body',
-        'Weltraumschrott': 'Space debris',
-        'Unbekanntes Objekt': 'Unknown object',
-        'Kein aktiver Betreiber': 'No active operator',
-        'Nicht katalogisierte Nutzlast/Objekt': 'Uncataloged payload/object',
-        'Raumstation/ISS-Modul': 'Space station/ISS module',
-        'Raumstation/Stationsmodul': 'Space station/station module',
-        'Raumschiff/Versorgung': 'Spacecraft/resupply',
-        'Kommunikationssatellit': 'Communications satellite',
-        'Kommunikationssatellit (Qianfan/Spacesail)': 'Communications satellite (Qianfan/Spacesail)',
-        'Kommunikations-/Datenrelaissatellit': 'Communications/data relay satellite',
-        'Militaerischer Kommunikations-/Datenrelaissatellit': 'Military communications/data relay satellite',
-        'Milit\u00e4rischer Kommunikationssatellit': 'Military communications satellite',
-        'Navigationssatellit': 'Navigation satellite',
-        'Wetter-/Umweltsatellit': 'Weather/environment satellite',
-        'Erdbeobachtung': 'Earth observation',
-        'Radar-Erdbeobachtung': 'Radar Earth observation',
-        'Weltraumteleskop': 'Space telescope',
-        'Wissenschaftssatellit': 'Science satellite',
-        'Milit\u00e4r-/Aufkl\u00e4rungssatellit': 'Military/reconnaissance satellite',
-        'Milit\u00e4r-/Regierungssatellit': 'Military/government satellite',
-        'Regierungs-/Aufkl\u00e4rungssatellit': 'Government/reconnaissance satellite',
-        'Aufkl\u00e4rungssatellit': 'Reconnaissance satellite',
-        'Wetter-/AIS-Datensatellit': 'Weather/AIS data satellite',
-        'RF-Aufkl\u00e4rungssatellit': 'RF reconnaissance satellite',
-        'IoT-Kommunikationssatellit': 'IoT communications satellite',
-        'Europ\u00e4ische Union': 'European Union',
-        'Vereinigtes K\u00f6nigreich': 'United Kingdom',
-        'Vereinigtes K\u00f6nigreich/Frankreich': 'United Kingdom/France',
-        'Russland': 'Russia',
-        'Deutschland': 'Germany',
-        'Frankreich': 'France',
-        'Frankreich/Europa': 'France/Europe',
-        'Kanada': 'Canada',
-        'Spanien': 'Spain',
-        'T\u00fcrkei': 'Turkey',
-        'Saudi-Arabien': 'Saudi Arabia',
-        '\u00c4gypten': 'Egypt',
-        'Finnland': 'Finland',
-        'S\u00fcdkorea': 'South Korea',
-        'Indien': 'India',
-        'Luxemburg': 'Luxembourg',
-        'International': 'International',
-        'Europa': 'Europe',
-        'USA/Europa': 'USA/Europe',
-        'USA/Luxemburg': 'USA/Luxembourg'
-    };
+    const {
+        formatLaunchCountdown,
+        launchInstant,
+        launchLatitude,
+        launchLongitude,
+        isEarthLaunch,
+        launchOrganization,
+        launchKey,
+        launchPadLabel,
+        launchPadName,
+        launchPadLocationName,
+        launchRocketName,
+        launchStatusLabel,
+        launchStatusText,
+        classifyLaunchStatus,
+        launchCountdownStatusClass,
+        applyLaunchStatusClass,
+        launchStatusBadge,
+        belongsInLaunchHistory,
+        isTerminalLaunch,
+        belongsInUpcomingLaunch,
+        launchStory,
+        launchVideoCandidates,
+        launchLivestream,
+        youtubeEmbedUrl,
+        launchStreamSearchUrl,
+        launchExternalUrl,
+        formatCoordinates
+    } = createLaunchUtils(t);
 
     const STATIC_TEXT_NODE_ORIGINALS = new WeakMap();
     const STATIC_ATTRIBUTE_ORIGINALS = new WeakMap();
-    const DATE_FORMATTER_CACHE = new Map();
-
-    function normalizeLanguage(language) {
-        return SUPPORTED_LANGUAGES.includes(language) ? language : 'en';
-    }
-
-    function regionFromLocale(locale) {
-        const match = String(locale || '').match(/[-_]([A-Za-z]{2})(?:$|-|_)/);
-        return match ? match[1].toUpperCase() : '';
-    }
-
-    function defaultUiLanguage() {
-        const languages = Array.isArray(navigator.languages) && navigator.languages.length
-            ? navigator.languages
-            : [navigator.language].filter(Boolean);
-        const inDachLocale = languages.some((language) => {
-            const region = regionFromLocale(language);
-            return DACH_REGIONS.has(region);
-        });
-        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-        return inDachLocale || DACH_TIME_ZONES.has(timeZone) ? 'de' : 'en';
-    }
-
-    function currentLanguage() {
-        return normalizeLanguage(state?.panelVisibility?.language || defaultUiLanguage());
-    }
-
-    function currentLocale() {
-        return currentLanguage() === 'de' ? 'de-DE' : 'en-US';
-    }
-
-    function t(key, values = {}) {
-        const table = TEXT[currentLanguage()] || TEXT.en;
-        const fallback = TEXT.en[key] || TEXT.de[key] || key;
-        return String(table[key] || fallback).replace(/\{(\w+)\}/g, (match, name) => (
-            Object.prototype.hasOwnProperty.call(values, name) ? String(values[name]) : match
-        ));
-    }
-
-    function formatNumber(value, options = undefined) {
-        return Number(value).toLocaleString(currentLocale(), options);
-    }
-
-    function dateFormatter(key, options) {
-        const cacheKey = `${currentLocale()}|${key}`;
-        if (!DATE_FORMATTER_CACHE.has(cacheKey)) {
-            DATE_FORMATTER_CACHE.set(cacheKey, new Intl.DateTimeFormat(currentLocale(), options));
-        }
-        return DATE_FORMATTER_CACHE.get(cacheKey);
-    }
-
-    function formatLocalDateTime(date) {
-        return dateFormatter('long', {
-            weekday: 'short',
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        }).format(date);
-    }
-
-    function formatLocalShortDateTime(date) {
-        return dateFormatter('short', {
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            timeZoneName: 'short'
-        }).format(date);
-    }
-
-    function formatLocalTimeOnly(date) {
-        return dateFormatter('time', {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        }).format(date);
-    }
-
-    function translateDataLabel(value) {
-        if (currentLanguage() !== 'en' || typeof value !== 'string') return value;
-        return DATA_LABEL_TRANSLATIONS_EN[value] || value;
-    }
-
-    function getLocalTimeZoneLabel(date = new Date()) {
-        try {
-            const part = dateFormatter('zone', { timeZoneName: 'short' })
-                .formatToParts(date)
-                .find((entry) => entry.type === 'timeZoneName');
-            return part?.value || Intl.DateTimeFormat().resolvedOptions().timeZone || (currentLanguage() === 'de' ? 'Lokal' : 'Local');
-        } catch (error) {
-            return currentLanguage() === 'de' ? 'Lokal' : 'Local';
-        }
-    }
 
     function getSatelliteLib() {
         return window.satellite || null;
@@ -960,7 +166,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         return false;
     }
 
-    const state = {
+    state = {
         scene: null,
         camera: null,
         renderer: null,
@@ -1027,6 +233,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         satelliteCatalogStats: null,
         satelliteGroupStats: new Map(),
         satelliteProfileDataPromise: null,
+        satelliteProfileHydrationScheduled: false,
         satelliteProfileCache: new Map(),
         satelliteProfilePending: new Map(),
         satelliteSearchQuery: '',
@@ -2111,6 +1318,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         window.addEventListener('resize', onResize);
         window.addEventListener('keydown', onKeyDown);
         window.addEventListener('keyup', onKeyUp);
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) return;
+            state.lastFrameTime = performance.now();
+            propagateSatellites(true);
+        });
     }
 
     function init() {
@@ -3664,271 +2876,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             jumpToMissionMet(0);
         }
         updateArtemisVisibility();
-    }
-
-    function formatLaunchCountdown(target) {
-        if (!target) return '--';
-        const diff = target.getTime() - Date.now();
-        if (diff <= 0) return t('countdown.reached');
-        const sec = Math.floor(diff / 1000);
-        const days = Math.floor(sec / 86400);
-        const hours = Math.floor(sec / 3600) % 24;
-        const minutes = Math.floor(sec / 60) % 60;
-        const seconds = sec % 60;
-        const pad2 = (value) => String(value).padStart(2, '0');
-        if (days > 0) return `${days}d ${pad2(hours)}:${pad2(minutes)}:${pad2(seconds)}`;
-        return `${pad2(hours)}:${pad2(minutes)}:${pad2(seconds)}`;
-    }
-
-    function launchInstant(launch) {
-        const raw = launch?.net || launch?.window_start || launch?.windowStart;
-        if (!raw) return null;
-        const date = new Date(raw);
-        return Number.isNaN(date.getTime()) ? null : date;
-    }
-
-    function launchLatitude(launch) {
-        const value = launch?.latitude ?? launch?.pad?.latitude;
-        const parsed = parseFloat(value);
-        return Number.isFinite(parsed) ? parsed : NaN;
-    }
-
-    function launchLongitude(launch) {
-        const value = launch?.longitude ?? launch?.pad?.longitude;
-        const parsed = parseFloat(value);
-        return Number.isFinite(parsed) ? parsed : NaN;
-    }
-
-    function isEarthLaunch(launch) {
-        const lat = launchLatitude(launch);
-        const lon = launchLongitude(launch);
-        return Number.isFinite(lat) && Number.isFinite(lon);
-    }
-
-    function launchOrganization(launch) {
-        if (typeof launch?.provider === 'string' && launch.provider.trim()) return launch.provider.trim();
-        const lsp = launch?.launch_service_provider;
-        if (lsp?.name) return String(lsp.name).trim();
-        const manufacturer = launch?.rocket?.configuration?.manufacturer;
-        if (manufacturer?.name) return String(manufacturer.name).trim();
-        return t('launch.unknownOrg');
-    }
-
-    function launchKey(launch) {
-        return String(launch?.id || `${launch?.name || 'launch'}-${launch?.net || launch?.window_start || ''}`);
-    }
-
-    function launchPadLabel(launch) {
-        if (typeof launch?.pad === 'string' && launch.pad.trim()) {
-            return [launch.pad.trim(), launch.padLocation].filter(Boolean).join(' · ');
-        }
-        const pad = launch?.pad?.name || t('launch.unknownPad');
-        const location = launch?.pad?.location?.name || '';
-        return [pad, location].filter(Boolean).join(' · ');
-    }
-
-    function launchPadName(launch) {
-        if (typeof launch?.pad === 'string' && launch.pad.trim()) return launch.pad.trim();
-        return launch?.pad?.name || t('launch.unknownPad');
-    }
-
-    function launchPadLocationName(launch) {
-        return launch?.padLocation || launch?.pad?.location?.name || '';
-    }
-
-    function launchRocketName(launch) {
-        if (typeof launch?.rocket === 'string' && launch.rocket.trim()) return launch.rocket.trim();
-        return launch?.rocket?.configuration?.full_name ||
-            launch?.rocket?.configuration?.name ||
-            t('launch.unknownRocket');
-    }
-
-    function launchStatusLabel(launch) {
-        if (launch?.statusName) return launch.statusName;
-        if (typeof launch?.status === 'string' && launch.status.trim()) return launch.status.trim();
-        return launch?.status?.name || t('launch.unknownStatus');
-    }
-
-    function launchStatusText(launch) {
-        return [
-            launch?.outcome,
-            typeof launch?.status === 'string' ? launch.status : '',
-            launch?.statusName,
-            launch?.statusAbbrev,
-            launch?.statusDescription,
-            launch?.status?.abbrev,
-            launch?.status?.name,
-            launch?.status?.description
-        ].filter(Boolean).join(' ').toLowerCase();
-    }
-
-    function classifyLaunchStatus(launch) {
-        const text = launchStatusText(launch);
-        if (!text) return 'scheduled';
-        if (/(success|successful)/.test(text)) return 'success';
-        if (/(partial failure|failure|failed|lost)/.test(text)) return 'failure';
-        if (/(cancel|cancelled|canceled|scrub|scrubbed)/.test(text)) return 'cancelled';
-        if (/(hold|delay|delayed|postponed|slip|tbc|tbd|to be confirmed|to be determined|unconfirmed)/.test(text)) return 'delayed';
-        if (/(in flight|flight|liftoff|lift-off|launch in progress)/.test(text)) return 'live';
-        if (/(go|confirmed|ready|on schedule)/.test(text)) return 'go';
-        return 'scheduled';
-    }
-
-    function launchCountdownStatusClass(launch) {
-        if (!launch) return '';
-        const status = classifyLaunchStatus(launch);
-        if (status === 'success') return 'status-success';
-        if (status === 'failure') return 'status-failure';
-        if (status === 'cancelled') return 'status-cancelled';
-        if (status === 'delayed') return 'status-delayed';
-        if (status === 'live') return 'status-go';
-
-        const when = launchInstant(launch);
-        if (when && when.getTime() - Date.now() <= LAUNCH_VERIFY_WINDOW_MS && launch?.preflightStatus === 'go') {
-            return 'status-go';
-        }
-        if (status === 'go' && when && when.getTime() - Date.now() <= LAUNCH_VERIFY_WINDOW_MS) {
-            return 'status-go';
-        }
-        return '';
-    }
-
-    function applyLaunchStatusClass(element, launch) {
-        if (!element) return;
-        ['status-go', 'status-delayed', 'status-cancelled', 'status-success', 'status-failure'].forEach((name) => {
-            element.classList.remove(name);
-        });
-        const statusClass = launchCountdownStatusClass(launch);
-        if (statusClass) element.classList.add(statusClass);
-    }
-
-    function launchStatusBadge(launch) {
-        if (launch?.outcome) {
-            if (launch.outcome === 'success') return { text: t('launch.status.success'), className: 'status-success' };
-            if (launch.outcome === 'failure') return { text: t('launch.status.failure'), className: 'status-failure' };
-            if (launch.outcome === 'cancelled') return { text: t('launch.status.cancelled'), className: 'status-cancelled' };
-            if (launch.outcome === 'delayed') return { text: t('launch.status.delayed'), className: 'status-delayed' };
-            if (launch.outcome === 'go') return { text: t('launch.status.goT15'), className: 'status-go' };
-        }
-        const status = classifyLaunchStatus(launch);
-        if (status === 'success') return { text: t('launch.status.success'), className: 'status-success' };
-        if (status === 'failure') return { text: t('launch.status.failure'), className: 'status-failure' };
-        if (status === 'cancelled') return { text: t('launch.status.cancelled'), className: 'status-cancelled' };
-        if (status === 'delayed') return { text: t('launch.status.delayed'), className: 'status-delayed' };
-        if (status === 'live') return { text: 'Live', className: 'status-go' };
-        if (status === 'go') return { text: 'Go', className: 'status-go' };
-        return { text: launchStatusLabel(launch), className: '' };
-    }
-
-    function belongsInLaunchHistory(launch, now = Date.now()) {
-        const when = launchInstant(launch);
-        if (!when) return Boolean(launch?.outcome);
-        const isFuture = when.getTime() > now;
-        if (isFuture && classifyLaunchStatus(launch) === 'delayed') return false;
-        return Boolean(launch?.outcome) || when.getTime() <= now;
-    }
-
-    function isTerminalLaunch(launch) {
-        const terminalStates = new Set(['success', 'failure', 'cancelled']);
-        const outcome = String(launch?.outcome || '').toLowerCase();
-        const postflightStatus = String(launch?.postflightStatus || '').toLowerCase();
-        return terminalStates.has(outcome) ||
-            terminalStates.has(postflightStatus) ||
-            terminalStates.has(classifyLaunchStatus(launch));
-    }
-
-    function belongsInUpcomingLaunch(launch) {
-        return !isTerminalLaunch(launch);
-    }
-
-    function launchStory(launch) {
-        if (launch?.missionDescription) return launch.missionDescription;
-        if (typeof launch?.mission === 'string' && launch.mission.trim()) return launch.mission.trim();
-        return launch?.mission?.description ||
-            launch?.mission?.name ||
-            t('launch.noStory');
-    }
-
-    function launchVideoCandidates(launch) {
-        const candidates = [];
-        const addUrl = (entry) => {
-            if (!entry) return;
-            if (typeof entry === 'string') {
-                candidates.push({ url: entry, title: 'Livestream' });
-                return;
-            }
-            if (entry.url) {
-                candidates.push({
-                    url: entry.url,
-                    title: entry.title || entry.description || entry.source || 'Livestream',
-                    featured: Boolean(entry.featured),
-                    priority: Number.isFinite(Number(entry.priority)) ? Number(entry.priority) : 999
-                });
-            }
-        };
-
-        addUrl(launch?.livestreamUrl);
-        if (Array.isArray(launch?.vidURLs)) launch.vidURLs.forEach(addUrl);
-        if (Array.isArray(launch?.vid_urls)) launch.vid_urls.forEach(addUrl);
-        if (Array.isArray(launch?.videos)) launch.videos.forEach(addUrl);
-
-        return candidates
-            .filter((entry) => /^https?:\/\//i.test(entry.url))
-            .sort((a, b) => {
-                const aYoutube = /youtu\.?be|youtube\.com/i.test(a.url) ? 0 : 1;
-                const bYoutube = /youtu\.?be|youtube\.com/i.test(b.url) ? 0 : 1;
-                if (aYoutube !== bYoutube) return aYoutube - bYoutube;
-                if (a.featured !== b.featured) return a.featured ? -1 : 1;
-                return a.priority - b.priority;
-            });
-    }
-
-    function launchLivestream(launch) {
-        return launchVideoCandidates(launch)[0] || null;
-    }
-
-    function youtubeEmbedUrl(url) {
-        try {
-            const parsed = new URL(url);
-            let id = '';
-            if (parsed.hostname.includes('youtu.be')) {
-                id = parsed.pathname.split('/').filter(Boolean)[0] || '';
-            } else if (parsed.pathname.startsWith('/watch')) {
-                id = parsed.searchParams.get('v') || '';
-            } else if (parsed.pathname.startsWith('/live/') || parsed.pathname.startsWith('/embed/')) {
-                id = parsed.pathname.split('/').filter(Boolean)[1] || '';
-            }
-            return id ? `https://www.youtube.com/embed/${encodeURIComponent(id)}?rel=0` : '';
-        } catch (error) {
-            return '';
-        }
-    }
-
-    function launchStreamSearchUrl(launch) {
-        const query = [
-            launch?.name,
-            launchRocketName(launch),
-            launchOrganization(launch),
-            'launch livestream'
-        ].filter(Boolean).join(' ');
-        return `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
-    }
-
-    function launchExternalUrl(launch) {
-        if (launch?.sourceUrl) return launch.sourceUrl;
-        if (launch?.livestreamUrl) return launch.livestreamUrl;
-        const firstVideo = Array.isArray(launch?.vidURLs) && launch.vidURLs.length > 0 ? launch.vidURLs[0]?.url : '';
-        const firstInfo = Array.isArray(launch?.infoURLs) && launch.infoURLs.length > 0 ? launch.infoURLs[0]?.url : '';
-        return firstVideo || firstInfo || launch?.url || '';
-    }
-
-    function formatCoordinates(launch) {
-        const lat = launchLatitude(launch);
-        const lon = launchLongitude(launch);
-        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return '--';
-        const latHemisphere = lat >= 0 ? 'N' : 'S';
-        const lonHemisphere = lon >= 0 ? 'E' : 'W';
-        return `${Math.abs(lat).toFixed(2)}° ${latHemisphere}, ${Math.abs(lon).toFixed(2)}° ${lonHemisphere}`;
     }
 
     function rememberLaunchesForMonitoring(items) {
@@ -5630,43 +4577,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }, LAUNCH_DATA_REFRESH_MS);
     }
 
-    function latLonToVector3(lat, lon, radius) {
-        const phi = THREE.MathUtils.degToRad(90 - lat);
-        const theta = THREE.MathUtils.degToRad(lon + 180);
-        return new THREE.Vector3(
-            -radius * Math.sin(phi) * Math.cos(theta),
-            radius * Math.cos(phi),
-            radius * Math.sin(phi) * Math.sin(theta)
-        );
-    }
-
-    function normalizeLongitude(lon) {
-        return THREE.MathUtils.euclideanModulo(lon + 540, 360) - 180;
-    }
-
-    function destinationLatLon(latDeg, lonDeg, bearingDeg, angularDistanceDeg) {
-        const lat = THREE.MathUtils.degToRad(latDeg);
-        const lon = THREE.MathUtils.degToRad(lonDeg);
-        const bearing = THREE.MathUtils.degToRad(bearingDeg);
-        const angularDistance = THREE.MathUtils.degToRad(angularDistanceDeg);
-        const sinLat = Math.sin(lat);
-        const cosLat = Math.cos(lat);
-        const sinDistance = Math.sin(angularDistance);
-        const cosDistance = Math.cos(angularDistance);
-        const lat2 = Math.asin(
-            sinLat * cosDistance +
-            cosLat * sinDistance * Math.cos(bearing)
-        );
-        const lon2 = lon + Math.atan2(
-            Math.sin(bearing) * sinDistance * cosLat,
-            cosDistance - sinLat * Math.sin(lat2)
-        );
-        return {
-            lat: THREE.MathUtils.radToDeg(lat2),
-            lon: normalizeLongitude(THREE.MathUtils.radToDeg(lon2))
-        };
-    }
-
     function launchTrajectoryReferenceMs(launch) {
         const when = launchInstant(launch);
         return when ? when.getTime() : earthReferenceTimeMs();
@@ -6588,174 +5498,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         );
     }
 
-    const SATCAT_OWNER_LABELS = {
-        AB: 'Arab Satellite Communications Organization',
-        ALG: 'Algerien',
-        ARGN: 'Argentinien',
-        AUS: 'Australien',
-        AZER: 'Aserbaidschan',
-        BEL: 'Belgien',
-        BGR: 'Bulgarien',
-        BOL: 'Bolivien',
-        BRAZ: 'Brasilien',
-        CA: 'Kanada',
-        CHBZ: 'China/Brasilien',
-        CHLE: 'Chile',
-        CIS: 'Russland/GUS',
-        COL: 'Kolumbien',
-        CZCH: 'Tschechien',
-        DEN: 'Daenemark',
-        ECU: 'Ecuador',
-        EGY: 'Aegypten',
-        ESA: 'ESA',
-        EUME: 'EUMETSAT',
-        EUTE: 'Eutelsat',
-        FGER: 'Frankreich/Deutschland',
-        FR: 'Frankreich',
-        GER: 'Deutschland',
-        GLOB: 'Globalstar',
-        GREC: 'Griechenland',
-        HUN: 'Ungarn',
-        IM: 'Inmarsat',
-        IND: 'Indien',
-        INDO: 'Indonesien',
-        IRAN: 'Iran',
-        IRAQ: 'Irak',
-        ISRA: 'Israel',
-        ISS: 'Internationale Raumstation',
-        IT: 'Italien',
-        JPN: 'Japan',
-        KAZ: 'Kasachstan',
-        LAOS: 'Laos',
-        LTU: 'Litauen',
-        LUXE: 'Luxemburg',
-        MALA: 'Malaysia',
-        MEX: 'Mexiko',
-        NATO: 'NATO',
-        NETH: 'Niederlande',
-        NICO: 'Nicaragua',
-        NIG: 'Nigeria',
-        NKOR: 'Nordkorea',
-        NOR: 'Norwegen',
-        NZ: 'Neuseeland',
-        O3B: 'O3b/SES',
-        PAKI: 'Pakistan',
-        PER: 'Peru',
-        POL: 'Polen',
-        PRC: 'China',
-        RASC: 'RascomStar-QAF',
-        ROC: 'Taiwan',
-        ROM: 'Rumaenien',
-        RP: 'Philippinen',
-        SAFR: 'Suedafrika',
-        SAUD: 'Saudi-Arabien',
-        SDN: 'Sudan',
-        SES: 'SES',
-        SGP: 'Singapur',
-        SKOR: 'Suedkorea',
-        SPN: 'Spanien',
-        SWED: 'Schweden',
-        SWTZ: 'Schweiz',
-        TBD: 'Nicht bestaetigt',
-        THAI: 'Thailand',
-        TMMC: 'Turkmenistan/Monaco',
-        TURK: 'Tuerkei',
-        UAE: 'Vereinigte Arabische Emirate',
-        UK: 'Vereinigtes Koenigreich',
-        UKR: 'Ukraine',
-        UNK: 'Unbekannt',
-        US: 'USA',
-        USBZ: 'USA/Brasilien',
-        VENZ: 'Venezuela',
-        VTNM: 'Vietnam'
-    };
-
-    const SATCAT_COUNTRY_OVERRIDES = {
-        AB: 'Saudi-Arabien',
-        EUME: 'Europa',
-        EUTE: 'Frankreich',
-        GLOB: 'USA',
-        IM: 'Vereinigtes Koenigreich',
-        INTL: 'USA/Luxemburg',
-        ISS: 'International',
-        O3B: 'Luxemburg',
-        RASC: 'Mauritius',
-        SES: 'Luxemburg'
-    };
-
-    const SATCAT_OPERATOR_LABELS = {
-        AB: 'Arabsat',
-        EUME: 'EUMETSAT',
-        EUTE: 'Eutelsat',
-        GLOB: 'Globalstar',
-        IM: 'Inmarsat',
-        INTL: 'Intelsat',
-        ISS: 'ISS-Partner',
-        NATO: 'NATO',
-        O3B: 'O3b/SES',
-        RASC: 'RascomStar-QAF',
-        SES: 'SES'
-    };
-
-    const SATELLITE_NAME_OPERATOR_PROFILES = [
-        [/^STARLINK\b/, 'SpaceX', 'USA'],
-        [/^GLOBALSTAR\b/, 'Globalstar', 'USA'],
-        [/^ONEWEB\b/, 'Eutelsat OneWeb', 'Vereinigtes Koenigreich/Frankreich'],
-        [/^KUIPER\b|PROJECT KUIPER/, 'Amazon Project Kuiper', 'USA'],
-        [/^IRIDIUM\b/, 'Iridium Communications', 'USA'],
-        [/^ORBCOMM\b/, 'ORBCOMM', 'USA'],
-        [/^O3B\b/, 'O3b/SES', 'Luxemburg'],
-        [/^SES\b/, 'SES', 'Luxemburg'],
-        [/^LEMUR\b/, 'Spire Global', 'USA/Luxemburg'],
-        [/^FLOCK\b|^DOVE\b|^SKYSAT\b/, 'Planet Labs', 'USA'],
-        [/^ICEYE\b/, 'ICEYE', 'Finnland'],
-        [/^CAPELLA\b/, 'Capella Space', 'USA'],
-        [/^HAWK\b/, 'HawkEye 360', 'USA'],
-        [/^GPS\b|^NAVSTAR\b/, 'U.S. Space Force', 'USA'],
-        [/^GALILEO\b|^GSAT01\b|^GSAT02\b/, 'EU/ESA/EUSPA', 'Europaeische Union'],
-        [/^GLONASS\b/, 'Roskosmos', 'Russland'],
-        [/^BEIDOU\b|^COMPASS\b/, 'BeiDou/CNSA', 'China'],
-        [/^QZSS\b|^MICHIBIKI\b/, 'Cabinet Office/JAXA', 'Japan'],
-        [/^IRNSS\b|^NAVIC\b/, 'ISRO', 'Indien'],
-        [/^TDRS\b/, 'NASA', 'USA'],
-        [/^GOES\b|^NOAA\b|^JPSS\b|^SUOMI NPP\b/, 'NOAA/NASA', 'USA'],
-        [/^SENTINEL\b/, 'ESA/Copernicus', 'Europaeische Union'],
-        [/^LANDSAT\b/, 'NASA/USGS', 'USA']
-    ];
-
-    const SATELLITE_NAME_TYPE_PROFILES = [
-    ];
-
-    const SATELLITE_NAME_SIZE_PROFILES = [
-        [/^STARLINK\b.*(?:V2|V2 MINI)/, 'ca. 4,1 x 2,7 m'],
-        [/^STARLINK\b/, 'ca. 2,8 x 1,4 m'],
-        [/^ONEWEB\b/, 'ca. 1,0 x 1,0 x 1,3 m'],
-        [/^GLOBALSTAR\b/, 'ca. 2,4 x 2,4 x 1,3 m'],
-        [/^IRIDIUM\b/, 'ca. 3,1 x 2,4 x 1,5 m'],
-        [/^ORBCOMM\b/, 'ca. 1 m Klasse'],
-        [/^O3B\b/, 'mehrere Meter'],
-        [/^SES\b/, 'mehrere Meter'],
-        [/^KUIPER\b|PROJECT KUIPER/, 'nicht veroeffentlicht'],
-        [/^LEMUR\b/, 'ca. 3U/6U CubeSat'],
-        [/^FLOCK\b|^DOVE\b/, 'ca. 3U CubeSat'],
-        [/^SKYSAT\b/, 'ca. 60 x 60 x 95 cm'],
-        [/^ICEYE\b/, 'ca. 1 m Klasse'],
-        [/^CAPELLA\b/, 'mehrere Meter entfaltet'],
-        [/^HAWK\b/, 'ca. ESPA/CubeSat-Klasse'],
-        [/^GPS\b|^NAVSTAR\b/, 'mehrere Meter'],
-        [/^GALILEO\b|^GSAT01\b|^GSAT02\b/, 'ca. 2,7 x 1,2 x 1,1 m'],
-        [/^GLONASS\b/, 'mehrere Meter'],
-        [/^BEIDOU\b|^COMPASS\b/, 'mehrere Meter'],
-        [/^QZSS\b|^MICHIBIKI\b/, 'mehrere Meter'],
-        [/^TDRS\b/, 'mehrere Meter'],
-        [/^GOES\b/, 'mehrere Meter'],
-        [/^NOAA\b|^JPSS\b|^SUOMI NPP\b/, 'mehrere Meter'],
-        [/^SENTINEL-1\b/, 'ca. 3,4 x 1,3 x 1,3 m'],
-        [/^SENTINEL-2\b/, 'ca. 3,4 x 1,8 x 2,4 m'],
-        [/^SENTINEL\b/, 'mehrere Meter'],
-        [/^LANDSAT\b/, 'mehrere Meter']
-    ];
-
     function satcatOwnerLabel(owner) {
         const code = String(owner || '').trim().toUpperCase();
         return SATCAT_COUNTRY_OVERRIDES[code] || SATCAT_OWNER_LABELS[code] || code || t('sat.notClear');
@@ -7460,6 +6202,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     }
 
     function propagateSatellites(force = false) {
+        if (document.hidden && !force) return;
         const satelliteLib = getSatelliteLib();
         if (!satelliteLib || !state.satelliteCatalog.length || !state.satellitePoints) {
             state.satelliteLiveCount = 0;
@@ -7523,7 +6266,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
                     launchPayloadContext && !launchPayloadMatch ? 0.24 : b
                 );
             }
-            state.satelliteWorldPositions.set(satellite.id, vector.clone());
+            state.satelliteWorldPositions.set(satellite.id, vector);
             state.satelliteDrawOrder[visibleCount] = satellite.id;
             visibleCount += 1;
         });
@@ -7540,6 +6283,38 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
         }
         if (document.body.classList.contains('search-open')) {
             renderSatelliteSearchResults();
+        }
+    }
+
+    function applySatelliteCatalog(rawText, fallbackError = '') {
+        state.satelliteCatalog = parseSatelliteCatalog(rawText);
+        state.satelliteCatalogLoaded = true;
+        state.satelliteLastError = fallbackError;
+        refreshSatelliteOverviewCounts();
+        rebuildSatelliteLayer();
+        propagateSatellites(true);
+        fetchSatelliteLiveHistory(true);
+        renderSatelliteSearchResults();
+        if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
+        scheduleSatelliteProfileHydration();
+    }
+
+    function scheduleSatelliteProfileHydration() {
+        if (state.satelliteProfileHydrationScheduled) return;
+        state.satelliteProfileHydrationScheduled = true;
+        const hydrate = async () => {
+            state.satelliteProfileHydrationScheduled = false;
+            await loadSatelliteProfileData();
+            applyLoadedSatelliteProfilesToCatalog();
+            refreshSatelliteOverviewCounts();
+            propagateSatellites(true);
+            renderSatelliteSearchResults();
+            if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
+        };
+        if (typeof window.requestIdleCallback === 'function') {
+            window.requestIdleCallback(hydrate, { timeout: 3000 });
+        } else {
+            window.setTimeout(hydrate, 0);
         }
     }
 
@@ -7565,29 +6340,14 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
             const rawText = await response.text();
             if (!rawText.trim()) throw new Error(t('sat.staticCatalogEmpty'));
             writeSatelliteCache(rawText);
-            state.satelliteCatalog = parseSatelliteCatalog(rawText);
-            await loadSatelliteProfileData();
-            applyLoadedSatelliteProfilesToCatalog();
-            state.satelliteCatalogLoaded = true;
-            refreshSatelliteOverviewCounts();
-            rebuildSatelliteLayer();
-            propagateSatellites(true);
-            fetchSatelliteLiveHistory(true);
-            renderSatelliteSearchResults();
-            if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
+            applySatelliteCatalog(rawText);
         } catch (error) {
             const cached = readSatelliteCache();
             if (cached?.rawText) {
-                state.satelliteCatalog = parseSatelliteCatalog(cached.rawText);
-                await loadSatelliteProfileData();
-                applyLoadedSatelliteProfilesToCatalog();
-                state.satelliteCatalogLoaded = true;
-                refreshSatelliteOverviewCounts();
-                state.satelliteLastError = t('sat.cacheFallback', { error: error.message || t('sat.unknownError') });
-                rebuildSatelliteLayer();
-                propagateSatellites(true);
-                renderSatelliteSearchResults();
-                if (state.selectedLaunchId || state.launchDetailActive) refreshSelectedLaunchUi();
+                applySatelliteCatalog(
+                    cached.rawText,
+                    t('sat.cacheFallback', { error: error.message || t('sat.unknownError') })
+                );
                 return;
             }
 

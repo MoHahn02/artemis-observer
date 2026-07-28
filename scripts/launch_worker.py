@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -50,6 +51,7 @@ USER_AGENT = os.environ.get(
 
 FEED_REFRESH_INTERVAL = timedelta(hours=1)
 SATELLITE_REFRESH_INTERVAL = timedelta(hours=2)
+SATELLITE_PROFILE_REFRESH_INTERVAL = timedelta(hours=24)
 ISS_OEM_REFRESH_INTERVAL = timedelta(hours=2)
 EARTH_OBSERVATION_REFRESH_INTERVAL = timedelta(hours=24)
 PREFLIGHT_WINDOW = timedelta(minutes=15)
@@ -170,36 +172,54 @@ def read_json(path: Path, default: dict) -> dict:
         raise RuntimeError(f"{path} is not valid JSON; refusing to overwrite it: {error}") from error
 
 
-def stable_json(data: dict) -> str:
+def stable_json(data: dict, *, compact: bool = False) -> str:
+    if compact:
+        return json.dumps(data, ensure_ascii=True, separators=(",", ":")) + "\n"
     return json.dumps(data, ensure_ascii=True, indent=2) + "\n"
 
 
-def write_json_if_changed(path: Path, data: dict) -> bool:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    new_text = stable_json(data)
+def atomic_write_bytes(path: Path, data: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(
+        dir=path.parent,
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+    )
+    temporary_path = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "wb") as handle:
+            handle.write(data)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, path)
+    except BaseException:
+        temporary_path.unlink(missing_ok=True)
+        raise
+
+
+def write_json_if_changed(path: Path, data: dict, *, compact: bool = False) -> bool:
+    new_text = stable_json(data, compact=compact)
     old_text = path.read_text(encoding="utf-8") if path.exists() else ""
     if old_text == new_text:
         return False
-    path.write_text(new_text, encoding="utf-8")
+    atomic_write_bytes(path, new_text.encode("utf-8"))
     return True
 
 
 def write_text_if_changed(path: Path, text: str) -> bool:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
     normalized = text.replace("\r\n", "\n").strip() + "\n"
     old_text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
     if old_text == normalized:
         return False
-    path.write_text(normalized, encoding="utf-8")
+    atomic_write_bytes(path, normalized.encode("utf-8"))
     return True
 
 
 def write_bytes_if_changed(path: Path, data: bytes) -> bool:
-    path.parent.mkdir(parents=True, exist_ok=True)
     old_data = path.read_bytes() if path.exists() else b""
     if old_data == data:
         return False
-    path.write_bytes(data)
+    atomic_write_bytes(path, data)
     return True
 
 
@@ -792,6 +812,18 @@ def enriched_satellite_profile(record: dict, rules: list[dict]) -> dict:
     return {key: value for key, value in profile.items() if value not in ("", None)}
 
 
+def frontend_satellite_profile(record: dict, rules: list[dict]) -> dict:
+    """Return only profile overrides the browser cannot derive from SATCAT."""
+    profile = enriched_satellite_profile(record, rules)
+    if profile.get("operatorAmbiguous"):
+        return {"operatorAmbiguous": True}
+    return {
+        key: profile[key]
+        for key in ("type", "operator", "country", "sizeLabel", "source")
+        if profile.get(key) not in ("", None)
+    }
+
+
 SATELLITE_GROUP_IDS = [
     "starlink",
     "qianfan",
@@ -960,7 +992,12 @@ def refresh_satellites(now: datetime, state: dict, force: bool, errors: list[str
 
 
 def refresh_satellite_profiles(now: datetime, state: dict, force: bool, errors: list[str]) -> bool:
-    if not should_refresh(state.get("lastSatelliteProfileRefreshAt"), SATELLITE_REFRESH_INTERVAL, now, force) and SATELLITE_PROFILE_PATH.exists():
+    if not should_refresh(
+        state.get("lastSatelliteProfileRefreshAt"),
+        SATELLITE_PROFILE_REFRESH_INTERVAL,
+        now,
+        force,
+    ) and SATELLITE_PROFILE_PATH.exists():
         return False
     if not SATELLITE_TLE_PATH.exists():
         return False
@@ -986,10 +1023,11 @@ def refresh_satellite_profiles(now: datetime, state: dict, force: bool, errors: 
             catnr_text = str(catnr).strip()
             normalized = str(int(catnr_text)) if catnr_text.isdigit() else catnr_text
             if normalized in active_ids:
+                satcat = compact_satcat_record(record)
+                satcat.pop("NORAD_CAT_ID", None)
                 profiles[normalized] = {
-                    "satcat": compact_satcat_record(record),
-                    "profile": enriched_satellite_profile(record, rules),
-                    "wikidata": None,
+                    "satcat": satcat,
+                    "profile": frontend_satellite_profile(record, rules),
                 }
 
         output = {
@@ -1000,7 +1038,7 @@ def refresh_satellite_profiles(now: datetime, state: dict, force: bool, errors: 
         }
         old_output = read_json(SATELLITE_PROFILE_PATH, EMPTY_SATELLITE_PROFILES)
         output = preserve_if_semantically_equal(old_output, output, {"generatedAt"})
-        changed = write_json_if_changed(SATELLITE_PROFILE_PATH, output)
+        changed = write_json_if_changed(SATELLITE_PROFILE_PATH, output, compact=True)
         state["lastSatelliteProfileRefreshAt"] = to_iso(now)
         return changed
     except Exception as error:  # noqa: BLE001

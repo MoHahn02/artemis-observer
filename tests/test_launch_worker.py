@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import importlib.util
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from unittest import mock
 
 
 WORKER_PATH = Path(__file__).resolve().parents[1] / "scripts" / "launch_worker.py"
@@ -13,6 +15,48 @@ SPEC.loader.exec_module(launch_worker)
 
 
 class LaunchWorkerTests(unittest.TestCase):
+    def test_write_helpers_replace_files_atomically_and_skip_unchanged_content(self) -> None:
+        missing_path = mock.Mock(spec=Path)
+        missing_path.exists.return_value = False
+        unchanged_path = mock.Mock(spec=Path)
+        unchanged_path.exists.return_value = True
+        unchanged_path.read_text.return_value = launch_worker.stable_json({"value": 1})
+
+        with mock.patch.object(launch_worker, "atomic_write_bytes") as atomic_write:
+            self.assertTrue(launch_worker.write_json_if_changed(missing_path, {"value": 1}))
+            atomic_write.assert_called_once_with(
+                missing_path,
+                launch_worker.stable_json({"value": 1}).encode("utf-8"),
+            )
+            self.assertFalse(launch_worker.write_json_if_changed(unchanged_path, {"value": 1}))
+
+    def test_compact_json_has_stable_single_line_encoding(self) -> None:
+        payload = {"label": "Prüfung", "items": [1, 2]}
+
+        self.assertEqual(
+            launch_worker.stable_json(payload, compact=True),
+            '{"label":"Pr\\u00fcfung","items":[1,2]}\n',
+        )
+
+    def test_satellite_profile_refresh_has_independent_daily_cadence(self) -> None:
+        now = datetime(2026, 7, 19, 12, tzinfo=timezone.utc)
+        last_refresh = launch_worker.to_iso(now - timedelta(hours=3))
+
+        self.assertFalse(
+            launch_worker.should_refresh(
+                last_refresh,
+                launch_worker.SATELLITE_PROFILE_REFRESH_INTERVAL,
+                now,
+            )
+        )
+        self.assertTrue(
+            launch_worker.should_refresh(
+                launch_worker.to_iso(now - timedelta(hours=25)),
+                launch_worker.SATELLITE_PROFILE_REFRESH_INTERVAL,
+                now,
+            )
+        )
+
     def test_semantic_payload_compare_ignores_operational_timestamps(self) -> None:
         left = {
             "generatedAt": "2026-05-02T09:00:00Z",
@@ -60,6 +104,18 @@ class LaunchWorkerTests(unittest.TestCase):
         self.assertFalse(qianfan["operatorAmbiguous"])
         self.assertEqual(unknown["operatorAmbiguous"], True)
         self.assertEqual(unknown["source"], "CelesTrak SATCAT geprüft; Betreiber nicht eindeutig")
+
+        compact_qianfan = launch_worker.frontend_satellite_profile(
+            {"OBJECT_NAME": "QIANFAN-1", "OBJECT_TYPE": "PAY", "OWNER": "PRC"},
+            rules,
+        )
+        compact_unknown = launch_worker.frontend_satellite_profile(
+            {"OBJECT_NAME": "OBJECT A", "OBJECT_TYPE": "PAY", "OWNER": "US"},
+            rules,
+        )
+        self.assertEqual(compact_qianfan["operator"], "Shanghai Spacecom Satellite Technology (SSST)")
+        self.assertNotIn("confidence", compact_qianfan)
+        self.assertEqual(compact_unknown, {"operatorAmbiguous": True})
 
 
     def test_satellite_group_stats_count_active_added_and_decayed(self) -> None:
