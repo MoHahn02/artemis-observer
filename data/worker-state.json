@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-08-03T15:09:04Z",
-  "lastCheckRunAt": "2026-08-03T15:09:04Z",
-  "lastSatelliteRefreshAt": "2026-08-03T15:09:04Z",
+  "lastFeedRefreshAt": "2026-08-03T17:18:35Z",
+  "lastCheckRunAt": "2026-08-03T17:18:35Z",
+  "lastSatelliteRefreshAt": "2026-08-03T17:18:35Z",
   "pendingChecks": [
     {
       "id": "12b9454b-d48b-4fd5-9c11-17c18f45dafe",
@@ -150,13 +150,13 @@
     {
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
       "phase": "preflight",
-      "dueAt": "2026-08-26T23:45:00Z",
+      "dueAt": "2026-08-27T19:55:00Z",
       "overdue": false
     },
     {
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
       "phase": "postflight",
-      "dueAt": "2026-08-27T00:30:00Z",
+      "dueAt": "2026-08-27T20:40:00Z",
       "overdue": false
     },
     {
@@ -292,6 +292,18 @@
       "overdue": false
     },
     {
+      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
+      "phase": "preflight",
+      "dueAt": "2026-09-12T22:19:00Z",
+      "overdue": false
+    },
+    {
+      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
+      "phase": "postflight",
+      "dueAt": "2026-09-12T23:04:00Z",
+      "overdue": false
+    },
+    {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
       "phase": "preflight",
       "dueAt": "2026-09-15T01:06:07Z",
@@ -304,21 +316,9 @@
       "overdue": false
     },
     {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "phase": "preflight",
-      "dueAt": "2026-09-29T23:45:00Z",
-      "overdue": false
-    },
-    {
       "id": "ad358a4d-c541-409b-9366-9c2f2da4aeb9",
       "phase": "preflight",
       "dueAt": "2026-09-29T23:45:00Z",
-      "overdue": false
-    },
-    {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "phase": "postflight",
-      "dueAt": "2026-09-30T00:30:00Z",
       "overdue": false
     },
     {
@@ -365,7 +365,7 @@
     }
   ],
   "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-08-03T15:09:04Z",
+  "lastIssOemRefreshAt": "2026-08-03T17:18:35Z",
   "lastSatelliteProfileRefreshAt": "2026-08-03T11:58:54Z",
   "lastEarthObservationRefreshAt": "2026-08-03T04:51:22Z"
 }
