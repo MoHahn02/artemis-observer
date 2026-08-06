@@ -1,39 +1,12 @@
 {
-  "generatedAt": "2026-08-06T06:17:21Z",
+  "generatedAt": "2026-08-06T09:14:48Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-08-06T07:17:21Z",
+  "nextRefreshAfter": "2026-08-06T10:14:48Z",
   "launches": [
-    {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
-      "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
-      "net": "2026-08-05T07:49:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 40",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.56194122,
-      "longitude": -80.57735736,
-      "mission": "BlueBird 11-13 (Block 2 #6-8)",
-      "missionDescription": "AST SpaceMobile\u2019s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
-      "orbit": "Low Earth Orbit",
-      "status": "success",
-      "outcome": "success",
-      "statusName": "Launch Successful",
-      "statusAbbrev": "Success",
-      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
-      "preflightStatus": "",
-      "postflightStatus": "",
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "livestreamUrl": "https://www.youtube.com/watch?v=6un1y7bK0XY",
-      "sourceUrl": "https://www.spacex.com/launches/bluebird11-13",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/56a85c82-ea71-449b-828c-b583f6f4a18b/",
-      "updatedAt": "2026-08-06T06:17:21Z"
-    },
     {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
       "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
-      "net": "2026-08-06T09:00:00Z",
+      "net": "2026-08-06T09:18:00Z",
       "provider": "Rocket Lab",
       "rocket": "Electron",
       "pad": "Rocket Lab Launch Complex 1A",
@@ -55,7 +28,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=TR4bkBCR6VI",
       "sourceUrl": "https://www.youtube.com/watch?v=TR4bkBCR6VI",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8b7e748c-6ed5-4681-a898-827b4a23b8d7/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
@@ -82,7 +55,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qxoNNApQWyJv",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-38",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e4316d4c-9eb8-4a18-9b0d-4307c3970ef6/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "cff704ab-8098-4f65-899e-50adaf908e59",
@@ -109,7 +82,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
@@ -136,7 +109,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nxeLLRRMQWJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-19",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/36ab6924-bb36-416a-b71d-cda9e88004be/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
@@ -163,7 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "6f94dbe4-1318-4ffb-a53d-351bbdcba733",
@@ -190,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nGnRRpkMDLGO",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-49",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6f94dbe4-1318-4ffb-a53d-351bbdcba733/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -217,7 +190,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nJOLERVPDzxR",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "b0e7d1cc-24dd-4da4-bb60-b15b6791d08e",
@@ -244,7 +217,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
@@ -271,7 +244,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
@@ -298,7 +271,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -325,7 +298,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
@@ -352,7 +325,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
@@ -379,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
@@ -406,7 +379,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
@@ -433,7 +406,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -460,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "a927b2f9-f9a5-4196-9abb-2e275e4a6b96",
@@ -487,7 +460,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -514,7 +487,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
@@ -541,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
@@ -568,7 +541,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
@@ -595,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "ad358a4d-c541-409b-9366-9c2f2da4aeb9",
@@ -622,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
     },
     {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
@@ -649,7 +622,34 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef9850ad-1096-425b-9d27-f7bbd186e61a/",
-      "updatedAt": "2026-08-06T06:17:21Z"
+      "updatedAt": "2026-08-06T09:14:48Z"
+    },
+    {
+      "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
+      "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A",
+      "net": "2026-09-30T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "SDA Tranche 1 Tracking Layer A",
+      "missionDescription": "Tranche 1 Tracking Layer A is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
+      "orbit": "Polar Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "preflightStatus": "",
+      "postflightStatus": "",
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "livestreamUrl": "",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
+      "updatedAt": "2026-08-06T09:14:48Z"
     }
   ]
 }
