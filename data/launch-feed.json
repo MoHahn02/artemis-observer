@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-07T21:04:05Z",
+  "generatedAt": "2026-08-07T22:36:42Z",
   "source": "launch-worker:launch/upcoming",
-  "nextRefreshAfter": "2026-08-07T22:04:05Z",
+  "nextRefreshAfter": "2026-08-07T23:36:42Z",
   "launches": [
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
@@ -28,7 +28,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1qxoNNApQWyJv",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-38",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e4316d4c-9eb8-4a18-9b0d-4307c3970ef6/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
@@ -55,7 +55,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "cff704ab-8098-4f65-899e-50adaf908e59",
@@ -82,7 +82,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
@@ -109,7 +109,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nxeLLRRMQWJX",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-19",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/36ab6924-bb36-416a-b71d-cda9e88004be/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
@@ -136,7 +136,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "6f94dbe4-1318-4ffb-a53d-351bbdcba733",
@@ -163,7 +163,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nGnRRpkMDLGO",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-49",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6f94dbe4-1318-4ffb-a53d-351bbdcba733/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "55b79515-ddbf-4198-8a59-29a12ed21330",
@@ -190,7 +190,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
@@ -217,7 +217,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1pJkOOkmyQyJj",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "b0e7d1cc-24dd-4da4-bb60-b15b6791d08e",
@@ -244,7 +244,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "f6958a77-37bb-4559-a108-40ba0ff9e34a",
@@ -271,7 +271,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1RJjppgNbXwKw",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-50",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f6958a77-37bb-4559-a108-40ba0ff9e34a/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
@@ -298,7 +298,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
@@ -325,7 +325,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -352,7 +352,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
@@ -379,7 +379,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
@@ -406,7 +406,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "57280454-470e-4c5d-8de1-1bbd0ea41b49",
@@ -433,7 +433,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/the-lightning-god-defends/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/57280454-470e-4c5d-8de1-1bbd0ea41b49/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
@@ -460,7 +460,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
@@ -487,7 +487,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "a927b2f9-f9a5-4196-9abb-2e275e4a6b96",
@@ -514,7 +514,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -541,7 +541,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
@@ -568,7 +568,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
@@ -595,7 +595,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
@@ -622,7 +622,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     },
     {
       "id": "ad358a4d-c541-409b-9366-9c2f2da4aeb9",
@@ -649,7 +649,7 @@
       "livestreamUrl": "",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
-      "updatedAt": "2026-08-07T21:04:05Z"
+      "updatedAt": "2026-08-07T22:36:42Z"
     }
   ]
 }
