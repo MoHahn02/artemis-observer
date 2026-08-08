@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T15:42:32Z",
+  "generatedAt": "2026-08-08T16:56:13Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1170,14 +1170,14 @@
       "mission": "Starlink Group 17-38",
       "missionDescription": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "live",
+      "statusName": "Launch in Flight",
+      "statusAbbrev": "In Flight",
+      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
       "livestreamUrl": "https://www.youtube.com/watch?v=IKpbroR9kuk",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-38",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e4316d4c-9eb8-4a18-9b0d-4307c3970ef6/",
-      "updatedAt": "2026-08-08T15:42:32Z",
+      "updatedAt": "2026-08-08T16:56:13Z",
       "firstSeenAt": "2026-07-27T17:08:52Z",
       "previousNets": [
         "2026-08-06T14:00:00Z",
@@ -1186,9 +1186,9 @@
         "2026-08-08T16:24:49Z",
         "2026-08-08T16:23:41Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-08-08T16:56:13Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
+      "preflightStatus": "go",
       "postflightStatus": ""
     },
     {
