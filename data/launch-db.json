@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T17:33:37Z",
+  "generatedAt": "2026-08-10T19:35:02Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -433,7 +433,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-25T23:07:48Z",
       "previousNets": [
         "2026-09-11T00:00:00Z"
@@ -463,7 +463,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-26T16:12:25Z",
       "previousNets": [
         "2026-09-30T00:00:00Z"
@@ -493,7 +493,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-04-27T16:11:41Z",
       "previousNets": [
         "2026-06-17T01:40:00Z"
@@ -592,7 +592,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-06-26T23:37:01Z",
       "previousNets": [
         "2026-07-31T00:00:00Z"
@@ -622,7 +622,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-04-30T15:18:38Z",
       "previousNets": [
         "2026-06-25T00:00:00Z",
@@ -653,7 +653,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "outcome": "delayed",
       "previousNets": [
@@ -693,7 +693,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -730,7 +730,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-05T01:09:34Z"
     },
     {
@@ -753,7 +753,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-05T01:09:34Z"
     },
     {
@@ -776,7 +776,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/the-lightning-god-defends/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/57280454-470e-4c5d-8de1-1bbd0ea41b49/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-06T15:32:50Z"
     },
     {
@@ -799,8 +799,39 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-10T01:53:12Z"
+    },
+    {
+      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
+      "name": "Zhuque-3 | Flight 2",
+      "net": "2026-08-31T00:00:00Z",
+      "provider": "LandSpace",
+      "rocket": "Zhuque-3",
+      "pad": "Launch Area 96B",
+      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
+      "latitude": 40.92017,
+      "longitude": 100.25129,
+      "mission": "Flight 2",
+      "missionDescription": "Second test launch of LandSpace\u2019s ZQ-3 rocket. Payload identities are TBD.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
+      "updatedAt": "2026-08-10T19:35:02Z",
+      "firstSeenAt": "2026-07-22T23:40:28Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z",
+        "2026-08-10T23:45:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
     },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -822,7 +853,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-03T05:27:10Z",
       "previousNets": [
         "2026-08-30T00:00:00Z",
@@ -854,7 +885,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-05-01T04:13:09Z",
       "previousNets": [
         "2026-06-30T00:00:00Z",
@@ -885,7 +916,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9d402fb6-9115-424d-b6f0-bd3b13ee310e/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-18T14:05:20Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -894,6 +925,29 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
+    },
+    {
+      "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
+      "name": "Falcon 9 Block 5 | Starlink Group 10-39",
+      "net": "2026-08-20T15:19:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 40",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.56194122,
+      "longitude": -80.57735736,
+      "mission": "Starlink Group 10-39",
+      "missionDescription": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+      "orbit": "Low Earth Orbit",
+      "status": "go",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "livestreamUrl": "https://x.com/i/broadcasts/1qKDzWPePyaJV",
+      "sourceUrl": "https://www.spacex.com/launches/sl-10-39",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04/",
+      "updatedAt": "2026-08-10T19:35:02Z",
+      "firstSeenAt": "2026-08-10T19:35:02Z"
     },
     {
       "id": "f6958a77-37bb-4559-a108-40ba0ff9e34a",
@@ -915,7 +969,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1RJjppgNbXwKw",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-50",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f6958a77-37bb-4559-a108-40ba0ff9e34a/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-07T00:33:35Z"
     },
     {
@@ -938,7 +992,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-20T12:32:23Z"
     },
     {
@@ -961,7 +1015,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/globalstar2-rlaunch1",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-05-08T04:37:08Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1pJkOOkmyQyJj",
       "previousNets": [
@@ -1000,7 +1054,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-08-07T00:33:35Z"
     },
     {
@@ -1046,7 +1100,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1nGnRRpkMDLGO",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-49",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6f94dbe4-1318-4ffb-a53d-351bbdcba733/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-27T17:08:52Z",
       "previousNets": [
         "2026-08-10T02:00:00Z",
@@ -1077,7 +1131,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=x6FNFhI98xw",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-19",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/36ab6924-bb36-416a-b71d-cda9e88004be/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-27T17:08:52Z",
       "previousNets": [
         "2026-08-10T11:00:00Z",
@@ -1085,36 +1139,6 @@
         "2026-08-10T14:49:00Z",
         "2026-08-10T15:07:28Z",
         "2026-08-10T16:20:09Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
-      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
-      "name": "Zhuque-3 | Flight 2",
-      "net": "2026-08-10T23:45:00Z",
-      "provider": "LandSpace",
-      "rocket": "Zhuque-3",
-      "pad": "Launch Area 96B",
-      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "latitude": 40.92017,
-      "longitude": 100.25129,
-      "mission": "Flight 2",
-      "missionDescription": "Second test launch of LandSpace\u2019s ZQ-3 rocket. Payload identities are TBD.",
-      "orbit": "Low Earth Orbit",
-      "status": "go",
-      "outcome": "",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef02e2cf-e617-4b38-a526-951ac9204b0a/",
-      "updatedAt": "2026-08-10T17:33:37Z",
-      "firstSeenAt": "2026-07-22T23:40:28Z",
-      "previousNets": [
-        "2026-08-31T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -1134,13 +1158,13 @@
       "mission": "Michibiki 7 (QZS-7)",
       "missionDescription": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
       "orbit": "Geostationary Transfer Orbit",
-      "status": "go",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "live",
+      "statusName": "Launch in Flight",
+      "statusAbbrev": "In Flight",
+      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
       "sourceUrl": "https://www.youtube.com/watch?v=fH9hQn8ebp4",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b89ab080-66c3-4831-85a9-38d85da71d30/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-06-22T19:43:06Z",
       "outcome": "",
       "previousNets": [
@@ -1149,9 +1173,9 @@
         "2026-08-09T19:00:00Z",
         "2026-08-10T19:00:00Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-08-10T19:35:02Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
+      "preflightStatus": "go",
       "postflightStatus": "",
       "livestreamUrl": "https://www.youtube.com/watch?v=fH9hQn8ebp4"
     },
@@ -1175,7 +1199,7 @@
       "statusDescription": "Either the launch vehicle did not reach orbit, or the payload(s) failed to separate.",
       "sourceUrl": "https://www.youtube.com/watch?v=cwy5FbgI7n8",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
-      "updatedAt": "2026-08-10T17:33:37Z",
+      "updatedAt": "2026-08-10T19:35:02Z",
       "firstSeenAt": "2026-07-20T12:32:23Z",
       "previousNets": [
         "2026-08-09T11:00:00Z",
