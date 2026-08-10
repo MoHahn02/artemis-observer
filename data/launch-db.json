@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T01:53:12Z",
+  "generatedAt": "2026-08-10T12:04:12Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1171,17 +1171,18 @@
       "statusName": "Go for Launch",
       "statusAbbrev": "Go",
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
+      "sourceUrl": "https://www.youtube.com/watch?v=cwy5FbgI7n8",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cff704ab-8098-4f65-899e-50adaf908e59/",
-      "updatedAt": "2026-08-10T01:53:12Z",
+      "updatedAt": "2026-08-10T12:04:12Z",
       "firstSeenAt": "2026-07-20T12:32:23Z",
       "previousNets": [
         "2026-08-09T11:00:00Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-08-10T12:04:12Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
+      "preflightStatus": "go",
+      "postflightStatus": "",
+      "livestreamUrl": "https://www.youtube.com/watch?v=cwy5FbgI7n8"
     },
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
