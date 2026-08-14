@@ -1,7 +1,37 @@
 {
-  "generatedAt": "2026-08-14T17:09:45Z",
+  "generatedAt": "2026-08-14T23:47:49Z",
   "source": "launch-worker:observed-db",
   "launches": [
+    {
+      "id": "0d6ad64c-3aed-4041-b095-e1d951bc6d29",
+      "name": "Electron | Aspera",
+      "net": "2027-01-29T00:00:00Z",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "pad": "Unknown Pad",
+      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "latitude": -39.260881,
+      "longitude": 177.865826,
+      "mission": "Aspera",
+      "missionDescription": "Aspera houses an ultraviolet telescope and will examine hot gas in the  intergalactic medium, thought to be contributing to the birth of stars and planets. Aspera will be the first NASA astrophysics mission to gather and map these ultraviolet light signatures, potentially unlocking a deeper understanding of the origins of stars, planets, and life in the universe.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0d6ad64c-3aed-4041-b095-e1d951bc6d29/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0d6ad64c-3aed-4041-b095-e1d951bc6d29/",
+      "updatedAt": "2026-08-14T23:47:49Z",
+      "firstSeenAt": "2026-06-24T12:08:06Z",
+      "previousNets": [
+        "2026-08-15T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-14T23:47:49Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
     {
       "id": "ca3d56b7-2175-48e4-9a6a-2ecc9996d96b",
       "name": "New Glenn | Amazon Leo (LN-01)",
@@ -1158,29 +1188,6 @@
       "updatedAt": "2026-08-14T17:09:45Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1DxleVErQBdKL"
-    },
-    {
-      "id": "0d6ad64c-3aed-4041-b095-e1d951bc6d29",
-      "name": "Electron | Aspera",
-      "net": "2026-08-15T00:00:00Z",
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "pad": "Unknown Pad",
-      "padLocation": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-      "latitude": -39.260881,
-      "longitude": 177.865826,
-      "mission": "Aspera",
-      "missionDescription": "Aspera houses an ultraviolet telescope and will examine hot gas in the  intergalactic medium, thought to be contributing to the birth of stars and planets. Aspera will be the first NASA astrophysics mission to gather and map these ultraviolet light signatures, potentially unlocking a deeper understanding of the origins of stars, planets, and life in the universe.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/0d6ad64c-3aed-4041-b095-e1d951bc6d29/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/0d6ad64c-3aed-4041-b095-e1d951bc6d29/",
-      "updatedAt": "2026-06-26T06:12:42Z",
-      "firstSeenAt": "2026-06-24T12:08:06Z"
     },
     {
       "id": "6f94dbe4-1318-4ffb-a53d-351bbdcba733",
