@@ -1,7 +1,7 @@
 {
   "lastFeedRefreshAt": "2026-08-15T08:48:14Z",
-  "lastCheckRunAt": "2026-08-15T08:48:14Z",
-  "lastSatelliteRefreshAt": "2026-08-15T07:46:44Z",
+  "lastCheckRunAt": "2026-08-15T10:01:13Z",
+  "lastSatelliteRefreshAt": "2026-08-15T10:01:13Z",
   "pendingChecks": [
     {
       "id": "55b79515-ddbf-4198-8a59-29a12ed21330",
@@ -382,7 +382,9 @@
       "overdue": false
     }
   ],
-  "lastErrors": [],
+  "lastErrors": [
+    "feed refresh failed: The read operation timed out"
+  ],
   "lastIssOemRefreshAt": "2026-08-15T08:48:14Z",
   "lastSatelliteProfileRefreshAt": "2026-08-14T18:06:06Z",
   "lastEarthObservationRefreshAt": "2026-08-14T13:08:10Z"
