@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T04:18:45Z",
+  "generatedAt": "2026-08-16T04:54:39Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1123,15 +1123,15 @@
       "statusDescription": "The launch vehicle has lifted off from the launchpad.",
       "sourceUrl": "https://www.youtube.com/watch?v=UifMQ8J8jMY",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b0e7d1cc-24dd-4da4-bb60-b15b6791d08e/",
-      "updatedAt": "2026-08-16T04:18:45Z",
+      "updatedAt": "2026-08-16T04:54:39Z",
       "firstSeenAt": "2026-07-20T12:32:23Z",
       "previousNets": [
         "2026-08-17T02:00:00Z"
       ],
       "preflightCheckedAt": "2026-08-16T04:18:45Z",
-      "postflightCheckedAt": null,
+      "postflightCheckedAt": "2026-08-16T04:54:39Z",
       "preflightStatus": "go",
-      "postflightStatus": "",
+      "postflightStatus": "live",
       "livestreamUrl": "https://www.youtube.com/watch?v=UifMQ8J8jMY"
     },
     {
@@ -1154,7 +1154,7 @@
       "statusDescription": "Launch in Flight",
       "sourceUrl": "https://www.spacex.com/launches/ussf366",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-16T04:18:45Z",
+      "updatedAt": "2026-08-16T04:54:39Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=GCdmtmYyInM",
       "previousNets": [
@@ -1163,7 +1163,7 @@
         "2026-08-15T23:47:12Z"
       ],
       "preflightCheckedAt": "2026-08-16T02:42:11Z",
-      "postflightCheckedAt": "2026-08-16T04:18:45Z",
+      "postflightCheckedAt": "2026-08-16T04:54:39Z",
       "preflightStatus": "missed",
       "postflightStatus": "live"
     },
