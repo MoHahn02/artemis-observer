@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T15:22:13Z",
+  "generatedAt": "2026-08-16T16:01:20Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1147,14 +1147,14 @@
       "mission": "USSF-366",
       "missionDescription": "USSF-366 is a classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites for a US government entity based on SpaceX\u2019s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
       "orbit": "Low Earth Orbit",
-      "status": "live",
-      "outcome": "",
-      "statusName": "Launch in Flight",
-      "statusAbbrev": "In Flight",
-      "statusDescription": "Launch in Flight",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/ussf366",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-16T15:22:13Z",
+      "updatedAt": "2026-08-16T16:01:20Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=GCdmtmYyInM",
       "previousNets": [
@@ -1163,9 +1163,9 @@
         "2026-08-15T23:47:12Z"
       ],
       "preflightCheckedAt": "2026-08-16T02:42:11Z",
-      "postflightCheckedAt": "2026-08-16T15:22:13Z",
+      "postflightCheckedAt": "2026-08-16T16:01:20Z",
       "preflightStatus": "missed",
-      "postflightStatus": "live"
+      "postflightStatus": "success"
     },
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
