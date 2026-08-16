@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T02:42:11Z",
+  "generatedAt": "2026-08-16T03:34:19Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1153,16 +1153,16 @@
       "statusDescription": "The launch vehicle has lifted off from the launchpad.",
       "sourceUrl": "https://www.spacex.com/launches/ussf366",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-16T02:42:11Z",
+      "updatedAt": "2026-08-16T03:34:19Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
-      "livestreamUrl": "https://www.youtube.com/watch?v=kHEJHhUndgk",
+      "livestreamUrl": "https://www.youtube.com/watch?v=GCdmtmYyInM",
       "previousNets": [
         "2026-08-15T21:52:00Z",
         "2026-08-15T21:54:02Z",
         "2026-08-15T23:47:12Z"
       ],
       "preflightCheckedAt": "2026-08-16T02:42:11Z",
-      "postflightCheckedAt": "2026-08-16T02:42:11Z",
+      "postflightCheckedAt": "2026-08-16T03:34:19Z",
       "preflightStatus": "missed",
       "postflightStatus": "live"
     },
