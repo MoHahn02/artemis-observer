@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T09:46:07Z",
+  "generatedAt": "2026-08-16T10:36:13Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1154,7 +1154,7 @@
       "statusDescription": "Launch in Flight",
       "sourceUrl": "https://www.spacex.com/launches/ussf366",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/55b79515-ddbf-4198-8a59-29a12ed21330/",
-      "updatedAt": "2026-08-16T09:46:07Z",
+      "updatedAt": "2026-08-16T10:36:13Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=GCdmtmYyInM",
       "previousNets": [
@@ -1163,7 +1163,7 @@
         "2026-08-15T23:47:12Z"
       ],
       "preflightCheckedAt": "2026-08-16T02:42:11Z",
-      "postflightCheckedAt": "2026-08-16T09:46:07Z",
+      "postflightCheckedAt": "2026-08-16T10:36:13Z",
       "preflightStatus": "missed",
       "postflightStatus": "live"
     },
