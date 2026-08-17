@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T05:49:07Z",
+  "generatedAt": "2026-08-17T06:23:49Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1123,9 +1123,9 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/cb6f4df1-c045-423b-904c-e63bf1ee5168/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/cb6f4df1-c045-423b-904c-e63bf1ee5168/",
-      "updatedAt": "2026-08-17T05:49:07Z",
+      "updatedAt": "2026-08-17T06:23:49Z",
       "firstSeenAt": "2026-08-12T19:17:23Z",
-      "postflightCheckedAt": "2026-08-17T05:49:07Z",
+      "postflightCheckedAt": "2026-08-17T06:23:49Z",
       "postflightStatus": "go",
       "preflightCheckedAt": "2026-08-17T03:30:58Z",
       "preflightStatus": "missed"
