@@ -1,6 +1,6 @@
 {
   "lastFeedRefreshAt": "2026-08-18T10:57:52Z",
-  "lastCheckRunAt": "2026-08-18T11:32:07Z",
+  "lastCheckRunAt": "2026-08-18T13:00:06Z",
   "lastSatelliteRefreshAt": "2026-08-18T11:32:07Z",
   "pendingChecks": [
     {
@@ -358,7 +358,9 @@
       "overdue": false
     }
   ],
-  "lastErrors": [],
+  "lastErrors": [
+    "feed refresh failed: The read operation timed out"
+  ],
   "lastIssOemRefreshAt": "2026-08-18T11:32:07Z",
   "lastSatelliteProfileRefreshAt": "2026-08-17T19:01:41Z",
   "lastEarthObservationRefreshAt": "2026-08-17T13:39:18Z"
