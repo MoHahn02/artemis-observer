@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T04:09:21Z",
+  "generatedAt": "2026-08-19T04:51:08Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1098,10 +1098,10 @@
       "statusName": "Launch in Flight",
       "statusAbbrev": "In Flight",
       "statusDescription": "The launch vehicle has lifted off from the launchpad.",
-      "livestreamUrl": "https://www.youtube.com/watch?v=Nsw6vYpjtaw",
+      "livestreamUrl": "https://www.youtube.com/watch?v=3vX-zLAGM38",
       "sourceUrl": "https://www.spacex.com/launches/sl-17-50",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f6958a77-37bb-4559-a108-40ba0ff9e34a/",
-      "updatedAt": "2026-08-19T04:09:21Z",
+      "updatedAt": "2026-08-19T04:51:08Z",
       "firstSeenAt": "2026-08-07T00:33:35Z",
       "previousNets": [
         "2026-08-19T02:00:00Z",
@@ -1109,9 +1109,9 @@
         "2026-08-19T03:46:10Z"
       ],
       "preflightCheckedAt": "2026-08-19T04:09:21Z",
-      "postflightCheckedAt": null,
+      "postflightCheckedAt": "2026-08-19T04:51:08Z",
       "preflightStatus": "go",
-      "postflightStatus": ""
+      "postflightStatus": "live"
     },
     {
       "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
