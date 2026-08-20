@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T13:08:06Z",
+  "generatedAt": "2026-08-20T13:57:32Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1105,19 +1105,19 @@
       "outcome": "",
       "statusName": "Launch in Flight",
       "statusAbbrev": "In Flight",
-      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
+      "statusDescription": "Launch in Flight",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/the-lightning-god-defends/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/57280454-470e-4c5d-8de1-1bbd0ea41b49/",
-      "updatedAt": "2026-08-20T13:08:06Z",
+      "updatedAt": "2026-08-20T13:57:32Z",
       "firstSeenAt": "2026-08-06T15:32:50Z",
       "previousNets": [
         "2026-08-31T00:00:00Z",
         "2026-08-20T13:00:00Z"
       ],
       "preflightCheckedAt": "2026-08-20T13:08:06Z",
-      "postflightCheckedAt": null,
+      "postflightCheckedAt": "2026-08-20T13:57:32Z",
       "preflightStatus": "go",
-      "postflightStatus": "",
+      "postflightStatus": "live",
       "livestreamUrl": "https://www.youtube.com/watch?v=wLc1C15jbgY"
     },
     {
