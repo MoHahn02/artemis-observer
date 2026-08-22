@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T07:58:18Z",
+  "generatedAt": "2026-08-22T08:39:16Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1094,14 +1094,14 @@
       "mission": "Starlink Group 15-20",
       "missionDescription": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
       "orbit": "Low Earth Orbit",
-      "status": "live",
-      "outcome": "",
-      "statusName": "Launch in Flight",
-      "statusAbbrev": "In Flight",
-      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
+      "status": "success",
+      "outcome": "success",
+      "statusName": "Launch Successful",
+      "statusAbbrev": "Success",
+      "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-20",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/6208f972-18ec-490f-bbe5-6f5c6cfcd48c/",
-      "updatedAt": "2026-08-22T07:58:18Z",
+      "updatedAt": "2026-08-22T08:39:16Z",
       "firstSeenAt": "2026-08-13T19:29:24Z",
       "livestreamUrl": "https://www.youtube.com/watch?v=7r0RfmKbr_Q",
       "previousNets": [
@@ -1109,9 +1109,9 @@
         "2026-08-22T07:25:09Z"
       ],
       "preflightCheckedAt": "2026-08-22T07:34:58Z",
-      "postflightCheckedAt": "2026-08-22T07:58:18Z",
+      "postflightCheckedAt": "2026-08-22T08:39:16Z",
       "preflightStatus": "go",
-      "postflightStatus": "live"
+      "postflightStatus": "success"
     },
     {
       "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
