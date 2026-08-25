@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T10:18:47Z",
+  "generatedAt": "2026-08-25T10:55:10Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1072,7 +1072,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=iXcAJQ5r0jI",
       "sourceUrl": "https://www.spacex.com/launches/sl-10-49",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad501ebd-a357-4305-90c1-c46c6feb2ecf/",
-      "updatedAt": "2026-08-25T10:18:47Z",
+      "updatedAt": "2026-08-25T10:55:10Z",
       "firstSeenAt": "2026-08-12T17:09:53Z",
       "previousNets": [
         "2026-08-25T11:00:00Z",
@@ -1080,7 +1080,7 @@
         "2026-08-25T09:33:17Z"
       ],
       "preflightCheckedAt": "2026-08-25T09:50:01Z",
-      "postflightCheckedAt": "2026-08-25T10:18:47Z",
+      "postflightCheckedAt": "2026-08-25T10:55:10Z",
       "preflightStatus": "go",
       "postflightStatus": "live"
     },
