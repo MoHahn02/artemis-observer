@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-08-26T19:08:21Z",
-  "lastCheckRunAt": "2026-08-26T19:08:21Z",
-  "lastSatelliteRefreshAt": "2026-08-26T19:08:21Z",
+  "lastFeedRefreshAt": "2026-08-26T21:49:56Z",
+  "lastCheckRunAt": "2026-08-26T21:49:56Z",
+  "lastSatelliteRefreshAt": "2026-08-26T21:49:56Z",
   "pendingChecks": [
     {
       "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
@@ -126,25 +126,25 @@
     {
       "id": "63181269-b125-4c36-951c-c9bd9bbc4b55",
       "phase": "preflight",
-      "dueAt": "2026-09-01T07:46:00Z",
+      "dueAt": "2026-09-02T07:31:00Z",
       "overdue": false
     },
     {
       "id": "63181269-b125-4c36-951c-c9bd9bbc4b55",
       "phase": "postflight",
-      "dueAt": "2026-09-01T08:31:00Z",
+      "dueAt": "2026-09-02T08:16:00Z",
       "overdue": false
     },
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "phase": "preflight",
-      "dueAt": "2026-09-04T11:13:00Z",
+      "dueAt": "2026-09-05T10:58:00Z",
       "overdue": false
     },
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "phase": "postflight",
-      "dueAt": "2026-09-04T11:58:00Z",
+      "dueAt": "2026-09-05T11:43:00Z",
       "overdue": false
     },
     {
@@ -347,7 +347,7 @@
     }
   ],
   "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-08-26T19:08:21Z",
-  "lastSatelliteProfileRefreshAt": "2026-08-25T21:39:39Z",
+  "lastIssOemRefreshAt": "2026-08-26T21:49:56Z",
+  "lastSatelliteProfileRefreshAt": "2026-08-26T21:49:56Z",
   "lastEarthObservationRefreshAt": "2026-08-26T16:05:46Z"
 }
