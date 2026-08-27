@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T21:49:56Z",
+  "generatedAt": "2026-08-27T12:54:54Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -143,7 +143,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/2d0472b9-463d-49c8-afb1-7925e49a3368/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-05-21T04:43:17Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -173,7 +173,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dca8749f-1552-485a-8061-f1ad79055b8d/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-05-22T12:09:28Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -203,7 +203,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5/",
-      "updatedAt": "2026-06-30T00:14:49Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-05-23T10:55:32Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -334,40 +334,6 @@
       "postflightStatus": "delayed"
     },
     {
-      "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
-      "name": "GSLV Mk II | GISAT-1A (EOS-05)",
-      "net": "2026-09-30T00:00:00Z",
-      "provider": "Indian Space Research Organization",
-      "rocket": "GSLV Mk. II",
-      "pad": "Satish Dhawan Space Centre Second Launch Pad",
-      "padLocation": "Satish Dhawan Space Centre, India",
-      "latitude": 13.7199,
-      "longitude": 80.2304,
-      "mission": "GISAT-1A (EOS-05)",
-      "missionDescription": "GISAT-1A (GEO Imaging Satellite) is an Indian earth observing satellite operating from geostationary orbit to facilitate continuous observation of Indian sub-continent, quick monitoring of natural hazards and disaster.",
-      "orbit": "Geostationary Transfer Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-08-26T21:49:56Z",
-      "firstSeenAt": "2026-05-07T15:39:36Z",
-      "previousNets": [
-        "2026-05-21T03:15:00Z",
-        "2026-05-31T00:00:00Z",
-        "2026-06-30T00:00:00Z",
-        "2026-06-10T00:00:00Z",
-        "2026-07-31T00:00:00Z"
-      ],
-      "preflightCheckedAt": "2026-07-31T01:10:34Z",
-      "postflightCheckedAt": "2026-07-31T01:10:34Z",
-      "preflightStatus": "missed",
-      "postflightStatus": "delayed"
-    },
-    {
       "id": "ad358a4d-c541-409b-9366-9c2f2da4aeb9",
       "name": "Falcon 9 Block 5 | O3b mPower 11-13",
       "net": "2026-09-30T00:00:00Z",
@@ -387,7 +353,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-02T04:42:49Z"
     },
     {
@@ -410,7 +376,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef9850ad-1096-425b-9d27-f7bbd186e61a/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-06T03:44:41Z"
     },
     {
@@ -433,7 +399,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/20d5676e-111b-40e3-8923-b218c3665ca2/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/20d5676e-111b-40e3-8923-b218c3665ca2/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-17T04:23:28Z"
     },
     {
@@ -456,7 +422,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7d1afb26-6f9c-429b-9ccf-29012fd1e519/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-18T03:02:40Z"
     },
     {
@@ -512,7 +478,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-04-30T15:18:38Z",
       "previousNets": [
         "2026-06-25T00:00:00Z",
@@ -546,7 +512,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -584,7 +550,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-25T03:09:47Z"
     },
     {
@@ -607,7 +573,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-25T10:18:47Z"
     },
     {
@@ -630,8 +596,38 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-26T03:53:58Z"
+    },
+    {
+      "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
+      "name": "Long March 12A | Flight 2",
+      "net": "2026-09-30T00:00:00Z",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 12A",
+      "pad": "Long March 12 series Pad",
+      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
+      "latitude": 40.891596,
+      "longitude": 100.217289,
+      "mission": "Flight 2",
+      "missionDescription": "Second test launch of CASC/SAST\u2019s Long March 12A rocket. Payload identities are TBD.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
+      "updatedAt": "2026-08-27T12:54:54Z",
+      "firstSeenAt": "2026-08-05T01:09:34Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
     },
     {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
@@ -653,7 +649,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-07-25T23:07:48Z",
       "previousNets": [
         "2026-09-11T00:00:00Z"
@@ -683,7 +679,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-07-26T16:12:25Z",
       "previousNets": [
         "2026-09-30T00:00:00Z"
@@ -713,7 +709,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-04-27T16:11:41Z",
       "previousNets": [
         "2026-06-17T01:40:00Z",
@@ -744,10 +740,45 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1NxaroyrEngKj",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-24",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/153ef8ef-b12b-43f4-a4bf-05b225c0cd37/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-21T15:40:16Z",
       "previousNets": [
         "2026-09-04T11:28:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
+      "name": "GSLV Mk II | GISAT-1A (EOS-05)",
+      "net": "2026-09-03T21:00:00Z",
+      "provider": "Indian Space Research Organization",
+      "rocket": "GSLV Mk. II",
+      "pad": "Satish Dhawan Space Centre Second Launch Pad",
+      "padLocation": "Satish Dhawan Space Centre, India",
+      "latitude": 13.7199,
+      "longitude": 80.2304,
+      "mission": "GISAT-1A (EOS-05)",
+      "missionDescription": "GISAT-1A (GEO Imaging Satellite) is an Indian earth observing satellite operating from geostationary orbit to facilitate continuous observation of Indian sub-continent, quick monitoring of natural hazards and disaster.",
+      "orbit": "Geostationary Transfer Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Confirmed",
+      "statusAbbrev": "TBC",
+      "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
+      "updatedAt": "2026-08-27T12:54:54Z",
+      "firstSeenAt": "2026-05-07T15:39:36Z",
+      "previousNets": [
+        "2026-05-21T03:15:00Z",
+        "2026-05-31T00:00:00Z",
+        "2026-06-30T00:00:00Z",
+        "2026-06-10T00:00:00Z",
+        "2026-07-31T00:00:00Z",
+        "2026-09-30T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -774,10 +805,40 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1yKAPwXpMlqxb",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-23",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/63181269-b125-4c36-951c-c9bd9bbc4b55/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-20T20:50:05Z",
       "previousNets": [
         "2026-09-01T08:01:00Z"
+      ],
+      "preflightCheckedAt": null,
+      "postflightCheckedAt": null,
+      "preflightStatus": "",
+      "postflightStatus": ""
+    },
+    {
+      "id": "a927b2f9-f9a5-4196-9abb-2e275e4a6b96",
+      "name": "Pallas-1 | Demo Flight",
+      "net": "2026-09-01T02:00:00Z",
+      "provider": "Galactic Energy",
+      "rocket": "Pallas-1",
+      "pad": "Pallas-1 Launch Pad",
+      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
+      "latitude": 40.775962,
+      "longitude": 100.107214,
+      "mission": "Demo Flight",
+      "missionDescription": "First test launch of Galactic Energy\u2019s Pallas-1 rocket.",
+      "orbit": "Unknown",
+      "status": "go",
+      "outcome": "",
+      "statusName": "Go for Launch",
+      "statusAbbrev": "Go",
+      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
+      "updatedAt": "2026-08-27T12:54:54Z",
+      "firstSeenAt": "2026-08-05T01:09:34Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
       ],
       "preflightCheckedAt": null,
       "postflightCheckedAt": null,
@@ -804,7 +865,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/owl-around-the-world/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-06-26T23:37:01Z",
       "previousNets": [
         "2026-07-31T00:00:00Z",
@@ -924,52 +985,6 @@
       "postflightStatus": ""
     },
     {
-      "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
-      "name": "Long March 12A | Flight 2",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12A",
-      "pad": "Long March 12 series Pad",
-      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "latitude": 40.891596,
-      "longitude": 100.217289,
-      "mission": "Flight 2",
-      "missionDescription": "Second test launch of CASC/SAST\u2019s Long March 12A rocket. Payload identities are TBD.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-08-26T21:49:56Z",
-      "firstSeenAt": "2026-08-05T01:09:34Z"
-    },
-    {
-      "id": "a927b2f9-f9a5-4196-9abb-2e275e4a6b96",
-      "name": "Pallas-1 | Demo Flight",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "Galactic Energy",
-      "rocket": "Pallas-1",
-      "pad": "Pallas-1 Launch Pad",
-      "padLocation": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "latitude": 40.775962,
-      "longitude": 100.107214,
-      "mission": "Demo Flight",
-      "missionDescription": "First test launch of Galactic Energy\u2019s Pallas-1 rocket.",
-      "orbit": "Unknown",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "updatedAt": "2026-08-26T21:49:56Z",
-      "firstSeenAt": "2026-08-05T01:09:34Z"
-    },
-    {
       "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
       "name": "Angara 1.2 | Kosmos (Unknown Payload)",
       "net": "2026-08-31T00:00:00Z",
@@ -989,7 +1004,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-08-10T01:53:12Z"
     },
     {
@@ -1012,7 +1027,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/roman",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-07-03T05:27:10Z",
       "previousNets": [
         "2026-08-30T00:00:00Z",
@@ -1046,7 +1061,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.youtube.com/watch?v=CLTbPdGfMJw",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a57aed97-b94f-42e1-905e-9421dbd96ac8/",
-      "updatedAt": "2026-08-26T21:49:56Z",
+      "updatedAt": "2026-08-27T12:54:54Z",
       "firstSeenAt": "2026-05-01T04:13:09Z",
       "previousNets": [
         "2026-06-30T00:00:00Z",
