@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-08-29T17:48:16Z",
-  "lastCheckRunAt": "2026-08-29T17:48:16Z",
-  "lastSatelliteRefreshAt": "2026-08-29T14:25:56Z",
+  "lastFeedRefreshAt": "2026-08-29T20:00:55Z",
+  "lastCheckRunAt": "2026-08-29T20:00:55Z",
+  "lastSatelliteRefreshAt": "2026-08-29T20:00:55Z",
   "pendingChecks": [
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -394,10 +394,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "satellite refresh failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
-  ],
-  "lastIssOemRefreshAt": "2026-08-29T17:48:16Z",
+  "lastErrors": [],
+  "lastIssOemRefreshAt": "2026-08-29T20:00:55Z",
   "lastSatelliteProfileRefreshAt": "2026-08-29T02:08:06Z",
   "lastEarthObservationRefreshAt": "2026-08-29T02:08:06Z"
 }
