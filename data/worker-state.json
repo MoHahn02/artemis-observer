@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-08-29T22:38:02Z",
-  "lastCheckRunAt": "2026-08-29T22:38:02Z",
+  "lastFeedRefreshAt": "2026-08-30T00:43:07Z",
+  "lastCheckRunAt": "2026-08-30T00:43:07Z",
   "lastSatelliteRefreshAt": "2026-08-29T20:00:55Z",
   "pendingChecks": [
     {
@@ -395,9 +395,9 @@
     }
   ],
   "lastErrors": [
-    "satellite refresh failed: <urlopen error timed out>"
+    "satellite refresh failed: HTTP Error 503: Service Unavailable"
   ],
-  "lastIssOemRefreshAt": "2026-08-29T22:38:02Z",
+  "lastIssOemRefreshAt": "2026-08-30T00:43:07Z",
   "lastSatelliteProfileRefreshAt": "2026-08-29T02:08:06Z",
   "lastEarthObservationRefreshAt": "2026-08-29T02:08:06Z"
 }
