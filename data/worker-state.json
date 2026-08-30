@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-08-30T00:43:07Z",
-  "lastCheckRunAt": "2026-08-30T00:43:07Z",
+  "lastFeedRefreshAt": "2026-08-30T05:55:02Z",
+  "lastCheckRunAt": "2026-08-30T05:55:02Z",
   "lastSatelliteRefreshAt": "2026-08-29T20:00:55Z",
   "pendingChecks": [
     {
@@ -160,18 +160,6 @@
       "overdue": false
     },
     {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "phase": "preflight",
-      "dueAt": "2026-09-12T22:19:00Z",
-      "overdue": false
-    },
-    {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "phase": "postflight",
-      "dueAt": "2026-09-12T23:04:00Z",
-      "overdue": false
-    },
-    {
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
       "phase": "preflight",
       "dueAt": "2026-09-15T01:06:07Z",
@@ -181,6 +169,12 @@
       "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
       "phase": "postflight",
       "dueAt": "2026-09-15T01:51:07Z",
+      "overdue": false
+    },
+    {
+      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
+      "phase": "preflight",
+      "dueAt": "2026-09-29T23:45:00Z",
       "overdue": false
     },
     {
@@ -241,6 +235,12 @@
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "phase": "preflight",
       "dueAt": "2026-09-29T23:45:00Z",
+      "overdue": false
+    },
+    {
+      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
+      "phase": "postflight",
+      "dueAt": "2026-09-30T00:30:00Z",
       "overdue": false
     },
     {
@@ -395,9 +395,10 @@
     }
   ],
   "lastErrors": [
-    "satellite refresh failed: HTTP Error 503: Service Unavailable"
+    "satellite refresh failed: <urlopen error timed out>",
+    "satellite profile refresh failed: <urlopen error timed out>"
   ],
-  "lastIssOemRefreshAt": "2026-08-30T00:43:07Z",
+  "lastIssOemRefreshAt": "2026-08-30T05:55:02Z",
   "lastSatelliteProfileRefreshAt": "2026-08-29T02:08:06Z",
-  "lastEarthObservationRefreshAt": "2026-08-29T02:08:06Z"
+  "lastEarthObservationRefreshAt": "2026-08-30T05:55:02Z"
 }
