@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T21:38:09Z",
+  "generatedAt": "2026-08-30T23:52:08Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -124,6 +124,135 @@
       "postflightStatus": "delayed"
     },
     {
+      "id": "c703fab3-2ce4-4cf1-861d-754da3f3ad42",
+      "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A",
+      "net": "2026-12-31T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Space Launch Complex 4E",
+      "padLocation": "Vandenberg SFB, CA, USA",
+      "latitude": 34.632,
+      "longitude": -120.611,
+      "mission": "SDA Tranche 2 Transport Layer A",
+      "missionDescription": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
+      "orbit": "Polar Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c703fab3-2ce4-4cf1-861d-754da3f3ad42/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c703fab3-2ce4-4cf1-861d-754da3f3ad42/",
+      "updatedAt": "2026-08-30T23:52:08Z",
+      "firstSeenAt": "2026-07-15T15:45:05Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-30T23:52:08Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
+    {
+      "id": "91b13c6c-4525-496d-997b-3521bb6a4cd8",
+      "name": "RFA One | Maiden Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "provider": "Rocket Factory Augsburg",
+      "rocket": "RFA One",
+      "pad": "Launch Pad Fredo",
+      "padLocation": "SaxaVord Spaceport",
+      "latitude": 60.81736038715111,
+      "longitude": -0.7626391593025057,
+      "mission": "Maiden Flight",
+      "missionDescription": "First flight of the RFA One launch vehicle. Will carry 7 satellites for various companies and organizations coordinated by the German Aerospace Center (DLR).\r\n\r\n* AllBertEinStein\r\n* ARTICA\r\n* Curium Two\r\n* ERMINAZ\r\n* PCIOD\r\n* Separation Ring Mission\r\n* SpaceDREAM",
+      "orbit": "Sun-Synchronous Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
+      "updatedAt": "2026-08-30T23:52:08Z",
+      "firstSeenAt": "2026-07-19T07:12:10Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-30T23:52:08Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
+    {
+      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
+      "name": "Mir | Demo Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "provider": "Agency for Defense Development",
+      "rocket": "Mir",
+      "pad": "ADD Offshore launch platform",
+      "padLocation": "Sea Launch",
+      "latitude": 33.216667,
+      "longitude": 126.366667,
+      "mission": "Demo Flight",
+      "missionDescription": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
+      "updatedAt": "2026-08-30T23:52:08Z",
+      "firstSeenAt": "2026-04-19T13:07:28Z",
+      "outcome": "delayed",
+      "previousNets": [
+        "2026-04-25T05:00:00Z",
+        "2026-05-31T00:00:00Z",
+        "2026-05-20T05:00:00Z",
+        "2026-06-01T05:00:00Z",
+        "2026-06-08T05:00:00Z",
+        "2026-06-30T00:00:00Z",
+        "2026-06-29T05:00:00Z",
+        "2026-06-30T05:00:00Z",
+        "2026-07-31T00:00:00Z",
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-30T23:52:08Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
+    {
+      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
+      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
+      "net": "2026-12-31T00:00:00Z",
+      "provider": "Russian Space Forces",
+      "rocket": "Angara 1.2",
+      "pad": "35/1",
+      "padLocation": "Plesetsk Cosmodrome, Russian Federation",
+      "latitude": 62.927319,
+      "longitude": 40.574897,
+      "mission": "Kosmos (Unknown Payload)",
+      "missionDescription": "Unknown classified satellite(s) for the Russian military.",
+      "orbit": "Unknown",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
+      "updatedAt": "2026-08-30T23:52:08Z",
+      "firstSeenAt": "2026-08-10T01:53:12Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-30T23:52:08Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
+    {
       "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
       "name": "Electron | StriX Launch 12",
       "net": "2026-10-31T00:00:00Z",
@@ -147,6 +276,36 @@
       "firstSeenAt": "2026-08-29T14:25:56Z"
     },
     {
+      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
+      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
+      "net": "2026-10-31T00:00:00Z",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "pad": "Unknown Pad",
+      "padLocation": "Cape Canaveral SFS, FL, USA",
+      "latitude": 28.458,
+      "longitude": -80.528,
+      "mission": "Dragon CRS-2 SpX-35",
+      "missionDescription": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+      "orbit": "Low Earth Orbit",
+      "status": "delayed",
+      "outcome": "delayed",
+      "statusName": "To Be Determined",
+      "statusAbbrev": "TBD",
+      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
+      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/11/",
+      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bf2c3027-a314-403e-a416-2bfd5d165ad1/",
+      "updatedAt": "2026-08-30T23:52:08Z",
+      "firstSeenAt": "2026-07-08T09:02:45Z",
+      "previousNets": [
+        "2026-08-31T00:00:00Z"
+      ],
+      "preflightCheckedAt": "2026-08-30T23:52:08Z",
+      "postflightCheckedAt": null,
+      "preflightStatus": "delayed",
+      "postflightStatus": ""
+    },
+    {
       "id": "69ebbcd2-b257-4070-9ef9-21e7d1f8a883",
       "name": "H3-24 | Martian Moon eXplorer (MMX)",
       "net": "2026-10-19T19:41:03Z",
@@ -165,7 +324,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/69ebbcd2-b257-4070-9ef9-21e7d1f8a883/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/69ebbcd2-b257-4070-9ef9-21e7d1f8a883/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-29T02:08:06Z"
     },
     {
@@ -187,7 +346,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e0741415-6c63-4236-9736-24a6c04485bc/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e0741415-6c63-4236-9736-24a6c04485bc/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-28T19:03:01Z"
     },
     {
@@ -210,7 +369,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7bdc412b-c965-4517-a131-f57a01189803/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-27T22:50:55Z"
     },
     {
@@ -323,7 +482,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-05-23T23:39:26Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -413,7 +572,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-06-18T06:27:12Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -443,7 +602,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-02T04:42:49Z"
     },
     {
@@ -466,7 +625,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef9850ad-1096-425b-9d27-f7bbd186e61a/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-06T03:44:41Z"
     },
     {
@@ -512,7 +671,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7d1afb26-6f9c-429b-9ccf-29012fd1e519/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-18T03:02:40Z"
     },
     {
@@ -568,7 +727,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-04-30T15:18:38Z",
       "previousNets": [
         "2026-06-25T00:00:00Z",
@@ -601,7 +760,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-25T03:09:47Z"
     },
     {
@@ -624,7 +783,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-25T10:18:47Z"
     },
     {
@@ -647,7 +806,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-26T03:53:58Z"
     },
     {
@@ -670,7 +829,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-05T01:09:34Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -700,7 +859,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-07-26T16:12:25Z",
       "previousNets": [
         "2026-09-30T00:00:00Z",
@@ -731,7 +890,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-07-25T23:07:48Z",
       "previousNets": [
         "2026-09-11T00:00:00Z"
@@ -761,7 +920,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/63063b9d-ade9-4448-8717-6f910aa81188/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/63063b9d-ade9-4448-8717-6f910aa81188/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-30T15:26:17Z"
     },
     {
@@ -784,7 +943,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-04-27T16:11:41Z",
       "previousNets": [
         "2026-06-17T01:40:00Z",
@@ -815,7 +974,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1NxaroyrEngKj",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-24",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/153ef8ef-b12b-43f4-a4bf-05b225c0cd37/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-21T15:40:16Z",
       "previousNets": [
         "2026-09-04T11:28:00Z",
@@ -847,7 +1006,7 @@
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
         "2026-05-31T00:00:00Z",
@@ -886,7 +1045,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.isro.gov.in/ISRO_EN/Mission_GSLVF17.html",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/17d0ec68-f466-4916-9dc5-16123eda6484/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-05-07T15:39:36Z",
       "previousNets": [
         "2026-05-21T03:15:00Z",
@@ -922,7 +1081,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1yKAPwXpMlqxb",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-23",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/63181269-b125-4c36-951c-c9bd9bbc4b55/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-20T20:50:05Z",
       "previousNets": [
         "2026-09-01T08:01:00Z"
@@ -952,7 +1111,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://rocketlabcorp.com/missions/launches/owl-around-the-world/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9f5a4cb6-63f9-47e1-9512-b468bae2a8e6/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-06-26T23:37:01Z",
       "previousNets": [
         "2026-07-31T00:00:00Z",
@@ -985,7 +1144,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/a927b2f9-f9a5-4196-9abb-2e275e4a6b96/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-08-05T01:09:34Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -994,136 +1153,6 @@
       "postflightCheckedAt": null,
       "preflightStatus": "",
       "postflightStatus": ""
-    },
-    {
-      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Unknown Pad",
-      "padLocation": "Cape Canaveral SFS, FL, USA",
-      "latitude": 28.458,
-      "longitude": -80.528,
-      "mission": "Dragon CRS-2 SpX-35",
-      "missionDescription": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/11/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bf2c3027-a314-403e-a416-2bfd5d165ad1/",
-      "updatedAt": "2026-07-16T23:34:24Z",
-      "firstSeenAt": "2026-07-08T09:02:45Z"
-    },
-    {
-      "id": "c703fab3-2ce4-4cf1-861d-754da3f3ad42",
-      "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "pad": "Space Launch Complex 4E",
-      "padLocation": "Vandenberg SFB, CA, USA",
-      "latitude": 34.632,
-      "longitude": -120.611,
-      "mission": "SDA Tranche 2 Transport Layer A",
-      "missionDescription": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
-      "orbit": "Polar Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/c703fab3-2ce4-4cf1-861d-754da3f3ad42/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/c703fab3-2ce4-4cf1-861d-754da3f3ad42/",
-      "updatedAt": "2026-07-16T12:54:47Z",
-      "firstSeenAt": "2026-07-15T15:45:05Z"
-    },
-    {
-      "id": "91b13c6c-4525-496d-997b-3521bb6a4cd8",
-      "name": "RFA One | Maiden Flight",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "Rocket Factory Augsburg",
-      "rocket": "RFA One",
-      "pad": "Launch Pad Fredo",
-      "padLocation": "SaxaVord Spaceport",
-      "latitude": 60.81736038715111,
-      "longitude": -0.7626391593025057,
-      "mission": "Maiden Flight",
-      "missionDescription": "First flight of the RFA One launch vehicle. Will carry 7 satellites for various companies and organizations coordinated by the German Aerospace Center (DLR).\r\n\r\n* AllBertEinStein\r\n* ARTICA\r\n* Curium Two\r\n* ERMINAZ\r\n* PCIOD\r\n* Separation Ring Mission\r\n* SpaceDREAM",
-      "orbit": "Sun-Synchronous Orbit",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/91b13c6c-4525-496d-997b-3521bb6a4cd8/",
-      "updatedAt": "2026-07-28T14:31:34Z",
-      "firstSeenAt": "2026-07-19T07:12:10Z"
-    },
-    {
-      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
-      "name": "Mir | Demo Flight",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "Agency for Defense Development",
-      "rocket": "Mir",
-      "pad": "ADD Offshore launch platform",
-      "padLocation": "Sea Launch",
-      "latitude": 33.216667,
-      "longitude": 126.366667,
-      "mission": "Demo Flight",
-      "missionDescription": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
-      "orbit": "Low Earth Orbit",
-      "status": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/9e27a1ed-e81a-4918-b32b-0380cf3a9f8f/",
-      "updatedAt": "2026-08-26T10:00:21Z",
-      "firstSeenAt": "2026-04-19T13:07:28Z",
-      "outcome": "delayed",
-      "previousNets": [
-        "2026-04-25T05:00:00Z",
-        "2026-05-31T00:00:00Z",
-        "2026-05-20T05:00:00Z",
-        "2026-06-01T05:00:00Z",
-        "2026-06-08T05:00:00Z",
-        "2026-06-30T00:00:00Z",
-        "2026-06-29T05:00:00Z",
-        "2026-06-30T05:00:00Z",
-        "2026-07-31T00:00:00Z"
-      ],
-      "preflightCheckedAt": null,
-      "postflightCheckedAt": null,
-      "preflightStatus": "",
-      "postflightStatus": ""
-    },
-    {
-      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
-      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
-      "net": "2026-08-31T00:00:00Z",
-      "provider": "Russian Space Forces",
-      "rocket": "Angara 1.2",
-      "pad": "35/1",
-      "padLocation": "Plesetsk Cosmodrome, Russian Federation",
-      "latitude": 62.927319,
-      "longitude": 40.574897,
-      "mission": "Kosmos (Unknown Payload)",
-      "missionDescription": "Unknown classified satellite(s) for the Russian military.",
-      "orbit": "Unknown",
-      "status": "delayed",
-      "outcome": "delayed",
-      "statusName": "To Be Determined",
-      "statusAbbrev": "TBD",
-      "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
-      "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
-      "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb/",
-      "updatedAt": "2026-08-27T22:50:55Z",
-      "firstSeenAt": "2026-08-10T01:53:12Z"
     },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
@@ -1145,7 +1174,7 @@
       "statusDescription": "The launch vehicle successfully inserted its payload(s) into the target orbit(s).",
       "sourceUrl": "https://www.spacex.com/launches/roman",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-30T21:38:09Z",
+      "updatedAt": "2026-08-30T23:52:08Z",
       "firstSeenAt": "2026-07-03T05:27:10Z",
       "previousNets": [
         "2026-08-30T00:00:00Z",
