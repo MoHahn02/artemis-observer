@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T05:55:02Z",
+  "generatedAt": "2026-08-30T11:26:52Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -1104,7 +1104,7 @@
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-      "net": "2026-08-30T11:25:49Z",
+      "net": "2026-08-30T11:26:04Z",
       "provider": "SpaceX",
       "rocket": "Falcon Heavy",
       "pad": "Launch Complex 39A",
@@ -1121,17 +1121,18 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/roman",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/521f3a1c-f977-4306-9b7f-495858719adf/",
-      "updatedAt": "2026-08-30T05:55:02Z",
+      "updatedAt": "2026-08-30T11:26:52Z",
       "firstSeenAt": "2026-07-03T05:27:10Z",
       "previousNets": [
         "2026-08-30T00:00:00Z",
         "2026-08-30T11:20:00Z",
         "2026-08-30T11:26:00Z",
-        "2026-08-30T11:25:00Z"
+        "2026-08-30T11:25:00Z",
+        "2026-08-30T11:25:49Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-08-30T11:26:52Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
+      "preflightStatus": "go",
       "postflightStatus": "",
       "livestreamUrl": "https://www.youtube.com/watch?v=9wq3VHsL_bE"
     },
