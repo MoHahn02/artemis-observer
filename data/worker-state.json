@@ -1,6 +1,6 @@
 {
-  "lastFeedRefreshAt": "2026-08-31T04:15:35Z",
-  "lastCheckRunAt": "2026-08-31T04:15:35Z",
+  "lastFeedRefreshAt": "2026-08-31T10:56:41Z",
+  "lastCheckRunAt": "2026-08-31T10:56:41Z",
   "lastSatelliteRefreshAt": "2026-08-31T04:15:35Z",
   "pendingChecks": [
     {
@@ -364,8 +364,10 @@
       "overdue": false
     }
   ],
-  "lastErrors": [],
-  "lastIssOemRefreshAt": "2026-08-31T04:15:35Z",
+  "lastErrors": [
+    "satellite refresh failed: <urlopen error timed out>"
+  ],
+  "lastIssOemRefreshAt": "2026-08-31T10:56:41Z",
   "lastSatelliteProfileRefreshAt": "2026-08-30T15:26:17Z",
-  "lastEarthObservationRefreshAt": "2026-08-30T05:55:02Z"
+  "lastEarthObservationRefreshAt": "2026-08-31T10:56:41Z"
 }
