@@ -1,7 +1,7 @@
 {
-  "lastFeedRefreshAt": "2026-09-02T13:19:58Z",
-  "lastCheckRunAt": "2026-09-02T13:19:58Z",
-  "lastSatelliteRefreshAt": "2026-09-02T08:50:48Z",
+  "lastFeedRefreshAt": "2026-09-02T17:12:41Z",
+  "lastCheckRunAt": "2026-09-02T17:12:41Z",
+  "lastSatelliteRefreshAt": "2026-09-02T17:12:41Z",
   "pendingChecks": [
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -352,10 +352,8 @@
       "overdue": false
     }
   ],
-  "lastErrors": [
-    "satellite refresh failed: HTTP Error 503: Service Unavailable"
-  ],
-  "lastIssOemRefreshAt": "2026-09-02T13:19:58Z",
+  "lastErrors": [],
+  "lastIssOemRefreshAt": "2026-09-02T17:12:41Z",
   "lastSatelliteProfileRefreshAt": "2026-09-01T19:33:33Z",
   "lastEarthObservationRefreshAt": "2026-09-02T13:19:58Z"
 }
