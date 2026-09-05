@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T13:26:28Z",
+  "generatedAt": "2026-09-05T20:35:25Z",
   "source": "launch-worker:observed-db",
   "launches": [
     {
@@ -272,7 +272,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/f4c720ce-0cfd-43e6-b8dd-00273073bc01/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/f4c720ce-0cfd-43e6-b8dd-00273073bc01/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-29T14:25:56Z"
     },
     {
@@ -295,7 +295,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/11/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/bf2c3027-a314-403e-a416-2bfd5d165ad1/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-07-08T09:02:45Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -325,7 +325,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b430f81-0ff1-4d85-8a1a-cef0de326198/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b430f81-0ff1-4d85-8a1a-cef0de326198/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-09-03T13:55:07Z"
     },
     {
@@ -347,7 +347,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/69ebbcd2-b257-4070-9ef9-21e7d1f8a883/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/69ebbcd2-b257-4070-9ef9-21e7d1f8a883/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-29T02:08:06Z"
     },
     {
@@ -369,7 +369,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/e0741415-6c63-4236-9736-24a6c04485bc/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/e0741415-6c63-4236-9736-24a6c04485bc/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-28T19:03:01Z"
     },
     {
@@ -392,7 +392,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7bdc412b-c965-4517-a131-f57a01189803/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-27T22:50:55Z"
     },
     {
@@ -505,7 +505,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-05-23T23:39:26Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -595,7 +595,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3b94ad50-3505-496e-8a95-b0bc4c0dadc6/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-06-18T06:27:12Z",
       "previousNets": [
         "2026-06-30T00:00:00Z"
@@ -625,7 +625,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/27/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ef9850ad-1096-425b-9d27-f7bbd186e61a/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-06T03:44:41Z"
     },
     {
@@ -671,7 +671,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/1/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7d1afb26-6f9c-429b-9ccf-29012fd1e519/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-18T03:02:40Z"
     },
     {
@@ -727,7 +727,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/599ba2df-7483-4b2f-a083-2b5ddc06e069/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-04-30T15:18:38Z",
       "previousNets": [
         "2026-06-25T00:00:00Z",
@@ -760,7 +760,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/7766f3bb-674c-4c71-b986-963bd633fcfe/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-25T03:09:47Z"
     },
     {
@@ -783,7 +783,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/b81156da-c0b8-46c8-aebd-8af8d2be83cd/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-25T10:18:47Z"
     },
     {
@@ -806,7 +806,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/548df42c-ae26-4cc9-921a-f0042941911a/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-26T03:53:58Z"
     },
     {
@@ -829,7 +829,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/dc570565-4dcf-4ab9-8174-bf88efef477f/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-05T01:09:34Z",
       "previousNets": [
         "2026-08-31T00:00:00Z"
@@ -859,7 +859,7 @@
       "statusDescription": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/5/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/18441371-8b2e-457c-afb5-1ec1b11ab630/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-07-26T16:12:25Z",
       "previousNets": [
         "2026-09-30T00:00:00Z",
@@ -890,7 +890,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/22/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/8effc13a-c658-4d2e-9f15-8dba4d7fe2dd/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-07-25T23:07:48Z",
       "previousNets": [
         "2026-09-11T00:00:00Z"
@@ -920,7 +920,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/ad358a4d-c541-409b-9366-9c2f2da4aeb9/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-02T04:42:49Z",
       "previousNets": [
         "2026-09-30T00:00:00Z"
@@ -950,7 +950,7 @@
       "statusDescription": "Awaiting official confirmation - current date is known with some certainty.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/63063b9d-ade9-4448-8717-6f910aa81188/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/63063b9d-ade9-4448-8717-6f910aa81188/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-30T15:26:17Z"
     },
     {
@@ -973,7 +973,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://www.spacex.com/launches/ussf153",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/3e0456da-14b1-4ac3-b59e-35fefb1d1530/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-09-01T19:33:33Z",
       "livestreamUrl": "https://x.com/i/broadcasts/1nxnRBWejLOxO"
     },
@@ -997,7 +997,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/program/17/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/d793ba47-faf5-4bab-a386-39a9ccc49c90/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-04-27T16:11:41Z",
       "previousNets": [
         "2026-06-17T01:40:00Z",
@@ -1028,7 +1028,7 @@
       "statusDescription": "Current T-0 confirmed by official or reliable sources.",
       "sourceUrl": "https://ll.thespacedevs.com/2.2.0/launch/95eb9265-bdbe-43ad-b08c-6be7eb4e58f4/",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/95eb9265-bdbe-43ad-b08c-6be7eb4e58f4/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-09-02T13:19:58Z"
     },
     {
@@ -1051,7 +1051,7 @@
       "livestreamUrl": "https://x.com/i/broadcasts/1NxaroyrEngKj",
       "sourceUrl": "https://www.spacex.com/launches/sl-15-24",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/153ef8ef-b12b-43f4-a4bf-05b225c0cd37/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-08-21T15:40:16Z",
       "previousNets": [
         "2026-09-04T11:28:00Z",
@@ -1065,7 +1065,7 @@
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
       "name": "Spectrum | Onward and Upward",
-      "net": "2026-09-05T20:00:00Z",
+      "net": "2026-09-05T20:12:00Z",
       "provider": "Isar Aerospace",
       "rocket": "Spectrum",
       "pad": "Orbital Launch Pad",
@@ -1075,18 +1075,17 @@
       "mission": "Onward and Upward",
       "missionDescription": "Second test flight of the Isar Spectrum launch vehicle. This launch will carry 5 cubesats and 1 non-separable experiment as part of European Space Agency (ESA)'s \u201cBoost!\u201d program:\r\n\r\n* CyBEEsat (TU Berlin)\r\n* TriSat-S (University of Maribor)\r\n* Platform 6 (EnduroSat)\r\n* FramSat-1 (NTNU)\r\n* SpaceTeamSat1 (TU Wien Space Team)\r\n* Let It Go (Dcubed, non-separable experiment)",
       "orbit": "Sun-Synchronous Orbit",
-      "status": "go",
-      "outcome": "delayed",
-      "statusName": "Go for Launch",
-      "statusAbbrev": "Go",
-      "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+      "status": "live",
+      "outcome": "",
+      "statusName": "Launch in Flight",
+      "statusAbbrev": "In Flight",
+      "statusDescription": "The launch vehicle has lifted off from the launchpad.",
       "livestreamUrl": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
       "sourceUrl": "https://isaraerospace.com/mission-2",
       "apiUrl": "https://ll.thespacedevs.com/2.2.0/launch/1b23eb18-e06e-4058-9b42-e95ca0980511/",
-      "updatedAt": "2026-09-05T13:26:28Z",
+      "updatedAt": "2026-09-05T20:35:25Z",
       "firstSeenAt": "2026-04-19T13:07:28Z",
       "previousNets": [
-        "2026-06-30T00:00:00Z",
         "2026-06-15T20:00:00Z",
         "2026-06-16T20:00:00Z",
         "2026-06-18T20:00:00Z",
@@ -1095,11 +1094,12 @@
         "2026-08-06T00:00:00Z",
         "2026-08-31T00:00:00Z",
         "2026-09-30T00:00:00Z",
-        "2026-09-04T20:00:00Z"
+        "2026-09-04T20:00:00Z",
+        "2026-09-05T20:00:00Z"
       ],
-      "preflightCheckedAt": null,
+      "preflightCheckedAt": "2026-09-05T20:35:25Z",
       "postflightCheckedAt": null,
-      "preflightStatus": "",
+      "preflightStatus": "go",
       "postflightStatus": ""
     },
     {
